@@ -310,10 +310,13 @@
         position: fixed !important;
         top: var(--dealer-filter-top, 67px) !important;
         left: 0 !important;
+        z-index: 990 !important;
         min-height: 84px !important;
         margin-bottom: 0 !important;
+        background: #fff !important;
+        border-bottom: 1px solid #efefef !important;
         box-shadow: 0 8px 18px rgba(0, 0, 0, .04) !important;
-        transition: top .5s ease !important;
+        transition: none !important;
       }
 
       .dealer-static-catalog .hidden_filter .hidden_button {
@@ -954,8 +957,17 @@
   function updateFilterMode() {
     const currentScrollY = window.scrollY || 0;
     const compact = window.innerWidth > 1250 && currentScrollY > 0;
-    const scrollingUp = currentScrollY < lastScrollY;
-    const filterTop = compact && window.innerWidth >= 1500 && scrollingUp ? '112px' : '67px';
+    const topNav = document.querySelector('.top_nav');
+    const menu = document.querySelector('body > .menu');
+    const topNavRect = topNav?.getBoundingClientRect();
+    const menuRect = menu?.getBoundingClientRect();
+    const topNavHeight = topNavRect?.height || 67;
+    const menuVisible = menu
+      && getComputedStyle(menu).display !== 'none'
+      && menuRect
+      && menuRect.height > 0
+      && menuRect.bottom > 0;
+    const filterTop = compact ? Math.round(topNavHeight + (menuVisible ? menuRect.height : 0)) + 'px' : '0px';
 
     document.documentElement.style.setProperty('--dealer-filter-top', filterTop);
     document.body.classList.toggle('dealer-filter-compact', compact);
