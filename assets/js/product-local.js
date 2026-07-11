@@ -50,9 +50,119 @@
   function addStyle() {
     if (document.getElementById('dealer-local-product-style')) return;
 
+    const root = new URL(document.currentScript?.getAttribute('src') || '../assets/js/product-local.js', window.location.href);
+    const assetRoot = new URL('../', root).href;
     const style = document.createElement('style');
     style.id = 'dealer-local-product-style';
     style.textContent = `
+      @font-face {
+        font-family: "GothamProRegular";
+        src: url("${assetRoot}fonts/GothamProRegular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GothamProMedium";
+        src: url("${assetRoot}fonts/GothamProMedium.woff") format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GothamProBold";
+        src: url("${assetRoot}fonts/GothamProBold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body.single-product,
+      body.single-product .card_info,
+      body.single-product .add_info,
+      body.single-product .summary {
+        font-family: "GothamProRegular", Arial, Helvetica, sans-serif !important;
+        letter-spacing: 0 !important;
+      }
+
+      body.single-product .woocommerce-breadcrumb,
+      body.single-product .breadcrumbs,
+      body.single-product .card_breadcrumbs,
+      body.single-product .breadcrumb,
+      body.single-product .bread,
+      body.single-product .bread span,
+      body.single-product .breadcrumb_last,
+      body.single-product .product_meta,
+      body.single-product .product_meta a {
+        font-family: "GothamProMedium", Arial, Helvetica, sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        line-height: 1.35 !important;
+        letter-spacing: 0 !important;
+      }
+
+      body.single-product .woocommerce-breadcrumb a,
+      body.single-product .breadcrumbs a,
+      body.single-product .card_breadcrumbs a,
+      body.single-product .breadcrumb a,
+      body.single-product .bread a {
+        font-family: "GothamProBold", Arial, Helvetica, sans-serif !important;
+        font-weight: 700 !important;
+        text-decoration: underline !important;
+        text-decoration-thickness: 1px !important;
+        text-underline-offset: 2px !important;
+      }
+
+      body.single-product .card_actions .pin,
+      body.single-product .card_actions .pin a,
+      body.single-product .card_actions .pin span {
+        font-family: "GothamProMedium", Arial, Helvetica, sans-serif !important;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        line-height: 1.2 !important;
+        letter-spacing: 0 !important;
+        color: #111 !important;
+      }
+
+      body.single-product .card_actions .pin a span {
+        border-bottom: 1px solid currentColor !important;
+        text-decoration: none !important;
+      }
+
+      body.single-product .add_info .dimensions h3 {
+        font-family: "GothamProBold", Arial, Helvetica, sans-serif !important;
+        font-size: 18px !important;
+        line-height: 1.25 !important;
+        font-weight: 700 !important;
+        letter-spacing: 0 !important;
+        text-transform: uppercase !important;
+      }
+
+      body.single-product .add_info .dimensions_text,
+      body.single-product .add_info .dimensions_text span {
+        font-family: "GothamProMedium", Arial, Helvetica, sans-serif !important;
+        font-size: 16px !important;
+        line-height: 1.45 !important;
+        font-weight: 500 !important;
+        letter-spacing: 0 !important;
+      }
+
+      body.single-product .add_info .dimensions_text span span:first-child,
+      body.single-product .add_info .dimensions_text > span:first-child,
+      body.single-product .add_info .dimensions_text .bowl {
+        font-family: "GothamProMedium", Arial, Helvetica, sans-serif !important;
+      }
+
+      body.single-product .add_info .dimensions_text .bowl_size {
+        font-family: "GothamProBold", Arial, Helvetica, sans-serif !important;
+        font-size: 30px !important;
+        line-height: 1 !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+      }
+
       .dealer-local-cart-tab {
         position: fixed;
         z-index: 100000;
