@@ -3,9 +3,11 @@
   window.__omoikiriLangSwitchLoaded = true;
 
   const STORE_KEY = 'omoikiriDealerLang';
+  const ROOT = document.currentScript?.dataset.root || '';
   const elementStore = new Map();
   const textStore = [];
   let textStoreReady = false;
+  let searchIndexPromise = null;
 
   const exactMap = {
     'Мойки': 'Мойкалар',
@@ -440,10 +442,90 @@
         flex: 0 0 40px !important;
       }
 
+      .dealer-search-suggestions {
+        position: fixed;
+        left: 100px;
+        right: 100px;
+        top: 67px;
+        z-index: 100001;
+        display: none;
+        max-height: min(420px, calc(100vh - 86px));
+        overflow: auto;
+        border-radius: 0 0 4px 4px;
+        background: #fff;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, .12);
+        font-family: "GothamProRegular", Arial, Helvetica, sans-serif;
+      }
+
+      body.dealer-search-open .dealer-search-suggestions.show {
+        display: block;
+      }
+
+      .dealer-search-suggestion {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 66px;
+        padding: 8px 20px;
+        border-bottom: 1px solid #ededed;
+        color: #222;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+
+      .dealer-search-suggestion:hover,
+      .dealer-search-suggestion:focus {
+        background: #f7f7f7;
+        color: #222;
+        outline: none;
+      }
+
+      .dealer-search-suggestion img {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+        object-fit: contain;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        background: #fff;
+      }
+
+      .dealer-search-suggestion-title {
+        font-family: "GothamProBold", Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .dealer-search-suggestion-title mark {
+        background: transparent;
+        color: inherit;
+        font: inherit;
+      }
+
+      .dealer-search-suggestion-meta {
+        margin-left: 4px;
+        color: #444;
+        font-size: 13px;
+        line-height: 1.2;
+      }
+
+      .dealer-search-empty {
+        padding: 18px 20px;
+        color: #555;
+        font-size: 14px;
+      }
+
       @media (max-width: 800px) {
         body.dealer-search-open .search_line {
           width: calc(100% - 85px) !important;
           margin-left: 65px !important;
+        }
+
+        .dealer-search-suggestions {
+          left: 65px;
+          right: 20px;
+          top: 57px;
         }
       }
     `;
@@ -563,16 +645,163 @@
   function addCartLink() {
     if (document.querySelector('.dealer-local-cart-tab')) return;
 
-    const root = document.currentScript?.dataset.root || '';
     const link = document.createElement('a');
     link.className = 'dealer-local-cart-tab';
-    link.href = root + 'cart.html';
+    link.href = ROOT + 'cart.html';
     link.target = '_blank';
     link.rel = 'noopener';
     link.setAttribute('aria-label', 'Cart');
     link.title = 'Cart';
     link.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 5h2.1l1.8 10.2a2 2 0 0 0 2 1.65h7.35a2 2 0 0 0 1.94-1.5L20.2 8H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20.15h.01M17 20.15h.01" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/></svg>';
     document.body.appendChild(link);
+  }
+
+  function loadSearchIndex() {
+    if (window.OMOIKIRI_SEARCH_INDEX) return Promise.resolve(window.OMOIKIRI_SEARCH_INDEX);
+    if (searchIndexPromise) return searchIndexPromise;
+
+    searchIndexPromise = new Promise((resolve, reject) => {
+      const existing = document.querySelector('script[data-dealer-search-index]');
+      if (existing) {
+        existing.addEventListener('load', () => resolve(window.OMOIKIRI_SEARCH_INDEX || []), { once: true });
+        existing.addEventListener('error', reject, { once: true });
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = ROOT + 'assets/js/search-index.js?v=20260711-01';
+      script.async = true;
+      script.dataset.dealerSearchIndex = '1';
+      script.onload = () => resolve(window.OMOIKIRI_SEARCH_INDEX || []);
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+
+    return searchIndexPromise;
+  }
+
+  function normalizeSearch(value) {
+    return String(value || '').toLocaleLowerCase('ru').replace(/ё/g, 'е').replace(/\s+/g, ' ').trim();
+  }
+
+  function productHref(item) {
+    try {
+      return new URL(ROOT + item.url, window.location.href).href;
+    } catch {
+      return ROOT + item.url;
+    }
+  }
+
+  function renderHighlight(title, query) {
+    const lower = normalizeSearch(title);
+    const needle = normalizeSearch(query);
+    const index = lower.indexOf(needle);
+    if (index < 0 || !needle) return title;
+    return title.slice(0, index) + '<mark>' + title.slice(index, index + needle.length) + '</mark>' + title.slice(index + needle.length);
+  }
+
+  function createSuggestionsBox() {
+    let box = document.querySelector('.dealer-search-suggestions');
+    if (!box) {
+      box = document.createElement('div');
+      box.className = 'dealer-search-suggestions';
+      box.setAttribute('role', 'listbox');
+      document.body.appendChild(box);
+    }
+    return box;
+  }
+
+  function searchMatches(index, query) {
+    const q = normalizeSearch(query);
+    if (q.length < 2) return [];
+
+    return index
+      .map((item) => {
+        const title = normalizeSearch(item.title);
+        const sku = normalizeSearch(item.sku);
+        const skus = (item.skus || []).map(normalizeSearch);
+        const category = normalizeSearch(item.category);
+        let score = 99;
+        if (title === q) score = 0;
+        else if (title.startsWith(q)) score = 1;
+        else if (sku.startsWith(q) || skus.some((value) => value.startsWith(q))) score = 2;
+        else if (title.includes(q)) score = 3;
+        else if (sku.includes(q) || skus.some((value) => value.includes(q))) score = 4;
+        else if (category.includes(q)) score = 5;
+        return { item, score };
+      })
+      .filter((entry) => entry.score < 99)
+      .sort((a, b) => a.score - b.score || a.item.title.localeCompare(b.item.title, 'ru', { sensitivity: 'base', numeric: true }))
+      .slice(0, 8)
+      .map((entry) => entry.item);
+  }
+
+  function renderSuggestions(items, query) {
+    const box = createSuggestionsBox();
+    if (!query || normalizeSearch(query).length < 2) {
+      box.classList.remove('show');
+      box.innerHTML = '';
+      return;
+    }
+
+    if (!items.length) {
+      box.innerHTML = '<div class="dealer-search-empty">Ничего не найдено</div>';
+      box.classList.add('show');
+      return;
+    }
+
+    box.innerHTML = items.map((item) => {
+      const skus = [item.sku].concat(item.skus || []).filter(Boolean);
+      const sku = skus[0] ? ' (SKU: ' + skus[0] + ')' : '';
+      return '<a class="dealer-search-suggestion" role="option" href="' + productHref(item) + '">' +
+        '<img src="' + item.image + '" alt="">' +
+        '<span>' +
+          '<span class="dealer-search-suggestion-title">' + renderHighlight(item.title, query) + '</span>' +
+          '<span class="dealer-search-suggestion-meta">' + sku + '</span>' +
+        '</span>' +
+      '</a>';
+    }).join('');
+    box.classList.add('show');
+  }
+
+  function bindLocalSearchSuggestions() {
+    const input = document.querySelector('.dgwt-wcas-search-input');
+    const form = document.querySelector('.dgwt-wcas-search-form');
+    if (!input || input.dataset.dealerLocalSearchBound === '1') return;
+    input.dataset.dealerLocalSearchBound = '1';
+
+    const update = () => {
+      const query = input.value;
+      loadSearchIndex()
+        .then((index) => renderSuggestions(searchMatches(index, query), query))
+        .catch(() => renderSuggestions([], query));
+    };
+
+    input.addEventListener('input', update);
+    input.addEventListener('focus', update);
+    input.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter') return;
+      const first = document.querySelector('.dealer-search-suggestion');
+      if (!first) return;
+      event.preventDefault();
+      window.location.href = first.href;
+    });
+
+    if (form) {
+      form.addEventListener('submit', (event) => {
+        const first = document.querySelector('.dealer-search-suggestion');
+        if (!first) return;
+        event.preventDefault();
+        window.location.href = first.href;
+      });
+    }
+
+    document.addEventListener('click', (event) => {
+      const box = document.querySelector('.dealer-search-suggestions');
+      if (!box) return;
+      if (event.target.closest('.search_line, #search, .dealer-search-suggestions')) return;
+      box.classList.remove('show');
+    }, true);
   }
 
   function bindSearchState() {
@@ -602,6 +831,7 @@
     createSwitcher();
     addCartLink();
     bindSearchState();
+    bindLocalSearchSuggestions();
     if (localStorage.getItem(STORE_KEY) === 'kz') {
       window.setTimeout(() => applyKz(false), 0);
     }
