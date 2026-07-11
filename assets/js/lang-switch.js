@@ -389,6 +389,63 @@
         -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8 4a6.8 6.8 0 1 0 0 13.6 6.8 6.8 0 0 0 0-13.6Zm0 2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm5.1 9.5 4.1 4.1-1.4 1.4-4.1-4.1 1.4-1.4Z'/%3E%3C/svg%3E") no-repeat center / contain;
         mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8 4a6.8 6.8 0 1 0 0 13.6 6.8 6.8 0 0 0 0-13.6Zm0 2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm5.1 9.5 4.1 4.1-1.4 1.4-4.1-4.1 1.4-1.4Z'/%3E%3C/svg%3E") no-repeat center / contain;
       }
+
+      body.dealer-search-open .dealer-lang-switch,
+      body.dealer-search-open .dealer-local-cart-tab,
+      body.dealer-search-open .favorites-icon-wrapper,
+      body.dealer-search-open #search {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+
+      body.dealer-search-open .search_line {
+        z-index: 100002 !important;
+        width: calc(100% - 150px) !important;
+        margin-left: 100px !important;
+      }
+
+      body.dealer-search-open .search_line .dgwt-wcas-search-wrapp,
+      body.dealer-search-open .search_line .dgwt-wcas-search-form,
+      body.dealer-search-open .search_line .dgwt-wcas-sf-wrapp {
+        width: 100% !important;
+        max-width: none !important;
+        box-sizing: border-box !important;
+      }
+
+      body.dealer-search-open .search_line .dgwt-wcas-sf-wrapp {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0 !important;
+        background: transparent !important;
+        padding: 0 !important;
+        border: 0 !important;
+        box-shadow: none !important;
+      }
+
+      body.dealer-search-open .search_line .dgwt-wcas-search-input {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+        height: 44px !important;
+        border: 0 !important;
+        border-bottom: 1px solid #111 !important;
+        border-radius: 0 !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+        background: transparent !important;
+      }
+
+      body.dealer-search-open .search_line .dgwt-wcas-search-submit {
+        display: inline-flex !important;
+        flex: 0 0 40px !important;
+      }
+
+      @media (max-width: 800px) {
+        body.dealer-search-open .search_line {
+          width: calc(100% - 85px) !important;
+          margin-left: 65px !important;
+        }
+      }
     `;
     document.head.appendChild(style);
   }
@@ -518,10 +575,33 @@
     document.body.appendChild(link);
   }
 
+  function bindSearchState() {
+    const sync = () => {
+      const searchLine = document.querySelector('.search_line');
+      document.body.classList.toggle('dealer-search-open', Boolean(searchLine?.classList.contains('show')));
+    };
+
+    sync();
+
+    const searchLine = document.querySelector('.search_line');
+    if (searchLine) {
+      new MutationObserver(sync).observe(searchLine, {
+        attributes: true,
+        attributeFilter: ['class', 'style']
+      });
+    }
+
+    document.addEventListener('click', () => window.setTimeout(sync, 0), true);
+    document.addEventListener('keyup', (event) => {
+      if (event.key === 'Escape') window.setTimeout(sync, 0);
+    }, true);
+  }
+
   function init() {
     addStyle();
     createSwitcher();
     addCartLink();
+    bindSearchState();
     if (localStorage.getItem(STORE_KEY) === 'kz') {
       window.setTimeout(() => applyKz(false), 0);
     }
