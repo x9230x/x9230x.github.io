@@ -1,0 +1,620 @@
+{
+  "models": [
+    {
+      "model": "AKASHI",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.24, "hot_water_l_min": 4.75, "mix_water_l_min": 5.55},
+        {"pressure_bar": 2, "cold_water_l_min": 6.08, "hot_water_l_min": 6.87, "mix_water_l_min": 8.18},
+        {"pressure_bar": 3, "cold_water_l_min": 7.47, "hot_water_l_min": 8.44, "mix_water_l_min": 10.01},
+        {"pressure_bar": 4, "cold_water_l_min": 8.66, "hot_water_l_min": 9.76, "mix_water_l_min": 11.6},
+        {"pressure_bar": 5, "cold_water_l_min": 9.71, "hot_water_l_min": 10.92, "mix_water_l_min": 12.9}
+      ]
+    },
+    {
+      "model": "AKASHI-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.16, "hot_water_l_min": 5.13, "mix_water_l_min": 6.34},
+        {"pressure_bar": 2, "cold_water_l_min": 7.72, "hot_water_l_min": 7.61, "mix_water_l_min": 9.42},
+        {"pressure_bar": 3, "cold_water_l_min": 9.63, "hot_water_l_min": 9.48, "mix_water_l_min": 11.68},
+        {"pressure_bar": 4, "cold_water_l_min": 11.23, "hot_water_l_min": 11.06, "mix_water_l_min": 13.61},
+        {"pressure_bar": 5, "cold_water_l_min": 12.63, "hot_water_l_min": 12.43, "mix_water_l_min": 15.36}
+      ]
+    },
+    {
+      "model": "AKITA-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 2.68, "hot_water_l_min": 2.75, "mix_water_l_min": 3},
+        {"pressure_bar": 2, "cold_water_l_min": 4.01, "hot_water_l_min": 4.16, "mix_water_l_min": 4.45},
+        {"pressure_bar": 3, "cold_water_l_min": 5.04, "hot_water_l_min": 5.21, "mix_water_l_min": 5.58},
+        {"pressure_bar": 4, "cold_water_l_min": 5.91, "hot_water_l_min": 6.12, "mix_water_l_min": 6.57},
+        {"pressure_bar": 5, "cold_water_l_min": 6.77, "hot_water_l_min": 7.05, "mix_water_l_min": 7.53}
+      ]
+    },
+    {
+      "model": "AMAGASAKI",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.18, "hot_water_l_min": 5.18, "mix_water_l_min": 6.11},
+        {"pressure_bar": 2, "cold_water_l_min": 7.38, "hot_water_l_min": 7.5, "mix_water_l_min": 8.49},
+        {"pressure_bar": 3, "cold_water_l_min": 9.06, "hot_water_l_min": 9.25, "mix_water_l_min": 10.44},
+        {"pressure_bar": 4, "cold_water_l_min": 10.48, "hot_water_l_min": 10.73, "mix_water_l_min": 12.09},
+        {"pressure_bar": 5, "cold_water_l_min": 11.88, "hot_water_l_min": 12.2, "mix_water_l_min": 13.62}
+      ]
+    },
+    {
+      "model": "ARITA-SB",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.84, "hot_water_l_min": 3.75, "mix_water_l_min": 4.23},
+        {"pressure_bar": 2, "cold_water_l_min": 5.49, "hot_water_l_min": 5.41, "mix_water_l_min": 6.05},
+        {"pressure_bar": 3, "cold_water_l_min": 6.78, "hot_water_l_min": 6.68, "mix_water_l_min": 7.45},
+        {"pressure_bar": 4, "cold_water_l_min": 7.82, "hot_water_l_min": 7.71, "mix_water_l_min": 8.65},
+        {"pressure_bar": 5, "cold_water_l_min": 8.63, "hot_water_l_min": 8.56, "mix_water_l_min": 9.67}
+      ]
+    },
+    {
+      "model": "HOTARU",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.67, "hot_water_l_min": 4.89, "mix_water_l_min": 5.68},
+        {"pressure_bar": 2, "cold_water_l_min": 6.68, "hot_water_l_min": 7.04, "mix_water_l_min": 8.16},
+        {"pressure_bar": 3, "cold_water_l_min": 8.24, "hot_water_l_min": 8.69, "mix_water_l_min": 10.02},
+        {"pressure_bar": 4, "cold_water_l_min": 9.56, "hot_water_l_min": 10.07, "mix_water_l_min": 11.6},
+        {"pressure_bar": 5, "cold_water_l_min": 10.72, "hot_water_l_min": 11.37, "mix_water_l_min": 12.99}
+      ]
+    },
+    {
+      "model": "KANTO",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.96, "hot_water_l_min": 4.9, "mix_water_l_min": 6.17},
+        {"pressure_bar": 2, "cold_water_l_min": 7.16, "hot_water_l_min": 7.08, "mix_water_l_min": 8.81},
+        {"pressure_bar": 3, "cold_water_l_min": 8.86, "hot_water_l_min": 8.74, "mix_water_l_min": 10.89},
+        {"pressure_bar": 4, "cold_water_l_min": 10.33, "hot_water_l_min": 10.19, "mix_water_l_min": 12.62},
+        {"pressure_bar": 5, "cold_water_l_min": 11.54, "hot_water_l_min": 11.37, "mix_water_l_min": 14.16}
+      ]
+    },
+    {
+      "model": "Kanto 2 Plus-SB",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 2, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 3, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 4, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 5, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null}
+      ]
+    },
+    {
+      "model": "KARATSU-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.65, "hot_water_l_min": 3.68, "mix_water_l_min": 4.25},
+        {"pressure_bar": 2, "cold_water_l_min": 5.26, "hot_water_l_min": 5.32, "mix_water_l_min": 6.22},
+        {"pressure_bar": 3, "cold_water_l_min": 6.53, "hot_water_l_min": 6.59, "mix_water_l_min": 7.7},
+        {"pressure_bar": 4, "cold_water_l_min": 7.56, "hot_water_l_min": 7.69, "mix_water_l_min": 8.98},
+        {"pressure_bar": 5, "cold_water_l_min": 8.52, "hot_water_l_min": 8.66, "mix_water_l_min": 10.1}
+      ]
+    },
+    {
+      "model": "KYOTO",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.79, "hot_water_l_min": 6.82, "mix_water_l_min": 9.91},
+        {"pressure_bar": 2, "cold_water_l_min": 9.76, "hot_water_l_min": 9.82, "mix_water_l_min": 14.21},
+        {"pressure_bar": 3, "cold_water_l_min": 12.06, "hot_water_l_min": 12.09, "mix_water_l_min": 17.51},
+        {"pressure_bar": 4, "cold_water_l_min": 14.01, "hot_water_l_min": 14.04, "mix_water_l_min": 20.34},
+        {"pressure_bar": 5, "cold_water_l_min": 15.77, "hot_water_l_min": 15.09, "mix_water_l_min": 23.09}
+      ]
+    },
+    {
+      "model": "MIKAWA 2 PLUS-SB",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.32, "hot_water_l_min": 3.36, "mix_water_l_min": 3.71},
+        {"pressure_bar": 2, "cold_water_l_min": 4.81, "hot_water_l_min": 4.87, "mix_water_l_min": 5.55},
+        {"pressure_bar": 3, "cold_water_l_min": 5.95, "hot_water_l_min": 6.02, "mix_water_l_min": 6.84},
+        {"pressure_bar": 4, "cold_water_l_min": 6.91, "hot_water_l_min": 6.97, "mix_water_l_min": 7.92},
+        {"pressure_bar": 5, "cold_water_l_min": 7.78, "hot_water_l_min": 7.84, "mix_water_l_min": 8.92}
+      ]
+    },
+    {
+      "model": "MIKAWA-SB SENSOR",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 2, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 3, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 4, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 5, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null}
+      ]
+    },
+    {
+      "model": "NAGANO",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.73, "hot_water_l_min": 4.79, "mix_water_l_min": 5.74},
+        {"pressure_bar": 2, "cold_water_l_min": 6.77, "hot_water_l_min": 6.94, "mix_water_l_min": 8.63},
+        {"pressure_bar": 3, "cold_water_l_min": 8.34, "hot_water_l_min": 8.55, "mix_water_l_min": 10.61},
+        {"pressure_bar": 4, "cold_water_l_min": 9.68, "hot_water_l_min": 9.9, "mix_water_l_min": 12.29},
+        {"pressure_bar": 5, "cold_water_l_min": 10.9, "hot_water_l_min": 11.1, "mix_water_l_min": 13.78}
+      ]
+    },
+    {
+      "model": "NAGANO + Pure Drop Lite",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.73, "hot_water_l_min": 4.79, "mix_water_l_min": 5.74},
+        {"pressure_bar": 2, "cold_water_l_min": 6.77, "hot_water_l_min": 6.94, "mix_water_l_min": 8.63},
+        {"pressure_bar": 3, "cold_water_l_min": 8.34, "hot_water_l_min": 8.55, "mix_water_l_min": 10.61},
+        {"pressure_bar": 4, "cold_water_l_min": 9.68, "hot_water_l_min": 9.9, "mix_water_l_min": 12.29},
+        {"pressure_bar": 5, "cold_water_l_min": 10.9, "hot_water_l_min": 11.1, "mix_water_l_min": 13.78}
+      ]
+    },
+    {
+      "model": "NAKAGAWA 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.52, "hot_water_l_min": 4.86, "mix_water_l_min": 5.12},
+        {"pressure_bar": 2, "cold_water_l_min": 6.4, "hot_water_l_min": 6.94, "mix_water_l_min": 7.48},
+        {"pressure_bar": 3, "cold_water_l_min": 7.89, "hot_water_l_min": 8.52, "mix_water_l_min": 9.17},
+        {"pressure_bar": 4, "cold_water_l_min": 9.11, "hot_water_l_min": 9.87, "mix_water_l_min": 10.58},
+        {"pressure_bar": 5, "cold_water_l_min": 10.22, "hot_water_l_min": 10.3, "mix_water_l_min": 11.82}
+      ]
+    },
+    {
+      "model": "NARA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.23, "hot_water_l_min": 4.08, "mix_water_l_min": 4.18},
+        {"pressure_bar": 2, "cold_water_l_min": 6.15, "hot_water_l_min": 5.91, "mix_water_l_min": 5.87},
+        {"pressure_bar": 3, "cold_water_l_min": 7.56, "hot_water_l_min": 7.26, "mix_water_l_min": 7.26},
+        {"pressure_bar": 4, "cold_water_l_min": 8.74, "hot_water_l_min": 8.48, "mix_water_l_min": 8.45},
+        {"pressure_bar": 5, "cold_water_l_min": 9.78, "hot_water_l_min": 9.47, "mix_water_l_min": 9.68}
+      ]
+    },
+    {
+      "model": "NARA 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.99, "hot_water_l_min": 4.05, "mix_water_l_min": 4.59},
+        {"pressure_bar": 2, "cold_water_l_min": 5.8, "hot_water_l_min": 5.93, "mix_water_l_min": 6.48},
+        {"pressure_bar": 3, "cold_water_l_min": 7.18, "hot_water_l_min": 7.32, "mix_water_l_min": 8.07},
+        {"pressure_bar": 4, "cold_water_l_min": 8.37, "hot_water_l_min": 8.56, "mix_water_l_min": 9.39},
+        {"pressure_bar": 5, "cold_water_l_min": 9.48, "hot_water_l_min": 9.65, "mix_water_l_min": 10.62}
+      ]
+    },
+    {
+      "model": "NARA 2 PLUS-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.62, "hot_water_l_min": 3.65, "mix_water_l_min": 3.97},
+        {"pressure_bar": 2, "cold_water_l_min": 5.26, "hot_water_l_min": 5.29, "mix_water_l_min": 5.88},
+        {"pressure_bar": 3, "cold_water_l_min": 6.48, "hot_water_l_min": 6.59, "mix_water_l_min": 7.33},
+        {"pressure_bar": 4, "cold_water_l_min": 7.55, "hot_water_l_min": 7.65, "mix_water_l_min": 8.64},
+        {"pressure_bar": 5, "cold_water_l_min": 8.65, "hot_water_l_min": 8.77, "mix_water_l_min": 9.93}
+      ]
+    },
+    {
+      "model": "NARA-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.86, "hot_water_l_min": 4.65, "mix_water_l_min": 4.93},
+        {"pressure_bar": 2, "cold_water_l_min": 6.97, "hot_water_l_min": 6.68, "mix_water_l_min": 6.77},
+        {"pressure_bar": 3, "cold_water_l_min": 8.54, "hot_water_l_min": 8.02, "mix_water_l_min": 8.32},
+        {"pressure_bar": 4, "cold_water_l_min": 9.9, "hot_water_l_min": 9.54, "mix_water_l_min": 9.65},
+        {"pressure_bar": 5, "cold_water_l_min": 11.12, "hot_water_l_min": 10.75, "mix_water_l_min": 10.86}
+      ]
+    },
+    {
+      "model": "OSAKA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.85, "hot_water_l_min": 3.88, "mix_water_l_min": 4.11},
+        {"pressure_bar": 2, "cold_water_l_min": 5.58, "hot_water_l_min": 5.63, "mix_water_l_min": 5.92},
+        {"pressure_bar": 3, "cold_water_l_min": 6.9, "hot_water_l_min": 6.94, "mix_water_l_min": 7.28},
+        {"pressure_bar": 4, "cold_water_l_min": 7.99, "hot_water_l_min": 8.06, "mix_water_l_min": 8.43},
+        {"pressure_bar": 5, "cold_water_l_min": 8.97, "hot_water_l_min": 9.03, "mix_water_l_min": 9.59}
+      ]
+    },
+    {
+      "model": "SHINAGAWA 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.78, "hot_water_l_min": 5.27, "mix_water_l_min": 5.69},
+        {"pressure_bar": 2, "cold_water_l_min": 6.82, "hot_water_l_min": 7.5, "mix_water_l_min": 8.12},
+        {"pressure_bar": 3, "cold_water_l_min": 8.35, "hot_water_l_min": 9.22, "mix_water_l_min": 9.93},
+        {"pressure_bar": 4, "cold_water_l_min": 9.68, "hot_water_l_min": 10.65, "mix_water_l_min": 11.51},
+        {"pressure_bar": 5, "cold_water_l_min": 10.82, "hot_water_l_min": 11.91, "mix_water_l_min": 12.87}
+      ]
+    },
+    {
+      "model": "SINTO 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.01, "hot_water_l_min": 4.99, "mix_water_l_min": 6.23},
+        {"pressure_bar": 2, "cold_water_l_min": 7.27, "hot_water_l_min": 7.21, "mix_water_l_min": 8.81},
+        {"pressure_bar": 3, "cold_water_l_min": 8.98, "hot_water_l_min": 8.91, "mix_water_l_min": 10.89},
+        {"pressure_bar": 4, "cold_water_l_min": 10.44, "hot_water_l_min": 10.35, "mix_water_l_min": 12.65},
+        {"pressure_bar": 5, "cold_water_l_min": 11.71, "hot_water_l_min": 11.6, "mix_water_l_min": 14.24}
+      ]
+    },
+    {
+      "model": "TAKAMATSU-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 2.63, "hot_water_l_min": 2.68, "mix_water_l_min": 2.91},
+        {"pressure_bar": 2, "cold_water_l_min": 4.05, "hot_water_l_min": 4.13, "mix_water_l_min": 4.45},
+        {"pressure_bar": 3, "cold_water_l_min": 5.1, "hot_water_l_min": 5.23, "mix_water_l_min": 5.61},
+        {"pressure_bar": 4, "cold_water_l_min": 5.98, "hot_water_l_min": 6.14, "mix_water_l_min": 6.57},
+        {"pressure_bar": 5, "cold_water_l_min": 6.82, "hot_water_l_min": 6.96, "mix_water_l_min": 7.45}
+      ]
+    },
+    {
+      "model": "TOTTORI",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.65, "hot_water_l_min": 4.56, "mix_water_l_min": 5.41},
+        {"pressure_bar": 2, "cold_water_l_min": 6.6, "hot_water_l_min": 6.43, "mix_water_l_min": 6.97},
+        {"pressure_bar": 3, "cold_water_l_min": 8.1, "hot_water_l_min": 7.89, "mix_water_l_min": 8.55},
+        {"pressure_bar": 4, "cold_water_l_min": 9.36, "hot_water_l_min": 9.14, "mix_water_l_min": 9.91},
+        {"pressure_bar": 5, "cold_water_l_min": 10.48, "hot_water_l_min": 10.22, "mix_water_l_min": 12.02}
+      ]
+    },
+    {
+      "model": "WAKAYAMA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.68, "hot_water_l_min": 6.68, "mix_water_l_min": 7.53},
+        {"pressure_bar": 2, "cold_water_l_min": 9.46, "hot_water_l_min": 9.46, "mix_water_l_min": 10.62},
+        {"pressure_bar": 3, "cold_water_l_min": 11.58, "hot_water_l_min": 11.61, "mix_water_l_min": 13.01},
+        {"pressure_bar": 4, "cold_water_l_min": 13.42, "hot_water_l_min": 13.42, "mix_water_l_min": 15.09},
+        {"pressure_bar": 5, "cold_water_l_min": 15.03, "hot_water_l_min": 15.09, "mix_water_l_min": 16.92}
+      ]
+    },
+    {
+      "model": "YAMADA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.28, "hot_water_l_min": 4.68, "mix_water_l_min": 5.58},
+        {"pressure_bar": 2, "cold_water_l_min": 6.11, "hot_water_l_min": 6.85, "mix_water_l_min": 8.16},
+        {"pressure_bar": 3, "cold_water_l_min": 7.46, "hot_water_l_min": 8.46, "mix_water_l_min": 10.06},
+        {"pressure_bar": 4, "cold_water_l_min": 8.65, "hot_water_l_min": 9.78, "mix_water_l_min": 11.64},
+        {"pressure_bar": 5, "cold_water_l_min": 9.78, "hot_water_l_min": 10.87, "mix_water_l_min": 12.91}
+      ]
+    },
+    {
+      "model": "AKITA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.54, "hot_water_l_min": 5.74, "mix_water_l_min": 6.75},
+        {"pressure_bar": 2, "cold_water_l_min": 8.07, "hot_water_l_min": 8.11, "mix_water_l_min": 9.58},
+        {"pressure_bar": 3, "cold_water_l_min": 9.94, "hot_water_l_min": 9.93, "mix_water_l_min": 11.69},
+        {"pressure_bar": 4, "cold_water_l_min": 11.53, "hot_water_l_min": 11.46, "mix_water_l_min": 13.55},
+        {"pressure_bar": 5, "cold_water_l_min": 13, "hot_water_l_min": 12.89, "mix_water_l_min": 15.16}
+      ]
+    },
+    {
+      "model": "KORIYAMA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 7.89, "hot_water_l_min": 7.87, "mix_water_l_min": 8.94},
+        {"pressure_bar": 2, "cold_water_l_min": 11.3, "hot_water_l_min": 11.23, "mix_water_l_min": 12.66},
+        {"pressure_bar": 3, "cold_water_l_min": 13.92, "hot_water_l_min": 13.82, "mix_water_l_min": 15.91},
+        {"pressure_bar": 4, "cold_water_l_min": 16.1, "hot_water_l_min": 16.06, "mix_water_l_min": 18.4},
+        {"pressure_bar": 5, "cold_water_l_min": 18.05, "hot_water_l_min": 18.04, "mix_water_l_min": 20.62}
+      ]
+    },
+    {
+      "model": "KORIYAMA-SB",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.44, "hot_water_l_min": 4.62, "mix_water_l_min": 4.83},
+        {"pressure_bar": 2, "cold_water_l_min": 6.63, "hot_water_l_min": 6.64, "mix_water_l_min": 6.97},
+        {"pressure_bar": 3, "cold_water_l_min": 8.18, "hot_water_l_min": 8.21, "mix_water_l_min": 8.58},
+        {"pressure_bar": 4, "cold_water_l_min": 9.51, "hot_water_l_min": 9.55, "mix_water_l_min": 10.02},
+        {"pressure_bar": 5, "cold_water_l_min": 10.72, "hot_water_l_min": 10.74, "mix_water_l_min": 11.18}
+      ]
+    },
+    {
+      "model": "TAKAMATSU",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.69, "hot_water_l_min": 5.69, "mix_water_l_min": 6.6},
+        {"pressure_bar": 2, "cold_water_l_min": 8.11, "hot_water_l_min": 8.16, "mix_water_l_min": 9.4},
+        {"pressure_bar": 3, "cold_water_l_min": 9.96, "hot_water_l_min": 9.96, "mix_water_l_min": 11.47},
+        {"pressure_bar": 4, "cold_water_l_min": 11.54, "hot_water_l_min": 11.57, "mix_water_l_min": 13.33},
+        {"pressure_bar": 5, "cold_water_l_min": 13, "hot_water_l_min": 13.03, "mix_water_l_min": 14.85}
+      ]
+    },
+    {
+      "model": "AKENO",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.09, "hot_water_l_min": 5, "mix_water_l_min": 5.78},
+        {"pressure_bar": 2, "cold_water_l_min": 7.17, "hot_water_l_min": 6.98, "mix_water_l_min": 8.16},
+        {"pressure_bar": 3, "cold_water_l_min": 8.82, "hot_water_l_min": 8.64, "mix_water_l_min": 10},
+        {"pressure_bar": 4, "cold_water_l_min": 10.21, "hot_water_l_min": 9.88, "mix_water_l_min": 11.56},
+        {"pressure_bar": 5, "cold_water_l_min": 11.37, "hot_water_l_min": 11.04, "mix_water_l_min": 12.94}
+      ]
+    },
+    {
+      "model": "KADO",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.34, "hot_water_l_min": 6.03, "mix_water_l_min": 6.82},
+        {"pressure_bar": 2, "cold_water_l_min": 8.96, "hot_water_l_min": 8.46, "mix_water_l_min": 9.39},
+        {"pressure_bar": 3, "cold_water_l_min": 10.98, "hot_water_l_min": 10.39, "mix_water_l_min": 11.55},
+        {"pressure_bar": 4, "cold_water_l_min": 12.72, "hot_water_l_min": 12.02, "mix_water_l_min": 13.34},
+        {"pressure_bar": 5, "cold_water_l_min": 14.29, "hot_water_l_min": 13.45, "mix_water_l_min": 14.93}
+      ]
+    },
+    {
+      "model": "KANTO",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.44, "hot_water_l_min": 5.3, "mix_water_l_min": 6.31},
+        {"pressure_bar": 2, "cold_water_l_min": 7.66, "hot_water_l_min": 7.42, "mix_water_l_min": 8.88},
+        {"pressure_bar": 3, "cold_water_l_min": 9.44, "hot_water_l_min": 9.08, "mix_water_l_min": 10.97},
+        {"pressure_bar": 4, "cold_water_l_min": 10.9, "hot_water_l_min": 10.53, "mix_water_l_min": 12.68},
+        {"pressure_bar": 5, "cold_water_l_min": 12.23, "hot_water_l_min": 11.81, "mix_water_l_min": 14.21}
+      ]
+    },
+    {
+      "model": "MORI",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.83, "hot_water_l_min": 5.72, "mix_water_l_min": 6.68},
+        {"pressure_bar": 2, "cold_water_l_min": 8.23, "hot_water_l_min": 8.05, "mix_water_l_min": 9.33},
+        {"pressure_bar": 3, "cold_water_l_min": 10.11, "hot_water_l_min": 9.67, "mix_water_l_min": 11.38},
+        {"pressure_bar": 4, "cold_water_l_min": 11.44, "hot_water_l_min": 11.19, "mix_water_l_min": 13.13},
+        {"pressure_bar": 5, "cold_water_l_min": 13.13, "hot_water_l_min": 12.88, "mix_water_l_min": 14.73}
+      ]
+    },
+    {
+      "model": "NAKAGAWA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 7.44, "hot_water_l_min": 7.3, "mix_water_l_min": 8.95},
+        {"pressure_bar": 2, "cold_water_l_min": 10.41, "hot_water_l_min": 10.34, "mix_water_l_min": 12.44},
+        {"pressure_bar": 3, "cold_water_l_min": 12.8, "hot_water_l_min": 12.73, "mix_water_l_min": 15.25},
+        {"pressure_bar": 4, "cold_water_l_min": 14.73, "hot_water_l_min": 14.74, "mix_water_l_min": 17.68},
+        {"pressure_bar": 5, "cold_water_l_min": 16.49, "hot_water_l_min": 16.54, "mix_water_l_min": 19.73}
+      ]
+    },
+    {
+      "model": "SHINAGAWA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.32, "hot_water_l_min": 6.27, "mix_water_l_min": 7.14},
+        {"pressure_bar": 2, "cold_water_l_min": 8.88, "hot_water_l_min": 8.67, "mix_water_l_min": 9.74},
+        {"pressure_bar": 3, "cold_water_l_min": 10.9, "hot_water_l_min": 10.58, "mix_water_l_min": 12.19},
+        {"pressure_bar": 4, "cold_water_l_min": 12.58, "hot_water_l_min": 12.22, "mix_water_l_min": 14.09},
+        {"pressure_bar": 5, "cold_water_l_min": 14.15, "hot_water_l_min": 13.73, "mix_water_l_min": 15.76}
+      ]
+    },
+    {
+      "model": "SHINAGAWA-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.22, "hot_water_l_min": 3.3, "mix_water_l_min": 3.41},
+        {"pressure_bar": 2, "cold_water_l_min": 4.78, "hot_water_l_min": 4.73, "mix_water_l_min": 4.97},
+        {"pressure_bar": 3, "cold_water_l_min": 5.96, "hot_water_l_min": 5.81, "mix_water_l_min": 6.11},
+        {"pressure_bar": 4, "cold_water_l_min": 6.82, "hot_water_l_min": 6.65, "mix_water_l_min": 6.93},
+        {"pressure_bar": 5, "cold_water_l_min": 6.81, "hot_water_l_min": 6.6, "mix_water_l_min": 6.85}
+      ]
+    },
+    {
+      "model": "TANIGAWA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.97, "hot_water_l_min": 4.12, "mix_water_l_min": 3.52},
+        {"pressure_bar": 2, "cold_water_l_min": 5.72, "hot_water_l_min": 5.69, "mix_water_l_min": 5.98},
+        {"pressure_bar": 3, "cold_water_l_min": 6.96, "hot_water_l_min": 6.94, "mix_water_l_min": 7.3},
+        {"pressure_bar": 4, "cold_water_l_min": 8.04, "hot_water_l_min": 8.01, "mix_water_l_min": 8.39},
+        {"pressure_bar": 5, "cold_water_l_min": 8.99, "hot_water_l_min": 8.93, "mix_water_l_min": 9.38}
+      ]
+    },
+    {
+      "model": "TANIGAWA-SB",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.43, "hot_water_l_min": 5.22, "mix_water_l_min": 6.55},
+        {"pressure_bar": 2, "cold_water_l_min": 7.64, "hot_water_l_min": 7.56, "mix_water_l_min": 8.21},
+        {"pressure_bar": 3, "cold_water_l_min": 9.31, "hot_water_l_min": 9.23, "mix_water_l_min": 9.98},
+        {"pressure_bar": 4, "cold_water_l_min": 10.75, "hot_water_l_min": 11.2, "mix_water_l_min": 12.11},
+        {"pressure_bar": 5, "cold_water_l_min": 11.99, "hot_water_l_min": 11.89, "mix_water_l_min": 12.89}
+      ]
+    },
+    {
+      "model": "TATEYAMA-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.28, "hot_water_l_min": 5.1, "mix_water_l_min": 5.52},
+        {"pressure_bar": 2, "cold_water_l_min": 7.29, "hot_water_l_min": 7.21, "mix_water_l_min": 7.59},
+        {"pressure_bar": 3, "cold_water_l_min": 8.89, "hot_water_l_min": 8.83, "mix_water_l_min": 9.46},
+        {"pressure_bar": 4, "cold_water_l_min": 10.3, "hot_water_l_min": 9.63, "mix_water_l_min": 11},
+        {"pressure_bar": 5, "cold_water_l_min": 11.52, "hot_water_l_min": 10.75, "mix_water_l_min": 12.26}
+      ]
+    },
+    {
+      "model": "TOKIGAWA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.34, "hot_water_l_min": 6.44, "mix_water_l_min": 7.8},
+        {"pressure_bar": 2, "cold_water_l_min": 8.9, "hot_water_l_min": 8.89, "mix_water_l_min": 10.87},
+        {"pressure_bar": 3, "cold_water_l_min": 11, "hot_water_l_min": 10.91, "mix_water_l_min": 13.36},
+        {"pressure_bar": 4, "cold_water_l_min": 12.75, "hot_water_l_min": 12.65, "mix_water_l_min": 15.45},
+        {"pressure_bar": 5, "cold_water_l_min": 14.28, "hot_water_l_min": 14.22, "mix_water_l_min": 17.34}
+      ]
+    },
+    {
+      "model": "TONAMI",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.03, "hot_water_l_min": 5.89, "mix_water_l_min": 6.49},
+        {"pressure_bar": 2, "cold_water_l_min": 8.32, "hot_water_l_min": 8.28, "mix_water_l_min": 9.01},
+        {"pressure_bar": 3, "cold_water_l_min": 10.23, "hot_water_l_min": 10.03, "mix_water_l_min": 10.99},
+        {"pressure_bar": 4, "cold_water_l_min": 11.79, "hot_water_l_min": 11.54, "mix_water_l_min": 12.68},
+        {"pressure_bar": 5, "cold_water_l_min": 13.09, "hot_water_l_min": 12.96, "mix_water_l_min": 14.13}
+      ]
+    },
+    {
+      "model": "TOSHIMA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 5.87, "hot_water_l_min": 5.7, "mix_water_l_min": 6.54},
+        {"pressure_bar": 2, "cold_water_l_min": 8.14, "hot_water_l_min": 8.03, "mix_water_l_min": 9.17},
+        {"pressure_bar": 3, "cold_water_l_min": 9.82, "hot_water_l_min": 9.84, "mix_water_l_min": 11.29},
+        {"pressure_bar": 4, "cold_water_l_min": 11.45, "hot_water_l_min": 11.37, "mix_water_l_min": 13.07},
+        {"pressure_bar": 5, "cold_water_l_min": 12.92, "hot_water_l_min": 12.74, "mix_water_l_min": 14.65}
+      ]
+    },
+    {
+      "model": "UMI",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.06, "hot_water_l_min": 6.27, "mix_water_l_min": 6.73},
+        {"pressure_bar": 2, "cold_water_l_min": 8.72, "hot_water_l_min": 8.63, "mix_water_l_min": 9.49},
+        {"pressure_bar": 3, "cold_water_l_min": 10.73, "hot_water_l_min": 10.54, "mix_water_l_min": 11.64},
+        {"pressure_bar": 4, "cold_water_l_min": 12.38, "hot_water_l_min": 12.13, "mix_water_l_min": 13.42},
+        {"pressure_bar": 5, "cold_water_l_min": 13.81, "hot_water_l_min": 13.66, "mix_water_l_min": 15.02}
+      ]
+    },
+    {
+      "model": "YATOMI",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 6.09, "hot_water_l_min": 5.82, "mix_water_l_min": 6.89},
+        {"pressure_bar": 2, "cold_water_l_min": 8.86, "hot_water_l_min": 8.34, "mix_water_l_min": 9.7},
+        {"pressure_bar": 3, "cold_water_l_min": 10.95, "hot_water_l_min": 10.32, "mix_water_l_min": 11.9},
+        {"pressure_bar": 4, "cold_water_l_min": 12.72, "hot_water_l_min": 12.02, "mix_water_l_min": 13.88},
+        {"pressure_bar": 5, "cold_water_l_min": 14.35, "hot_water_l_min": 13.53, "mix_water_l_min": 15.59}
+      ]
+    },
+    {
+      "model": "ASAKAWA-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 2.881, "hot_water_l_min": 3.024, "mix_water_l_min": 3.281},
+        {"pressure_bar": 2, "cold_water_l_min": 4.3, "hot_water_l_min": 4.519, "mix_water_l_min": 4.9},
+        {"pressure_bar": 3, "cold_water_l_min": 5.383, "hot_water_l_min": 5.639, "mix_water_l_min": 6.221},
+        {"pressure_bar": 4, "cold_water_l_min": 6.291, "hot_water_l_min": 6.589, "mix_water_l_min": 7.168},
+        {"pressure_bar": 5, "cold_water_l_min": 7.104, "hot_water_l_min": 7.444, "mix_water_l_min": 8.107}
+      ]
+    },
+    {
+      "model": "KAMI 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 2, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 3, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 4, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 5, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null}
+      ]
+    },
+    {
+      "model": "KANTO 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.309, "hot_water_l_min": 4.291, "mix_water_l_min": 4.641},
+        {"pressure_bar": 2, "cold_water_l_min": 6.387, "hot_water_l_min": 6.317, "mix_water_l_min": 6.866},
+        {"pressure_bar": 3, "cold_water_l_min": 7.979, "hot_water_l_min": 7.905, "mix_water_l_min": 8.541},
+        {"pressure_bar": 4, "cold_water_l_min": 9.295, "hot_water_l_min": 9.203, "mix_water_l_min": 9.952},
+        {"pressure_bar": 5, "cold_water_l_min": 10.446, "hot_water_l_min": 10.319, "mix_water_l_min": 11.196}
+      ]
+    },
+    {
+      "model": "MAKKARI 2 PLUS-SB",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.032, "hot_water_l_min": 4.072, "mix_water_l_min": 4.341},
+        {"pressure_bar": 2, "cold_water_l_min": 6.065, "hot_water_l_min": 6.105, "mix_water_l_min": 6.497},
+        {"pressure_bar": 3, "cold_water_l_min": 7.64, "hot_water_l_min": 7.645, "mix_water_l_min": 8.148},
+        {"pressure_bar": 4, "cold_water_l_min": 8.957, "hot_water_l_min": 8.954, "mix_water_l_min": 9.553},
+        {"pressure_bar": 5, "cold_water_l_min": 10.135, "hot_water_l_min": 10.152, "mix_water_l_min": 10.805}
+      ]
+    },
+    {
+      "model": "OKAWA 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 4.358, "hot_water_l_min": 4.433, "mix_water_l_min": 5.003},
+        {"pressure_bar": 2, "cold_water_l_min": 6.473, "hot_water_l_min": 6.58, "mix_water_l_min": 7.405},
+        {"pressure_bar": 3, "cold_water_l_min": 8.065, "hot_water_l_min": 8.181, "mix_water_l_min": 9.217},
+        {"pressure_bar": 4, "cold_water_l_min": 9.406, "hot_water_l_min": 9.547, "mix_water_l_min": 10.747},
+        {"pressure_bar": 5, "cold_water_l_min": 10.587, "hot_water_l_min": 10.723, "mix_water_l_min": 12.071}
+      ]
+    },
+    {
+      "model": "TAHARA-SB",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 2.415, "hot_water_l_min": 2.465, "mix_water_l_min": 2.641},
+        {"pressure_bar": 2, "cold_water_l_min": 3.74, "hot_water_l_min": 3.808, "mix_water_l_min": 4.083},
+        {"pressure_bar": 3, "cold_water_l_min": 4.697, "hot_water_l_min": 4.775, "mix_water_l_min": 5.113},
+        {"pressure_bar": 4, "cold_water_l_min": 5.507, "hot_water_l_min": 5.592, "mix_water_l_min": 5.998},
+        {"pressure_bar": 5, "cold_water_l_min": 6.217, "hot_water_l_min": 6.326, "mix_water_l_min": 6.774}
+      ]
+    },
+    {
+      "model": "TARA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 2, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 3, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 4, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 5, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null}
+      ]
+    },
+    {
+      "model": "YATOMI 2 PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3.593, "hot_water_l_min": 3.768, "mix_water_l_min": 3.941},
+        {"pressure_bar": 2, "cold_water_l_min": 5.408, "hot_water_l_min": 5.668, "mix_water_l_min": 5.943},
+        {"pressure_bar": 3, "cold_water_l_min": 6.807, "hot_water_l_min": 7.135, "mix_water_l_min": 7.487},
+        {"pressure_bar": 4, "cold_water_l_min": 7.991, "hot_water_l_min": 8.393, "mix_water_l_min": 8.812},
+        {"pressure_bar": 5, "cold_water_l_min": 9.067, "hot_water_l_min": 9.519, "mix_water_l_min": 10.016}
+      ]
+    },
+    {
+      "model": "YATOMI PLUS",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 2, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 3, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 4, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 5, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null}
+      ]
+    },
+    {
+      "model": "KARIWA-S",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": 0, "hot_water_l_min": 0, "mix_water_l_min": 0},
+        {"pressure_bar": 1, "cold_water_l_min": 3, "hot_water_l_min": 2.9, "mix_water_l_min": 3.4},
+        {"pressure_bar": 2, "cold_water_l_min": 4.45, "hot_water_l_min": 4.27, "mix_water_l_min": 5},
+        {"pressure_bar": 3, "cold_water_l_min": 5.5, "hot_water_l_min": 5.2, "mix_water_l_min": 6.2},
+        {"pressure_bar": 4, "cold_water_l_min": 6.4, "hot_water_l_min": 6, "mix_water_l_min": 7.1},
+        {"pressure_bar": 5, "cold_water_l_min": 7.2, "hot_water_l_min": 6.8, "mix_water_l_min": 7.9}
+      ]
+    },
+    {
+      "model": "ORA",
+      "data": [
+        {"pressure_bar": 0, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 1, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 2, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 3, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 4, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null},
+        {"pressure_bar": 5, "cold_water_l_min": null, "hot_water_l_min": null, "mix_water_l_min": null}
+      ]
+    }
+  ]
+}

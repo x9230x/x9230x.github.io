@@ -354,6 +354,35 @@
     });
   }
 
+  function updateVariationPriceDisplay() {
+    const variation = variationData();
+    const priceBox = document.querySelector('.woocommerce-variation-price');
+    if (!variation || !priceBox) return;
+
+    const sale = Number(variation.display_price || 0);
+    const regular = Number(variation.display_regular_price || sale || 0);
+    if (!sale && !regular) return;
+
+    const saleKzt = formatKzt(roundKzt(sale || regular));
+    const regularKzt = formatKzt(roundKzt(regular));
+    let html = '';
+    if (regular && sale && regular !== sale) {
+      html = '<span class="price"><del><span class="woocommerce-Price-amount amount"><bdi>' +
+        regularKzt + '</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi>' +
+        saleKzt + '</bdi></span></ins></span>';
+    } else {
+      html = '<span class="price"><span class="woocommerce-Price-amount amount"><bdi>' +
+        saleKzt + '</bdi></span></span>';
+    }
+
+    if (priceBox.innerHTML === html) return;
+    priceBox.innerHTML = html;
+
+    priceBox.querySelectorAll('.woocommerce-Price-amount.amount').forEach((node) => {
+      node.dataset.kztDone = '1';
+    });
+  }
+
   function visiblePrice() {
     const candidates = [
       '.summary .rrc',
@@ -564,6 +593,32 @@
     }
   }
 
+  function applyClickedAttribute(target) {
+    const swatch = target.closest('[data-attribute_name][data-value], .attribute_pa_color[data-value]');
+    if (!swatch) return;
+
+    const attributeName = swatch.getAttribute('data-attribute_name') ||
+      (swatch.classList.contains('attribute_pa_color') ? 'attribute_pa_color' : '');
+    const attributeValue = swatch.getAttribute('data-value') || '';
+    if (!attributeName || !attributeValue) return;
+
+    const select = document.querySelector('select[name="' + CSS.escape(attributeName) + '"]');
+    if (select && [...select.options].some((option) => option.value === attributeValue)) {
+      select.value = attributeValue;
+      select.dispatchEvent(new Event('change', { bubbles: true }));
+      if (window.jQuery) window.jQuery(select).trigger('change');
+    }
+
+    document.querySelectorAll('[data-attribute_name="' + CSS.escape(attributeName) + '"], .' + CSS.escape(attributeName) + '[data-value]').forEach((node) => {
+      const selected = node.getAttribute('data-value') === attributeValue;
+      node.classList.toggle('thwvs-selected', selected);
+      node.classList.toggle('selected', selected);
+      node.classList.toggle('rtwpvg-selected', selected);
+    });
+
+    if (attributeName === 'attribute_pa_color') updateProductUrlColor(attributeValue);
+  }
+
   function cleanColorName(value) {
     return String(value || '')
       .replace(/^\s*\d+\.\s*/, '')
@@ -574,8 +629,44 @@
   function cleanProductTitle(value) {
     return String(value || '')
       .replace(/\s+[a-z0-9-]+-p\s*$/i, '')
+      .replace(/\s+(?=[a-z0-9]*[a-z])[a-z0-9]{1,4}\s*$/i, '')
       .replace(/\s+/g, ' ')
       .trim();
+  }
+
+  function normalizeTitleAndButtons() {
+    document.querySelectorAll('.current_color, .painted').forEach((node) => {
+      node.textContent = '';
+      node.style.display = 'none';
+    });
+
+    document.querySelectorAll('.prod_title, h1.product_title').forEach((node) => {
+      const cleanTitle = cleanProductTitle(node.textContent);
+      if (cleanTitle && node.dataset.dealerCleanTitle !== cleanTitle) {
+        node.textContent = cleanTitle;
+        node.dataset.dealerCleanTitle = cleanTitle;
+      }
+    });
+
+    document.querySelectorAll('.single_add_to_cart_button, button[name="add-to-cart"]').forEach((button) => {
+      const text = button.textContent.trim();
+      if (/^(add to cart|select options|choose an option|no combination)$/i.test(text)) {
+        button.textContent = 'В корзину';
+      }
+    });
+
+    document.querySelectorAll('select[name^="attribute_"] option').forEach((option) => {
+      if (/^choose an option$/i.test(option.textContent.trim())) option.textContent = 'Выберите вариант';
+    });
+
+    if (window.thwvs_public_var) {
+      Object.assign(window.thwvs_public_var, {
+        add_to_cart_text: 'В корзину',
+        select_option_text: 'Выберите вариант',
+        choose_option_text: 'Выберите вариант',
+        no_combination_text: 'Нет сочетания'
+      });
+    }
   }
 
   function titleWithColor(title, color) {
@@ -674,7 +765,7 @@
   }
 
   function currentProduct() {
-    const title = document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim();
+    const title = cleanProductTitle(document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim());
     const variation = productSku() || currentVariationId() || primaryAttributeValue() || cleanColorName(selectedColor()) || 'default';
     const price = visiblePrice() || variationPrice();
 
@@ -971,7 +1062,9 @@
     addCartLink();
     removeDiscontinuedVariants();
     applyRequestedColor();
+    normalizeTitleAndButtons();
     renderProductImage();
+    updateVariationPriceDisplay();
     convertPrices(document);
     bindCart();
     bindFavorite();
@@ -984,6 +1077,8 @@
       if (event.target.matches('select[name="attribute_pa_color"], input.variation_id')) {
         if (!applyingRequestedColor) userChangedColor = true;
         window.setTimeout(renderProductImage, 0);
+        window.setTimeout(updateVariationPriceDisplay, 0);
+        window.setTimeout(normalizeTitleAndButtons, 0);
         window.setTimeout(refreshFavoriteState, 0);
       }
     }, true);
@@ -991,7 +1086,10 @@
     document.addEventListener('click', (event) => {
       if (event.target.closest('.thwvsf-wrapper-item-li, .thwvsf-selected, .rtwpvg-thumbnail, [data-value]')) {
         if (!applyingRequestedColor) userChangedColor = true;
+        applyClickedAttribute(event.target);
         window.setTimeout(renderProductImage, 80);
+        window.setTimeout(updateVariationPriceDisplay, 80);
+        window.setTimeout(normalizeTitleAndButtons, 80);
         window.setTimeout(refreshFavoriteState, 80);
       }
     }, true);
@@ -1002,6 +1100,8 @@
       pendingConvert = true;
       window.requestAnimationFrame(() => {
         pendingConvert = false;
+        normalizeTitleAndButtons();
+        updateVariationPriceDisplay();
         convertPrices(document);
         refreshFavoriteState();
       });
@@ -1018,7 +1118,9 @@
       window.setTimeout(() => {
         removeDiscontinuedVariants();
         applyRequestedColor();
+        normalizeTitleAndButtons();
         renderProductImage();
+        updateVariationPriceDisplay();
         convertPrices(document);
         bindFavorite();
       }, delay);
