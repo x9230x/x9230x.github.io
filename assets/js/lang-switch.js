@@ -438,8 +438,18 @@
       }
 
       body.dealer-search-open .search_line .dgwt-wcas-search-submit {
-        display: inline-flex !important;
-        flex: 0 0 40px !important;
+        display: none !important;
+        flex: 0 0 0 !important;
+        width: 0 !important;
+        min-width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+      }
+
+      body.dealer-search-open .search_line .dgwt-wcas-search-submit::before {
+        display: none !important;
+        content: none !important;
       }
 
       .dealer-search-suggestions {
