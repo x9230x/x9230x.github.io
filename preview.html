@@ -1,0 +1,1647 @@
+﻿<html lang="ru-RU">
+<head>
+  <meta name="robots" content="noindex">
+	<title>OMOIKIRI KZ</title>
+	<meta charset="UTF-8" />
+	<link type="image/x-icon" href="/fav.png" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/wp-content/plugins/ajax-search-for-woocommerce-premium/assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/buttons.css">
+	<link rel="stylesheet" href="assets/css/favorites.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://omoikiri.ru/wp-content/themes/twentynineteen/favorites.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();
+	for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+	k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	ym(43500299, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+	});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/43500299" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+<style id="dealer-kz-layer-style">
+  .dealer-lang-switch {
+    position: fixed;
+    z-index: 99999;
+    right: 18px;
+    top: 86px;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, .16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .82);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, .12);
+    font-family: Arial, sans-serif;
+  }
+
+  .dealer-lang-switch button {
+    min-width: 44px;
+    height: 32px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: #111;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    cursor: pointer;
+  }
+
+  .dealer-lang-switch button.active {
+    background: #111;
+    color: #fff;
+  }
+
+  .dealer-kz-note {
+    position: fixed;
+    z-index: 99998;
+    right: 18px;
+    top: 130px;
+    max-width: 270px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: rgba(17, 17, 17, .82);
+    color: #fff;
+    font: 12px/1.35 Arial, sans-serif;
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: .25s ease;
+  }
+
+  .dealer-kz-note.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 780px) {
+    .dealer-lang-switch {
+      top: 72px;
+      right: 12px;
+    }
+
+    .dealer-kz-note {
+      top: 116px;
+      right: 12px;
+      left: 12px;
+      max-width: none;
+    }
+  }
+</style>
+<script id="dealer-kz-layer-script">
+(function () {
+  const elementStore = new Map();
+  const textStore = [];
+  let textStoreReady = false;
+
+  const exactMap = {
+    'Мойки': 'Мойкалар',
+    'Раковины для ванной': 'Жуынатын бөлме раковиналары',
+    'Смесители': 'Араластырғыштар',
+    'Фильтры': 'Сүзгілер',
+    'Измельчители': 'Ұсақтағыштар',
+    'Дозаторы': 'Дозаторлар',
+    'Аксессуары': 'Аксессуарлар',
+    'OMOIKIRI Home': 'OMOIKIRI Home',
+    'О компании': 'Компания туралы',
+    'Сервис': 'Сервис',
+    'Где купить': 'Қайдан сатып алуға болады',
+    'Контакты': 'Байланыс',
+    'прайс': 'баға парағы',
+    'каталог': 'каталог',
+    'шагов': 'қадам',
+    'к идеальной': 'мінсіз',
+    'зоне кухни': 'асүй аймағына',
+    'подробнее': 'толығырақ',
+    'sinks': 'мойкалар',
+    'Sinks': 'Мойкалар',
+    'Steel Collection': 'Болат коллекциясы',
+    'Color': 'Түс',
+    'collection': 'коллекциясы',
+    'Taps': 'Араластырғыштар',
+    'filters': 'сүзгілер',
+    'Disposer': 'Ұсақтағыш',
+    'accessories': 'аксессуарлар',
+    'home': 'үйге арналған',
+    'смесители под фильтр': 'сүзгіге арналған араластырғыштар',
+    'вытяжной/гибкий шланг': 'суырмалы/иілгіш шланг',
+    'с функцией струя/душ': 'ағын/душ функциясымен',
+    'смесители под окно': 'терезе астына арналған араластырғыштар',
+    'ЯРКОСТЬ, ЭМОЦИИ И\u00a0ВКУС ЖИЗНИ': 'ЖАРҚЫНДЫҚ, ЭМОЦИЯ ЖӘНЕ ӨМІР ДӘМІ',
+    'ИЗМЕЛЬЧИТЕЛЬ ПИЩЕВЫХ ОТХОДОВ - ЗАБОТА ОБ ОКРУЖАЮЩЕМ МИРЕ': 'ТАҒАМ ҚАЛДЫҚТАРЫН ҰСАҚТАҒЫШ - ҚОРШАҒАН ОРТАҒА ҚАМҚОРЛЫҚ'
+  };
+
+  const selectorHtml = [
+    ['.text1', 'NATCERAMIC мойкалар коллекциясы табиғи материалдарды, сәнді әрі ерекше заттарды бағалайтындар үшін арнайы әзірленген. NATCERAMIC - саз, минералдар және бояғыш пигмент қоспасынан тұратын табиғи материал.<br>Осы мойкалар жасалатын табиғи минералдар жоғары гигиеналық және экологиялық қасиеттерге ие. Материалдың басты артықшылықтары - ұзақ қызмет етуі, беріктігі, ыңғайлылығы және жеңіл күтім.'],
+    ['.text3', 'OMOIKIRI KINARU PRO дизайнерлік жұмыс станциясы - функционалдық пен ұсақ детальдар ертеңгі күн сапасының стандарттарын айқындайтын орын.'],
+    ['.text2', 'Тот баспайтын болаттан жасалған мойкалар ұзақ жылдар бойы тартымды сыртқы көрінісін сақтайды, стилі жағынан әмбебап және кез келген интерьерге үйлеседі. SIDE шығару тесігі бүйірде орналасқан модельдер ерекше танымал.'],
+    ['.text4', 'Асүй кеңістігі жаңа бейнеге ие болады, ал оны түсіндірудің кілті - түс. Color Collection сәнді палитрасы асүйге жаңаша қарауға мүмкіндік береді: жаңа үйлесімдер, жаңа көңіл-күй және жаңа оқиғалар.'],
+    ['#id1_text p', 'Кері осмос жүйесі, мембрана, минерализатор және 5 литрлік жинақтаушы багы бар жоғары деңгейлі су тазартқыш. Қаттылығы әртүрлі суға жарайды.'],
+    ['#id2_text p', 'Суды терең тазартуға арналған ағынды су тазартқыш: механикалық қоспалардан және қақ түзілуінен толық қорғайды.'],
+    ['#id3_text p', 'Жапондық жартылай талшықты мембранасы бар ағынды су тазартқыш суды терең тазартып, бактериялардың барлық түрінен сенімді қорғайды.'],
+    ['.disp_text', 'Ұсақтағышты пайдалану асүй жинау уақытын қысқартады және тағам қалдықтарының полигонға түсуін азайтып, қоршаған ортаны қорғауға үлес қосады. Ылғалды қоқыс пакеттерін ұмытасыз. Сонымен қатар ұсақтағыш мойканы тазалау қажеттілігін азайтады және құбырлардың бітелуінен қорғайды. Табақтағы тамақ қалдықтары, шай, көкөніс пен жеміс қабықтары және басқа қалдықтар жай ғана су ағызғышқа шайылып, ұсақталады.'],
+    ['.aces_text', 'OMOIKIRI аксессуарлары мойка аймағын толықтырып, оған жеке стиль береді, иесінің талғамын көрсетеді және кеңістікті функционалды пайдалануды кеңейтеді.'],
+    ['.h_text', 'OMOIKIRI HOME бөлімінде интерьеріңіздің даралығын айқындайтын үйге арналған тауарлар орналастырылған. Декордың арқасында кез келген кеңістікті жайлы үйге айналдыруға болады.'],
+    ['.title7', 'ЖАРҚЫНДЫҚ, ЭМОЦИЯ ЖӘНЕ ӨМІР ДӘМІ'],
+    ['.disp_title', 'ТАҒАМ ҚАЛДЫҚТАРЫН ҰСАҚТАҒЫШ - ҚОРШАҒАН ОРТАҒА ҚАМҚОРЛЫҚ']
+  ];
+
+  function saveElement(el) {
+    if (!elementStore.has(el)) {
+      elementStore.set(el, el.innerHTML);
+    }
+  }
+
+  function setHtml(selector, html) {
+    document.querySelectorAll(selector).forEach((el) => {
+      saveElement(el);
+      el.innerHTML = html;
+    });
+  }
+
+  function textNodes() {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent) return NodeFilter.FILTER_REJECT;
+        if (parent.closest('script, style, noscript, textarea, svg, .dealer-lang-switch, .dealer-kz-note')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    return nodes;
+  }
+
+  function rememberTextNodes() {
+    if (textStoreReady) return;
+    textNodes().forEach((node) => textStore.push([node, node.nodeValue]));
+    textStoreReady = true;
+  }
+
+  function replaceExactText() {
+    textNodes().forEach((node) => {
+      const value = node.nodeValue;
+      const key = value.replace(/\s+/g, ' ').trim();
+      if (!key || !exactMap[key]) return;
+      const leading = value.match(/^\s*/)[0];
+      const trailing = value.match(/\s*$/)[0];
+      node.nodeValue = leading + exactMap[key] + trailing;
+    });
+  }
+
+  function restoreRu() {
+    elementStore.forEach((html, el) => {
+      if (el && el.isConnected) el.innerHTML = html;
+    });
+    textStore.forEach(([node, value]) => {
+      if (node && node.isConnected) node.nodeValue = value;
+    });
+    document.documentElement.lang = 'ru';
+    document.querySelectorAll('.dealer-lang-switch button').forEach((button) => {
+      button.classList.toggle('active', button.dataset.lang === 'ru');
+    });
+    localStorage.setItem('omoikiriDealerLang', 'ru');
+  }
+
+  function applyKz(showNote) {
+    rememberTextNodes();
+    selectorHtml.forEach(([selector, html]) => setHtml(selector, html));
+    replaceExactText();
+    document.documentElement.lang = 'kk';
+    document.querySelectorAll('.dealer-lang-switch button').forEach((button) => {
+      button.classList.toggle('active', button.dataset.lang === 'kz');
+    });
+    localStorage.setItem('omoikiriDealerLang', 'kz');
+
+    if (showNote) {
+      const note = document.querySelector('.dealer-kz-note');
+      if (note) {
+        note.classList.add('show');
+        window.setTimeout(() => note.classList.remove('show'), 2600);
+      }
+    }
+  }
+
+  function createSwitcher() {
+    const switcher = document.createElement('div');
+    switcher.className = 'dealer-lang-switch';
+    switcher.innerHTML = '<button type="button" data-lang="ru" class="active">RU</button><button type="button" data-lang="kz">KZ</button>';
+    document.body.appendChild(switcher);
+
+    const note = document.createElement('div');
+    note.className = 'dealer-kz-note';
+    note.textContent = 'KZ-қабат қосылды: негізгі мәтіндер қазақшаға ауысты, түпнұсқа анимациялар сақталды.';
+    document.body.appendChild(note);
+
+    switcher.addEventListener('click', (event) => {
+      const button = event.target.closest('button');
+      if (!button) return;
+      if (button.dataset.lang === 'kz') applyKz(true);
+      else restoreRu();
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    createSwitcher();
+    if (localStorage.getItem('omoikiriDealerLang') === 'kz') {
+      applyKz(false);
+    }
+  });
+})();
+</script>
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="top_nav">
+  
+<div class="search_line">
+  <div  class="dgwt-wcas-search-wrapp dgwt-wcas-has-submit woocommerce dgwt-wcas-style-pirx js-dgwt-wcas-layout-classic dgwt-wcas-layout-classic js-dgwt-wcas-mobile-overlay-enabled">
+		<form class="dgwt-wcas-search-form" role="search" action="https://omoikiri.ru/" method="get">
+		<div class="dgwt-wcas-sf-wrapp">
+						<label class="screen-reader-text"
+				   for="dgwt-wcas-search-input-1">Поиск товаров</label>
+
+			<input id="dgwt-wcas-search-input-1"
+				   type="search"
+				   class="dgwt-wcas-search-input"
+				   name="s"
+				   value=""
+				   placeholder="Поиск товаров..."
+				   autocomplete="off"
+							/>
+			<div class="dgwt-wcas-preloader"></div>
+
+			<div class="dgwt-wcas-voice-search"></div>
+
+							<button type="submit"
+						aria-label="Поиск"
+						class="dgwt-wcas-search-submit">				<svg class="dgwt-wcas-ico-magnifier" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+					<path  d=" M 16.722523,17.901412 C 16.572585,17.825208 15.36088,16.670476 14.029846,15.33534 L 11.609782,12.907819 11.01926,13.29667 C 8.7613237,14.783493 5.6172703,14.768302 3.332423,13.259528 -0.07366363,11.010358 -1.0146502,6.5989684 1.1898146,3.2148776
+						  1.5505179,2.6611594 2.4056498,1.7447266 2.9644271,1.3130497 3.4423015,0.94387379 4.3921825,0.48568469 5.1732652,0.2475835 5.886299,0.03022609 6.1341883,0 7.2037391,0 8.2732897,0 8.521179,0.03022609 9.234213,0.2475835 c 0.781083,0.23810119 1.730962,0.69629029 2.208837,1.0654662
+						  0.532501,0.4113763 1.39922,1.3400096 1.760153,1.8858877 1.520655,2.2998531 1.599025,5.3023778 0.199549,7.6451086 -0.208076,0.348322 -0.393306,0.668209 -0.411622,0.710863 -0.01831,0.04265 1.065556,1.18264 2.408603,2.533307 1.343046,1.350666 2.486621,2.574792 2.541278,2.720279 0.282475,0.7519
+						  -0.503089,1.456506 -1.218488,1.092917 z M 8.4027892,12.475062 C 9.434946,12.25579 10.131043,11.855461 10.99416,10.984753 11.554519,10.419467 11.842507,10.042366 12.062078,9.5863882 12.794223,8.0659672 12.793657,6.2652398 12.060578,4.756293 11.680383,3.9737304 10.453587,2.7178427
+						  9.730569,2.3710306 8.6921295,1.8729196 8.3992147,1.807606 7.2037567,1.807606 6.0082984,1.807606 5.7153841,1.87292 4.6769446,2.3710306 3.9539263,2.7178427 2.7271301,3.9737304 2.3469352,4.756293 1.6138384,6.2652398 1.6132726,8.0659672 2.3454252,9.5863882 c 0.4167354,0.8654208 1.5978784,2.0575608
+						  2.4443766,2.4671358 1.0971012,0.530827 2.3890403,0.681561 3.6130134,0.421538 z
+					"/>
+				</svg>
+				</button>
+			
+			<input type="hidden" name="post_type" value="product"/>
+			<input type="hidden" name="dgwt_wcas" value="1"/>
+
+			
+					</div>
+	</form>
+</div>
+</div>
+
+<div id="hamb"><span></span><span></span><span></span></div>
+  <div class="menu_ico" id="pin"></div>
+  
+  <span><a href="tel:87077832888">8 (707) 783-28-88</a></span>
+  <div class="logo">
+    <a href="/"><img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/default/logo_black.svg" alt=""></a>
+  </div>
+
+  <div class="favorites-icon-wrapper">
+    <a href="https://omoikiri.ru/favorites" class="favorites-link">
+        <span id="favorites-count" class="favorites-count">0</span> 
+    </a>
+</div>
+  
+  
+
+  <div class="menu_ico" id="search"></div>
+</div>
+
+<div class="menu">
+    <div class="menu-top_menu-container"><ul id="menu-top_menu" class="menu"><li id="menu-item-102" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-102"><a href="/sinks/index.html">Мойки</a></li>
+<li id="menu-item-20829" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20829"><a href="/bathsinks/index.html">Раковины для ванной</a></li>
+<li id="menu-item-8503" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8503"><a href="/taps/index.html">Смесители</a></li>
+<li id="menu-item-19993" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-19993"><a href="/filters/index.html">Фильтры</a></li>
+<li id="menu-item-19894" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-19894"><a href="/disposers/index.html">Измельчители</a></li>
+<li id="menu-item-28463" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-28463"><a href="/dispenser/index.html">Дозаторы</a></li>
+<li id="menu-item-20063" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20063"><a href="/acs/index.html">Аксессуары</a></li>
+<li id="menu-item-21010" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-21010"><a href="/omoikiri-home/index.html">OMOIKIRI Home</a></li>
+<li id="menu-item-769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"><a href="https://omoikiri.ru/about">О компании</a></li>
+<li id="menu-item-772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772"><a href="https://omoikiri.ru/service">Сервис</a></li>
+<li id="menu-item-8346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8346"><a href="https://omoikiri.ru/dealers">Где купить</a></li>
+<li id="menu-item-8355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8355"><a href="https://omoikiri.ru/contact">Контакты</a></li>
+</ul></div></div>
+
+<div class="side_menu">
+  <a href="https://disk.yandex.ru/d/aO_kHDOqvwPQZ" target="_blank">
+  <div class="side_menu_item">
+    <span>прайс</span>
+    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.293,13.707a1,1,0,1,1,1.414-1.414L11,14.586V3a1,1,0,0,1,2,0V14.586l2.293-2.293a1,1,0,0,1,1.414,1.414l-4,4a1,1,0,0,1-.325.216.986.986,0,0,1-.764,0,1,1,0,0,1-.325-.216ZM22,12a1,1,0,0,0-1,1v7H3V13a1,1,0,0,0-2,0v8a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V13A1,1,0,0,0,22,12Z"/>
+    </svg>
+  </div>
+  </a>
+  <a href="https://disk.yandex.ru/d/7fhTS6i8g4g2V" target="_blank">
+  <div class="side_menu_item">
+    <span>каталог</span>
+    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.293,13.707a1,1,0,1,1,1.414-1.414L11,14.586V3a1,1,0,0,1,2,0V14.586l2.293-2.293a1,1,0,0,1,1.414,1.414l-4,4a1,1,0,0,1-.325.216.986.986,0,0,1-.764,0,1,1,0,0,1-.325-.216ZM22,12a1,1,0,0,0-1,1v7H3V13a1,1,0,0,0-2,0v8a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V13A1,1,0,0,0,22,12Z"/>
+    </svg>
+  </div>
+  </a>
+</div>
+
+<script>
+document.getElementById('search').addEventListener('click', function(event) {
+    var searchLine = document.querySelector('.search_line');
+    var inputField = document.querySelector('.dgwt-wcas-search-input');
+    
+    if (searchLine.classList.contains('show')) {
+        searchLine.classList.remove('show');
+        setTimeout(() => {
+            searchLine.style.display = 'none';
+        }, 500);
+    } else {
+        searchLine.style.display = 'block';
+        setTimeout(() => {
+            searchLine.classList.add('show');
+            inputField.focus();
+        }, 10);
+    }
+
+    event.stopPropagation(); // предотвращаем всплытие события
+});
+
+document.addEventListener('click', function(event) {
+    var searchLine = document.querySelector('.search_line');
+    var inputField = document.querySelector('.dgwt-wcas-search-input');
+    
+    if (!searchLine.contains(event.target) && searchLine.classList.contains('show')) {
+        searchLine.classList.remove('show');
+        setTimeout(() => {
+            searchLine.style.display = 'none';
+        }, 500);
+    }
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+
+
+<div class="mob_menu">
+  <div class="mob_menu_cont">
+  <div class="menu-top_menu-container"><ul id="menu-top_menu-1" class="menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-102"><a href="/sinks/index.html">Мойки</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20829"><a href="/bathsinks/index.html">Раковины для ванной</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8503"><a href="/taps/index.html">Смесители</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-19993"><a href="/filters/index.html">Фильтры</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-19894"><a href="/disposers/index.html">Измельчители</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-28463"><a href="/dispenser/index.html">Дозаторы</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-20063"><a href="/acs/index.html">Аксессуары</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-21010"><a href="/omoikiri-home/index.html">OMOIKIRI Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"><a href="https://omoikiri.ru/about">О компании</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772"><a href="https://omoikiri.ru/service">Сервис</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8346"><a href="https://omoikiri.ru/dealers">Где купить</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8355"><a href="https://omoikiri.ru/contact">Контакты</a></li>
+</ul></div>  <div class="mob_cont">
+    <a href="https://disk.yandex.ru/d/aO_kHDOqvwPQZ" target="_blank">
+    <div class="side_menu_item">
+      <span>прайс</span>
+      <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.293,13.707a1,1,0,1,1,1.414-1.414L11,14.586V3a1,1,0,0,1,2,0V14.586l2.293-2.293a1,1,0,0,1,1.414,1.414l-4,4a1,1,0,0,1-.325.216.986.986,0,0,1-.764,0,1,1,0,0,1-.325-.216ZM22,12a1,1,0,0,0-1,1v7H3V13a1,1,0,0,0-2,0v8a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V13A1,1,0,0,0,22,12Z"/>
+      </svg>
+    </div>
+    </a>
+    <a href="https://disk.yandex.ru/d/7fhTS6i8g4g2V" target="_blank">
+    <div class="side_menu_item">
+      <span>каталог</span>
+      <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.293,13.707a1,1,0,1,1,1.414-1.414L11,14.586V3a1,1,0,0,1,2,0V14.586l2.293-2.293a1,1,0,0,1,1.414,1.414l-4,4a1,1,0,0,1-.325.216.986.986,0,0,1-.764,0,1,1,0,0,1-.325-.216ZM22,12a1,1,0,0,0-1,1v7H3V13a1,1,0,0,0-2,0v8a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V13A1,1,0,0,0,22,12Z"/>
+      </svg>
+    </div>
+    </a>
+  </div>
+  <div class="mob_sub">
+    <div class="mob_line">
+      <img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/default/phone.svg" alt="">
+      <p><a href="tel:87077832888">8 (707) 783-28-88</a></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+$(function() {
+  function slideMenu() {
+    var activeState = $(".mob_menu").hasClass("active");
+    $(".mob_menu").animate({left: activeState ? "0%" : "-100%"}, 400);
+  }
+
+  $("#hamb").click(function(event) {
+    event.stopPropagation();
+    $("#hamb").toggleClass("open");
+    $(".mob_menu").toggleClass("active");
+    slideMenu();
+
+    $("body").addClass("overflow-hidden");
+  });
+
+
+});
+</script>
+
+<script type="text/javascript">
+
+$(function() {
+  function slideMenu() {
+    var activeState = $(".mob_menu").hasClass("active");
+    $(".mob_menu").animate({left: activeState ? "0%" : "-100%"}, 400);
+    $(".mob_menu").animate({left: activeState ? "0%" : "-100%"}, 400);
+  }
+
+
+});
+</script>
+<div class="default_main">
+<div class="main_block">
+	<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/top.jpg" alt="">
+	<a href="product-category/taps/" target="_blank"><div class="prod_pin" id="tap"></div></a>
+	<a href="product-category/sinks/" target="_blank"><div class="prod_pin" id="sink"></div></a>
+	<a href="product-category/disposers/" target="_blank"><div class="prod_pin" id="disposer"></div></a>
+	<a href="product-category/filters/" target="_blank"><div class="prod_pin" id="filter"></div></a>
+	<a href="product-category/acs/" target="_blank"><div class="prod_pin" id="acs"></div></a>
+	<a href="product-category/omoikiri-home/" target="_blank"><div class="prod_pin" id="home"></div></a>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const pins = document.querySelectorAll('.prod_pin');
+
+			pins.forEach(pin => {
+				pin.addEventListener('mouseenter', () => {
+					pin.classList.add('paused');
+				});
+				pin.addEventListener('mouseleave', () => {
+					pin.classList.remove('paused');
+				});
+			});
+		});
+	</script>
+	<div class="arrow-container">
+		<div class="arrow">
+			<svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z"></path>
+			</svg>
+		</div>
+	</div>
+	<script>
+		document.querySelector(".arrow").addEventListener("click", function() {
+			const targetElement = document.querySelector(".num_cont");
+
+			if (targetElement) {
+				targetElement.scrollIntoView({ behavior: "smooth" });
+			}
+		});
+	</script>
+</div>
+
+<section class="num_cont">
+	<div class="num">
+		<div class="eight">8</div>
+		<div class="eight_text">
+			<span>шагов</span>
+			<span>к идеальной</span>
+			<span>зоне кухни</span>
+		</div>
+	</div>
+</section>
+
+
+	<section class="sinks">
+		<div class="sinks_left">
+			<h2 class="title1">sinks</h2>
+			<div class="sinks_text">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/natceramic.png" class="logo1" alt="">
+				<p class="text1">Коллекция моек из NATCERAMIC разработана специально для ценителей природных материалов, роскошных и неповторимых вещей. NATCERAMIC – это натуральный материал, состоящий из смеси глин, минералов и красящего пигмента.<br> Природные минералы, из которых делаются такие мойки, обладают прекрасными гигиеническими и экологическими свойствами. Безусловным достоинством данного материала также является его долговечность, прочность, удобство и легкий уход.</p>
+				<a href="/sinks/index.html?product_cat=sinks&pa_material=natceramic" target="_blank">
+				<div class="btn btn1">
+					<span>подробнее</span>
+					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="sinks_right imgs1">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/mikura/mikura1.png" alt="">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/mikura/mikura2.png" alt="">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/mikura/mikura3.png" alt="">
+		</div>
+	</section>
+
+	<section class="sinks3">
+		<div class="kinaru_block">
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/kin_gb.jpg" class="main_kin" alt="">
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/gb.png" class="change_kin" id="img_gb" alt="">
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/wh.png" class="change_kin" id="img_wh" alt="">
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/do.png" class="change_kin" id="img_do" alt="">
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/wg.png" class="change_kin" id="img_wg" alt="">
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/cn.png" class="change_kin" id="img_cn" alt="">
+		<div class="kin_colors">
+			<div class="kin_color" id="gb"></div>
+			<div class="kin_color" id="wh"></div>
+			<div class="kin_color" id="do"></div>
+			<div class="kin_color active" id="cn"></div>
+			<div class="kin_color" id="wg"></div>
+		</div>
+		<div class="sinks_text">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/reddot.png" class="img3" alt="">
+			<h3 class="title4">Omoikiri x Elleci</h3>
+			<p class="text3">Рабочая дизайнерская станция OMOIKIRI KINARU PRO - это место, где функциональность и детали определяют стандарты качества завтрашнего дня.</p>
+			<a href="/product/kinaru-pro-86-u-i/?attribute_pa_color=az" target="_blank">
+			<div class="btn btn3">
+				<span>подробнее</span>
+				<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+			</a>
+		</div>
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/kinaru.jpg" class="mob_kin" alt="">
+		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Список всех кнопок и соответствующих id изображений
+				const mappings = {
+					gb: 'img_gb',
+					wh: 'img_wh',
+					do: 'img_do',
+					cn: 'img_cn',
+					wg: 'img_wg'
+				};
+
+				// Назначение событий для каждой кнопки
+				Object.keys(mappings).forEach(function(buttonId) {
+					const imgId = mappings[buttonId];
+					
+					// Найдем элемент кнопки
+					const button = document.getElementById(buttonId);
+
+					button.addEventListener('click', function() {
+						// Скрываем все изображения
+						document.querySelectorAll('.change_kin').forEach(img => img.style.display = 'none');
+
+						// Показываем соответствующее изображение
+						document.getElementById(imgId).style.display = 'block';
+
+						// Убираем класс active у всех кнопок
+						Object.keys(mappings).forEach(function(id) {
+							document.getElementById(id).classList.remove('active');
+						});
+
+						// Добавляем класс active к нажатой кнопке
+						button.classList.add('active');
+					});
+				});
+
+				// Убедимся, что основное изображение всегда видно
+				document.querySelector('.main_kin').style.display = 'block';
+			});
+		</script>
+	</section>
+
+	<section class="sinks2">
+		<h2 class="title_hidden">sinks</h2>
+		<div class="sinks_left">
+			<div class="sinks_text">
+				<h3 class="title5">Steel Collection</h3>
+				<p class="text2">Мойки из нержавеющей стали сохраняют привлекательный внешний вид долгие годы, довольно универсальны по стилю и могут вписаться в любой интерьер. Особую популярность приобрели мойки с выпуском SIDE, размещенным сбоку.</p>
+				<a href="/sinks/index.html?product_cat=sinks&pa_material=steel" target="_blank">
+				<div class="btn btn2">
+					<span>подробнее</span>
+					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+				</a>
+			</div>
+			<img src="assets/img/custom/steel-collection-side.png?v=2" class="img2" alt="">
+		</div>
+		<div class="sinks_right">
+			<div class="sinks_anim">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/1.png" alt="">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/2.png" alt="">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/3.png" alt="">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/1.png" alt="">
+			</div>
+		</div>
+	</section>
+
+<section class="color">
+	<div class="color_line">
+		<div class="color_half">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/colors/Kanto_TO.jpg" id="TO" class="active" alt="">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/colors/Akita_IB.jpg" id="IB" alt="">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/colors/Nakagawa_SL.jpg" id="SL" alt="">
+			<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/colors/Nagano_RG.jpg" id="RG" alt="">
+			<div class="tap_colors" id="menu1">
+				<div class="tap_color active" id="TO"></div>
+				<div class="tap_color" id="IB"></div>
+				<div class="tap_color" id="RG"></div>
+				<div class="tap_color" id="SL"></div>
+			</div>
+		</div>
+		<div class="color_half change_bg">
+			<div class="color_col">
+				<h2 class="title6"><i>Color</i> <span>collection</span></h2>
+			</div>
+			<div class="color_top">
+				<video class="tap_gif" width="100%" playsinline="" autoplay="" muted="" loop="" preload="auto">
+					<source class="vid_TO active" src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/to.mp4">
+					<source class="vid_IB" src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/ib.mp4">
+					<source class="vid_RG" src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/rg.mp4">
+					<source class="vid_SL" src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/sl.mp4">
+				</video>
+				<div class="color_text">
+					<h3 class="title7">ЯРКОСТЬ, ЭМОЦИИ И&nbsp;ВКУС ЖИЗНИ</h3>
+					<p class="text4">Кухонное пространство приобретает новый облик, и ключ к его интерпретации - это цвет. Роскошная цветовая палитра Color Collection позволит изменить взгляд на кухню, позволяя создавать новые интересные комбинации, а значит и новые истории.</p>
+					<div class="tap_menu">
+						<div class="tap_colors" id="menu2">
+							<div class="tap_color active" id="TO"></div>
+							<div class="tap_color" id="IB"></div>
+							<div class="tap_color" id="RG"></div>
+							<div class="tap_color" id="SL"></div>
+						</div>
+					</div>
+					<div class="btn btn4">
+					<span>подробнее</span>
+					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const colors = {
+        'TO': '#b82727',
+        'IB': '#3c5075',
+        'RG': '#236f4b',
+        'SL': '#feed01'
+    };
+
+    const changeBg = document.querySelector('.change_bg');
+    const tapColors = document.querySelectorAll('.tap_color');
+    const images = document.querySelectorAll('.color_half img');
+    
+    const videoElement = document.querySelector('.tap_gif');
+    const videoSources = {
+        'TO': "https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/to.webm",
+        'IB': "https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/ib.webm",
+        'RG': "https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/rg.webm",
+        'SL': "https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/sl.webm"
+    };
+
+    // Инициализация выбранных параметров
+    let selectedColor = 'TO';
+
+    // Функция для обновления отображаемых изображений
+    function updateImages() {
+        const targetId = `${selectedColor}`;
+        images.forEach(img => {
+            if (img.id === targetId) {
+                img.classList.add('active');
+            } else {
+                img.classList.remove('active');
+            }
+        });
+    }
+
+    // Функция для обновления фона и видео
+    function updateBackgroundAndVideo() {
+        const newColor = colors[selectedColor] || '#ffffff'; // Фолбэк на белый цвет
+        changeBg.style.backgroundColor = newColor;
+        
+        // Обновляем источник видео
+        if (videoElement) {
+            videoElement.querySelector('source').src = videoSources[selectedColor];
+            videoElement.load();  // Перезагрузка видео для применения нового источника
+        }
+    }
+
+    // Обработчик кликов по tap_colors
+    tapColors.forEach(tapColor => {
+        tapColor.addEventListener('click', function () {
+            // Обновление выбранного цвета
+            selectedColor = this.id;
+
+            // Удаляем класс active у всех tapColors и добавляем к текущему
+            tapColors.forEach(tc => tc.classList.remove('active'));
+            this.classList.add('active');
+
+            // Обновляем изображения, фон и видео
+            updateImages();
+            updateBackgroundAndVideo();
+        });
+    });
+
+    // Инициализация при загрузке
+    updateImages();
+    updateBackgroundAndVideo();
+});
+</script>
+
+<div class="white"></div>
+<section class="taps">
+	<h2>Taps</h2>
+	<div class="taps_grid">
+		<div class="tap_cont">
+			<div class="tap">
+				<span>one</span>
+				<video autoplay muted loop playsinline id="video">
+					<source src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/1.mp4" type="video/mp4">
+				</video>
+			</div>
+			<a href="/taps/index.html?product_cat=taps&pa_filter=yes" target="_blank">
+			<div class="btn btn_empty">
+				<span>смесители под фильтр</span>
+			</div>
+			</a>
+		</div>
+		<div class="tap_cont">
+			<div class="tap">
+				<span>two</span>
+				<video autoplay muted loop playsinline id="video">
+					<source src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/2.mp4" type="video/mp4">
+				</video>
+			</div>
+			<a href="/taps/index.html?product_cat=taps&pa_hose=yes" target="_blank">
+			<div class="btn btn_empty">
+				<span>вытяжной/гибкий шланг</span>
+			</div>
+			</a>
+		</div>
+		<div class="tap_cont">
+			<div class="tap">
+				<span>three</span>
+				<video autoplay muted loop playsinline id="video">
+					<source src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/3.mp4" type="video/mp4">
+				</video>
+			</div>
+			<a href="/taps/index.html?product_cat=taps&pa_button=yes" target="_blank">
+			<div class="btn btn_empty">
+				<span>с функцией струя/душ</span>
+			</div>
+			</a>
+		</div>
+		<div class="tap_cont">
+			<div class="tap">
+				<span>four</span>
+				<video autoplay muted loop playsinline id="video">
+					<source src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/4.mp4" type="video/mp4">
+				</video>
+			</div>
+			<a href="/taps/index.html?product_cat=taps&pa_window=yes" target="_blank">
+			<div class="btn btn_empty">
+				<span>смесители под окно</span>
+			</div>
+			</a>
+		</div>
+	</div>
+</section>
+<section class="filters">
+	<video autoplay muted loop playsinline id="video_filter">
+		<source src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/filter_id1.mp4" id="id1_video" class="active" type="video/mp4">
+		<source src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/filter_id2.mp4" id="id2_video" class="" type="video/mp4">
+		<source src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/filter_id3.mp4" id="id3_video" class="" type="video/mp4">
+	</video>
+	<div class="filters_grid">
+		<h2>filters</h2>
+		<div class="filter_gallery">
+			<div class="filter_item">
+				<div class="left_half">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/pure_drop214s.png" class="active" id="id1_img" alt="">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/pure_drop_lite.png" id="id2_img" alt="">
+				<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/pure_drop_10.png" id="id3_img" alt="">
+				<ul class="swap">
+					<li data-id="id1" class="active"></li>
+					<li data-id="id2"></li>
+					<li data-id="id3"></li>
+				</ul>
+				</div>
+				<div class="filter_text active" id="id1_text" >
+					<h3>Pure Drop 2.1.4S</h3>
+					<p>Водоочиститель высшей степени очистки с системой обратного осмоса, мембраной, минерализатором и накопительным баком на&nbsp;5&nbsp;л. Подходит для воды любой степени жесткости.</p>
+					<a href="/product/pure-drop-2-1-4s/index.html">
+					<div class="btn">
+						<span>подробнее</span>
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					</a>
+				</div>
+				<div class="filter_text" id="id2_text" >
+					<h3>Pure Drop Lite</h3>
+					<p>Проточный водоочиститель для глубокой очистки воды, полная защита от механических примесей и образования накипи.</p>
+					<a href="/product/pure-drop-lite/index.html">
+					<div class="btn">
+						<span>подробнее</span>
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					</a>
+				</div>
+				<div class="filter_text" id="id3_text" >
+					<h3>Pure Drop 1.0</h3>
+					<p>Проточный водоочиститель с японской половолоконной мембраной для глубокой очистки воды надежно защищает от всех видов бактерий.</p>
+					<a href="/product/pure-drop-1-0/index.html">
+					<div class="btn">
+						<span>подробнее</span>
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const swapItems = document.querySelectorAll(".swap li");
+    const videoElement = document.getElementById("video_filter");
+    const videoSource = videoElement.querySelector("source");
+    const images = document.querySelectorAll(".filter_item img");
+    const texts = document.querySelectorAll(".filter_text");
+
+    swapItems.forEach(item => {
+        item.addEventListener("click", function() {
+            const id = this.getAttribute("data-id");
+
+            // Удаляем класс active у всех элементов
+            swapItems.forEach(s => s.classList.remove("active"));
+            images.forEach(img => img.classList.remove("active"));
+            texts.forEach(text => text.classList.remove("active"));
+            
+            // Добавляем класс active к выбранным элементам
+            this.classList.add("active");
+            document.getElementById(id + "_img").classList.add("active");
+            document.getElementById(id + "_text").classList.add("active");
+
+            // Обновляем атрибут 'src' и переигрываем видео
+            const newSrc = `https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/filter_${id}.mp4`;
+            videoSource.setAttribute("src", newSrc);
+            videoElement.load();
+            videoElement.play();
+        });
+    });
+});
+</script>
+
+<div class="anvideo">
+	<h2>Disposer</h2>
+	<div class="anvideo_content">
+		<canvas></canvas>
+		<div class="anvideo_text">
+			<h3 class="disp_title">ИЗМЕЛЬЧИТЕЛЬ ПИЩЕВЫХ ОТХОДОВ - ЗАБОТА ОБ ОКРУЖАЮЩЕМ МИРЕ</h3>
+			<p class="disp_text">Использование измельчителя сократит время уборки на кухне и поможет внести вклад в охрану окружающей среды путем предотвращения попадания пищевых отходов на свалки. Вы навсегда забудете про мокрые мусорные мешки. Также измельчитель значительно уменьшает потребность в чистке мойки и избавляет от засоров труб. Остатки еды с тарелок, чай из чашек, кожура овощей/фруктов и многое другое - просто смываются в слив и измельчаются.</p>
+			<a href="/disposers/index.html" target="_blank">
+			<div class="btn disp_btn">
+				<span>подробнее</span>
+				<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+			</a>
+		</div>
+		<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/disposer.png" class="disp_img" alt="">
+	</div>
+	<h2>accessories</h2>
+</div>
+
+<section class="acs">
+	<div class="acs_text">
+		<p class="aces_text">Аксессуары OMOIKIRI завершат рабочую зону мойки, придавая ей свой уникальный стиль, подчеркивая вкус владельца и расширяя функциональное использование пространства.</p>
+		<a href="/acs/index.html" class="aces_btn" target="_blank">
+		<div class="btn">
+			<span>подробнее</span>
+			<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</div>
+		</a>
+	</div>
+	<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/acs.png" class="aces_img" alt="">
+</section>
+
+<section class="home">
+	<div class="home_bg_text">
+		<h2 class="title8">home</h2>
+		<p class="h_text">В разделе OMOIKIRI HOME размещены товары для дома, которые подчеркнут индивидуальность вашего интерьера. Благодаря декору любое пространство можно превратить в уютный дом. </p>
+	</div>
+	<img src="https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/home.jpg" alt="">
+	<a href="/omoikiri-home/index.html" target="_blank">
+	<div class="btn h_btn">
+		<span>подробнее</span>
+		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	</div>
+	</a>
+</section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+const pc = window.matchMedia('(min-width: 1050px');
+
+if (pc.matches) {
+
+	// анимация 8
+
+	gsap.timeline({
+		scrollTrigger: {
+			trigger: ".num_cont",
+			start: "top 114px",
+			endTrigger: ".sinks",
+			end: "+=200%",
+			scrub: 0.1,
+			pin: ".num_cont",
+			snap: true,
+		}
+	})
+	.to(".eight_text span", {
+		duration: 1,
+		opacity: 1,
+		stagger: 0.2,
+	})
+	.to(".eight", {
+		duration: 1,
+		scale: 20,
+		rotation: 45,
+	})
+
+	// анимация моек Natceramic
+
+	document.addEventListener("DOMContentLoaded", function() {
+		let images = gsap.utils.toArray(".imgs1 img");
+
+		gsap.from(images, {
+			opacity: 0.8,
+			scale: 0.8,
+			duration: 1,
+			stagger: 0.5,
+			y: 100,
+			scrollTrigger: {
+				trigger: '.sinks',
+				start: "-700 0",
+				end: '-150 0',
+				scrub: true,
+				toggleActions: "play pause resume reverse"
+			}
+		});
+	});
+
+	gsap.from('.title1', {
+		scrollTrigger: {
+			trigger: '.sinks',
+			start: 'top 40%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.logo1', {
+		scrollTrigger: {
+			trigger: '.sinks',
+			start: 'top 40%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.text1', {
+		scrollTrigger: {
+			trigger: '.sinks',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.btn1', {
+		scrollTrigger: {
+			trigger: '.sinks',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		y: 200,
+		duration: 1,
+	});
+
+	// анимация моек Нержа
+
+	gsap.from('.title2', {
+		scrollTrigger: {
+			trigger: '.sinks2',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.title5', {
+		scrollTrigger: {
+			trigger: '.sinks2',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.text2', {
+		scrollTrigger: {
+			trigger: '.sinks2',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.btn2', {
+		scrollTrigger: {
+			trigger: '.sinks2',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.img2', {
+		scrollTrigger: {
+			trigger: '.sinks2',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.utils.toArray('.sinks_anim img').forEach((img, index) => {
+		const offset = index % 2 === 0 ? -200 : 200;
+		gsap.fromTo(img, 
+			{ x: offset }, 
+			{ 
+				x: 0, 
+				duration: 1,
+				ease: "power2.out",
+				scrollTrigger: {
+					trigger: '.sinks_anim',
+					endTrigger: ".color",
+					end: "+=200%",
+					start: 'top 80%',
+					scrub: 1,
+				}
+			}
+		);
+	});
+
+	// анимация моек Kinaru
+
+	gsap.from('.title3', {
+		scrollTrigger: {
+			trigger: '.sinks3',
+			start: '-500 0',
+			end: '-200 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.title4', {
+		scrollTrigger: {
+			trigger: '.sinks3',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.text3', {
+		scrollTrigger: {
+			trigger: '.sinks3',
+			start: 'top 50%', 
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.btn3', {
+		scrollTrigger: {
+			trigger: '.sinks3',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.img3', {
+		scrollTrigger: {
+			trigger: '.sinks3',
+			start: '-350 0',
+			end: '-150 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.kin_colors', {
+		scrollTrigger: {
+			trigger: '.sinks3',
+			start: '-350 0',
+			end: '-150 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.title6 i', {
+		scrollTrigger: {
+			trigger: '.color_col',
+			start: '-850 0',
+			end: '-150 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.title6 span', {
+		scrollTrigger: {
+			trigger: '.color_col',
+			start: '-850 0',
+			end: '-150 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 300,
+		duration: 1,
+	});
+
+	gsap.from('.tap_cont', {
+		scrollTrigger: {
+			trigger: '.taps',
+			start: 'top 50%',
+			end: 'bottom bottom',
+			scrub: false,
+		},
+		stagger: 0.25,
+		opacity: 0,
+		y: 50,
+		duration: 2,
+		ease: 'power2.out',
+	});
+
+	gsap.from('.title7', {
+		scrollTrigger: {
+			trigger: '.color',
+			start: '-700 0',
+			end: '150 0',
+			scrub: true,
+			markers: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.text4', {
+		scrollTrigger: {
+			trigger: '.color',
+			start: '-700 0',
+			end: '150 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.tap_gif', {
+		scrollTrigger: {
+			trigger: '.color',
+			start: '-700 0',
+			end: '150 0',
+			scrub: true,
+		},
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.color_text .tap_menu', {
+		scrollTrigger: {
+			trigger: '.color',
+			start: '-700 0',
+			end: '150 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.btn4', {
+		scrollTrigger: {
+			trigger: '.color',
+			start: '-700 0',
+			end: '150 0',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.disp_title', {
+		scrollTrigger: {
+			trigger: '.anvideo',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.disp_text', {
+		scrollTrigger: {
+			trigger: '.anvideo',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.disp_btn', {
+		scrollTrigger: {
+			trigger: '.anvideo',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.disp_img', {
+		scrollTrigger: {
+			trigger: '.anvideo',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		x: 200,
+		duration: 1,
+	});
+
+	gsap.from('.aces_text', {
+		scrollTrigger: {
+			trigger: '.acs',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: 0,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.aces_btn', {
+		scrollTrigger: {
+			trigger: '.acs',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.aces_img', {
+		scrollTrigger: {
+			trigger: '.acs',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		opacity: .5,
+		y: 200,
+		duration: 1,
+	});
+
+	gsap.from('.title8', {
+		scrollTrigger: {
+			trigger: '.home',
+			start: '-800 0',
+			end: '-250 0',
+			scrub: true,
+		},
+		opacity: .5,
+		y: 100,
+		duration: 1,
+	});
+
+	gsap.from('.h_text', {
+		scrollTrigger: {
+			trigger: '.home',
+			start: '-800 0',
+			end: '-250 0',
+			scrub: true,
+		},
+		opacity: .5,
+		y: 100,
+		duration: 1,
+	});
+
+	gsap.from('.h_btn', {
+		scrollTrigger: {
+			trigger: '.home',
+			start: 'top 50%',
+			end: 'center center',
+			scrub: true,
+		},
+		y: 200,
+		duration: 1,
+	});
+} else {
+
+	// анимация 8
+
+	gsap.timeline({
+		scrollTrigger: {
+			trigger: ".num_cont",
+			start: "top top",
+			endTrigger: ".sinks",
+			end: "+=50%",
+			scrub: 0.1,
+			pin: ".num_cont",
+		}
+	})
+	.to(".eight_text span", {
+		duration: 1,
+		opacity: 1,
+		stagger: 0.2,
+	})
+
+	// 
+}
+
+</script>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+let sectiones = gsap.utils.toArray(".anvideo");
+
+sectiones.forEach((section) => {
+  let canvas = section.querySelector("canvas");
+  canvas ? initCanvas(section, canvas) : initOther(section);
+});
+
+function initCanvas(section, canvas) {
+  let context = canvas.getContext("2d");
+  canvas.width = 1681;
+  canvas.height = 2978;
+  let frameCount = 99;
+  let filePath = section.dataset.file;
+  let top = section.dataset.top;
+  let text = "#" + section.dataset.text;
+  console.log("text is " + text);
+	const currentFrame = (index) =>
+    `https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/sq/img_${index}.png`;
+
+  let images = [];
+  let airpods = {
+    frame: 0
+  };
+
+  for (let i = 1; i <= frameCount; i++) {
+    let img = new Image();
+    img.src = currentFrame(i);
+    images.push(img);
+  }
+
+  gsap
+    .timeline({
+      onUpdate: render,
+      scrollTrigger: {
+        trigger: section,
+        onToggle: self => console.log("toggle", section, self.isActive),
+        scrub: 1,
+        start: "-30% top",
+        end: "top top",
+        toggleClass: "active"
+      }
+    })
+
+    .to(
+      airpods,
+      {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: "none",
+        duration: 3
+      },
+      0
+    )
+    .fromTo(
+      text,
+      { top: "100%" },
+      { top: "10%", duration: 3, stagger: 1 },
+      "0"
+    );
+
+  images[0].onload = render;
+
+  function render() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(images[airpods.frame], 0, 0);
+  }
+}
+</script>
+
+<script id="jquery-dgwt-wcas-js-extra">
+var dgwt_wcas = {"labels":{"post":"\u0417\u0430\u043f\u0438\u0441\u044c","page":"Page","vendor":"Vendor","product_plu":"Products","post_plu":"\u0417\u0430\u043f\u0438\u0441\u0438","page_plu":"\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u044b","vendor_plu":"Vendors","sku_label":"SKU:","sale_badge":"Sale","vendor_sold_by":"Sold by:","featured_badge":"Featured","in":"\u0432","read_more":"continue reading","no_results":"\"\\u041d\\u0438\\u0447\\u0435\\u0433\\u043e \\u043d\\u0435 \\u043d\\u0430\\u0439\\u0434\\u0435\\u043d\\u043e\"","no_results_default":"\u041d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e","show_more":"\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0432\u0441\u0435 \u0442\u043e\u0432\u0430\u0440\u044b..","show_more_details":"\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0432\u0441\u0435 \u0442\u043e\u0432\u0430\u0440\u044b..","search_placeholder":"\u041f\u043e\u0438\u0441\u043a \u0442\u043e\u0432\u0430\u0440\u043e\u0432...","submit":"","search_hist":"Your search history","search_hist_clear":"Clear","tax_product_cat_plu":"Categories","tax_product_cat":"Category","tax_product_tag_plu":"\u041c\u0435\u0442\u043a\u0438","tax_product_tag":"Tag"},"ajax_search_endpoint":"https:\/\/omoikiri.ru\/wp-content\/plugins\/ajax-search-for-woocommerce-premium\/includes\/Engines\/TNTSearchMySQL\/Endpoints\/search.php","ajax_details_endpoint":"\/?wc-ajax=dgwt_wcas_result_details","ajax_prices_endpoint":"\/?wc-ajax=dgwt_wcas_get_prices","action_search":"dgwt_wcas_ajax_search","action_result_details":"dgwt_wcas_result_details","action_get_prices":"dgwt_wcas_get_prices","min_chars":"2","width":"auto","show_details_panel":"","show_images":"1","show_price":"","show_desc":"","show_sale_badge":"","show_featured_badge":"","dynamic_prices":"","is_rtl":"","show_preloader":"1","show_headings":"","preloader_url":"","taxonomy_brands":"","img_url":"https:\/\/omoikiri.ru\/wp-content\/plugins\/ajax-search-for-woocommerce-premium\/assets\/img\/","is_premium":"1","layout_breakpoint":"992","mobile_overlay_breakpoint":"992","mobile_overlay_wrapper":"body","mobile_overlay_delay":"0","debounce_wait_ms":"100","send_ga_events":"1","enable_ga_site_search_module":"","magnifier_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"\n\t\t\t\t\t xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\n\t\t\t\t\t viewBox=\"0 0 51.539 51.361\" xml:space=\"preserve\">\n\t\t             <path \t\t\t\t\t\t d=\"M51.539,49.356L37.247,35.065c3.273-3.74,5.272-8.623,5.272-13.983c0-11.742-9.518-21.26-21.26-21.26 S0,9.339,0,21.082s9.518,21.26,21.26,21.26c5.361,0,10.244-1.999,13.983-5.272l14.292,14.292L51.539,49.356z M2.835,21.082 c0-10.176,8.249-18.425,18.425-18.425s18.425,8.249,18.425,18.425S31.436,39.507,21.26,39.507S2.835,31.258,2.835,21.082z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","magnifier_icon_pirx":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 18 18\">\n\t\t\t\t\t<path  d=\" M 16.722523,17.901412 C 16.572585,17.825208 15.36088,16.670476 14.029846,15.33534 L 11.609782,12.907819 11.01926,13.29667 C 8.7613237,14.783493 5.6172703,14.768302 3.332423,13.259528 -0.07366363,11.010358 -1.0146502,6.5989684 1.1898146,3.2148776\n\t\t\t\t\t\t  1.5505179,2.6611594 2.4056498,1.7447266 2.9644271,1.3130497 3.4423015,0.94387379 4.3921825,0.48568469 5.1732652,0.2475835 5.886299,0.03022609 6.1341883,0 7.2037391,0 8.2732897,0 8.521179,0.03022609 9.234213,0.2475835 c 0.781083,0.23810119 1.730962,0.69629029 2.208837,1.0654662\n\t\t\t\t\t\t  0.532501,0.4113763 1.39922,1.3400096 1.760153,1.8858877 1.520655,2.2998531 1.599025,5.3023778 0.199549,7.6451086 -0.208076,0.348322 -0.393306,0.668209 -0.411622,0.710863 -0.01831,0.04265 1.065556,1.18264 2.408603,2.533307 1.343046,1.350666 2.486621,2.574792 2.541278,2.720279 0.282475,0.7519\n\t\t\t\t\t\t  -0.503089,1.456506 -1.218488,1.092917 z M 8.4027892,12.475062 C 9.434946,12.25579 10.131043,11.855461 10.99416,10.984753 11.554519,10.419467 11.842507,10.042366 12.062078,9.5863882 12.794223,8.0659672 12.793657,6.2652398 12.060578,4.756293 11.680383,3.9737304 10.453587,2.7178427\n\t\t\t\t\t\t  9.730569,2.3710306 8.6921295,1.8729196 8.3992147,1.807606 7.2037567,1.807606 6.0082984,1.807606 5.7153841,1.87292 4.6769446,2.3710306 3.9539263,2.7178427 2.7271301,3.9737304 2.3469352,4.756293 1.6138384,6.2652398 1.6132726,8.0659672 2.3454252,9.5863882 c 0.4167354,0.8654208 1.5978784,2.0575608\n\t\t\t\t\t\t  2.4443766,2.4671358 1.0971012,0.530827 2.3890403,0.681561 3.6130134,0.421538 z\n\t\t\t\t\t\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","history_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"18\" height=\"16\">\n\t\t\t\t\t<g transform=\"translate(-17.498822,-36.972165)\">\n\t\t\t\t\t\t<path \t\t\t\t\t\t\td=\"m 26.596964,52.884295 c -0.954693,-0.11124 -2.056421,-0.464654 -2.888623,-0.926617 -0.816472,-0.45323 -1.309173,-0.860824 -1.384955,-1.145723 -0.106631,-0.400877 0.05237,-0.801458 0.401139,-1.010595 0.167198,-0.10026 0.232609,-0.118358 0.427772,-0.118358 0.283376,0 0.386032,0.04186 0.756111,0.308336 1.435559,1.033665 3.156285,1.398904 4.891415,1.038245 2.120335,-0.440728 3.927688,-2.053646 4.610313,-4.114337 0.244166,-0.737081 0.291537,-1.051873 0.293192,-1.948355 0.0013,-0.695797 -0.0093,-0.85228 -0.0806,-1.189552 -0.401426,-1.899416 -1.657702,-3.528366 -3.392535,-4.398932 -2.139097,-1.073431 -4.69701,-0.79194 -6.613131,0.727757 -0.337839,0.267945 -0.920833,0.890857 -1.191956,1.27357 -0.66875,0.944 -1.120577,2.298213 -1.120577,3.35859 v 0.210358 h 0.850434 c 0.82511,0 0.854119,0.0025 0.974178,0.08313 0.163025,0.109516 0.246992,0.333888 0.182877,0.488676 -0.02455,0.05927 -0.62148,0.693577 -1.32651,1.40957 -1.365272,1.3865 -1.427414,1.436994 -1.679504,1.364696 -0.151455,-0.04344 -2.737016,-2.624291 -2.790043,-2.784964 -0.05425,-0.16438 0.02425,-0.373373 0.179483,-0.477834 0.120095,-0.08082 0.148717,-0.08327 0.970779,-0.08327 h 0.847035 l 0.02338,-0.355074 c 0.07924,-1.203664 0.325558,-2.153721 0.819083,-3.159247 1.083047,-2.206642 3.117598,-3.79655 5.501043,-4.298811 0.795412,-0.167616 1.880855,-0.211313 2.672211,-0.107576 3.334659,0.437136 6.147035,3.06081 6.811793,6.354741 0.601713,2.981541 -0.541694,6.025743 -2.967431,7.900475 -1.127277,0.871217 -2.441309,1.407501 -3.893104,1.588856 -0.447309,0.05588 -1.452718,0.06242 -1.883268,0.01225 z m 3.375015,-5.084703 c -0.08608,-0.03206 -2.882291,-1.690237 -3.007703,-1.783586 -0.06187,-0.04605 -0.160194,-0.169835 -0.218507,-0.275078 L 26.639746,45.549577 V 43.70452 41.859464 L 26.749,41.705307 c 0.138408,-0.195294 0.31306,-0.289155 0.538046,-0.289155 0.231638,0 0.438499,0.109551 0.563553,0.298452 l 0.10019,0.151342 0.01053,1.610898 0.01053,1.610898 0.262607,0.154478 c 1.579961,0.929408 2.399444,1.432947 2.462496,1.513106 0.253582,0.322376 0.140877,0.816382 -0.226867,0.994404 -0.148379,0.07183 -0.377546,0.09477 -0.498098,0.04986 z\"\/>\n\t\t\t\t\t<\/g>\n\t\t\t\t<\/svg>\n\t\t\t\t","close_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\" viewBox=\"0 0 24 24\"\n\t\t\t\t\t width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","back_icon":"\t\t\t\t<svg class=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 16 16\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M14 6.125H3.351l4.891-4.891L7 0 0 7l7 7 1.234-1.234L3.35 7.875H14z\" fill-rule=\"evenodd\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","preloader_icon":"\t\t\t\t<svg class=\"dgwt-wcas-loader-circular \" viewBox=\"25 25 50 50\">\n\t\t\t\t\t<circle class=\"dgwt-wcas-loader-circular-path\" cx=\"50\" cy=\"50\" r=\"20\" fill=\"none\"\n\t\t\t\t\t\t stroke-miterlimit=\"10\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","voice_search_inactive_icon":"\t\t\t\t<svg class=\"dgwt-wcas-voice-search-mic-inactive\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\" width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm0-6Zm-1 13v-3.075q-2.6-.35-4.3-2.325Q5 13.625 5 11h2q0 2.075 1.463 3.537Q9.925 16 12 16t3.538-1.463Q17 13.075 17 11h2q0 2.625-1.7 4.6-1.7 1.975-4.3 2.325V21Zm1-9q.425 0 .713-.288Q13 11.425 13 11V5q0-.425-.287-.713Q12.425 4 12 4t-.712.287Q11 4.575 11 5v6q0 .425.288.712.287.288.712.288Z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","voice_search_active_icon":"\t\t\t\t<svg class=\"dgwt-wcas-voice-search-mic-active\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\"\n\t\t\t\t\t width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm-1 7v-3.075q-2.6-.35-4.3-2.325Q5 13.625 5 11h2q0 2.075 1.463 3.537Q9.925 16 12 16t3.538-1.463Q17 13.075 17 11h2q0 2.625-1.7 4.6-1.7 1.975-4.3 2.325V21Z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","voice_search_disabled_icon":"\t\t\t\t<svg class=\"dgwt-wcas-voice-search-mic-disabled\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"24\" width=\"24\">\n\t\t\t\t\t<path \t\t\t\t\t\td=\"M17.75 14.95 16.3 13.5q.35-.575.525-1.2Q17 11.675 17 11h2q0 1.1-.325 2.087-.325.988-.925 1.863Zm-2.95-3L9 6.15V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 .275-.062.5-.063.225-.138.45ZM11 21v-3.1q-2.6-.35-4.3-2.312Q5 13.625 5 11h2q0 2.075 1.463 3.537Q9.925 16 12 16q.85 0 1.613-.262.762-.263 1.387-.738l1.425 1.425q-.725.575-1.587.962-.863.388-1.838.513V21Zm8.8 1.6L1.4 4.2l1.4-1.4 18.4 18.4Z\"\/>\n\t\t\t\t<\/svg>\n\t\t\t\t","custom_params":{},"convert_html":"1","suggestions_wrapper":"body","show_product_vendor":"","disable_hits":"","disable_submit":"","fixer":{"broken_search_ui":true,"broken_search_ui_ajax":true,"broken_search_ui_hard":false,"broken_search_elementor_popups":true,"broken_search_jet_mobile_menu":true,"broken_search_browsers_back_arrow":true,"force_refresh_checkout":true},"voice_search_enabled":"","voice_search_lang":"ru-RU","show_recently_searched_products":"","show_recently_searched_phrases":"","show_sku":"1"};
+</script>
+<script src="https://omoikiri.ru/wp-content/plugins/ajax-search-for-woocommerce-premium/assets/js/search.min.js?ver=1.28.1" id="jquery-dgwt-wcas-js"></script>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+
+Served from: omoikiri.ru @ 2026-07-05 23:13:34 by W3 Total Cache
+-->
+<style id="dealer-local-cart-tab-style">
+  .dealer-local-cart-tab {
+    position: fixed;
+    z-index: 99999;
+    right: 18px;
+    top: 176px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, .16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .86);
+    color: #111;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, .12);
+    backdrop-filter: blur(12px);
+    color: #111;
+  }
+
+  .dealer-local-cart-tab svg {
+    width: 21px;
+    height: 21px;
+    display: block;
+    stroke: currentColor;
+  }
+
+  @media (max-width: 780px) {
+    .dealer-local-cart-tab {
+      top: 158px;
+      right: 12px;
+    }
+  }
+</style>
+<style id="dealer-kz-font-fix">
+  html[lang="kk"],
+  html[lang="kk"] body,
+  html[lang="kk"] h1,
+  html[lang="kk"] h2,
+  html[lang="kk"] h3,
+  html[lang="kk"] h4,
+  html[lang="kk"] h5,
+  html[lang="kk"] h6,
+  html[lang="kk"] p,
+  html[lang="kk"] a,
+  html[lang="kk"] span,
+  html[lang="kk"] button,
+  html[lang="kk"] input,
+  html[lang="kk"] textarea {
+    font-family: Arial, Helvetica, "Segoe UI", sans-serif !important;
+    letter-spacing: 0 !important;
+  }
+
+  html[lang="kk"] .text1,
+  html[lang="kk"] .text2,
+  html[lang="kk"] .text3,
+  html[lang="kk"] .text4,
+  html[lang="kk"] .disp_text,
+  html[lang="kk"] .aces_text,
+  html[lang="kk"] .h_text {
+    line-height: 1.45 !important;
+    font-weight: 600 !important;
+  }
+</style>
+<script id="dealer-local-cart-tab-script">
+(function () {
+  function localCartHref() {
+    const url = new URL(window.location.href);
+    const path = url.pathname.replace(/(?:index|preview)\.html$/i, '');
+    url.pathname = path + 'cart.html';
+    url.search = '';
+    url.hash = '';
+    return url.href;
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const link = document.createElement('a');
+    link.className = 'dealer-local-cart-tab';
+    link.href = localCartHref();
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.setAttribute('aria-label', 'Корзина');
+    link.title = 'Корзина';
+    link.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 5h2.1l1.8 10.2a2 2 0 0 0 2 1.65h7.35a2 2 0 0 0 1.94-1.5L20.2 8H7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20.15h.01M17 20.15h.01" stroke-width="3.1" stroke-linecap="round"/></svg>';
+    document.body.appendChild(link);
+  });
+})();
+</script>
+<script src="assets/js/lang-switch.js?v=20260711-02" data-root=""></script>
+<script src="assets/js/local-router.js"></script>

@@ -1,0 +1,473 @@
+﻿.top_nav {
+	position: fixed;
+	width: 100%;
+	height: 67px;
+	padding: 0 50px;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: var(--white);
+	z-index: 1000;
+	border-bottom: 1px solid var(--primary-grey);
+	overflow: hidden;
+}
+
+.top_nav>.wishlist_products_counter {
+	height: 30px;
+}
+
+.top_nav>.wishlist_products_counter:before {
+	font-size: 30px !important;
+	margin: 0 !important;
+}
+
+.top_nav span {
+	font-size: 15px;
+	font-family: var(--medium-font);
+}
+
+.top_nav a {
+	display: block;
+	font-size: 15px;
+	font-family: var(--medium-font);
+}
+
+.top_nav > span > a[href^="tel:87077832888"] {
+	font-family: var(--medium-font);
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+.menu {
+	position: fixed;
+	top: 67px;
+	background-color: var(--white);
+	z-index: 900;
+}
+
+#menu-top_menu.menu,
+#menu-top_menu-1.menu {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 38px;
+	margin: 0;
+	padding: 10px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid var(--secondary-grey);
+}
+
+.menu ul {
+	display: flex;
+	gap: 30px;
+	letter-spacing: 0.075em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 15px 0;
+	font-size: 15px;
+	border-bottom: 1px solid var(--secondary-grey);
+}
+
+.menu ul li {
+	list-style: none;
+}
+
+/*
+.menu ul li:nth-of-type(8) a {
+	color: var(--hover-link);
+}
+*/
+
+.menu ul li:hover a {
+	color: var(--hover-link);
+}
+
+.menu_ico {
+	height: 24px;
+	width: 30px;
+	cursor: pointer;
+	background-color: var(--primary-black);
+}
+
+.menu_ico:hover {
+	background-color: var(--hover-link);
+}
+
+#hamb {
+	position: relative;
+	width: 30px;
+	height: 24px;
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+}
+
+#hamb span {
+	opacity: 1;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 4px;
+	border-radius: 10px;
+	color: var(--primary-black);
+	background-color: var(--primary-black);
+	position: absolute;
+	transform: rotate(0deg);
+	transition: .4s ease-in-out;
+	border-radius: 4px;
+}
+
+#hamb span:nth-child(1) {
+	top: 0;
+}
+
+#hamb span:nth-child(2) {
+	width: calc(100% - 10px);
+	left: 10px;
+	top: 10px;
+}
+
+#hamb span:nth-child(3) {
+	top: 20px;
+}
+
+#hamb:hover span {
+	background-color: var(--hover-link);
+}
+
+#hamb.open span:nth-child(1) {
+	transform: translateY(6px) rotate(135deg);
+	background-color: var(--hover-link);
+	width: 80%;
+	top: 4px;
+}
+
+#hamb.open span:nth-child(2) {
+	opacity: 0;
+	transform: translateX(-60px);
+}
+
+#hamb.open span:nth-child(3) {
+	transform: translateY(-6px) rotate(-135deg);
+	background-color: var(--hover-link);
+	left: 0;
+	width: 80%;
+	top: 16px;
+}
+
+.wishlist_products_counter {
+	margin-left: auto;
+}
+
+#int {
+	-webkit-mask: url(../img/default/globe.svg) no-repeat center / contain;
+	mask: url(../img/default/globe.svg) no-repeat center / contain;
+}
+
+#search {
+	-webkit-mask: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3C!--%20Creator%3A%20CorelDRAW%202020%20(64-Bit)%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2234.1mm%22%20height%3D%2234.1mm%22%20version%3D%221.1%22%20style%3D%22shape-rendering%3AgeometricPrecision%3B%20text-rendering%3AgeometricPrecision%3B%20image-rendering%3AoptimizeQuality%3B%20fill-rule%3Aevenodd%3B%20clip-rule%3Aevenodd%22%0AviewBox%3D%220%200%203410%203410%22%0A%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%0A%20xmlns%3Axodm%3D%22http%3A%2F%2Fwww.corel.com%2Fcoreldraw%2Fodm%2F2003%22%3E%0A%20%3Cdefs%3E%0A%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%3C!%5BCDATA%5B%0A%20%20%20%20.fil0%20%7Bfill%3A%23333333%7D%0A%20%20%20%5D%5D%3E%0A%20%20%3C%2Fstyle%3E%0A%20%3C%2Fdefs%3E%0A%20%3Cg%20id%3D%22%D0%A0%D0%8E%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%E2%84%96_x0020_1%22%3E%0A%20%20%3Cmetadata%20id%3D%22CorelCorpID_0Corel-Layer%22%2F%3E%0A%20%20%3Cpath%20class%3D%22fil0%22%20d%3D%22M282.7%201456.38c-0.4%2C-2.06%205.96%2C-114.26%207.25%2C-131.47%207.2%2C-95.64%2051.32%2C-263.22%2089.73%2C-340.28%2088.73%2C-177.99%2063.6%2C-140.41%20195.34%2C-304.05%2066.58%2C-82.7%20224.66%2C-207.74%20320.27%2C-255.39%20127.03%2C-63.32%20242.94%2C-96.15%20385.11%2C-121.21%20176.33%2C-31.08%20446.11%2C5.17%20604.58%2C84.17l94.25%2044.47c83.46%2C50.69%20223.66%2C147.8%20285.06%2C221.25%20112.14%2C134.17%20128.13%2C151.5%20203.08%2C303.23%2059.22%2C119.87%2075.55%2C202.95%2098.26%2C331.76%2013.03%2C73.93%2011.81%2C181.23%205.56%2C264.29%20-9.59%2C127.26%20-73.34%2C326.68%20-134.25%2C434.49l-117.95%20173.36c-58.41%2C75.09%20-95.1%2C97.44%20-141.12%2C143.24%20-26.02%2C25.89%20-50.9%2C41.98%20-80.95%2C64.7%20-120.79%2C91.35%20-249.69%2C138.7%20-394.76%2C180.91%20-42.8%2C12.45%20-77.81%2C15.38%20-122.45%2C23.21%20-189.54%2C33.21%20-449.74%2C-14.39%20-603.36%2C-83.33%20-227.87%2C-102.26%20-404.43%2C-257.6%20-533.82%2C-471.87%20-52.52%2C-86.99%20-99.21%2C-208.65%20-123.76%2C-306.25%20-27.94%2C-111.08%20-23.73%2C-123.82%20-28.88%2C-220.82%20-1.54%2C-29.04%20-4.77%2C-21.86%20-7.19%2C-34.41zm-284.37%20-69.36c0%2C319.01%2037.98%2C451.86%20159.52%2C714.39%2026.6%2C57.44%20133.36%2C211.84%20175.42%2C261.54l169.67%20170.17c28.98%2C25.76%2068.11%2C51.5%2098.8%2C74.61%20200.12%2C150.69%20523.65%2C263.55%20776.81%2C263.55%20215.62%2C0%20393.61%2C-18.75%20594.54%2C-105.99%20100.77%2C-43.74%20188.65%2C-86.35%20279.36%2C-150.65%2027.66%2C-19.62%2055.42%2C-43.78%2083.24%2C-62.41%2050.67%2C33.93%20738.27%2C752.06%20829.13%2C821.58%20138.98%2C106.32%20301.7%2C-67.16%20203.53%2C-196.59%20-71.05%2C-93.65%20-790.42%2C-782.05%20-824.58%2C-833.07l116.63%20-167.73c106.61%2C-164.68%20202.41%2C-470.77%20202.41%2C-664.56%200%2C-264.04%20-21.95%2C-454.66%20-134.09%2C-677.39%20-41.58%2C-82.55%20-63.72%2C-137.2%20-126.49%2C-220.31%20-139.82%2C-185.12%20-243.55%2C-288.23%20-448.18%2C-411.86%20-16.71%2C-10.09%20-34.77%2C-22.61%20-52.26%2C-30.96%20-262.04%2C-125.28%20-403.57%2C-164.55%20-723.24%2C-164.55%20-246.73%2C0%20-576.54%2C112.32%20-772.85%2C260.59l-140.99%20115.63c-19.33%2C17.04%20-29.18%2C22.1%20-48.62%2C41.55%20-51.31%2C51.31%20-111.62%2C129.1%20-154.21%2C185.64%20-150.7%2C200.13%20-263.55%2C523.66%20-263.55%2C776.82z%22%2F%3E%0A%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A) no-repeat center / contain;
+	mask: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3C!--%20Creator%3A%20CorelDRAW%202020%20(64-Bit)%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2234.1mm%22%20height%3D%2234.1mm%22%20version%3D%221.1%22%20style%3D%22shape-rendering%3AgeometricPrecision%3B%20text-rendering%3AgeometricPrecision%3B%20image-rendering%3AoptimizeQuality%3B%20fill-rule%3Aevenodd%3B%20clip-rule%3Aevenodd%22%0AviewBox%3D%220%200%203410%203410%22%0A%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%0A%20xmlns%3Axodm%3D%22http%3A%2F%2Fwww.corel.com%2Fcoreldraw%2Fodm%2F2003%22%3E%0A%20%3Cdefs%3E%0A%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%3C!%5BCDATA%5B%0A%20%20%20%20.fil0%20%7Bfill%3A%23333333%7D%0A%20%20%20%5D%5D%3E%0A%20%20%3C%2Fstyle%3E%0A%20%3C%2Fdefs%3E%0A%20%3Cg%20id%3D%22%D0%A0%D0%8E%D0%A0%C2%BB%D0%A0%D1%95%D0%A0%E2%84%96_x0020_1%22%3E%0A%20%20%3Cmetadata%20id%3D%22CorelCorpID_0Corel-Layer%22%2F%3E%0A%20%20%3Cpath%20class%3D%22fil0%22%20d%3D%22M282.7%201456.38c-0.4%2C-2.06%205.96%2C-114.26%207.25%2C-131.47%207.2%2C-95.64%2051.32%2C-263.22%2089.73%2C-340.28%2088.73%2C-177.99%2063.6%2C-140.41%20195.34%2C-304.05%2066.58%2C-82.7%20224.66%2C-207.74%20320.27%2C-255.39%20127.03%2C-63.32%20242.94%2C-96.15%20385.11%2C-121.21%20176.33%2C-31.08%20446.11%2C5.17%20604.58%2C84.17l94.25%2044.47c83.46%2C50.69%20223.66%2C147.8%20285.06%2C221.25%20112.14%2C134.17%20128.13%2C151.5%20203.08%2C303.23%2059.22%2C119.87%2075.55%2C202.95%2098.26%2C331.76%2013.03%2C73.93%2011.81%2C181.23%205.56%2C264.29%20-9.59%2C127.26%20-73.34%2C326.68%20-134.25%2C434.49l-117.95%20173.36c-58.41%2C75.09%20-95.1%2C97.44%20-141.12%2C143.24%20-26.02%2C25.89%20-50.9%2C41.98%20-80.95%2C64.7%20-120.79%2C91.35%20-249.69%2C138.7%20-394.76%2C180.91%20-42.8%2C12.45%20-77.81%2C15.38%20-122.45%2C23.21%20-189.54%2C33.21%20-449.74%2C-14.39%20-603.36%2C-83.33%20-227.87%2C-102.26%20-404.43%2C-257.6%20-533.82%2C-471.87%20-52.52%2C-86.99%20-99.21%2C-208.65%20-123.76%2C-306.25%20-27.94%2C-111.08%20-23.73%2C-123.82%20-28.88%2C-220.82%20-1.54%2C-29.04%20-4.77%2C-21.86%20-7.19%2C-34.41zm-284.37%20-69.36c0%2C319.01%2037.98%2C451.86%20159.52%2C714.39%2026.6%2C57.44%20133.36%2C211.84%20175.42%2C261.54l169.67%20170.17c28.98%2C25.76%2068.11%2C51.5%2098.8%2C74.61%20200.12%2C150.69%20523.65%2C263.55%20776.81%2C263.55%20215.62%2C0%20393.61%2C-18.75%20594.54%2C-105.99%20100.77%2C-43.74%20188.65%2C-86.35%20279.36%2C-150.65%2027.66%2C-19.62%2055.42%2C-43.78%2083.24%2C-62.41%2050.67%2C33.93%20738.27%2C752.06%20829.13%2C821.58%20138.98%2C106.32%20301.7%2C-67.16%20203.53%2C-196.59%20-71.05%2C-93.65%20-790.42%2C-782.05%20-824.58%2C-833.07l116.63%20-167.73c106.61%2C-164.68%20202.41%2C-470.77%20202.41%2C-664.56%200%2C-264.04%20-21.95%2C-454.66%20-134.09%2C-677.39%20-41.58%2C-82.55%20-63.72%2C-137.2%20-126.49%2C-220.31%20-139.82%2C-185.12%20-243.55%2C-288.23%20-448.18%2C-411.86%20-16.71%2C-10.09%20-34.77%2C-22.61%20-52.26%2C-30.96%20-262.04%2C-125.28%20-403.57%2C-164.55%20-723.24%2C-164.55%20-246.73%2C0%20-576.54%2C112.32%20-772.85%2C260.59l-140.99%20115.63c-19.33%2C17.04%20-29.18%2C22.1%20-48.62%2C41.55%20-51.31%2C51.31%20-111.62%2C129.1%20-154.21%2C185.64%20-150.7%2C200.13%20-263.55%2C523.66%20-263.55%2C776.82z%22%2F%3E%0A%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A) no-repeat center / contain;
+}
+
+#pin {
+	-webkit-mask: url(../img/default/pin.svg) no-repeat center / contain;
+	mask: url(../img/default/pin.svg) no-repeat center / contain;
+	display: none;
+}
+
+.logo {
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.logo img {
+	height: 100%;
+	width: 160px;
+	filter: invert(14%) sepia(7%) saturate(238%) hue-rotate(349deg) brightness(91%) contrast(90%);
+}
+
+.side_menu {
+	position: fixed;
+	background-color: var(--white);
+	bottom: 223px;
+	transform-origin: 100% 100%;
+	transform: rotate(-90deg);
+	display: flex;
+	margin-right: 0;
+	right: 0;
+	border-radius: 8px 8px 0 0;
+	z-index: 1000;
+}
+
+.side_menu_item {
+	background-color: var(--white);
+	padding: 10px 15px;
+	box-shadow: rgba(0, 0, 0, 0.13) 0px 5px 15px;
+	border-radius: 8px 8px 0 0;
+	position: relative;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.side_menu_item:hover {
+	background-color: var(--secondary-grey);
+}
+
+.side_menu_item svg {
+	height: 22px;
+}
+
+.side_menu_item:first-child {
+	z-index: 2;
+}
+
+.side_menu_item:last-of-type {
+	border-radius: 0 8px 0 0;
+	margin-left: -5px;
+	padding-left: 20px;
+}
+
+.mob_menu {
+	max-width: 400px;
+	min-width: 320px;
+	height: calc(100dvh - 55px);
+	position: fixed;
+	background-color: var(--white);
+	z-index: 9999;
+	border-right: 1px solid var(--secondary-grey);
+	overflow-y: auto;
+	top: 67px;
+	left: -100%;
+}
+
+.mob_menu_cont {
+	padding-bottom: 25px;
+}
+
+.mob_menu .menu {
+	position: relative;
+	width: 100%;
+	top: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.mob_menu .menu li {
+	width: 100%;
+	padding: 10px 25px;
+}
+
+.mob_menu .menu li:hover {
+	background-color: var(--secondary-grey);
+}
+
+.menu-top_menu-container {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 25px;
+}
+
+.mob_cont {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin: 30px 0 40px 0;
+	padding: 0 25px;
+}
+
+.mob_cont>a {
+	width: 100%;
+}
+
+.mob_cont>a>.side_menu_item {
+	justify-content: center;
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.mob_cont>.side_menu_item:last-of-type {
+	margin: 0;
+}
+
+.mob_sub {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.mob_line {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	padding: 0 25px;
+	font-size: 16px;
+	font-family: var(--medium-font);
+	line-height: 1.1em;
+}
+
+.mob_line>img {
+	width: 20px;
+}
+
+
+/* search */
+
+.search_line {
+	width: calc(100% - 210px);
+	height: 66px;
+	position: fixed;
+	left: 0;
+	background-color: var(--white);
+	z-index: 9999;
+	padding-top: 12px;
+	margin-left: 110px;
+	display: none;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.search_line.show {
+	display: block;
+	opacity: 1;
+}
+
+.search_line .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp {
+	background: none;
+	padding: 0;
+}
+
+.search_line .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
+	padding: 10px 24px 10px 48px;
+	border: 0;
+	border-bottom: 1px solid var(--primary-black);
+	border-radius: 0;
+}
+
+.search_line .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp button.dgwt-wcas-search-submit svg {
+	display: none;
+}
+
+.search_line .dgwt-wcas-style-pirx .dgwt-wcas-preloader {
+	margin: 0;
+}
+
+.search_line .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
+	background: none !important;
+}
+
+.menu-item-26831 a {
+	color: var(--hover-link);
+}
+
+@media screen and (max-width: 1600px) {
+
+	#menu-top_menu .menu-item-769 {
+		display: none;
+	}
+
+	#menu-top_menu .menu-item-26831 {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 1500px) {
+
+	.menu {
+		display: none;
+	}
+
+	.side_menu {
+		display: none;
+	}
+
+	.top_nav {
+		border-bottom: 1px solid var(--secondary-grey);
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.top_nav span {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.top_nav {
+		padding: 15px 10px;
+	}
+
+	.logo {
+		height: 30px;
+	}
+
+	.mob_menu {
+		top: 57px;
+	}
+
+	.search_line {
+		margin-left: 65px;
+		width: calc(100% - 115px);
+		height: 50px;
+		padding: 0;
+	}
+
+	.search_line .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
+		padding: 10px;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+	#int {
+		display: none;
+	}
+
+	#pin {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.wishlist_products_counter {
+		z-index: 9999;
+		float: left;
+		margin: 0;
+		display: none;
+	}
+
+	.top_nav {
+		gap: 15px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.mob_menu {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+

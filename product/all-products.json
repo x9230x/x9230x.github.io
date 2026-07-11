@@ -1,0 +1,2096 @@
+{
+  "generatedAt": "2026-07-10T10:36:42.539Z",
+  "source": "https://omoikiri.ru",
+  "categories": [
+    {
+      "category": "sinks",
+      "pages": 6,
+      "cards": 224
+    },
+    {
+      "category": "bathsinks",
+      "pages": 1,
+      "cards": 5
+    },
+    {
+      "category": "taps",
+      "pages": 2,
+      "cards": 53
+    },
+    {
+      "category": "filters",
+      "pages": 1,
+      "cards": 11
+    },
+    {
+      "category": "disposers",
+      "pages": 1,
+      "cards": 6
+    },
+    {
+      "category": "dispenser",
+      "pages": 1,
+      "cards": 10
+    },
+    {
+      "category": "acs",
+      "pages": 2,
+      "cards": 74
+    },
+    {
+      "category": "omoikiri-home",
+      "pages": 1,
+      "cards": 26
+    }
+  ],
+  "count": 409,
+  "created": 177,
+  "skipped": 232,
+  "products": [
+    {
+      "slug": "akashi-s",
+      "url": "https://omoikiri.ru/product/akashi-s",
+      "category": "taps"
+    },
+    {
+      "slug": "akegata-51",
+      "url": "https://omoikiri.ru/product/akegata-51",
+      "category": "sinks"
+    },
+    {
+      "slug": "akeno",
+      "url": "https://omoikiri.ru/product/akeno",
+      "category": "taps"
+    },
+    {
+      "slug": "akira",
+      "url": "https://omoikiri.ru/product/akira",
+      "category": "bathsinks"
+    },
+    {
+      "slug": "akisame-100-2-l",
+      "url": "https://omoikiri.ru/product/akisame-100-2-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-100-2-r",
+      "url": "https://omoikiri.ru/product/akisame-100-2-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-41",
+      "url": "https://omoikiri.ru/product/akisame-41",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-46",
+      "url": "https://omoikiri.ru/product/akisame-46",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-51",
+      "url": "https://omoikiri.ru/product/akisame-51",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-59",
+      "url": "https://omoikiri.ru/product/akisame-59",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-60-2-l",
+      "url": "https://omoikiri.ru/product/akisame-60-2-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-65-l",
+      "url": "https://omoikiri.ru/product/akisame-65-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-65-r",
+      "url": "https://omoikiri.ru/product/akisame-65-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-78-2-l",
+      "url": "https://omoikiri.ru/product/akisame-78-2-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-78-2-r",
+      "url": "https://omoikiri.ru/product/akisame-78-2-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-78-l",
+      "url": "https://omoikiri.ru/product/akisame-78-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-78-r",
+      "url": "https://omoikiri.ru/product/akisame-78-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-86-2-side",
+      "url": "https://omoikiri.ru/product/akisame-86-2-side",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-86-l",
+      "url": "https://omoikiri.ru/product/akisame-86-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-86-r",
+      "url": "https://omoikiri.ru/product/akisame-86-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-86-side-l",
+      "url": "https://omoikiri.ru/product/akisame-86-side-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "akisame-86-side-r",
+      "url": "https://omoikiri.ru/product/akisame-86-side-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "akita",
+      "url": "https://omoikiri.ru/product/akita",
+      "category": "taps"
+    },
+    {
+      "slug": "akita-s",
+      "url": "https://omoikiri.ru/product/akita-s",
+      "category": "taps"
+    },
+    {
+      "slug": "amadare-39",
+      "url": "https://omoikiri.ru/product/amadare-39",
+      "category": "sinks"
+    },
+    {
+      "slug": "amadare-45",
+      "url": "https://omoikiri.ru/product/amadare-45",
+      "category": "sinks"
+    },
+    {
+      "slug": "amadare-50",
+      "url": "https://omoikiri.ru/product/amadare-50",
+      "category": "sinks"
+    },
+    {
+      "slug": "amadare-55",
+      "url": "https://omoikiri.ru/product/amadare-55",
+      "category": "sinks"
+    },
+    {
+      "slug": "amagasaki",
+      "url": "https://omoikiri.ru/product/amagasaki",
+      "category": "taps"
+    },
+    {
+      "slug": "arita-sb",
+      "url": "https://omoikiri.ru/product/arita-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "asakawa-s",
+      "url": "https://omoikiri.ru/product/asakawa-s",
+      "category": "taps"
+    },
+    {
+      "slug": "ashi-56",
+      "url": "https://omoikiri.ru/product/ashi-56",
+      "category": "sinks"
+    },
+    {
+      "slug": "asida-51",
+      "url": "https://omoikiri.ru/product/asida-51",
+      "category": "sinks"
+    },
+    {
+      "slug": "bd-01",
+      "url": "https://omoikiri.ru/product/bd-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "bosen-20-u",
+      "url": "https://omoikiri.ru/product/bosen-20-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-38-u",
+      "url": "https://omoikiri.ru/product/bosen-38-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-41",
+      "url": "https://omoikiri.ru/product/bosen-41",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-41a",
+      "url": "https://omoikiri.ru/product/bosen-41a",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-44-u",
+      "url": "https://omoikiri.ru/product/bosen-44-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-47",
+      "url": "https://omoikiri.ru/product/bosen-47",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-47a",
+      "url": "https://omoikiri.ru/product/bosen-47a",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-54-u",
+      "url": "https://omoikiri.ru/product/bosen-54-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-57",
+      "url": "https://omoikiri.ru/product/bosen-57",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-57a",
+      "url": "https://omoikiri.ru/product/bosen-57a",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-59-2",
+      "url": "https://omoikiri.ru/product/bosen-59-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-59-2a",
+      "url": "https://omoikiri.ru/product/bosen-59-2a",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-61",
+      "url": "https://omoikiri.ru/product/bosen-61",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-61a",
+      "url": "https://omoikiri.ru/product/bosen-61a",
+      "category": "sinks"
+    },
+    {
+      "slug": "bosen-80-2",
+      "url": "https://omoikiri.ru/product/bosen-80-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "bw-01",
+      "url": "https://omoikiri.ru/product/bw-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "cb-01-wood",
+      "url": "https://omoikiri.ru/product/cb-01-wood",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-03-wood-s",
+      "url": "https://omoikiri.ru/product/cb-03-wood-s",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-04-wood-l",
+      "url": "https://omoikiri.ru/product/cb-04-wood-l",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-05-wood-m",
+      "url": "https://omoikiri.ru/product/cb-05-wood-m",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-basic-370",
+      "url": "https://omoikiri.ru/product/cb-basic-370",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-basic-380",
+      "url": "https://omoikiri.ru/product/cb-basic-380",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-basic-400",
+      "url": "https://omoikiri.ru/product/cb-basic-400",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-kitagawa-86-lb",
+      "url": "https://omoikiri.ru/product/cb-kitagawa-86-lb",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-maru-86",
+      "url": "https://omoikiri.ru/product/cb-maru-86",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-prime-400",
+      "url": "https://omoikiri.ru/product/cb-prime-400",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-sintesi-l",
+      "url": "https://omoikiri.ru/product/cb-sintesi-l",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-sintesi-m",
+      "url": "https://omoikiri.ru/product/cb-sintesi-m",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-sintesi-s",
+      "url": "https://omoikiri.ru/product/cb-sintesi-s",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-sumi",
+      "url": "https://omoikiri.ru/product/cb-sumi",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-tarento-83",
+      "url": "https://omoikiri.ru/product/cb-tarento-83",
+      "category": "acs"
+    },
+    {
+      "slug": "cb-yamakawa",
+      "url": "https://omoikiri.ru/product/cb-yamakawa",
+      "category": "acs"
+    },
+    {
+      "slug": "cj-01",
+      "url": "https://omoikiri.ru/product/cj-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "co-02",
+      "url": "https://omoikiri.ru/product/co-02",
+      "category": "acs"
+    },
+    {
+      "slug": "co-04",
+      "url": "https://omoikiri.ru/product/co-04",
+      "category": "acs"
+    },
+    {
+      "slug": "co-05",
+      "url": "https://omoikiri.ru/product/co-05",
+      "category": "acs"
+    },
+    {
+      "slug": "co-06",
+      "url": "https://omoikiri.ru/product/co-06",
+      "category": "acs"
+    },
+    {
+      "slug": "co-07-pro",
+      "url": "https://omoikiri.ru/product/co-07-pro",
+      "category": "acs"
+    },
+    {
+      "slug": "d-01",
+      "url": "https://omoikiri.ru/product/d-01",
+      "category": "acs"
+    },
+    {
+      "slug": "daisen-42",
+      "url": "https://omoikiri.ru/product/daisen-42",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-44",
+      "url": "https://omoikiri.ru/product/daisen-44",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-46",
+      "url": "https://omoikiri.ru/product/daisen-46",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-51",
+      "url": "https://omoikiri.ru/product/daisen-51",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-57",
+      "url": "https://omoikiri.ru/product/daisen-57",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-60",
+      "url": "https://omoikiri.ru/product/daisen-60",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-65",
+      "url": "https://omoikiri.ru/product/daisen-65",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-65t",
+      "url": "https://omoikiri.ru/product/daisen-65t",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-77",
+      "url": "https://omoikiri.ru/product/daisen-77",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-78",
+      "url": "https://omoikiri.ru/product/daisen-78",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-78-2",
+      "url": "https://omoikiri.ru/product/daisen-78-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-78-2t",
+      "url": "https://omoikiri.ru/product/daisen-78-2t",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-78-lb",
+      "url": "https://omoikiri.ru/product/daisen-78-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-78t",
+      "url": "https://omoikiri.ru/product/daisen-78t",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-86",
+      "url": "https://omoikiri.ru/product/daisen-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "daisen-86-2",
+      "url": "https://omoikiri.ru/product/daisen-86-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "damascus-kuon",
+      "url": "https://omoikiri.ru/product/damascus-kuon",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "damascus-suminagashi",
+      "url": "https://omoikiri.ru/product/damascus-suminagashi",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "db-01",
+      "url": "https://omoikiri.ru/product/db-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "dc-01-1",
+      "url": "https://omoikiri.ru/product/dc-01-1",
+      "category": "acs"
+    },
+    {
+      "slug": "dc-02-2",
+      "url": "https://omoikiri.ru/product/dc-02-2",
+      "category": "acs"
+    },
+    {
+      "slug": "dc-02-3",
+      "url": "https://omoikiri.ru/product/dc-02-3",
+      "category": "acs"
+    },
+    {
+      "slug": "dc-03-1",
+      "url": "https://omoikiri.ru/product/dc-03-1",
+      "category": "acs"
+    },
+    {
+      "slug": "dc-04-2",
+      "url": "https://omoikiri.ru/product/dc-04-2",
+      "category": "acs"
+    },
+    {
+      "slug": "dc-04-3",
+      "url": "https://omoikiri.ru/product/dc-04-3",
+      "category": "acs"
+    },
+    {
+      "slug": "dc-05-1",
+      "url": "https://omoikiri.ru/product/dc-05-1",
+      "category": "acs"
+    },
+    {
+      "slug": "dec",
+      "url": "https://omoikiri.ru/product/dec",
+      "category": "acs"
+    },
+    {
+      "slug": "dec-02",
+      "url": "https://omoikiri.ru/product/dec-02",
+      "category": "acs"
+    },
+    {
+      "slug": "dry-01",
+      "url": "https://omoikiri.ru/product/dry-01",
+      "category": "acs"
+    },
+    {
+      "slug": "dry-02",
+      "url": "https://omoikiri.ru/product/dry-02",
+      "category": "acs"
+    },
+    {
+      "slug": "dry-03-pro",
+      "url": "https://omoikiri.ru/product/dry-03-pro",
+      "category": "acs"
+    },
+    {
+      "slug": "dry-04",
+      "url": "https://omoikiri.ru/product/dry-04",
+      "category": "acs"
+    },
+    {
+      "slug": "ec-01",
+      "url": "https://omoikiri.ru/product/ec-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "fg-02",
+      "url": "https://omoikiri.ru/product/fg-02",
+      "category": "acs"
+    },
+    {
+      "slug": "fk-01",
+      "url": "https://omoikiri.ru/product/fk-01",
+      "category": "acs"
+    },
+    {
+      "slug": "fp-04",
+      "url": "https://omoikiri.ru/product/fp-04",
+      "category": "acs"
+    },
+    {
+      "slug": "fp-05",
+      "url": "https://omoikiri.ru/product/fp-05",
+      "category": "acs"
+    },
+    {
+      "slug": "fp-07-pro",
+      "url": "https://omoikiri.ru/product/fp-07-pro",
+      "category": "acs"
+    },
+    {
+      "slug": "fp-08-pro",
+      "url": "https://omoikiri.ru/product/fp-08-pro",
+      "category": "acs"
+    },
+    {
+      "slug": "ft-01",
+      "url": "https://omoikiri.ru/product/ft-01",
+      "category": "acs"
+    },
+    {
+      "slug": "fumico",
+      "url": "https://omoikiri.ru/product/fumico",
+      "category": "bathsinks"
+    },
+    {
+      "slug": "furaipan-24",
+      "url": "https://omoikiri.ru/product/furaipan-24",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "gr-02-set",
+      "url": "https://omoikiri.ru/product/gr-02-set",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "grinder",
+      "url": "https://omoikiri.ru/product/grinder",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "haruna-86",
+      "url": "https://omoikiri.ru/product/haruna-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "hitomi",
+      "url": "https://omoikiri.ru/product/hitomi",
+      "category": "bathsinks"
+    },
+    {
+      "slug": "hotaru",
+      "url": "https://omoikiri.ru/product/hotaru",
+      "category": "taps"
+    },
+    {
+      "slug": "hp-01",
+      "url": "https://omoikiri.ru/product/hp-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "june",
+      "url": "https://omoikiri.ru/product/june",
+      "category": "bathsinks"
+    },
+    {
+      "slug": "kado",
+      "url": "https://omoikiri.ru/product/kado",
+      "category": "taps"
+    },
+    {
+      "slug": "kanto",
+      "url": "https://omoikiri.ru/product/kanto",
+      "category": "taps"
+    },
+    {
+      "slug": "kanto-2-plus-sb",
+      "url": "https://omoikiri.ru/product/kanto-2-plus-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "karatsu-s",
+      "url": "https://omoikiri.ru/product/karatsu-s",
+      "category": "taps"
+    },
+    {
+      "slug": "kasen-48-26-int",
+      "url": "https://omoikiri.ru/product/kasen-48-26-int",
+      "category": "sinks"
+    },
+    {
+      "slug": "kasen-49-16-int",
+      "url": "https://omoikiri.ru/product/kasen-49-16-int",
+      "category": "sinks"
+    },
+    {
+      "slug": "kasen-53-26-int",
+      "url": "https://omoikiri.ru/product/kasen-53-26-int",
+      "category": "sinks"
+    },
+    {
+      "slug": "kasen-54-16-int",
+      "url": "https://omoikiri.ru/product/kasen-54-16-int",
+      "category": "sinks"
+    },
+    {
+      "slug": "kashiogawa-79",
+      "url": "https://omoikiri.ru/product/kashiogawa-79",
+      "category": "sinks"
+    },
+    {
+      "slug": "kashiogawa-86",
+      "url": "https://omoikiri.ru/product/kashiogawa-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "kasumigaura-65",
+      "url": "https://omoikiri.ru/product/kasumigaura-65",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-20-u",
+      "url": "https://omoikiri.ru/product/kata-20-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-34-u",
+      "url": "https://omoikiri.ru/product/kata-34-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-40-u",
+      "url": "https://omoikiri.ru/product/kata-40-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-44-u",
+      "url": "https://omoikiri.ru/product/kata-44-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-54-u",
+      "url": "https://omoikiri.ru/product/kata-54-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-55-2-u",
+      "url": "https://omoikiri.ru/product/kata-55-2-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-56-ui-side",
+      "url": "https://omoikiri.ru/product/kata-56-ui-side",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-74-u",
+      "url": "https://omoikiri.ru/product/kata-74-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kata-76-u-i-side",
+      "url": "https://omoikiri.ru/product/kata-76-u-i-side",
+      "category": "sinks"
+    },
+    {
+      "slug": "kenrei-set",
+      "url": "https://omoikiri.ru/product/kenrei-set",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "kinaru-pro-86-u-i",
+      "url": "https://omoikiri.ru/product/kinaru-pro-86-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "kinokawa-60",
+      "url": "https://omoikiri.ru/product/kinokawa-60",
+      "category": "sinks"
+    },
+    {
+      "slug": "kinokawa-90",
+      "url": "https://omoikiri.ru/product/kinokawa-90",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-100",
+      "url": "https://omoikiri.ru/product/kitagawa-100",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-100-2",
+      "url": "https://omoikiri.ru/product/kitagawa-100-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-51",
+      "url": "https://omoikiri.ru/product/kitagawa-51",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-57",
+      "url": "https://omoikiri.ru/product/kitagawa-57",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-79-lb",
+      "url": "https://omoikiri.ru/product/kitagawa-79-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-83-2-u",
+      "url": "https://omoikiri.ru/product/kitagawa-83-2-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-86",
+      "url": "https://omoikiri.ru/product/kitagawa-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-86-2",
+      "url": "https://omoikiri.ru/product/kitagawa-86-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "kitagawa-86-lb",
+      "url": "https://omoikiri.ru/product/kitagawa-86-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "kiten-48-int",
+      "url": "https://omoikiri.ru/product/kiten-48-int",
+      "category": "sinks"
+    },
+    {
+      "slug": "kiten-70-int",
+      "url": "https://omoikiri.ru/product/kiten-70-int",
+      "category": "sinks"
+    },
+    {
+      "slug": "koriyama",
+      "url": "https://omoikiri.ru/product/koriyama",
+      "category": "taps"
+    },
+    {
+      "slug": "koriyama-sb",
+      "url": "https://omoikiri.ru/product/koriyama-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "kyoto",
+      "url": "https://omoikiri.ru/product/kyoto",
+      "category": "taps"
+    },
+    {
+      "slug": "kyoto-2-plus",
+      "url": "https://omoikiri.ru/product/kyoto-2-plus",
+      "category": "taps"
+    },
+    {
+      "slug": "m-complex-4",
+      "url": "https://omoikiri.ru/product/m-complex-4",
+      "category": "filters"
+    },
+    {
+      "slug": "m-complex-5s",
+      "url": "https://omoikiri.ru/product/m-complex-5s",
+      "category": "filters"
+    },
+    {
+      "slug": "makkari-2-plus-sb",
+      "url": "https://omoikiri.ru/product/makkari-2-plus-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "maru-86-2",
+      "url": "https://omoikiri.ru/product/maru-86-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "me-01",
+      "url": "https://omoikiri.ru/product/me-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "mikawa-2-plus-sb",
+      "url": "https://omoikiri.ru/product/mikawa-2-plus-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "mikura-61",
+      "url": "https://omoikiri.ru/product/mikura-61",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76",
+      "url": "https://omoikiri.ru/product/mikura-76",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76-dali",
+      "url": "https://omoikiri.ru/product/mikura-76-dali",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76-klimt",
+      "url": "https://omoikiri.ru/product/mikura-76-klimt",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76-lemon",
+      "url": "https://omoikiri.ru/product/mikura-76-lemon",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76-tokyo",
+      "url": "https://omoikiri.ru/product/mikura-76-tokyo",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76-tokyo-2",
+      "url": "https://omoikiri.ru/product/mikura-76-tokyo-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76-tokyo-3",
+      "url": "https://omoikiri.ru/product/mikura-76-tokyo-3",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-76-vangogh",
+      "url": "https://omoikiri.ru/product/mikura-76-vangogh",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-83",
+      "url": "https://omoikiri.ru/product/mikura-83",
+      "category": "sinks"
+    },
+    {
+      "slug": "mikura-91",
+      "url": "https://omoikiri.ru/product/mikura-91",
+      "category": "sinks"
+    },
+    {
+      "slug": "mira",
+      "url": "https://omoikiri.ru/product/mira",
+      "category": "bathsinks"
+    },
+    {
+      "slug": "miya-50-r",
+      "url": "https://omoikiri.ru/product/miya-50-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "miyako",
+      "url": "https://omoikiri.ru/product/miyako",
+      "category": "taps"
+    },
+    {
+      "slug": "mizu-78",
+      "url": "https://omoikiri.ru/product/mizu-78",
+      "category": "sinks"
+    },
+    {
+      "slug": "mizu-78-2",
+      "url": "https://omoikiri.ru/product/mizu-78-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "mizu-78-lb",
+      "url": "https://omoikiri.ru/product/mizu-78-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "mod-1-0",
+      "url": "https://omoikiri.ru/product/mod-1-0",
+      "category": "filters"
+    },
+    {
+      "slug": "mod-2-0",
+      "url": "https://omoikiri.ru/product/mod-2-0",
+      "category": "filters"
+    },
+    {
+      "slug": "mod-3-0",
+      "url": "https://omoikiri.ru/product/mod-3-0",
+      "category": "filters"
+    },
+    {
+      "slug": "mori",
+      "url": "https://omoikiri.ru/product/mori",
+      "category": "taps"
+    },
+    {
+      "slug": "na-01",
+      "url": "https://omoikiri.ru/product/na-01",
+      "category": "acs"
+    },
+    {
+      "slug": "na-02",
+      "url": "https://omoikiri.ru/product/na-02",
+      "category": "acs"
+    },
+    {
+      "slug": "na-03",
+      "url": "https://omoikiri.ru/product/na-03",
+      "category": "acs"
+    },
+    {
+      "slug": "na-04",
+      "url": "https://omoikiri.ru/product/na-04",
+      "category": "acs"
+    },
+    {
+      "slug": "nabor-banok-dlya-sypuchih-produktov",
+      "url": "https://omoikiri.ru/product/nabor-banok-dlya-sypuchih-produktov",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "nagano",
+      "url": "https://omoikiri.ru/product/nagano",
+      "category": "taps"
+    },
+    {
+      "slug": "nagano-pure-drop-lite",
+      "url": "https://omoikiri.ru/product/nagano-pure-drop-lite",
+      "category": "taps"
+    },
+    {
+      "slug": "nagare-1000",
+      "url": "https://omoikiri.ru/product/nagare-1000",
+      "category": "disposers"
+    },
+    {
+      "slug": "nagare-500",
+      "url": "https://omoikiri.ru/product/nagare-500",
+      "category": "disposers"
+    },
+    {
+      "slug": "nagare-750",
+      "url": "https://omoikiri.ru/product/nagare-750",
+      "category": "disposers"
+    },
+    {
+      "slug": "nagare-slim-1250",
+      "url": "https://omoikiri.ru/product/nagare-slim-1250",
+      "category": "disposers"
+    },
+    {
+      "slug": "nagare-slim-500",
+      "url": "https://omoikiri.ru/product/nagare-slim-500",
+      "category": "disposers"
+    },
+    {
+      "slug": "nagare-slim-900",
+      "url": "https://omoikiri.ru/product/nagare-slim-900",
+      "category": "disposers"
+    },
+    {
+      "slug": "nakagawa",
+      "url": "https://omoikiri.ru/product/nakagawa",
+      "category": "taps"
+    },
+    {
+      "slug": "nakagawa-2-plus",
+      "url": "https://omoikiri.ru/product/nakagawa-2-plus",
+      "category": "taps"
+    },
+    {
+      "slug": "nara",
+      "url": "https://omoikiri.ru/product/nara",
+      "category": "taps"
+    },
+    {
+      "slug": "nara-2-plus",
+      "url": "https://omoikiri.ru/product/nara-2-plus",
+      "category": "taps"
+    },
+    {
+      "slug": "nara-2-plus-s",
+      "url": "https://omoikiri.ru/product/nara-2-plus-s",
+      "category": "taps"
+    },
+    {
+      "slug": "nara-s",
+      "url": "https://omoikiri.ru/product/nara-s",
+      "category": "taps"
+    },
+    {
+      "slug": "notoro-48",
+      "url": "https://omoikiri.ru/product/notoro-48",
+      "category": "sinks"
+    },
+    {
+      "slug": "ob-01",
+      "url": "https://omoikiri.ru/product/ob-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "okawa-2-plus",
+      "url": "https://omoikiri.ru/product/okawa-2-plus",
+      "category": "taps"
+    },
+    {
+      "slug": "okinawa-2",
+      "url": "https://omoikiri.ru/product/okinawa-2",
+      "category": "taps"
+    },
+    {
+      "slug": "okinoshima-61-u-i",
+      "url": "https://omoikiri.ru/product/okinoshima-61-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "okinoshima-76-u-i",
+      "url": "https://omoikiri.ru/product/okinoshima-76-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "om-01",
+      "url": "https://omoikiri.ru/product/om-01",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-02",
+      "url": "https://omoikiri.ru/product/om-02",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-03",
+      "url": "https://omoikiri.ru/product/om-03",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-04",
+      "url": "https://omoikiri.ru/product/om-04",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-05",
+      "url": "https://omoikiri.ru/product/om-05",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-06",
+      "url": "https://omoikiri.ru/product/om-06",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-07",
+      "url": "https://omoikiri.ru/product/om-07",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-08",
+      "url": "https://omoikiri.ru/product/om-08",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-09-sensor",
+      "url": "https://omoikiri.ru/product/om-09-sensor",
+      "category": "dispenser"
+    },
+    {
+      "slug": "om-10",
+      "url": "https://omoikiri.ru/product/om-10",
+      "category": "dispenser"
+    },
+    {
+      "slug": "omi-20-u",
+      "url": "https://omoikiri.ru/product/omi-20-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-37-u-i-ultra",
+      "url": "https://omoikiri.ru/product/omi-37-u-i-ultra",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-38-u-i",
+      "url": "https://omoikiri.ru/product/omi-38-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-43-u-i-ultra",
+      "url": "https://omoikiri.ru/product/omi-43-u-i-ultra",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-43-u-i-ultra-mini",
+      "url": "https://omoikiri.ru/product/omi-43-u-i-ultra-mini",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-44-u-i",
+      "url": "https://omoikiri.ru/product/omi-44-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-44-u-i-quadro",
+      "url": "https://omoikiri.ru/product/omi-44-u-i-quadro",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-49-u-i",
+      "url": "https://omoikiri.ru/product/omi-49-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-49-u-i-in",
+      "url": "https://omoikiri.ru/product/omi-49-u-i-in",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-53-u-i-ultra",
+      "url": "https://omoikiri.ru/product/omi-53-u-i-ultra",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-53-u-i-ultra-mini",
+      "url": "https://omoikiri.ru/product/omi-53-u-i-ultra-mini",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-54-u-i",
+      "url": "https://omoikiri.ru/product/omi-54-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-73-u-i-ultra",
+      "url": "https://omoikiri.ru/product/omi-73-u-i-ultra",
+      "category": "sinks"
+    },
+    {
+      "slug": "omi-76-u-i",
+      "url": "https://omoikiri.ru/product/omi-76-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "omoikane-rw",
+      "url": "https://omoikiri.ru/product/omoikane-rw",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "omoikane-sw",
+      "url": "https://omoikiri.ru/product/omoikane-sw",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "omoikane-ww",
+      "url": "https://omoikiri.ru/product/omoikane-ww",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "osaka",
+      "url": "https://omoikiri.ru/product/osaka",
+      "category": "taps"
+    },
+    {
+      "slug": "ot-01",
+      "url": "https://omoikiri.ru/product/ot-01",
+      "category": "acs"
+    },
+    {
+      "slug": "ov-02",
+      "url": "https://omoikiri.ru/product/ov-02",
+      "category": "acs"
+    },
+    {
+      "slug": "ov-1-r",
+      "url": "https://omoikiri.ru/product/ov-1-r",
+      "category": "acs"
+    },
+    {
+      "slug": "ov-1-s",
+      "url": "https://omoikiri.ru/product/ov-1-s",
+      "category": "acs"
+    },
+    {
+      "slug": "pl-01",
+      "url": "https://omoikiri.ru/product/pl-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "pled",
+      "url": "https://omoikiri.ru/product/pled",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "pure-drop-1-0",
+      "url": "https://omoikiri.ru/product/pure-drop-1-0",
+      "category": "filters"
+    },
+    {
+      "slug": "pure-drop-2-1-4s",
+      "url": "https://omoikiri.ru/product/pure-drop-2-1-4s",
+      "category": "filters"
+    },
+    {
+      "slug": "pure-drop-lite",
+      "url": "https://omoikiri.ru/product/pure-drop-lite",
+      "category": "filters"
+    },
+    {
+      "slug": "pure-drop-soft",
+      "url": "https://omoikiri.ru/product/pure-drop-soft",
+      "category": "filters"
+    },
+    {
+      "slug": "re-01",
+      "url": "https://omoikiri.ru/product/re-01",
+      "category": "acs"
+    },
+    {
+      "slug": "roll-01",
+      "url": "https://omoikiri.ru/product/roll-01",
+      "category": "acs"
+    },
+    {
+      "slug": "roll-02",
+      "url": "https://omoikiri.ru/product/roll-02",
+      "category": "acs"
+    },
+    {
+      "slug": "roll-03",
+      "url": "https://omoikiri.ru/product/roll-03",
+      "category": "acs"
+    },
+    {
+      "slug": "roll-05",
+      "url": "https://omoikiri.ru/product/roll-05",
+      "category": "acs"
+    },
+    {
+      "slug": "s-01",
+      "url": "https://omoikiri.ru/product/s-01",
+      "category": "acs"
+    },
+    {
+      "slug": "sagami-63",
+      "url": "https://omoikiri.ru/product/sagami-63",
+      "category": "sinks"
+    },
+    {
+      "slug": "sagami-79",
+      "url": "https://omoikiri.ru/product/sagami-79",
+      "category": "sinks"
+    },
+    {
+      "slug": "sagami-79-2",
+      "url": "https://omoikiri.ru/product/sagami-79-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-100",
+      "url": "https://omoikiri.ru/product/sakaime-100",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-100-2",
+      "url": "https://omoikiri.ru/product/sakaime-100-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-60-2",
+      "url": "https://omoikiri.ru/product/sakaime-60-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-60e",
+      "url": "https://omoikiri.ru/product/sakaime-60e",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-68",
+      "url": "https://omoikiri.ru/product/sakaime-68",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-78",
+      "url": "https://omoikiri.ru/product/sakaime-78",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-78-2",
+      "url": "https://omoikiri.ru/product/sakaime-78-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-78-lb",
+      "url": "https://omoikiri.ru/product/sakaime-78-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-79",
+      "url": "https://omoikiri.ru/product/sakaime-79",
+      "category": "sinks"
+    },
+    {
+      "slug": "sakaime-86-2",
+      "url": "https://omoikiri.ru/product/sakaime-86-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "saru-48",
+      "url": "https://omoikiri.ru/product/saru-48",
+      "category": "sinks"
+    },
+    {
+      "slug": "sb-01",
+      "url": "https://omoikiri.ru/product/sb-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "se-01",
+      "url": "https://omoikiri.ru/product/se-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "sh-01",
+      "url": "https://omoikiri.ru/product/sh-01",
+      "category": "acs"
+    },
+    {
+      "slug": "shinagawa",
+      "url": "https://omoikiri.ru/product/shinagawa",
+      "category": "taps"
+    },
+    {
+      "slug": "shinagawa-2-plus",
+      "url": "https://omoikiri.ru/product/shinagawa-2-plus",
+      "category": "taps"
+    },
+    {
+      "slug": "shinagawa-sb",
+      "url": "https://omoikiri.ru/product/shinagawa-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "shinagawa-slim",
+      "url": "https://omoikiri.ru/product/shinagawa-slim",
+      "category": "taps"
+    },
+    {
+      "slug": "sintesi-100",
+      "url": "https://omoikiri.ru/product/sintesi-100",
+      "category": "sinks"
+    },
+    {
+      "slug": "sintesi-116",
+      "url": "https://omoikiri.ru/product/sintesi-116",
+      "category": "sinks"
+    },
+    {
+      "slug": "sintesi-57",
+      "url": "https://omoikiri.ru/product/sintesi-57",
+      "category": "sinks"
+    },
+    {
+      "slug": "sintesi-79",
+      "url": "https://omoikiri.ru/product/sintesi-79",
+      "category": "sinks"
+    },
+    {
+      "slug": "sintesi-86",
+      "url": "https://omoikiri.ru/product/sintesi-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "sintesi-pro-114-2",
+      "url": "https://omoikiri.ru/product/sintesi-pro-114-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "sinto-2-plus",
+      "url": "https://omoikiri.ru/product/sinto-2-plus",
+      "category": "taps"
+    },
+    {
+      "slug": "so-01",
+      "url": "https://omoikiri.ru/product/so-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "soft",
+      "url": "https://omoikiri.ru/product/soft",
+      "category": "filters"
+    },
+    {
+      "slug": "sr-01",
+      "url": "https://omoikiri.ru/product/sr-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "sumi-100",
+      "url": "https://omoikiri.ru/product/sumi-100",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-100a",
+      "url": "https://omoikiri.ru/product/sumi-100a",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-65",
+      "url": "https://omoikiri.ru/product/sumi-65",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-65a",
+      "url": "https://omoikiri.ru/product/sumi-65a",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-78-lb",
+      "url": "https://omoikiri.ru/product/sumi-78-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-78a-lb",
+      "url": "https://omoikiri.ru/product/sumi-78a-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-79",
+      "url": "https://omoikiri.ru/product/sumi-79",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-79a",
+      "url": "https://omoikiri.ru/product/sumi-79a",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-83c",
+      "url": "https://omoikiri.ru/product/sumi-83c",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-86",
+      "url": "https://omoikiri.ru/product/sumi-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "sumi-86a",
+      "url": "https://omoikiri.ru/product/sumi-86a",
+      "category": "sinks"
+    },
+    {
+      "slug": "sw-01",
+      "url": "https://omoikiri.ru/product/sw-01",
+      "category": "acs"
+    },
+    {
+      "slug": "tadzava-22-u-i",
+      "url": "https://omoikiri.ru/product/tadzava-22-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-22-u-i-ultra-15",
+      "url": "https://omoikiri.ru/product/tadzava-22-u-i-ultra-15",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-38-u-i",
+      "url": "https://omoikiri.ru/product/tadzava-38-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-38-u-i-ultra-15",
+      "url": "https://omoikiri.ru/product/tadzava-38-u-i-ultra-15",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-39-u-i",
+      "url": "https://omoikiri.ru/product/tadzava-39-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-44-u-i-quadro",
+      "url": "https://omoikiri.ru/product/tadzava-44-u-i-quadro",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-44-u-i-ultra",
+      "url": "https://omoikiri.ru/product/tadzava-44-u-i-ultra",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-44-u-i-ultra-15",
+      "url": "https://omoikiri.ru/product/tadzava-44-u-i-ultra-15",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-49-u-i",
+      "url": "https://omoikiri.ru/product/tadzava-49-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-49-u-i-ultra-15",
+      "url": "https://omoikiri.ru/product/tadzava-49-u-i-ultra-15",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-54-u-i",
+      "url": "https://omoikiri.ru/product/tadzava-54-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-54-u-i-ultra",
+      "url": "https://omoikiri.ru/product/tadzava-54-u-i-ultra",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-54-u-i-ultra-15",
+      "url": "https://omoikiri.ru/product/tadzava-54-u-i-ultra-15",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-58-2-u-i-l",
+      "url": "https://omoikiri.ru/product/tadzava-58-2-u-i-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-58-2-u-i-r",
+      "url": "https://omoikiri.ru/product/tadzava-58-2-u-i-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-58-2-u-i-ultra-15-l",
+      "url": "https://omoikiri.ru/product/tadzava-58-2-u-i-ultra-15-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-58-2-u-i-ultra-15-r",
+      "url": "https://omoikiri.ru/product/tadzava-58-2-u-i-ultra-15-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-75-u-i",
+      "url": "https://omoikiri.ru/product/tadzava-75-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "tadzava-75-u-i-ultra-15",
+      "url": "https://omoikiri.ru/product/tadzava-75-u-i-ultra-15",
+      "category": "sinks"
+    },
+    {
+      "slug": "tahara-sb",
+      "url": "https://omoikiri.ru/product/tahara-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "takamatsu",
+      "url": "https://omoikiri.ru/product/takamatsu",
+      "category": "taps"
+    },
+    {
+      "slug": "takamatsu-s",
+      "url": "https://omoikiri.ru/product/takamatsu-s",
+      "category": "taps"
+    },
+    {
+      "slug": "takara-set",
+      "url": "https://omoikiri.ru/product/takara-set",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "taki-20-u-if",
+      "url": "https://omoikiri.ru/product/taki-20-u-if",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-38-u-if",
+      "url": "https://omoikiri.ru/product/taki-38-u-if",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-44-u-if",
+      "url": "https://omoikiri.ru/product/taki-44-u-if",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-49-u-if",
+      "url": "https://omoikiri.ru/product/taki-49-u-if",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-54-u-if",
+      "url": "https://omoikiri.ru/product/taki-54-u-if",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-54-u-if-l-side-sf",
+      "url": "https://omoikiri.ru/product/taki-54-u-if-l-side-sf",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-54-u-if-microdecor",
+      "url": "https://omoikiri.ru/product/taki-54-u-if-microdecor",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-54-u-if-nano",
+      "url": "https://omoikiri.ru/product/taki-54-u-if-nano",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-54-u-if-side-sf",
+      "url": "https://omoikiri.ru/product/taki-54-u-if-side-sf",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-58-2-u-if-l",
+      "url": "https://omoikiri.ru/product/taki-58-2-u-if-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-58-2-u-if-r",
+      "url": "https://omoikiri.ru/product/taki-58-2-u-if-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-69-2-u-if-side-l",
+      "url": "https://omoikiri.ru/product/taki-69-2-u-if-side-l",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-69-2-u-if-side-r",
+      "url": "https://omoikiri.ru/product/taki-69-2-u-if-side-r",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-74-u-if",
+      "url": "https://omoikiri.ru/product/taki-74-u-if",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-74-u-if-l-side",
+      "url": "https://omoikiri.ru/product/taki-74-u-if-l-side",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-74-u-if-microdecor",
+      "url": "https://omoikiri.ru/product/taki-74-u-if-microdecor",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-74-u-if-side",
+      "url": "https://omoikiri.ru/product/taki-74-u-if-side",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-85-2-lb-u-if-side",
+      "url": "https://omoikiri.ru/product/taki-85-2-lb-u-if-side",
+      "category": "sinks"
+    },
+    {
+      "slug": "taki-86-2-u-if",
+      "url": "https://omoikiri.ru/product/taki-86-2-u-if",
+      "category": "sinks"
+    },
+    {
+      "slug": "tanigawa",
+      "url": "https://omoikiri.ru/product/tanigawa",
+      "category": "taps"
+    },
+    {
+      "slug": "tanigawa-sb",
+      "url": "https://omoikiri.ru/product/tanigawa-sb",
+      "category": "taps"
+    },
+    {
+      "slug": "tara",
+      "url": "https://omoikiri.ru/product/tara",
+      "category": "taps"
+    },
+    {
+      "slug": "tarento-83",
+      "url": "https://omoikiri.ru/product/tarento-83",
+      "category": "sinks"
+    },
+    {
+      "slug": "tasogare-51",
+      "url": "https://omoikiri.ru/product/tasogare-51",
+      "category": "sinks"
+    },
+    {
+      "slug": "tasogare-65",
+      "url": "https://omoikiri.ru/product/tasogare-65",
+      "category": "sinks"
+    },
+    {
+      "slug": "tasogare-78",
+      "url": "https://omoikiri.ru/product/tasogare-78",
+      "category": "sinks"
+    },
+    {
+      "slug": "tasogare-86",
+      "url": "https://omoikiri.ru/product/tasogare-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "tateyama-s",
+      "url": "https://omoikiri.ru/product/tateyama-s",
+      "category": "taps"
+    },
+    {
+      "slug": "tedori-100",
+      "url": "https://omoikiri.ru/product/tedori-100",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-54-u",
+      "url": "https://omoikiri.ru/product/tedori-54-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-57",
+      "url": "https://omoikiri.ru/product/tedori-57",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-66-u",
+      "url": "https://omoikiri.ru/product/tedori-66-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-68",
+      "url": "https://omoikiri.ru/product/tedori-68",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-79",
+      "url": "https://omoikiri.ru/product/tedori-79",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-85-2-u",
+      "url": "https://omoikiri.ru/product/tedori-85-2-u",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-86-2",
+      "url": "https://omoikiri.ru/product/tedori-86-2",
+      "category": "sinks"
+    },
+    {
+      "slug": "tedori-86-2-lb",
+      "url": "https://omoikiri.ru/product/tedori-86-2-lb",
+      "category": "sinks"
+    },
+    {
+      "slug": "tokara-88-u-i",
+      "url": "https://omoikiri.ru/product/tokara-88-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "tokigawa",
+      "url": "https://omoikiri.ru/product/tokigawa",
+      "category": "taps"
+    },
+    {
+      "slug": "tonami",
+      "url": "https://omoikiri.ru/product/tonami",
+      "category": "taps"
+    },
+    {
+      "slug": "torishima-67-u-i",
+      "url": "https://omoikiri.ru/product/torishima-67-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "toshima",
+      "url": "https://omoikiri.ru/product/toshima",
+      "category": "taps"
+    },
+    {
+      "slug": "tottori",
+      "url": "https://omoikiri.ru/product/tottori",
+      "category": "taps"
+    },
+    {
+      "slug": "tovada-49",
+      "url": "https://omoikiri.ru/product/tovada-49",
+      "category": "sinks"
+    },
+    {
+      "slug": "tovada-51",
+      "url": "https://omoikiri.ru/product/tovada-51",
+      "category": "sinks"
+    },
+    {
+      "slug": "umi",
+      "url": "https://omoikiri.ru/product/umi",
+      "category": "taps"
+    },
+    {
+      "slug": "un-01",
+      "url": "https://omoikiri.ru/product/un-01",
+      "category": "omoikiri-home"
+    },
+    {
+      "slug": "v-complex-1",
+      "url": "https://omoikiri.ru/product/v-complex-1",
+      "category": "filters"
+    },
+    {
+      "slug": "wakayama",
+      "url": "https://omoikiri.ru/product/wakayama",
+      "category": "taps"
+    },
+    {
+      "slug": "wk-1",
+      "url": "https://omoikiri.ru/product/wk-1",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-5",
+      "url": "https://omoikiri.ru/product/wk-1-5",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-5-cl-r-a",
+      "url": "https://omoikiri.ru/product/wk-1-5-cl-r-a",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-5-s",
+      "url": "https://omoikiri.ru/product/wk-1-5-s",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-5-un",
+      "url": "https://omoikiri.ru/product/wk-1-5-un",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-a",
+      "url": "https://omoikiri.ru/product/wk-1-a",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-r",
+      "url": "https://omoikiri.ru/product/wk-1-r",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-r-a",
+      "url": "https://omoikiri.ru/product/wk-1-r-a",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-s",
+      "url": "https://omoikiri.ru/product/wk-1-s",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1-un",
+      "url": "https://omoikiri.ru/product/wk-1-un",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1c",
+      "url": "https://omoikiri.ru/product/wk-1c",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1cl-r",
+      "url": "https://omoikiri.ru/product/wk-1cl-r",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-1cl-r-a",
+      "url": "https://omoikiri.ru/product/wk-1cl-r-a",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-2-a",
+      "url": "https://omoikiri.ru/product/wk-2-a",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-2-r-a",
+      "url": "https://omoikiri.ru/product/wk-2-r-a",
+      "category": "acs"
+    },
+    {
+      "slug": "wk-2c",
+      "url": "https://omoikiri.ru/product/wk-2c",
+      "category": "acs"
+    },
+    {
+      "slug": "yamada",
+      "url": "https://omoikiri.ru/product/yamada",
+      "category": "taps"
+    },
+    {
+      "slug": "yamada-slim",
+      "url": "https://omoikiri.ru/product/yamada-slim",
+      "category": "taps"
+    },
+    {
+      "slug": "yamakawa-45-integra",
+      "url": "https://omoikiri.ru/product/yamakawa-45-integra",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-45-u-i",
+      "url": "https://omoikiri.ru/product/yamakawa-45-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-45t-integra",
+      "url": "https://omoikiri.ru/product/yamakawa-45t-integra",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-45t-u-i",
+      "url": "https://omoikiri.ru/product/yamakawa-45t-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-55-integra",
+      "url": "https://omoikiri.ru/product/yamakawa-55-integra",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-55-u-i",
+      "url": "https://omoikiri.ru/product/yamakawa-55-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-55t-integra",
+      "url": "https://omoikiri.ru/product/yamakawa-55t-integra",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-55t-u-i",
+      "url": "https://omoikiri.ru/product/yamakawa-55t-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-75-integra",
+      "url": "https://omoikiri.ru/product/yamakawa-75-integra",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-75-u-i",
+      "url": "https://omoikiri.ru/product/yamakawa-75-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-75t-integra",
+      "url": "https://omoikiri.ru/product/yamakawa-75t-integra",
+      "category": "sinks"
+    },
+    {
+      "slug": "yamakawa-75t-u-i",
+      "url": "https://omoikiri.ru/product/yamakawa-75t-u-i",
+      "category": "sinks"
+    },
+    {
+      "slug": "yasugata-100",
+      "url": "https://omoikiri.ru/product/yasugata-100",
+      "category": "sinks"
+    },
+    {
+      "slug": "yasugata-48r",
+      "url": "https://omoikiri.ru/product/yasugata-48r",
+      "category": "sinks"
+    },
+    {
+      "slug": "yasugata-86",
+      "url": "https://omoikiri.ru/product/yasugata-86",
+      "category": "sinks"
+    },
+    {
+      "slug": "yatomi",
+      "url": "https://omoikiri.ru/product/yatomi",
+      "category": "taps"
+    },
+    {
+      "slug": "yatomi-2-plus",
+      "url": "https://omoikiri.ru/product/yatomi-2-plus",
+      "category": "taps"
+    },
+    {
+      "slug": "yonaka-65",
+      "url": "https://omoikiri.ru/product/yonaka-65",
+      "category": "sinks"
+    },
+    {
+      "slug": "yonaka-78-lb",
+      "url": "https://omoikiri.ru/product/yonaka-78-lb",
+      "category": "sinks"
+    }
+  ]
+}
