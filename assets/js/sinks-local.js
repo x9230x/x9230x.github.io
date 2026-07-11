@@ -36,6 +36,7 @@
   let lastScrollY = window.scrollY || 0;
   let productImageUpdateToken = 0;
   const productDetailsCache = new Map();
+  const productImageProbeCache = new Map();
   const productKeys = new Set();
   const colorNames = {
     az: 'азур',
@@ -1537,6 +1538,59 @@
     }
   }
 
+  function colorCodeForImageName(colorCode) {
+    return String(colorCode || '').split('-').map((part, index) => index === 0 ? part.toUpperCase() : part).join('-');
+  }
+
+  function localColorImageCandidate(product, colorCode) {
+    const image = rememberDefaultImage(product);
+    const source = product.dataset.dealerDefaultImage || image?.getAttribute('src') || image?.src || '';
+    const imageColor = colorCodeForImageName(colorCode);
+
+    if (!source || !imageColor) return '';
+
+    try {
+      const url = new URL(source, window.location.href);
+      const pathname = url.pathname;
+      const nextPath = pathname.replace(/([_-])([a-z]{1,3}(?:-[a-z]+)?)(-\d+x\d+\.(?:png|jpe?g|webp))$/i, '$1' + imageColor + '$3');
+
+      if (nextPath === pathname) return '';
+
+      url.pathname = nextPath;
+      return url.href;
+    } catch (error) {
+      return source.replace(/([_-])([a-z]{1,3}(?:-[a-z]+)?)(-\d+x\d+\.(?:png|jpe?g|webp))$/i, '$1' + imageColor + '$3');
+    }
+  }
+
+  function imageCanLoad(src) {
+    if (!src) return Promise.resolve(false);
+    if (productImageProbeCache.has(src)) return productImageProbeCache.get(src);
+
+    const promise = new Promise((resolve) => {
+      const image = new Image();
+      const finish = (result) => {
+        image.onload = null;
+        image.onerror = null;
+        resolve(result);
+      };
+
+      const timer = window.setTimeout(() => finish(false), 2500);
+      image.onload = () => {
+        window.clearTimeout(timer);
+        finish(true);
+      };
+      image.onerror = () => {
+        window.clearTimeout(timer);
+        finish(false);
+      };
+      image.src = src;
+    });
+
+    productImageProbeCache.set(src, promise);
+    return promise;
+  }
+
   async function updateProductImagesForSelectedColor(filters) {
     const colorCode = filters.pa_color?.[0] || '';
     const token = ++productImageUpdateToken;
@@ -1558,6 +1612,12 @@
       setHrefColor(product, colorCode);
       const link = product.querySelector('.woocommerce-loop-product__link');
       if (!link?.href) continue;
+
+      const localImage = localColorImageCandidate(product, colorCode);
+      if (localImage && await imageCanLoad(localImage)) {
+        if (token !== productImageUpdateToken) return;
+        setProductCardImage(product, localImage);
+      }
 
       const details = await fetchProductDetails(link.href, colorCode);
       if (token !== productImageUpdateToken) return;
