@@ -1,4 +1,6 @@
 (function () {
+  window.DEALER_LOCAL_CATALOG = true;
+
   const FAVORITES_KEY = 'omoikiri:favorites';
   const DISCONTINUED_SKUS = new Set([
     '4993469', '4993459', '4993487', '4993744', '4993291',
@@ -304,6 +306,18 @@
         border-bottom: 0 !important;
         box-shadow: none !important;
         overflow: visible !important;
+      }
+
+      .dealer-static-catalog.dealer-filter-compact > .menu {
+        position: fixed !important;
+        top: var(--dealer-nav-height, 67px) !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 991 !important;
+        background: #fff !important;
+        border-bottom: 1px solid #d8d8d8 !important;
+        box-shadow: none !important;
+        transform: translateZ(0);
       }
 
       .dealer-static-catalog.dealer-filter-compact .hidden_filter {
@@ -960,15 +974,13 @@
     const topNav = document.querySelector('.top_nav');
     const menu = document.querySelector('body > .menu');
     const topNavRect = topNav?.getBoundingClientRect();
-    const menuRect = menu?.getBoundingClientRect();
     const topNavHeight = topNavRect?.height || 67;
-    const menuVisible = menu
-      && getComputedStyle(menu).display !== 'none'
-      && menuRect
-      && menuRect.height > 0
-      && menuRect.bottom > 0;
-    const filterTop = compact ? Math.round(topNavHeight + (menuVisible ? menuRect.height : 0)) + 'px' : '0px';
+    const menuVisible = menu && getComputedStyle(menu).display !== 'none';
+    const menuHeight = menuVisible ? (menu.offsetHeight || 45) : 0;
+    const filterTop = compact ? Math.round(topNavHeight + menuHeight) + 'px' : '0px';
 
+    document.documentElement.style.setProperty('--dealer-nav-height', Math.round(topNavHeight) + 'px');
+    document.documentElement.style.setProperty('--dealer-menu-height', Math.round(menuHeight) + 'px');
     document.documentElement.style.setProperty('--dealer-filter-top', filterTop);
     document.body.classList.toggle('dealer-filter-compact', compact);
     lastScrollY = currentScrollY;
