@@ -381,15 +381,31 @@
     @media print {
       @page {
         size: A4;
-        margin: 22mm 18mm;
+        margin: 18mm 16mm;
+      }
+
+      * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
       }
 
       body {
         background: #fff !important;
         color: #000 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
       }
 
       .site-header,
+      .head-main,
+      .site-nav,
+      .favorites-link,
+      .search-icon,
+      .dealer-local-cart-tab,
+      .cart-link,
+      .cart-icon,
+      [href*="cart"],
       .clear-row,
       .export,
       .remove-from-favorites,
@@ -407,8 +423,9 @@
 
       .print-logo {
         display: block !important;
-        width: 184px;
-        margin: 0 auto 34px;
+        width: 190px;
+        height: auto;
+        margin: 0 auto 30px;
       }
 
       h1 {
@@ -419,34 +436,88 @@
         width: 100%;
         border-collapse: collapse;
         border-spacing: 0;
-      }
-
-      .favorites-products th,
-      .favorites-products td {
-        height: auto;
-        border: 1px solid #111;
-        padding: 8px 10px;
-        color: #000 !important;
-        font-size: 12px;
-        text-align: center;
+        table-layout: fixed;
+        margin: 0;
+        border: 1.5px solid #000;
+        page-break-inside: auto;
       }
 
       .favorites-products thead {
+        display: table-header-group !important;
         background: #fff !important;
         color: #000 !important;
       }
 
+      .favorites-products tbody {
+        display: table-row-group !important;
+      }
+
+      .favorites-products tr {
+        display: table-row !important;
+        background: #fff !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .favorites-products th,
+      .favorites-products td {
+        display: table-cell !important;
+        height: auto;
+        border: 1.5px solid #000;
+        padding: 9px 10px;
+        color: #000 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 14px;
+        line-height: 1.25;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .favorites-products th {
+        font-weight: 400;
+        text-transform: lowercase;
+      }
+
+      .favorites-products th:nth-child(1),
+      .favorites-products td:nth-child(1) {
+        width: 21%;
+      }
+
+      .favorites-products th:nth-child(2),
+      .favorites-products td:nth-child(2) {
+        width: 44%;
+      }
+
+      .favorites-products th:nth-child(3),
+      .favorites-products td:nth-child(3) {
+        width: 16%;
+      }
+
+      .favorites-products th:nth-child(4),
+      .favorites-products td:nth-child(4) {
+        width: 19%;
+      }
+
+      .favorites-products td:nth-child(2) a {
+        border-bottom: 0 !important;
+        text-decoration: none !important;
+      }
+
       .favorites-products td:first-child img {
-        width: 70px;
-        height: 56px;
+        display: block !important;
+        width: 86px;
+        height: 70px;
+        margin: 0 auto;
+        object-fit: contain;
       }
 
       .print-total {
         display: block !important;
         margin-top: 24px;
         text-align: right;
-        font-family: "GothamProBold", Arial, sans-serif;
-        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 16px;
+        font-weight: 700;
       }
     }
 
