@@ -1286,9 +1286,13 @@
     const materialFallback = [...product.classList]
       .filter((className) => className.indexOf('product_cat-') === 0 && className !== 'product_cat-sinks')
       .map((className) => className.replace('product_cat-', ''));
+    const categoryFallback = [...product.classList]
+      .filter((className) => className.indexOf('product_cat-') === 0)
+      .map((className) => className.replace('product_cat-', ''));
     const colorFallback = hrefParam(product, 'attribute_pa_color');
     const title = normalizeTitle(product);
 
+    product.dataset.filterProductCats = categoryFallback.join(',');
     product.dataset.filterMaterials = (meta.materials || materialFallback).join(',');
     product.dataset.filterColors = (meta.colors || [colorFallback]).filter(Boolean).join(',');
     product.dataset.filterBowlSizes = (meta.bowlSizes || []).join(',');
@@ -1363,6 +1367,10 @@
 
     const title = normalizeTitle(product);
 
+    if (filter === 'product_cat') {
+      return values.some((value) => classMatches(product, 'product_cat-' + value));
+    }
+
     if (filter === 'pa_material') {
       const materials = listFromDataset(product, 'filterMaterials');
       return values.some((value) => materials.includes(value) || classMatches(product, 'product_cat-' + value));
@@ -1417,7 +1425,8 @@
       pa_color: 'filterColors',
       pa_bowl_size: 'filterBowlSizes',
       pa_asmbl: 'filterAsmbl',
-      pa_sink_shape: 'filterShapes'
+      pa_sink_shape: 'filterShapes',
+      product_cat: 'filterProductCats'
     }[filter] || '';
   }
 
