@@ -1376,7 +1376,7 @@
 
       catalogMetaPromise = Promise.all([
         loadMeta('assets/data/sinks-meta.json?v=20260711-13'),
-        loadMeta('assets/data/taps-meta.json?v=20260711-02')
+        loadMeta('assets/data/taps-meta.json?v=20260711-03')
       ])
         .then(([sinksMeta, tapsMeta]) => {
           catalogMeta = { ...(sinksMeta || {}), ...(tapsMeta || {}) };
@@ -1923,7 +1923,7 @@
     if (!message) {
       message = document.createElement('div');
       message.className = 'dealer-local-empty';
-      message.textContent = 'РџРѕ РІС‹Р±СЂР°РЅРЅС‹Рј С„РёР»СЊС‚СЂР°Рј С‚РѕРІР°СЂС‹ РЅРµ РЅР°Р№РґРµРЅС‹';
+      message.textContent = 'По выбранным фильтрам товары не найдены';
       products.after(message);
     }
 
@@ -1980,13 +1980,6 @@
         event.preventDefault();
         event.stopImmediatePropagation();
         input.checked = !input.checked;
-
-        const filter = label.closest('.prdctfltr_filter');
-        if (filter?.classList.contains('prdctfltr_single') && input.checked) {
-          filter.querySelectorAll('input[type="checkbox"]').forEach((otherInput) => {
-            if (otherInput !== input) otherInput.checked = false;
-          });
-        }
 
         document.querySelectorAll('.xwc--pf-loader-overlay, .prdctfltr_loader').forEach((node) => node.remove());
         await ensureAllLocalProductsLoaded();
@@ -2064,12 +2057,6 @@
         const input = event.target.closest('input[type="checkbox"]');
         if (!input) return;
 
-        if (filter.classList.contains('prdctfltr_single') && input.checked) {
-          filter.querySelectorAll('input[type="checkbox"]').forEach((otherInput) => {
-            if (otherInput !== input) otherInput.checked = false;
-          });
-        }
-
         await ensureAllLocalProductsLoaded();
         await ensureCatalogMetaLoaded();
         applyFilters();
@@ -2082,7 +2069,7 @@
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'dealer-local-clear-filters';
-      button.textContent = 'РѕС‡РёСЃС‚РёС‚СЊ С„РёР»СЊС‚СЂС‹';
+      button.textContent = 'очистить фильтры';
       button.addEventListener('click', async () => {
         document.querySelectorAll('.prdctfltr_filter input[type="checkbox"]').forEach((input) => {
           input.checked = false;
