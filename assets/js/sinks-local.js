@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   window.DEALER_LOCAL_CATALOG = true;
 
   const FAVORITES_KEY = 'omoikiri:favorites';
@@ -39,33 +39,33 @@
   const productImageProbeCache = new Map();
   const productKeys = new Set();
   const colorNames = {
-    az: 'азур',
-    be: 'бежевый',
-    bl: 'черный',
-    cc: 'кофе',
-    ch: 'шоколад',
-    cn: 'карбон',
-    dc: 'темный шоколад',
-    es: 'эверест',
-    ev: 'эверест',
-    gb: 'графит',
-    gm: 'вороненая сталь',
-    gr: 'серый',
-    ib: 'индиго',
-    in: 'нержавеющая сталь',
-    lg: 'светлое золото',
-    mo: 'мокка',
-    ol: 'олива',
-    pa: 'пастила',
-    pe: 'жемчуг',
-    pl: 'платина',
-    rg: 'розовое золото',
-    sa: 'сахара',
-    sb: 'серо-бежевый',
-    sl: 'серебристый',
-    wh: 'белый',
-    wg: 'белое золото',
-    wd: 'дерево'
+    az: 'Р°Р·СѓСЂ',
+    be: 'Р±РµР¶РµРІС‹Р№',
+    bl: 'С‡РµСЂРЅС‹Р№',
+    cc: 'РєРѕС„Рµ',
+    ch: 'С€РѕРєРѕР»Р°Рґ',
+    cn: 'РєР°СЂР±РѕРЅ',
+    dc: 'С‚РµРјРЅС‹Р№ С€РѕРєРѕР»Р°Рґ',
+    es: 'СЌРІРµСЂРµСЃС‚',
+    ev: 'СЌРІРµСЂРµСЃС‚',
+    gb: 'РіСЂР°С„РёС‚',
+    gm: 'РІРѕСЂРѕРЅРµРЅР°СЏ СЃС‚Р°Р»СЊ',
+    gr: 'СЃРµСЂС‹Р№',
+    ib: 'РёРЅРґРёРіРѕ',
+    in: 'РЅРµСЂР¶Р°РІРµСЋС‰Р°СЏ СЃС‚Р°Р»СЊ',
+    lg: 'СЃРІРµС‚Р»РѕРµ Р·РѕР»РѕС‚Рѕ',
+    mo: 'РјРѕРєРєР°',
+    ol: 'РѕР»РёРІР°',
+    pa: 'РїР°СЃС‚РёР»Р°',
+    pe: 'Р¶РµРјС‡СѓРі',
+    pl: 'РїР»Р°С‚РёРЅР°',
+    rg: 'СЂРѕР·РѕРІРѕРµ Р·РѕР»РѕС‚Рѕ',
+    sa: 'СЃР°С…Р°СЂР°',
+    sb: 'СЃРµСЂРѕ-Р±РµР¶РµРІС‹Р№',
+    sl: 'СЃРµСЂРµР±СЂРёСЃС‚С‹Р№',
+    wh: 'Р±РµР»С‹Р№',
+    wg: 'Р±РµР»РѕРµ Р·РѕР»РѕС‚Рѕ',
+    wd: 'РґРµСЂРµРІРѕ'
   };
 
   window.paginationUrls = {};
@@ -663,7 +663,7 @@
       .map((node) => node.textContent.trim().replace(/\s+/g, ' '))
       .filter(Boolean);
 
-    if (amounts.length > 1) return amounts.join(' – ');
+    if (amounts.length > 1) return amounts.join(' вЂ“ ');
     if (amounts.length) return amounts[0];
 
     const clone = price.cloneNode(true);
@@ -722,7 +722,7 @@
     }
 
     if (!details.sku) {
-      const visibleSku = doc.querySelector('.sku')?.textContent.replace(/^арт\.\s*/i, '').trim();
+      const visibleSku = doc.querySelector('.sku')?.textContent.replace(/^Р°СЂС‚\.\s*/i, '').trim();
       if (visibleSku && /^\d{6,}$/.test(visibleSku) && !DISCONTINUED_SKUS.has(visibleSku)) details.sku = visibleSku;
     }
 
@@ -797,8 +797,8 @@
 
   function setFavoriteButtonState(button, active) {
     button.classList.toggle('dealer-favorite-active', active);
-    button.setAttribute('aria-label', active ? 'Убрать из избранного' : 'Добавить в избранное');
-    button.title = active ? 'Убрать из избранного' : 'Добавить в избранное';
+    button.setAttribute('aria-label', active ? 'РЈР±СЂР°С‚СЊ РёР· РёР·Р±СЂР°РЅРЅРѕРіРѕ' : 'Р”РѕР±Р°РІРёС‚СЊ РІ РёР·Р±СЂР°РЅРЅРѕРµ');
+    button.title = active ? 'РЈР±СЂР°С‚СЊ РёР· РёР·Р±СЂР°РЅРЅРѕРіРѕ' : 'Р”РѕР±Р°РІРёС‚СЊ РІ РёР·Р±СЂР°РЅРЅРѕРµ';
     button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 5.6c-1.5-1.9-4.4-2-6-.4L12 7.7 9.5 5.2c-1.6-1.6-4.5-1.5-6 .4-1.6 2-1.2 4.9.8 6.9l7.1 7.1c.3.3.8.3 1.1 0l7.1-7.1c2-2 2.4-4.9.9-6.9Z"/></svg>';
   }
 
@@ -1186,7 +1186,7 @@
   }
 
   function favoriteKey(slug, value) {
-    return (slug || 'product') + '-' + String(value || 'default').toLowerCase().replace(/[^a-z0-9а-яё-]+/gi, '-');
+    return (slug || 'product') + '-' + String(value || 'default').toLowerCase().replace(/[^a-z0-9Р°-СЏС‘-]+/gi, '-');
   }
 
   function listFromDataset(product, key) {
@@ -1301,6 +1301,11 @@
     product.dataset.filterMaterials = (meta.materials || materialFallback).join(',');
     product.dataset.filterColors = (meta.colors || [colorFallback]).filter(Boolean).join(',');
     product.dataset.filterBowlSizes = (meta.bowlSizes || []).join(',');
+    product.dataset.filterTapFilter = (meta.filter || []).join(',');
+    product.dataset.filterTapHose = (meta.hose || []).join(',');
+    product.dataset.filterTapFlexhose = (meta.flexhose || []).join(',');
+    product.dataset.filterTapButton = (meta.button || []).join(',');
+    product.dataset.filterTapWindow = (meta.window || []).join(',');
     const asmbl = new Set(meta.asmbl || []);
     const slug = productSlug(product);
     if ((slug.indexOf('omi-') === 0 && title.indexOf('ultra') !== -1)
@@ -1341,10 +1346,16 @@
     }
 
     if (!catalogMetaPromise) {
-      catalogMetaPromise = fetch(root + 'assets/data/sinks-meta.json?v=20260711-13')
+      const loadMeta = (file) => fetch(root + file)
         .then((response) => response.ok ? response.json() : {})
-        .then((data) => {
-          catalogMeta = data || {};
+        .catch(() => ({}));
+
+      catalogMetaPromise = Promise.all([
+        loadMeta('assets/data/sinks-meta.json?v=20260711-13'),
+        loadMeta('assets/data/taps-meta.json?v=20260711-02')
+      ])
+        .then(([sinksMeta, tapsMeta]) => {
+          catalogMeta = { ...(sinksMeta || {}), ...(tapsMeta || {}) };
           hydrateCatalogMeta();
         })
         .catch((error) => {
@@ -1412,6 +1423,31 @@
       return values.some((value) => shapes.includes(value));
     }
 
+    if (filter === 'pa_filter') {
+      const tapFilter = listFromDataset(product, 'filterTapFilter');
+      return values.some((value) => tapFilter.includes(value));
+    }
+
+    if (filter === 'pa_hose') {
+      const tapHose = listFromDataset(product, 'filterTapHose');
+      return values.some((value) => tapHose.includes(value));
+    }
+
+    if (filter === 'pa_flexhose') {
+      const tapFlexhose = listFromDataset(product, 'filterTapFlexhose');
+      return values.some((value) => tapFlexhose.includes(value));
+    }
+
+    if (filter === 'pa_button') {
+      const tapButton = listFromDataset(product, 'filterTapButton');
+      return values.some((value) => tapButton.includes(value));
+    }
+
+    if (filter === 'pa_window') {
+      const tapWindow = listFromDataset(product, 'filterTapWindow');
+      return values.some((value) => tapWindow.includes(value));
+    }
+
     return true;
   }
 
@@ -1431,6 +1467,11 @@
       pa_bowl_size: 'filterBowlSizes',
       pa_asmbl: 'filterAsmbl',
       pa_sink_shape: 'filterShapes',
+      pa_filter: 'filterTapFilter',
+      pa_hose: 'filterTapHose',
+      pa_flexhose: 'filterTapFlexhose',
+      pa_button: 'filterTapButton',
+      pa_window: 'filterTapWindow',
       product_cat: 'filterProductCats'
     }[filter] || '';
   }
@@ -1852,7 +1893,7 @@
     if (!message) {
       message = document.createElement('div');
       message.className = 'dealer-local-empty';
-      message.textContent = 'По выбранным фильтрам товары не найдены';
+      message.textContent = 'РџРѕ РІС‹Р±СЂР°РЅРЅС‹Рј С„РёР»СЊС‚СЂР°Рј С‚РѕРІР°СЂС‹ РЅРµ РЅР°Р№РґРµРЅС‹';
       products.after(message);
     }
 
@@ -2011,7 +2052,7 @@
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'dealer-local-clear-filters';
-      button.textContent = 'очистить фильтры';
+      button.textContent = 'РѕС‡РёСЃС‚РёС‚СЊ С„РёР»СЊС‚СЂС‹';
       button.addEventListener('click', async () => {
         document.querySelectorAll('.prdctfltr_filter input[type="checkbox"]').forEach((input) => {
           input.checked = false;
@@ -2033,8 +2074,8 @@
     link.href = root + 'cart.html';
     link.target = '_blank';
     link.rel = 'noopener';
-    link.setAttribute('aria-label', 'Корзина');
-    link.title = 'Корзина';
+    link.setAttribute('aria-label', 'РљРѕСЂР·РёРЅР°');
+    link.title = 'РљРѕСЂР·РёРЅР°';
     link.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 5h2.1l1.8 10.2a2 2 0 0 0 2 1.65h7.35a2 2 0 0 0 1.94-1.5L20.2 8H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20.15h.01M17 20.15h.01" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/></svg>';
     document.body.appendChild(link);
   }

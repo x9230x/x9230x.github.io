@@ -1,0 +1,1297 @@
+{
+  "akashi-s": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "wh",
+      "bl",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "akeno": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn",
+      "gm",
+      "gb",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "akita": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gb",
+      "bn"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "akita-s": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "az",
+      "ib",
+      "rg",
+      "sl",
+      "to",
+      "gb",
+      "bn",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "amagasaki": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "si",
+      "ab-022",
+      "gb",
+      "g",
+      "ev"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "arita-sb": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "gb"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "asakawa-s": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "gm",
+      "lg",
+      "bn",
+      "gb",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "hotaru": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gm-b",
+      "ch-be",
+      "gm-r",
+      "gm-wh",
+      "gb",
+      "gb-ib",
+      "bn-wh",
+      "c-wh"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "kado": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gr",
+      "bn",
+      "pa",
+      "pl",
+      "c",
+      "ev"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "kanto": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "az",
+      "ib",
+      "rg",
+      "sl",
+      "to",
+      "gm",
+      "gb",
+      "bn",
+      "lg",
+      "c",
+      "gm-bl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "kanto-2-plus-sb": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gb",
+      "bn",
+      "gm",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "karatsu-s": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "c",
+      "gm",
+      "bn",
+      "gb",
+      "lg"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "koriyama": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "koriyama-sb": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "bn"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "kyoto": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "si",
+      "ab-022",
+      "g"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "kyoto-2-plus": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "si",
+      "g"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "makkari-2-plus-sb": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gm",
+      "bn",
+      "lg",
+      "c",
+      "gb"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "mikawa-2-plus-sb": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "gm",
+      "gb",
+      "bn",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "miyako": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gm",
+      "lg",
+      "gb",
+      "bn"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "mori": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nagano": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "az",
+      "ib",
+      "rg-lg",
+      "sl",
+      "to",
+      "gm",
+      "gb",
+      "bn",
+      "lg",
+      "c",
+      "gr",
+      "sa",
+      "be",
+      "pa",
+      "bl",
+      "es",
+      "wh",
+      "pl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nagano-pure-drop-lite": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn",
+      "c",
+      "gb",
+      "gm",
+      "lg",
+      "gr",
+      "sa",
+      "be",
+      "ca",
+      "pa",
+      "bl",
+      "es",
+      "wh",
+      "pl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nakagawa": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gb",
+      "gr",
+      "bn",
+      "sa",
+      "lg",
+      "be",
+      "c",
+      "pa",
+      "bl",
+      "es",
+      "wh",
+      "pl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nakagawa-2-plus": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "az",
+      "ib",
+      "gr",
+      "rg",
+      "sl",
+      "to",
+      "sa",
+      "wh",
+      "be",
+      "gb",
+      "ca",
+      "bn",
+      "pa",
+      "lg",
+      "c",
+      "bl",
+      "es"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nara": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gb",
+      "bn",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nara-2-plus": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gb",
+      "bn",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nara-2-plus-s": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "gb",
+      "bn",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "nara-s": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "gb",
+      "bn",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "okawa-2-plus": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn",
+      "gb",
+      "lg",
+      "gm"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "okinawa-2": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "si",
+      "g"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "osaka": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn-wh",
+      "bn-bl",
+      "c-wh",
+      "c-bl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "shinagawa": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn-bl",
+      "gr",
+      "gb",
+      "sa",
+      "bn",
+      "be",
+      "lg",
+      "pa",
+      "c",
+      "bl",
+      "es",
+      "wh",
+      "pl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "shinagawa-2-plus": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "es",
+      "gr",
+      "sa",
+      "wh",
+      "be",
+      "gb",
+      "ca",
+      "bn",
+      "pa",
+      "lg",
+      "c",
+      "bl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "shinagawa-sb": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "bn",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "shinagawa-slim": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bl",
+      "gb",
+      "es",
+      "gm",
+      "bn",
+      "lg"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "sinto-2-plus": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gm",
+      "bn",
+      "lg",
+      "c",
+      "gb"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tahara-sb": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "lg",
+      "gb",
+      "bn"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "takamatsu": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn",
+      "lg"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "takamatsu-s": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "gm",
+      "az",
+      "gr",
+      "wh",
+      "gb",
+      "bn",
+      "lg",
+      "bl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tanigawa": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tanigawa-sb": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "bn",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tara": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gm",
+      "lg-gm"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tateyama-s": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "yes"
+    ],
+    "colors": [
+      "gb",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tokigawa": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "g",
+      "ab-022",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tonami": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gr",
+      "sa",
+      "be",
+      "gb",
+      "ca",
+      "bn",
+      "pa",
+      "pl",
+      "c",
+      "wh",
+      "bl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "toshima": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "si",
+      "ab-022"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "tottori": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "ab-022"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "umi": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gr",
+      "ab-022",
+      "be",
+      "ca",
+      "bn",
+      "pa",
+      "dc",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "wakayama": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gm",
+      "bn",
+      "lg",
+      "c"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "yamada": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "ab-022",
+      "gb",
+      "bn",
+      "lg",
+      "c",
+      "gr",
+      "sa",
+      "be",
+      "pa",
+      "bl",
+      "es",
+      "wh",
+      "pl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "yamada-slim": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "es",
+      "c",
+      "gm",
+      "bn",
+      "lg"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "yatomi": {
+    "filter": [
+      "no"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "bn-gr",
+      "bn-wh",
+      "bn-r",
+      "bn-bl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  },
+  "yatomi-2-plus": {
+    "filter": [
+      "yes"
+    ],
+    "hose": [
+      "no"
+    ],
+    "colors": [
+      "gb",
+      "bn-wh",
+      "bn-bl"
+    ],
+    "flexhose": [
+      "yes"
+    ],
+    "button": [
+      "no"
+    ],
+    "window": [
+      "no"
+    ]
+  }
+}
