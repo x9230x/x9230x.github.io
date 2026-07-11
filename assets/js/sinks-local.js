@@ -1330,6 +1330,7 @@
     product.dataset.filterTapFlexhose = (meta.flexhose || []).join(',');
     product.dataset.filterTapButton = (meta.button || []).join(',');
     product.dataset.filterTapWindow = (meta.window || []).join(',');
+    product.dataset.filterDispenserFunctions = (meta.functions || []).join(',');
     const asmbl = new Set(meta.asmbl || []);
     const slug = productSlug(product);
     if ((slug.indexOf('omi-') === 0 && title.indexOf('ultra') !== -1)
@@ -1376,10 +1377,11 @@
 
       catalogMetaPromise = Promise.all([
         loadMeta('assets/data/sinks-meta.json?v=20260711-13'),
-        loadMeta('assets/data/taps-meta.json?v=20260711-03')
+        loadMeta('assets/data/taps-meta.json?v=20260711-03'),
+        loadMeta('assets/data/catalog-extra-meta.json?v=20260711-01')
       ])
-        .then(([sinksMeta, tapsMeta]) => {
-          catalogMeta = { ...(sinksMeta || {}), ...(tapsMeta || {}) };
+        .then(([sinksMeta, tapsMeta, extraMeta]) => {
+          catalogMeta = { ...(sinksMeta || {}), ...(tapsMeta || {}), ...(extraMeta || {}) };
           hydrateCatalogMeta();
         })
         .catch((error) => {
@@ -1472,6 +1474,11 @@
       return boolValuesMatch(tapWindow, values);
     }
 
+    if (filter === 'pa_function') {
+      const functions = listFromDataset(product, 'filterDispenserFunctions');
+      return values.some((value) => functions.includes(value));
+    }
+
     return true;
   }
 
@@ -1496,6 +1503,7 @@
       pa_flexhose: 'filterTapFlexhose',
       pa_button: 'filterTapButton',
       pa_window: 'filterTapWindow',
+      pa_function: 'filterDispenserFunctions',
       product_cat: 'filterProductCats'
     }[filter] || '';
   }
@@ -1515,7 +1523,7 @@
 
     const values = new Set();
     products.forEach((product) => {
-      if (!productMatchesFilterSet(product, filters, priceRange, '')) return;
+      if (!productMatchesFilterSet(product, filters, priceRange, filter)) return;
       listFromDataset(product, datasetKey).forEach((value) => {
         if (['pa_filter', 'pa_hose', 'pa_flexhose', 'pa_button', 'pa_window'].includes(filter)) {
           addBoolFilterAliases(values, value);

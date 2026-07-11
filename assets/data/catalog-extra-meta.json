@@ -1,0 +1,815 @@
+{
+  "om-01": {
+    "colors": [
+      "ab-022",
+      "be",
+      "ca",
+      "gr",
+      "pa",
+      "sa"
+    ],
+    "functions": [
+      "vstraivaemyj"
+    ]
+  },
+  "om-02": {
+    "colors": [
+      "az",
+      "be",
+      "bl",
+      "bn",
+      "es",
+      "gm",
+      "gr",
+      "ib",
+      "lg",
+      "pa",
+      "sa"
+    ],
+    "functions": [
+      "vstraivaemyj"
+    ]
+  },
+  "om-03": {
+    "colors": [
+      "bl",
+      "gm",
+      "gr",
+      "lg"
+    ],
+    "functions": [
+      "vstraivaemyj"
+    ]
+  },
+  "om-04": {
+    "colors": [
+      "bn",
+      "gm",
+      "lg"
+    ],
+    "functions": [
+      "vstraivaemyj"
+    ]
+  },
+  "om-05": {
+    "colors": [
+      "gb",
+      "gm",
+      "lg"
+    ],
+    "functions": [
+      "vstraivaemyj"
+    ]
+  },
+  "om-06": {
+    "colors": [
+      "gb",
+      "lg"
+    ],
+    "functions": [
+      "otdelno-stoyashhij"
+    ]
+  },
+  "om-07": {
+    "colors": [
+      "bn",
+      "lg"
+    ],
+    "functions": [
+      "nastennyj",
+      "otdelno-stoyashhij"
+    ]
+  },
+  "om-08": {
+    "colors": [
+      "gm",
+      "lg"
+    ],
+    "functions": [
+      "vstraivaemyj"
+    ]
+  },
+  "om-09-sensor": {
+    "colors": [
+      "gm",
+      "lg"
+    ],
+    "functions": [
+      "sensornyj",
+      "vstraivaemyj"
+    ]
+  },
+  "om-10": {
+    "colors": [
+      "gm",
+      "lg"
+    ],
+    "functions": [
+      "vstraivaemyj"
+    ]
+  },
+  "cb-01-wood": {
+    "colors": [
+      "wod"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-03-wood-s": {
+    "colors": [
+      "wod"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-04-wood-l": {
+    "colors": [
+      "wod"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-05-wood-m": {
+    "colors": [
+      "wod"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-basic-370": {
+    "colors": [
+      "gb",
+      "wd"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-basic-380": {
+    "colors": [
+      "gb",
+      "wd"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-basic-400": {
+    "colors": [
+      "gb",
+      "wd"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-kitagawa-86-lb": {
+    "colors": [
+      "gb",
+      "wd"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-maru-86": {
+    "colors": [
+      "wd"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-prime-400": {
+    "colors": [
+      "gb"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-sintesi-l": {
+    "colors": [
+      "gb"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-sintesi-m": {
+    "colors": [
+      "gb",
+      "wood"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-sintesi-s": {
+    "colors": [
+      "gb",
+      "wood"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-sumi": {
+    "colors": [
+      "grey"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-tarento-83": {
+    "colors": [
+      "wd"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "cb-yamakawa": {
+    "colors": [
+      "gb",
+      "wd"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "co-02": {
+    "colors": [
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "colanders"
+    ]
+  },
+  "co-04": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "colanders"
+    ]
+  },
+  "co-05": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "colanders"
+    ]
+  },
+  "co-06": {
+    "colors": [
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "colanders"
+    ]
+  },
+  "co-07-pro": {
+    "colors": [
+      "gb"
+    ],
+    "productCats": [
+      "colanders",
+      "drypro"
+    ]
+  },
+  "d-01": {
+    "colors": [
+      "ab-022"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "dc-01-1": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "kontejnery"
+    ]
+  },
+  "dc-02-2": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "kontejnery"
+    ]
+  },
+  "dc-02-3": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "kontejnery"
+    ]
+  },
+  "dc-03-1": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "kontejnery"
+    ]
+  },
+  "dc-04-2": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "kontejnery"
+    ]
+  },
+  "dc-04-3": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "kontejnery"
+    ]
+  },
+  "dc-05-1": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "kontejnery"
+    ]
+  },
+  "dec": {
+    "colors": [
+      "ab-012",
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "dec-02": {
+    "colors": [
+      "bl",
+      "wh"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "dry-01": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "vstraivaemaya-sushka-dlya-posudy"
+    ]
+  },
+  "dry-02": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "vstraivaemaya-sushka-dlya-posudy"
+    ]
+  },
+  "dry-03-pro": {
+    "colors": [
+      "az",
+      "cn",
+      "do",
+      "gb",
+      "wh"
+    ],
+    "productCats": [
+      "vstraivaemaya-sushka-dlya-posudy"
+    ]
+  },
+  "dry-04": {
+    "colors": [
+      "gb",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "vstraivaemaya-sushka-dlya-posudy"
+    ]
+  },
+  "fg-02": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "dry"
+    ]
+  },
+  "fk-01": {
+    "colors": [
+      "gb",
+      "wod"
+    ],
+    "productCats": [
+      "dry"
+    ]
+  },
+  "fp-04": {
+    "colors": [
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "dry"
+    ]
+  },
+  "fp-05": {
+    "colors": [
+      "gb"
+    ],
+    "productCats": [
+      "cutboard"
+    ]
+  },
+  "fp-07-pro": {
+    "colors": [
+      "gb"
+    ],
+    "productCats": [
+      "cutboard",
+      "drypro"
+    ]
+  },
+  "fp-08-pro": {
+    "colors": [
+      "gb"
+    ],
+    "productCats": [
+      "drypro"
+    ]
+  },
+  "ft-01": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "dry"
+    ]
+  },
+  "na-01": {
+    "colors": [
+      "grey"
+    ],
+    "productCats": [
+      "fordisp"
+    ]
+  },
+  "na-02": {
+    "colors": [
+      "ab-022",
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "fordisp"
+    ]
+  },
+  "na-03": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "fordisp"
+    ]
+  },
+  "na-04": {
+    "colors": [
+      "ab-022",
+      "gb",
+      "gm",
+      "lg"
+    ],
+    "productCats": [
+      "fordisp"
+    ]
+  },
+  "ot-01": {
+    "colors": [
+      "az",
+      "bl",
+      "gr",
+      "ib",
+      "wh"
+    ],
+    "productCats": [
+      "dlya-smesitelej"
+    ]
+  },
+  "ov-02": {
+    "colors": [
+      "ab-022",
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "ov-1-r": {
+    "colors": [
+      "ab-012",
+      "ab-022",
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "ov-1-s": {
+    "colors": [
+      "ab-022",
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "re-01": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "wing"
+    ]
+  },
+  "roll-01": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "rolls"
+    ]
+  },
+  "roll-02": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "rolls"
+    ]
+  },
+  "roll-03": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "rolls"
+    ]
+  },
+  "roll-05": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "rolls"
+    ]
+  },
+  "s-01": {
+    "colors": [
+      "grey"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "sh-01": {
+    "colors": [
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "dlya-moek"
+    ]
+  },
+  "sw-01": {
+    "colors": [
+      "ab-022",
+      "gb",
+      "gm",
+      "lg"
+    ],
+    "productCats": [
+      "fordisp"
+    ]
+  },
+  "wk-1": {
+    "colors": [
+      "ab-012",
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-a": {
+    "colors": [
+      "ab-012",
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-r": {
+    "colors": [
+      "ab-022",
+      "gb",
+      "in"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-r-a": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-s": {
+    "colors": [
+      "ab-022",
+      "gm",
+      "in"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-un": {
+    "colors": [
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-5": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-5-cl-r-a": {
+    "colors": [
+      "ab-022"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-5-s": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1-5-un": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1c": {
+    "colors": [
+      "gb",
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1cl-r": {
+    "colors": [
+      "ab-022"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-1cl-r-a": {
+    "colors": [
+      "ab-022"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-2-a": {
+    "colors": [
+      "gm",
+      "in",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-2-r-a": {
+    "colors": [
+      "in"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  },
+  "wk-2c": {
+    "colors": [
+      "gb",
+      "gm",
+      "lg"
+    ],
+    "productCats": [
+      "arm"
+    ]
+  }
+}
