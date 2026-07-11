@@ -310,15 +310,7 @@
       }
 
       .dealer-static-catalog.dealer-filter-compact > .menu {
-        position: fixed !important;
-        top: var(--dealer-nav-height, 67px) !important;
-        left: 0 !important;
-        right: 0 !important;
-        z-index: 991 !important;
-        background: #fff !important;
-        border-bottom: 1px solid #d8d8d8 !important;
-        box-shadow: none !important;
-        transform: translateZ(0);
+        display: none !important;
       }
 
       .dealer-static-catalog.dealer-filter-compact .hidden_filter {
@@ -978,7 +970,7 @@
     const topNavHeight = topNavRect?.height || 67;
     const menuVisible = menu && getComputedStyle(menu).display !== 'none';
     const menuHeight = menuVisible ? (menu.offsetHeight || 45) : 0;
-    const filterTop = compact ? Math.round(topNavHeight + menuHeight) + 'px' : '0px';
+    const filterTop = compact ? Math.round(topNavHeight) + 'px' : '0px';
 
     document.documentElement.style.setProperty('--dealer-nav-height', Math.round(topNavHeight) + 'px');
     document.documentElement.style.setProperty('--dealer-menu-height', Math.round(menuHeight) + 'px');
