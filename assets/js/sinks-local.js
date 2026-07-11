@@ -1193,6 +1193,30 @@
     return (product.dataset[key] || '').split(',').map((value) => value.trim()).filter(Boolean);
   }
 
+  function normalizeBoolFilterValue(value) {
+    const normalized = String(value || '').trim().toLowerCase();
+    if (['yes', 'da', 'true', '1'].includes(normalized)) return 'yes';
+    if (['no', 'net', 'false', '0'].includes(normalized)) return 'no';
+    return normalized;
+  }
+
+  function boolValuesMatch(productValues, selectedValues) {
+    const normalizedProductValues = productValues.map(normalizeBoolFilterValue);
+    return selectedValues.some((value) => normalizedProductValues.includes(normalizeBoolFilterValue(value)));
+  }
+
+  function addBoolFilterAliases(values, value) {
+    const normalized = normalizeBoolFilterValue(value);
+    values.add(value);
+    if (normalized === 'yes') {
+      values.add('yes');
+      values.add('da');
+    } else if (normalized === 'no') {
+      values.add('no');
+      values.add('net');
+    }
+  }
+
   function productPriceRubRange(product) {
     const price = product.querySelector('.price');
     if (!price) return { min: 0, max: 0 };
@@ -1425,27 +1449,27 @@
 
     if (filter === 'pa_filter') {
       const tapFilter = listFromDataset(product, 'filterTapFilter');
-      return values.some((value) => tapFilter.includes(value));
+      return boolValuesMatch(tapFilter, values);
     }
 
     if (filter === 'pa_hose') {
       const tapHose = listFromDataset(product, 'filterTapHose');
-      return values.some((value) => tapHose.includes(value));
+      return boolValuesMatch(tapHose, values);
     }
 
     if (filter === 'pa_flexhose') {
       const tapFlexhose = listFromDataset(product, 'filterTapFlexhose');
-      return values.some((value) => tapFlexhose.includes(value));
+      return boolValuesMatch(tapFlexhose, values);
     }
 
     if (filter === 'pa_button') {
       const tapButton = listFromDataset(product, 'filterTapButton');
-      return values.some((value) => tapButton.includes(value));
+      return boolValuesMatch(tapButton, values);
     }
 
     if (filter === 'pa_window') {
       const tapWindow = listFromDataset(product, 'filterTapWindow');
-      return values.some((value) => tapWindow.includes(value));
+      return boolValuesMatch(tapWindow, values);
     }
 
     return true;
@@ -1492,7 +1516,13 @@
     const values = new Set();
     products.forEach((product) => {
       if (!productMatchesFilterSet(product, filters, priceRange, '')) return;
-      listFromDataset(product, datasetKey).forEach((value) => values.add(value));
+      listFromDataset(product, datasetKey).forEach((value) => {
+        if (['pa_filter', 'pa_hose', 'pa_flexhose', 'pa_button', 'pa_window'].includes(filter)) {
+          addBoolFilterAliases(values, value);
+        } else {
+          values.add(value);
+        }
+      });
     });
     return values;
   }
