@@ -23,6 +23,7 @@
   };
   let applyingRequestedColor = false;
   let userChangedColor = false;
+  const lastSelectedAttributes = {};
 
   function roundKzt(value) {
     return Math.ceil((value * 6.1 - 880) / 1000) * 1000 + 880;
@@ -460,6 +461,10 @@
       if (name && value) attributes[name] = value;
     });
 
+    Object.entries(lastSelectedAttributes).forEach(([name, value]) => {
+      if (name && value) attributes[name] = value;
+    });
+
     return attributes;
   }
 
@@ -601,6 +606,7 @@
       (swatch.classList.contains('attribute_pa_color') ? 'attribute_pa_color' : '');
     const attributeValue = swatch.getAttribute('data-value') || '';
     if (!attributeName || !attributeValue) return;
+    lastSelectedAttributes[attributeName] = attributeValue;
 
     const select = document.querySelector('select[name="' + CSS.escape(attributeName) + '"]');
     if (select && [...select.options].some((option) => option.value === attributeValue)) {
