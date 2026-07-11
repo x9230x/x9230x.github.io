@@ -1281,6 +1281,7 @@
     product.dataset.filterColors = (meta.colors || [colorFallback]).filter(Boolean).join(',');
     product.dataset.filterBowlSizes = (meta.bowlSizes || []).join(',');
     const asmbl = new Set(meta.asmbl || []);
+    const slug = productSlug(product);
     if ((slug.indexOf('omi-') === 0 && title.indexOf('ultra') !== -1)
       || (slug.indexOf('taki-') === 0 && (title.indexOf('u/if') !== -1 || slug.indexOf('-u-if') !== -1))) {
       asmbl.add('ul');
@@ -1302,7 +1303,7 @@
     }
 
     if (!catalogMetaPromise) {
-      catalogMetaPromise = fetch('/assets/data/sinks-meta.json?v=20260711-12')
+      catalogMetaPromise = fetch(root + 'assets/data/sinks-meta.json?v=20260711-13')
         .then((response) => response.ok ? response.json() : {})
         .then((data) => {
           catalogMeta = data || {};

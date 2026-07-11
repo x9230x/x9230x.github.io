@@ -437,8 +437,10 @@ document.addEventListener('DOMContentLoaded', function() {
         let allProducts = document.querySelectorAll('.woocommerce-loop-product__link');
         
         allProducts.forEach(product => {
-            // Предположим, у каждого продукта есть атрибут data-default-color
-            let defaultColor = 'product.getAttribute('data-default-color')';
+            let productCard = product.closest('li.product');
+            let defaultColor = productCard?.dataset.defaultColor
+                || productCard?.querySelector('.add-to-favorites-loop')?.dataset.pa_color
+                || '';
             
             if (defaultColor) {
                 let productLink = product.getAttribute('href');
@@ -1249,7 +1251,7 @@ var dgwt_wcas = {"labels":{"post":"\u0417\u0430\u043f\u0438\u0441\u044c","page":
 <script id="jquery-dgwt-wcas-js" src="https://omoikiri.ru/wp-content/plugins/ajax-search-for-woocommerce-premium/assets/js/search.min.js?ver=1.28.1"></script>
 
 
-<script id="dealer-local-sinks-layer-script" src="../assets/js/sinks-local.js?v=20260711-13" data-root="../"></script>
+<script id="dealer-local-sinks-layer-script" src="../assets/js/sinks-local.js?v=20260711-14" data-root="../"></script>
 <script src="../assets/js/lang-switch.js?v=20260711-08" data-root="../"></script>
 <script src="../assets/js/local-router.js" data-root="../"></script>
 </body>
