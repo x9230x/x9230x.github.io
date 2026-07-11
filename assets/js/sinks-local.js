@@ -1314,6 +1314,23 @@
       return;
     }
 
+    const inlineMeta = document.getElementById('dealer-sinks-meta-json');
+    if (inlineMeta?.textContent) {
+      try {
+        catalogMeta = JSON.parse(inlineMeta.textContent) || {};
+        hydrateCatalogMeta();
+        return;
+      } catch (error) {
+        console.warn('Inline catalog metadata was not parsed', error);
+      }
+    }
+
+    if (window.__OMOIKIRI_SINKS_META__) {
+      catalogMeta = window.__OMOIKIRI_SINKS_META__ || {};
+      hydrateCatalogMeta();
+      return;
+    }
+
     if (!catalogMetaPromise) {
       catalogMetaPromise = fetch(root + 'assets/data/sinks-meta.json?v=20260711-13')
         .then((response) => response.ok ? response.json() : {})
