@@ -15,6 +15,60 @@ body.dealer-info-page {
   font-family: "GothamProRegular", Arial, Helvetica, sans-serif;
 }
 
+body.dealer-info-page a {
+  color: inherit;
+}
+
+body.dealer-info-page .top_nav a,
+body.dealer-info-page #menu-top_menu a {
+  color: #202020 !important;
+  text-decoration: none !important;
+}
+
+body.dealer-info-page .top_nav > span > a[href^="tel:"] {
+  font-family: "GothamProBold", "GothamProMedium", Arial, Helvetica, sans-serif;
+}
+
+body.dealer-info-page .favorites-icon-wrapper {
+  margin-left: auto;
+}
+
+body.dealer-info-page .favorites-link {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  overflow: visible !important;
+  background: url(../img/default/heart.svg) no-repeat center center;
+  background-size: 28px 28px;
+}
+
+body.dealer-info-page #favorites-count,
+body.dealer-info-page .favorites-count {
+  position: absolute !important;
+  right: -5px !important;
+  bottom: 2px !important;
+  z-index: 3 !important;
+  display: none !important;
+  min-width: 10px;
+  color: #111 !important;
+  background: transparent !important;
+  font-family: "GothamProRegular", Arial, Helvetica, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  text-align: left !important;
+  letter-spacing: 0 !important;
+  pointer-events: none !important;
+}
+
+body.dealer-info-page #favorites-count:not(:empty):not([data-count-zero]),
+body.dealer-info-page .favorites-count:not(:empty):not([data-count-zero]) {
+  display: block !important;
+}
+
 .dealer-info-main {
   padding: 170px 50px 80px;
 }
