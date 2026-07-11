@@ -150,14 +150,27 @@
       }
 
       @media (min-width: 781px) {
+        body > .menu {
+          position: fixed !important;
+          top: 67px !important;
+          left: 0 !important;
+          right: 0 !important;
+          width: 100% !important;
+          margin: 0 !important;
+          background: #fff !important;
+          z-index: 900 !important;
+        }
+
         .menu-top_menu-container {
+          width: 100% !important;
           margin-top: 0 !important;
+          overflow: hidden !important;
         }
 
         #menu-top_menu.menu,
         #menu-top_menu-1.menu {
-          position: fixed !important;
-          top: 67px !important;
+          position: static !important;
+          top: auto !important;
           display: flex !important;
           align-items: center !important;
           justify-content: center !important;
