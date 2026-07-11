@@ -634,6 +634,24 @@
       .trim();
   }
 
+  function selectedColorDisplayCode() {
+    const code = selectedColorCode() || variationData()?.attributes?.attribute_pa_color || '';
+    if (!/^[a-z0-9-]{1,8}$/i.test(code)) return '';
+    return code.toUpperCase();
+  }
+
+  function isTapProduct() {
+    return Boolean(document.querySelector('.product_cat-taps, .entry.product_cat-taps'));
+  }
+
+  function productDisplayTitle(value) {
+    const title = cleanProductTitle(value);
+    const code = selectedColorDisplayCode();
+    const suffix = code ? code + (isTapProduct() ? '-P' : '') : '';
+    if (!suffix || new RegExp('\\s' + suffix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i').test(title)) return title;
+    return title + ' ' + suffix;
+  }
+
   function normalizeTitleAndButtons() {
     document.querySelectorAll('.current_color, .painted').forEach((node) => {
       node.textContent = '';
@@ -641,10 +659,9 @@
     });
 
     document.querySelectorAll('.prod_title, h1.product_title').forEach((node) => {
-      const cleanTitle = cleanProductTitle(node.textContent);
-      if (cleanTitle && node.dataset.dealerCleanTitle !== cleanTitle) {
-        node.textContent = cleanTitle;
-        node.dataset.dealerCleanTitle = cleanTitle;
+      const displayTitle = productDisplayTitle(node.textContent);
+      if (displayTitle && node.textContent.trim() !== displayTitle) {
+        node.textContent = displayTitle;
       }
     });
 
@@ -765,7 +782,7 @@
   }
 
   function currentProduct() {
-    const title = cleanProductTitle(document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim());
+    const title = productDisplayTitle(document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim());
     const variation = productSku() || currentVariationId() || primaryAttributeValue() || cleanColorName(selectedColor()) || 'default';
     const price = visiblePrice() || variationPrice();
 
