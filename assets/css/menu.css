@@ -55,7 +55,7 @@
 	width: 100%;
 	min-height: 38px;
 	margin: 0;
-	padding: 10px 0;
+	padding: 15px 0;
 	box-sizing: border-box;
 	border-bottom: 1px solid var(--secondary-grey);
 }
