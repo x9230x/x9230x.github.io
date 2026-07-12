@@ -730,6 +730,18 @@
     return Boolean(document.querySelector('.product_cat-taps, .entry.product_cat-taps'));
   }
 
+  const TAP_PAINTED_SUFFIX_SLUGS = new Set([
+    'nagano',
+    'nagano-pure-drop-lite',
+    'nakagawa',
+    'shinagawa',
+    'yamada'
+  ]);
+
+  function tapUsesPaintedSuffix() {
+    return isTapProduct() && TAP_PAINTED_SUFFIX_SLUGS.has(productSlug());
+  }
+
   function isDisposerProduct() {
     return Boolean(
       document.querySelector('.product_cat-disposers, .entry.product_cat-disposers, .desc_info.disposers') ||
@@ -741,7 +753,7 @@
     const title = cleanProductTitle(value);
     if (isDisposerProduct()) return title;
     const code = selectedColorDisplayCode();
-    const suffix = code ? code + (isTapProduct() ? '-P' : '') : '';
+    const suffix = code ? code + (tapUsesPaintedSuffix() ? '-P' : '') : '';
     if (!suffix || new RegExp('\\s' + suffix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i').test(title)) return title;
     return title + ' ' + suffix;
   }
