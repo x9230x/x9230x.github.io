@@ -1,6 +1,8 @@
 (function () {
   const CART_KEY = 'omoikiriCart';
   const FAVORITES_KEY = 'omoikiri:favorites';
+  const CATALOG_RETURN_PREFIX = 'omoikiri:catalog-return:';
+  const PRODUCT_CATALOGS = ['sinks', 'bathsinks', 'taps', 'filters', 'disposers', 'dispenser', 'acs', 'omoikiri-home'];
   const DISCONTINUED_SKUS = new Set([
     '4993469', '4993459', '4993487', '4993744', '4993291',
     '4993935', '4993845', '4993875', '4993917', '4993247',
@@ -46,6 +48,71 @@
     } catch (error) {
       return window.location.pathname.split('/').filter(Boolean).slice(-2, -1)[0] || 'product';
     }
+  }
+
+  function productCatalogKey() {
+    const classText = [
+      document.body.className || '',
+      document.querySelector('.entry.product, .product')?.className || '',
+      document.querySelector('.desc_info')?.className || ''
+    ].join(' ');
+
+    if (/\bproduct_cat-sinks\b|\bbread_sinks\b|\bdesc_info\s+sinks\b/i.test(classText)) return 'sinks';
+    if (/\bproduct_cat-bathsinks\b/i.test(classText)) return 'bathsinks';
+    if (/\bproduct_cat-taps\b/i.test(classText)) return 'taps';
+    if (/\bproduct_cat-filters\b/i.test(classText)) return 'filters';
+    if (/\bproduct_cat-disposers\b|\bdesc_info\s+disposers\b/i.test(classText)) return 'disposers';
+    if (/\bproduct_cat-dispenser\b/i.test(classText)) return 'dispenser';
+    if (/\bproduct_cat-acs\b|\bproduct_cat-accessories\b/i.test(classText)) return 'acs';
+    if (/\bproduct_cat-omoikiri-home\b/i.test(classText)) return 'omoikiri-home';
+
+    const categoryLink = document.querySelector('.bread a[href*="/sinks"], .bread a[href*="/taps"], .bread a[href*="/bathsinks"], .bread a[href*="/filters"], .bread a[href*="/disposers"], .bread a[href*="/dispenser"], .bread a[href*="/acs"], .bread a[href*="/omoikiri-home"]');
+    if (categoryLink) {
+      const path = categoryLink.getAttribute('href') || '';
+      return PRODUCT_CATALOGS.find((key) => path.includes('/' + key)) || '';
+    }
+
+    return '';
+  }
+
+  function cleanCatalogReturnHref(key, value) {
+    if (!key || !value) return '';
+
+    try {
+      const url = new URL(value, window.location.origin);
+      if (!url.pathname.includes('/' + key)) return '';
+      return url.pathname + url.search;
+    } catch (error) {
+      return '';
+    }
+  }
+
+  function storedCatalogReturnHref(key) {
+    try {
+      const referrer = new URL(document.referrer || '', window.location.href);
+      if (referrer.origin === window.location.origin && referrer.pathname.includes('/' + key) && referrer.search) {
+        return referrer.pathname + referrer.search;
+      }
+    } catch (error) {}
+
+    for (const storage of [window.sessionStorage, window.localStorage]) {
+      try {
+        const href = cleanCatalogReturnHref(key, storage?.getItem(CATALOG_RETURN_PREFIX + key));
+        if (href) return href;
+      } catch (error) {}
+    }
+
+    return '';
+  }
+
+  function restoreCatalogBreadcrumbLinks() {
+    const key = productCatalogKey();
+    const href = storedCatalogReturnHref(key);
+    if (!key || !href) return;
+
+    document.querySelectorAll(`a[href="/${key}"], a[href="/${key}/"], a[href="/${key}/index.html"]`).forEach((link) => {
+      link.setAttribute('href', href);
+    });
   }
 
   function addStyle() {
@@ -1131,6 +1198,7 @@
     addCartLink();
     removeDiscontinuedVariants();
     applyRequestedColor();
+    restoreCatalogBreadcrumbLinks();
     normalizeTitleAndButtons();
     renderProductSku();
     renderProductImage();
@@ -1172,6 +1240,7 @@
       pendingConvert = true;
       window.requestAnimationFrame(() => {
         pendingConvert = false;
+        restoreCatalogBreadcrumbLinks();
         normalizeTitleAndButtons();
         renderProductSku();
         updateVariationPriceDisplay();
@@ -1191,6 +1260,7 @@
       window.setTimeout(() => {
         removeDiscontinuedVariants();
         applyRequestedColor();
+        restoreCatalogBreadcrumbLinks();
         normalizeTitleAndButtons();
         renderProductSku();
         renderProductImage();

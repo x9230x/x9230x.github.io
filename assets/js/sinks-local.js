@@ -23,6 +23,8 @@
     'umi': ['bl']
   };
   const root = new URL(document.currentScript?.dataset.root || '../', window.location.href).href;
+  const CATALOG_RETURN_PREFIX = 'omoikiri:catalog-return:';
+  const CATALOG_DIRS = new Set(['sinks', 'bathsinks', 'taps', 'filters', 'disposers', 'dispenser', 'acs', 'omoikiri-home']);
   const loading = document.getElementById('loading');
   let filterClickBound = false;
   let filterDropdownBound = false;
@@ -1158,6 +1160,22 @@
     };
   }
 
+  function currentCatalogKey() {
+    const key = window.location.pathname.split('/').filter(Boolean)[0] || 'sinks';
+    return CATALOG_DIRS.has(key) ? key : '';
+  }
+
+  function persistCatalogReturnUrl(url = new URL(window.location.href)) {
+    const key = currentCatalogKey();
+    if (!key) return;
+
+    const value = url.pathname + url.search;
+    try {
+      window.sessionStorage?.setItem(CATALOG_RETURN_PREFIX + key, value);
+      window.localStorage?.setItem(CATALOG_RETURN_PREFIX + key, value);
+    } catch (error) {}
+  }
+
   function splitUrlFilterValue(value) {
     return String(value || '')
       .split(',')
@@ -1218,6 +1236,7 @@
     const next = url.pathname + url.search + url.hash;
     const current = window.location.pathname + window.location.search + window.location.hash;
     if (next !== current) window.history.replaceState(null, '', next);
+    persistCatalogReturnUrl(url);
   }
 
   function classMatches(product, token) {
@@ -2188,6 +2207,7 @@
     bindFavoriteButtons(document);
     bindFilters();
     restoreCatalogFiltersFromUrl();
+    persistCatalogReturnUrl();
     ensureCatalogMetaLoaded().then(applyFilters);
     if (document.body.classList.contains('term-taps')) {
       window.setTimeout(() => {
