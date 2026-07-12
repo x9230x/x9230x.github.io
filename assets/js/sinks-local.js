@@ -558,11 +558,11 @@
       }
 
       .dealer-local-cart-tab svg {
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
         display: block;
-        stroke-width: 1.8;
-        transform: translateY(4px);
+        stroke-width: 2.05;
+        transform: translateY(0);
       }
     `;
     document.head.appendChild(style);

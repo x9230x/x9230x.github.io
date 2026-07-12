@@ -228,12 +228,12 @@
       }
 
       .dealer-local-cart-tab svg {
-        width: 28px !important;
-        height: 28px !important;
+        width: 30px !important;
+        height: 30px !important;
         display: block !important;
         stroke: currentColor !important;
-        stroke-width: 1.8 !important;
-        transform: translateY(4px) !important;
+        stroke-width: 2.05 !important;
+        transform: translateY(0) !important;
       }
 
       .dealer-lang-switch {
