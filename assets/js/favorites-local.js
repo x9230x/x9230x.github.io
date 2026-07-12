@@ -223,7 +223,7 @@
     }
 
     if (!details.price) {
-      const priceNode = doc.querySelector('.summary .rrc, .summary .price, .entry-summary .price, .woocommerce-variation-price');
+      const priceNode = doc.querySelector('.card_actions .rrc, .summary .rrc, .summary .price, .entry-summary .price, .woocommerce-variation-price, .rrc');
       details.price = priceFromRubText(priceNode?.textContent);
     }
 
@@ -311,11 +311,11 @@
     items.forEach((item) => {
       const row = document.createElement('tr');
       row.innerHTML = [
-        '<td><img src="' + escapeHtml(item.image) + '" alt=""></td>',
-        '<td><a href="' + escapeHtml(item.href) + '">' + escapeHtml(item.title) + '</a></td>',
-        '<td>' + escapeHtml(article(item)) + '</td>',
-        '<td>' + escapeHtml(cleanPrice(item.price)) + '</td>',
-        '<td><button class="remove-from-favorites" type="button" aria-label="Убрать из избранного"></button></td>'
+        '<td class="photo-cell"><img src="' + escapeHtml(item.image) + '" alt=""></td>',
+        '<td class="name-cell"><a href="' + escapeHtml(item.href) + '">' + escapeHtml(item.title) + '</a></td>',
+        '<td class="article-cell">' + escapeHtml(article(item)) + '</td>',
+        '<td class="price-cell">' + escapeHtml(cleanPrice(item.price)) + '</td>',
+        '<td class="remove-cell"><button class="remove-from-favorites" type="button" aria-label="Убрать из избранного"></button></td>'
       ].join('');
 
       row.querySelector('.remove-from-favorites').addEventListener('click', () => {
@@ -356,7 +356,16 @@
     URL.revokeObjectURL(link.href);
   }
 
-  pdfButton.addEventListener('click', () => window.print());
+  async function preparePrint() {
+    await repairFavorites(readFavorites());
+    render();
+    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  }
+
+  pdfButton.addEventListener('click', async () => {
+    await preparePrint();
+    window.print();
+  });
   excelButton.addEventListener('click', exportExcel);
   clearButton.addEventListener('click', () => {
     writeFavorites([]);

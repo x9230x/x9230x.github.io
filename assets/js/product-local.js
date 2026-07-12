@@ -466,11 +466,13 @@
 
   function visiblePrice() {
     const candidates = [
+      '.card_actions .rrc',
       '.summary .rrc',
       '.summary .price ins .woocommerce-Price-amount',
       '.summary .price .woocommerce-Price-amount',
       '.entry-summary .woocommerce-Price-amount',
-      '.woocommerce-variation-price .woocommerce-Price-amount'
+      '.woocommerce-variation-price .woocommerce-Price-amount',
+      '.rrc'
     ];
 
     for (const selector of candidates) {
@@ -1023,7 +1025,7 @@
   function currentFavorite() {
     const product = currentProduct();
     const title = titleWithColor(product.name, product.color);
-    const priceNode = document.querySelector('.summary .rrc, .summary .price, .entry-summary .price');
+    const priceNode = document.querySelector('.card_actions .rrc, .summary .rrc, .summary .price, .entry-summary .price, .rrc');
     const price = cleanFavoritePrice(priceNode) || (product.price ? formatKzt(product.price) : '');
 
     return {

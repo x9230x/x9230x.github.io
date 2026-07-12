@@ -402,17 +402,23 @@
       .site-nav,
       .favorites-link,
       .search-icon,
+      html body .dealer-local-cart-tab,
+      html body a.dealer-local-cart-tab,
+      html body .dealer-local-cart-tab svg,
       .dealer-local-cart-tab,
       .cart-link,
       .cart-icon,
+      .cart-count,
+      .cart-counter,
       [href*="cart"],
       .clear-row,
       .export,
       .remove-from-favorites,
       .remove-head,
-      .favorites-products td:last-child,
+      .favorites-products .remove-cell,
       .lang-switch {
         display: none !important;
+        visibility: hidden !important;
       }
 
       .favorites-page {
@@ -498,6 +504,11 @@
         width: 19%;
       }
 
+      .favorites-products .price-cell {
+        display: table-cell !important;
+        visibility: visible !important;
+      }
+
       .favorites-products td:nth-child(2) a {
         border-bottom: 0 !important;
         text-decoration: none !important;
@@ -572,7 +583,7 @@
             <th>фото</th>
             <th>наименование</th>
             <th>артикул</th>
-            <th>цена</th>
+            <th class="price-head">цена</th>
             <th class="remove-head"></th>
           </tr>
         </thead>
@@ -594,7 +605,7 @@
     <div class="print-total" id="printTotal"></div>
   </main>
 
-  <script src="../assets/js/favorites-local.js"></script>
+  <script src="../assets/js/favorites-local.js?v=20260712-03"></script>
   <script src="../assets/js/lang-switch.js?v=20260712-03" data-root="../"></script>
   <script src="../assets/js/local-router.js" data-root="../"></script>
 </body>
