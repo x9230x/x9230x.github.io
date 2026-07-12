@@ -650,8 +650,16 @@
     return Boolean(document.querySelector('.product_cat-taps, .entry.product_cat-taps'));
   }
 
+  function isDisposerProduct() {
+    return Boolean(
+      document.querySelector('.product_cat-disposers, .entry.product_cat-disposers, .desc_info.disposers') ||
+      /\/product\/nagare(?:-|\/)/i.test(window.location.pathname)
+    );
+  }
+
   function productDisplayTitle(value) {
     const title = cleanProductTitle(value);
+    if (isDisposerProduct()) return title;
     const code = selectedColorDisplayCode();
     const suffix = code ? code + (isTapProduct() ? '-P' : '') : '';
     if (!suffix || new RegExp('\\s' + suffix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i').test(title)) return title;
