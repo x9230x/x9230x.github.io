@@ -35,6 +35,7 @@
   let catalogMeta = {};
   let lastScrollY = window.scrollY || 0;
   let productImageUpdateToken = 0;
+  let restoringCatalogFilters = false;
   const productDetailsCache = new Map();
   const productImageProbeCache = new Map();
   const productKeys = new Set();
@@ -1157,6 +1158,68 @@
     };
   }
 
+  function splitUrlFilterValue(value) {
+    return String(value || '')
+      .split(',')
+      .map((part) => part.trim())
+      .filter(Boolean);
+  }
+
+  function urlFilterValues(params, key) {
+    return params.getAll(key).flatMap(splitUrlFilterValue);
+  }
+
+  function restoreCatalogFiltersFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    restoringCatalogFilters = true;
+
+    document.querySelectorAll('.prdctfltr_filter').forEach((filter) => {
+      const key = filter.dataset.filter;
+      if (!key) return;
+
+      const values = new Set(urlFilterValues(params, key));
+      filter.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+        input.checked = values.has(input.value);
+      });
+    });
+
+    const priceFilter = document.querySelector('.prdctfltr_rng_price');
+    if (priceFilter) {
+      const min = params.get('rng_min_price');
+      const max = params.get('rng_max_price');
+      if (min !== null) priceFilter.dataset.currentMin = String(Number(min) || 0);
+      if (max !== null) priceFilter.dataset.currentMax = String(Number(max) || 0);
+      syncLocalPriceSlider(priceFilter);
+    }
+
+    restoringCatalogFilters = false;
+  }
+
+  function syncCatalogFiltersToUrl(filters = selectedFilters(), priceRange = selectedPriceRange()) {
+    if (restoringCatalogFilters || !window.history?.replaceState) return;
+
+    const url = new URL(window.location.href);
+    document.querySelectorAll('.prdctfltr_filter').forEach((filter) => {
+      const key = filter.dataset.filter;
+      if (key) url.searchParams.delete(key);
+    });
+    url.searchParams.delete('rng_min_price');
+    url.searchParams.delete('rng_max_price');
+
+    Object.entries(filters).forEach(([key, values]) => {
+      if (values.length) url.searchParams.set(key, values.join(','));
+    });
+
+    if (priceRange.active) {
+      url.searchParams.set('rng_min_price', String(priceRange.min));
+      url.searchParams.set('rng_max_price', String(priceRange.max));
+    }
+
+    const next = url.pathname + url.search + url.hash;
+    const current = window.location.pathname + window.location.search + window.location.hash;
+    if (next !== current) window.history.replaceState(null, '', next);
+  }
+
   function classMatches(product, token) {
     return [...product.classList].some((className) => className.toLowerCase() === token.toLowerCase());
   }
@@ -1963,6 +2026,7 @@
 
     updateFilterAvailability(filters, priceRange, products, hasActiveFilters);
     updateProductImagesForSelectedColor(filters);
+    syncCatalogFiltersToUrl(filters, priceRange);
 
     document.querySelectorAll('.dealer-local-clear-filters').forEach((button) => {
       button.classList.toggle('is-visible', hasActiveFilters);
@@ -2123,6 +2187,7 @@
     window.setInterval(() => convertPriceText(document), 300);
     bindFavoriteButtons(document);
     bindFilters();
+    restoreCatalogFiltersFromUrl();
     ensureCatalogMetaLoaded().then(applyFilters);
     if (document.body.classList.contains('term-taps')) {
       window.setTimeout(() => {
