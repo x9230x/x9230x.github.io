@@ -742,7 +742,7 @@
       })
       .filter((entry) => entry.score < 99)
       .sort((a, b) => a.score - b.score || a.item.title.localeCompare(b.item.title, 'ru', { sensitivity: 'base', numeric: true }))
-      .slice(0, 8)
+      .slice(0, 24)
       .map((entry) => entry.item);
   }
 
