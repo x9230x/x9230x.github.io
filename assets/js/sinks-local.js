@@ -2071,9 +2071,13 @@
       });
     });
 
-    document.querySelectorAll('.prdctfltr_buttons').forEach((container) => {
-      if (container.querySelector('.dealer-local-clear-filters')) return;
+    const resetContainers = [...document.querySelectorAll('.prdctfltr_buttons')];
+    const primaryResetContainer = resetContainers[0];
+    resetContainers.slice(1).forEach((container) => {
+      container.querySelectorAll('.dealer-local-clear-filters').forEach((button) => button.remove());
+    });
 
+    if (primaryResetContainer && !primaryResetContainer.querySelector('.dealer-local-clear-filters')) {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'dealer-local-clear-filters';
@@ -2087,8 +2091,8 @@
         await ensureCatalogMetaLoaded();
         applyFilters();
       });
-      container.appendChild(button);
-    });
+      primaryResetContainer.appendChild(button);
+    }
   }
 
   function addCartLink() {
