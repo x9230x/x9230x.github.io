@@ -116,6 +116,19 @@
         text-underline-offset: 2px !important;
       }
 
+      body.single-product .sku,
+      body.single-product .dealer-product-sku {
+        display: block !important;
+        margin: 3px 0 16px !important;
+        color: #202020 !important;
+        font-family: "GothamProRegular", Arial, Helvetica, sans-serif !important;
+        font-size: 17px !important;
+        font-weight: 400 !important;
+        line-height: 1.25 !important;
+        letter-spacing: 0 !important;
+        text-transform: none !important;
+      }
+
       body.single-product .card_actions .pin,
       body.single-product .card_actions .pin a,
       body.single-product .card_actions .pin span {
@@ -783,6 +796,31 @@
     return '';
   }
 
+  function renderProductSku() {
+    const title = document.querySelector('.prod_title, h1.product_title');
+    if (!title) return;
+
+    let node = document.querySelector('.sku, .dealer-product-sku');
+    if (!node) {
+      node = document.createElement('p');
+      node.className = 'sku dealer-product-sku';
+      title.insertAdjacentElement('afterend', node);
+    } else if (!node.classList.contains('dealer-product-sku')) {
+      node.classList.add('dealer-product-sku');
+    }
+
+    const sku = productSku();
+    if (!sku) {
+      node.textContent = '';
+      node.hidden = true;
+      return;
+    }
+
+    const text = '\u0430\u0440\u0442. ' + sku;
+    if (node.textContent.trim() !== text) node.textContent = text;
+    node.hidden = false;
+  }
+
   function currentProductHref() {
     try {
       const url = new URL(window.location.href);
@@ -1094,6 +1132,7 @@
     removeDiscontinuedVariants();
     applyRequestedColor();
     normalizeTitleAndButtons();
+    renderProductSku();
     renderProductImage();
     updateVariationPriceDisplay();
     convertPrices(document);
@@ -1108,6 +1147,7 @@
       if (event.target.matches('select[name="attribute_pa_color"], input.variation_id')) {
         if (!applyingRequestedColor) userChangedColor = true;
         window.setTimeout(renderProductImage, 0);
+        window.setTimeout(renderProductSku, 0);
         window.setTimeout(updateVariationPriceDisplay, 0);
         window.setTimeout(normalizeTitleAndButtons, 0);
         window.setTimeout(refreshFavoriteState, 0);
@@ -1119,6 +1159,7 @@
         if (!applyingRequestedColor) userChangedColor = true;
         applyClickedAttribute(event.target);
         window.setTimeout(renderProductImage, 80);
+        window.setTimeout(renderProductSku, 80);
         window.setTimeout(updateVariationPriceDisplay, 80);
         window.setTimeout(normalizeTitleAndButtons, 80);
         window.setTimeout(refreshFavoriteState, 80);
@@ -1132,6 +1173,7 @@
       window.requestAnimationFrame(() => {
         pendingConvert = false;
         normalizeTitleAndButtons();
+        renderProductSku();
         updateVariationPriceDisplay();
         convertPrices(document);
         refreshFavoriteState();
@@ -1150,6 +1192,7 @@
         removeDiscontinuedVariants();
         applyRequestedColor();
         normalizeTitleAndButtons();
+        renderProductSku();
         renderProductImage();
         updateVariationPriceDisplay();
         convertPrices(document);
