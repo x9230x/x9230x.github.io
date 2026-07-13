@@ -208,6 +208,11 @@
         background: #c9001a !important;
       }
 
+      .side_menu,
+      .mob_cont a[href*="disk.yandex.ru"] {
+        display: none !important;
+      }
+
       .dealer-local-cart-tab {
         position: fixed !important;
         z-index: 100000 !important;
