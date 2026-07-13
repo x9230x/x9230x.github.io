@@ -39,6 +39,17 @@
     return Number(String(text || '').replace(/\D/g, ''));
   }
 
+  function kztAmounts(text) {
+    return [...String(text || '').matchAll(/(\d[\d\s\u00a0]*)(?=\s*\u20b8)/g)]
+      .map((match) => numeric(match[1]))
+      .filter(Boolean);
+  }
+
+  function lastKztAmount(text) {
+    const amounts = kztAmounts(text);
+    return amounts.length ? amounts[amounts.length - 1] : 0;
+  }
+
   function productSlug() {
     const canonical = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
     try {
@@ -376,6 +387,22 @@
         white-space: nowrap !important;
       }
 
+      .dealer-simple-cart-button {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 42px !important;
+        padding: 0 22px !important;
+        border: 0 !important;
+        border-radius: 999px !important;
+        background: #202020 !important;
+        color: #fff !important;
+        font: 700 13px/1 Arial, sans-serif !important;
+        text-transform: lowercase !important;
+        cursor: pointer !important;
+        box-shadow: none !important;
+      }
+
       @media (max-width: 700px) {
         html,
         body,
@@ -550,8 +577,12 @@
 
     for (const selector of candidates) {
       const node = document.querySelector(selector);
-      const value = numeric(node?.textContent);
-      if (value) return value;
+      const text = node?.textContent || '';
+      const kzt = lastKztAmount(text);
+      if (kzt) return kzt;
+
+      const raw = numeric(text);
+      if (raw && !text.includes('\u20b8')) return roundKzt(raw);
     }
 
     return 0;
@@ -802,7 +833,7 @@
   }
 
   function isTapProduct() {
-    return Boolean(document.querySelector('.product_cat-taps, .entry.product_cat-taps'));
+    return productCatalogKey() === 'taps' || Boolean(document.querySelector('.product_cat-taps, .entry.product_cat-taps'));
   }
 
   const TAP_PAINTED_SUFFIX_SLUGS = new Set([
@@ -827,10 +858,38 @@
   function productDisplayTitle(value) {
     const title = cleanProductTitle(value);
     if (isDisposerProduct()) return title;
-    const code = selectedColorDisplayCode();
-    const suffix = code ? code + (tapUsesPaintedSuffix() ? '-P' : '') : '';
+    if (!isTapProduct()) return title;
+
+    let code = selectedColorDisplayCode();
+    if (!tapUsesPaintedSuffix()) {
+      code = code.replace(/-P$/i, '');
+    } else if (code && !/-P$/i.test(code)) {
+      code += '-P';
+    }
+
+    const suffix = code || '';
     if (!suffix || new RegExp('\\s' + suffix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i').test(title)) return title;
     return title + ' ' + suffix;
+  }
+
+  function ensureSimpleCartButton() {
+    if (document.querySelector('.single_add_to_cart_button, button[name="add-to-cart"], .dealer-simple-cart-button')) return;
+
+    const actions = document.querySelector('.card_actions');
+    const price = document.querySelector('.card_actions .rrc, .summary .rrc, .summary .price, .entry-summary .price, .rrc');
+    if (!actions || !price) return;
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'single_add_to_cart_button button alt dealer-simple-cart-button';
+    button.textContent = 'В корзину';
+
+    const favorite = actions.querySelector('.fav_button');
+    if (favorite) {
+      actions.insertBefore(button, favorite);
+    } else {
+      actions.appendChild(button);
+    }
   }
 
   function normalizeTitleAndButtons() {
@@ -988,7 +1047,8 @@
   }
 
   function currentProduct() {
-    const title = productDisplayTitle(document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim());
+    const displayTitle = productDisplayTitle(document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim());
+    const title = isTapProduct() ? displayTitle : titleWithColor(displayTitle, selectedColor());
     const variation = productSku() || currentVariationId() || primaryAttributeValue() || cleanColorName(selectedColor()) || 'default';
     const price = visiblePrice() || variationPrice();
 
@@ -1230,6 +1290,16 @@
 
   function writeCart(cart) {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    updateCartCount(cart);
+  }
+
+  function updateCartCount(cart) {
+    const items = Array.isArray(cart) ? cart : readCart();
+    const count = items.reduce((sum, item) => sum + (Number(item.qty) || 0), 0);
+    document.querySelectorAll('#cart-count, [data-cart-count], .cart-count').forEach((node) => {
+      node.textContent = String(count);
+      node.toggleAttribute('data-count-zero', count === 0);
+    });
   }
 
   function showToast(text) {
@@ -1287,12 +1357,14 @@
     applyRequestedColor();
     restoreCatalogBreadcrumbLinks();
     normalizeTitleAndButtons();
+    ensureSimpleCartButton();
     renderProductSku();
     renderProductImage();
     updateVariationPriceDisplay();
     convertPrices(document);
     bindCart();
     bindFavorite();
+    updateCartCount();
 
     function refreshFavoriteState() {
       setFavoriteState(readFavorites().some((item) => item.id === favoriteId()));
@@ -1305,6 +1377,7 @@
         window.setTimeout(renderProductSku, 0);
         window.setTimeout(updateVariationPriceDisplay, 0);
         window.setTimeout(normalizeTitleAndButtons, 0);
+        window.setTimeout(ensureSimpleCartButton, 0);
         window.setTimeout(refreshFavoriteState, 0);
       }
     }, true);
@@ -1317,6 +1390,7 @@
         window.setTimeout(renderProductSku, 80);
         window.setTimeout(updateVariationPriceDisplay, 80);
         window.setTimeout(normalizeTitleAndButtons, 80);
+        window.setTimeout(ensureSimpleCartButton, 80);
         window.setTimeout(refreshFavoriteState, 80);
       }
     }, true);
@@ -1329,6 +1403,7 @@
         pendingConvert = false;
         restoreCatalogBreadcrumbLinks();
         normalizeTitleAndButtons();
+        ensureSimpleCartButton();
         renderProductSku();
         updateVariationPriceDisplay();
         convertPrices(document);
@@ -1349,6 +1424,7 @@
         applyRequestedColor();
         restoreCatalogBreadcrumbLinks();
         normalizeTitleAndButtons();
+        ensureSimpleCartButton();
         renderProductSku();
         renderProductImage();
         updateVariationPriceDisplay();
