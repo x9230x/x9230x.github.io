@@ -289,6 +289,10 @@
         margin-top: 30px !important;
       }
 
+      .dealer-static-catalog .prdctfltr_rng_price .dealer-price-mobile-labels {
+        display: none !important;
+      }
+
       .dealer-local-empty {
         display: none;
         width: 100%;
