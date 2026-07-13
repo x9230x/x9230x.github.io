@@ -539,13 +539,40 @@
 
         .dealer-static-catalog .hidden_filter .prdctfltr_wc .prdctfltr_woocommerce_ordering {
           margin: 0 !important;
-          padding: 0 50px 50px 50px !important;
+          padding: 0 44px 44px !important;
         }
 
         .dealer-static-catalog .hidden_filter .prdctfltr_filter_inner {
           display: flex !important;
           flex-wrap: wrap !important;
           gap: 25px !important;
+        }
+
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_filter_inner {
+          display: flex !important;
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+          gap: 28px !important;
+        }
+
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_filter {
+          width: 100% !important;
+          min-width: 0 !important;
+        }
+
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_widget_title {
+          justify-content: space-between !important;
+          gap: 18px !important;
+        }
+
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_checkboxes {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          gap: 12px 18px !important;
+        }
+
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_filter label {
+          margin: 0 0 8px !important;
         }
 
         .dealer-static-catalog .prdctfltr_filter .prdctfltr_add_scroll,
@@ -558,34 +585,33 @@
         .dealer-static-catalog .prdctfltr_rng_price .irs {
           width: 100% !important;
           max-width: 280px !important;
-          margin-top: 16px !important;
-          padding-top: 28px !important;
+          margin-top: 8px !important;
+          padding-top: 0 !important;
+          height: 38px !important;
         }
 
         .dealer-static-catalog .prdctfltr_rng_price .irs-min,
         .dealer-static-catalog .prdctfltr_rng_price .irs-max,
-        .dealer-static-catalog .prdctfltr_rng_price .irs-single {
+        .dealer-static-catalog .prdctfltr_rng_price .irs-single,
+        .dealer-static-catalog .prdctfltr_rng_price .irs-from,
+        .dealer-static-catalog .prdctfltr_rng_price .irs-to {
           display: none !important;
         }
 
-        .dealer-static-catalog .prdctfltr_rng_price .irs-from,
-        .dealer-static-catalog .prdctfltr_rng_price .irs-to {
-          top: 0 !important;
-          display: block !important;
-          transform: none !important;
-          white-space: nowrap !important;
-          background: transparent !important;
+        .dealer-static-catalog .prdctfltr_rng_price .dealer-price-mobile-labels {
+          display: flex !important;
+          width: 100% !important;
+          max-width: 280px !important;
+          justify-content: space-between !important;
+          gap: 18px !important;
+          margin: 14px 0 0 !important;
           color: #111 !important;
           font: 700 12px/1.2 "GothamProBold", Arial, sans-serif !important;
+          white-space: nowrap !important;
         }
 
-        .dealer-static-catalog .prdctfltr_rng_price .irs-from {
-          left: 0 !important;
-        }
-
-        .dealer-static-catalog .prdctfltr_rng_price .irs-to {
-          left: auto !important;
-          right: 0 !important;
+        .dealer-static-catalog .prdctfltr_rng_price .dealer-price-mobile-labels span:last-child {
+          text-align: right !important;
         }
       }
 
@@ -1873,6 +1899,17 @@
     if (fromLabel) fromLabel.textContent = fromText;
     if (toLabel) toLabel.textContent = toText;
     if (singleLabel) singleLabel.textContent = from === to ? fromText : fromText + ' \u2014 ' + toText;
+
+    let mobileLabels = filter.querySelector('.dealer-price-mobile-labels');
+    if (!mobileLabels) {
+      mobileLabels = document.createElement('div');
+      mobileLabels.className = 'dealer-price-mobile-labels';
+      mobileLabels.innerHTML = '<span></span><span></span>';
+      filter.querySelector('.irs')?.before(mobileLabels);
+    }
+    const mobileValues = mobileLabels.querySelectorAll('span');
+    if (mobileValues[0]) mobileValues[0].textContent = fromText;
+    if (mobileValues[1]) mobileValues[1].textContent = toText;
   }
 
   function resetLocalPriceSlider() {
