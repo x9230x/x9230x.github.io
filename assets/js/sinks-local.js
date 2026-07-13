@@ -505,6 +505,13 @@
 
         .dealer-static-catalog .hidden_filter .hidden_button {
           display: flex !important;
+          position: sticky !important;
+          top: 0 !important;
+          z-index: 10002 !important;
+          align-self: center !important;
+          margin: 0 auto !important;
+          border-radius: 0 0 8px 8px !important;
+          background: #fff !important;
         }
 
         .dealer-static-catalog .hidden_filter .widget-area,
@@ -523,6 +530,13 @@
           display: block !important;
         }
 
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter {
+          max-height: calc(100dvh - var(--dealer-nav-height, 67px)) !important;
+          overflow-y: auto !important;
+          background: #fff !important;
+          box-shadow: 0 14px 35px rgba(0, 0, 0, .08) !important;
+        }
+
         .dealer-static-catalog .hidden_filter .prdctfltr_wc .prdctfltr_woocommerce_ordering {
           margin: 0 !important;
           padding: 0 50px 50px 50px !important;
@@ -539,6 +553,39 @@
           display: block !important;
           overflow: hidden !important;
           margin-top: 15px !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs {
+          width: 100% !important;
+          max-width: 280px !important;
+          margin-top: 16px !important;
+          padding-top: 28px !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-min,
+        .dealer-static-catalog .prdctfltr_rng_price .irs-max,
+        .dealer-static-catalog .prdctfltr_rng_price .irs-single {
+          display: none !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-from,
+        .dealer-static-catalog .prdctfltr_rng_price .irs-to {
+          top: 0 !important;
+          display: block !important;
+          transform: none !important;
+          white-space: nowrap !important;
+          background: transparent !important;
+          color: #111 !important;
+          font: 700 12px/1.2 "GothamProBold", Arial, sans-serif !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-from {
+          left: 0 !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-to {
+          left: auto !important;
+          right: 0 !important;
         }
       }
 
@@ -2070,6 +2117,10 @@
       document.body.classList.toggle('dealer-filter-expanded', open);
       document.querySelectorAll('.hidden_filter .widget-area, .hidden_filter .widget-column, .hidden_filter .widget').forEach((node) => {
         node.classList.toggle('active', open);
+      });
+      document.querySelectorAll('.hidden_button').forEach((button) => {
+        button.dataset.dealerOpen = open ? '1' : '0';
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
       if (!open) {
         document.querySelectorAll('.prdctfltr_filter.dealer-filter-open').forEach((openFilter) => {
