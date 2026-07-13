@@ -318,6 +318,7 @@
       .dealer-static-catalog .prdctfltr_rng_price .irs-line,
       .dealer-static-catalog .prdctfltr_rng_price .irs-bar {
         top: 30px !important;
+        height: 2px !important;
       }
 
       .dealer-static-catalog .prdctfltr_rng_price .irs-slider {
