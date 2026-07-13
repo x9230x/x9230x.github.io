@@ -613,9 +613,16 @@
           width: 22px !important;
           height: 22px !important;
           top: 6px !important;
-          margin-left: -5px !important;
           pointer-events: auto !important;
           touch-action: none !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-slider.from {
+          margin-left: 0 !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-slider.to {
+          margin-left: -22px !important;
         }
 
         .dealer-static-catalog .prdctfltr_rng_price .irs-min,
