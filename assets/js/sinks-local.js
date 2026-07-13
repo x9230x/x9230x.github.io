@@ -2013,8 +2013,8 @@
     let to = Number(hiddenMax?.value || maxLimit) || maxLimit;
     let activeHandle = '';
     let activePointerId = null;
-    let suppressMouseUntil = 0;
     let priceRangeApplied = false;
+    let usingPointerInput = false;
 
     const valueToPercent = (value) => ((value - minLimit) / (maxLimit - minLimit)) * 100;
     const pointToValue = (event) => {
@@ -2061,14 +2061,14 @@
 
     const begin = (event) => {
       if (!event.target.closest('.prdctfltr_rng_price')) return;
-      if (event.type === 'mousedown' && Date.now() < suppressMouseUntil) return;
+      if (window.PointerEvent && (event.type === 'mousedown' || event.type === 'touchstart')) return;
       event.preventDefault();
       event.stopImmediatePropagation();
 
       activePointerId = event.pointerId ?? null;
+      usingPointerInput = event.type.startsWith('pointer');
       if (activePointerId !== null) {
-        suppressMouseUntil = Date.now() + 700;
-        event.target.setPointerCapture?.(activePointerId);
+        filter.setPointerCapture?.(activePointerId);
       }
       const value = pointToValue(event);
       const target = event.target.closest('.irs-slider');
@@ -2085,7 +2085,8 @@
 
     const move = (event) => {
       if (!activeHandle) return;
-      if (event.type === 'mousemove' && Date.now() < suppressMouseUntil) return;
+      if (usingPointerInput && !event.type.startsWith('pointer')) return;
+      if (!usingPointerInput && window.PointerEvent && (event.type === 'mousemove' || event.type === 'touchmove')) return;
       if (activePointerId !== null && event.pointerId !== undefined && event.pointerId !== activePointerId) return;
 
       event.preventDefault();
@@ -2099,29 +2100,33 @@
 
     const end = (event) => {
       if (!activeHandle && !event.target.closest?.('.prdctfltr_rng_price')) return;
-      if (event.type === 'mouseup' && Date.now() < suppressMouseUntil) return;
+      if (usingPointerInput && !event.type.startsWith('pointer')) return;
+      if (!usingPointerInput && window.PointerEvent && (event.type === 'mouseup' || event.type === 'touchend' || event.type === 'touchcancel')) return;
       if (activePointerId !== null && event.pointerId !== undefined && event.pointerId !== activePointerId) return;
       event.preventDefault();
       event.stopImmediatePropagation();
-      if (activePointerId !== null) event.target.releasePointerCapture?.(activePointerId);
+      if (activePointerId !== null) filter.releasePointerCapture?.(activePointerId);
       activePointerId = null;
+      usingPointerInput = false;
       finish();
     };
 
     const forceEnd = () => {
       activePointerId = null;
+      usingPointerInput = false;
       if (activeHandle) finish();
     };
 
-    ['mousedown', 'pointerdown', 'touchstart'].forEach((eventName) => {
-      filter.addEventListener(eventName, begin, true);
+    const sliderEventOptions = { capture: true, passive: false };
+    ['pointerdown', 'mousedown', 'touchstart'].forEach((eventName) => {
+      filter.addEventListener(eventName, begin, sliderEventOptions);
     });
     ['mousemove', 'pointermove', 'touchmove'].forEach((eventName) => {
-      document.addEventListener(eventName, move, true);
+      document.addEventListener(eventName, move, sliderEventOptions);
     });
     ['mouseup', 'pointerup', 'pointercancel', 'touchend', 'touchcancel'].forEach((eventName) => {
-      document.addEventListener(eventName, end, true);
-      window.addEventListener(eventName, forceEnd, true);
+      document.addEventListener(eventName, end, sliderEventOptions);
+      window.addEventListener(eventName, forceEnd, sliderEventOptions);
     });
     document.addEventListener('mouseleave', forceEnd, true);
     document.addEventListener('visibilitychange', forceEnd, true);
