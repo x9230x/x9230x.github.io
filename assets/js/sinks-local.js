@@ -587,9 +587,19 @@
         .dealer-static-catalog .prdctfltr_rng_price .irs {
           width: 100% !important;
           max-width: 280px !important;
-          margin-top: 8px !important;
+          margin-top: -2px !important;
           padding-top: 0 !important;
-          height: 38px !important;
+          height: 24px !important;
+          min-height: 24px !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-line,
+        .dealer-static-catalog .prdctfltr_rng_price .irs-bar {
+          top: 12px !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs-slider {
+          top: 6px !important;
         }
 
         .dealer-static-catalog .prdctfltr_rng_price .irs-min,
