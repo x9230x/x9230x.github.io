@@ -321,6 +321,14 @@
         height: 2px !important;
       }
 
+      .dealer-static-catalog .prdctfltr_rng_price .irs-line {
+        background: #d9d9d9 !important;
+      }
+
+      .dealer-static-catalog .prdctfltr_rng_price .irs-bar {
+        background: rgba(0, 0, 0, .55) !important;
+      }
+
       .dealer-static-catalog .prdctfltr_rng_price .irs-slider {
         z-index: 8 !important;
         width: 18px !important;
