@@ -324,7 +324,7 @@
         z-index: 8 !important;
         width: 18px !important;
         height: 18px !important;
-        top: 27px !important;
+        top: 22px !important;
       }
 
       .dealer-static-catalog .prdctfltr_rng_price .irs-from,
@@ -670,7 +670,7 @@
           z-index: 8 !important;
           width: 22px !important;
           height: 22px !important;
-          top: 6px !important;
+          top: 2px !important;
           pointer-events: auto !important;
           touch-action: none !important;
         }
