@@ -356,6 +356,12 @@
         }
       }
 
+      @media (max-width: 600px) {
+        .dealer-local-cart-tab {
+          display: none !important;
+        }
+      }
+
       @media print {
         .dealer-lang-switch,
         .dealer-kz-note {

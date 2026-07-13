@@ -270,6 +270,12 @@
         transform: translateY(0);
       }
 
+      @media (max-width: 600px) {
+        .dealer-local-cart-tab {
+          display: none !important;
+        }
+      }
+
       .dealer-local-toast {
         position: fixed;
         z-index: 100000;

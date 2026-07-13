@@ -567,6 +567,12 @@
         stroke-width: 2.05;
         transform: translateY(0);
       }
+
+      @media (max-width: 600px) {
+        .dealer-local-cart-tab {
+          display: none !important;
+        }
+      }
     `;
     document.head.appendChild(style);
   }
