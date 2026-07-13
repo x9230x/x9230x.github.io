@@ -294,13 +294,14 @@
       }
 
       .dealer-static-catalog .prdctfltr_rng_price {
-        min-width: 185px !important;
+        min-width: 165px !important;
+        padding-right: 18px !important;
       }
 
       .dealer-static-catalog .prdctfltr_rng_price .irs {
         position: relative !important;
         z-index: 3 !important;
-        width: 185px !important;
+        width: 165px !important;
         max-width: 100% !important;
         touch-action: none !important;
       }
@@ -1931,7 +1932,7 @@
   }
 
   function syncLocalPriceSlider(filter = document.querySelector('.prdctfltr_rng_price')) {
-    if (!filter || filter.dataset.dealerLocalSlider !== '1') return;
+    if (!filter || !filter.dataset.dealerLocalSlider) return;
 
     const input = filter.querySelector('input.pf_rng_price');
     const hiddenMin = filter.querySelector('input[name="rng_min_price"]');
@@ -1980,6 +1981,69 @@
     if (mobileValues[1]) mobileValues[1].textContent = toText;
   }
 
+  function applyIonPriceData(filter, data, apply = false) {
+    if (!filter || !data) return;
+
+    const input = filter.querySelector('input.pf_rng_price');
+    const hiddenMin = filter.querySelector('input[name="rng_min_price"]');
+    const hiddenMax = filter.querySelector('input[name="rng_max_price"]');
+    const from = Number(data.from || data.min || 0);
+    const to = Number(data.to || data.max || 0);
+    if (!from || !to) return;
+
+    filter.dataset.currentMin = String(from);
+    filter.dataset.currentMax = String(to);
+    if (input) input.value = from + ';' + to;
+    if (hiddenMin) hiddenMin.value = String(from);
+    if (hiddenMax) hiddenMax.value = String(to);
+    syncLocalPriceSlider(filter);
+    if (apply) applyPriceRangeSoon();
+  }
+
+  function setupIonPriceSlider(filter, input, minLimit, maxLimit, from, to) {
+    const $ = window.jQuery;
+    if (!$?.fn?.ionRangeSlider) return false;
+
+    const $input = $(input);
+    const prettify = (value) => formatKzt(roundKzt(Number(value) || 0));
+    const options = {
+      type: 'double',
+      min: minLimit,
+      max: maxLimit,
+      from,
+      to,
+      step: 1,
+      input_values_separator: ';',
+      prettify_enabled: true,
+      prettify,
+      onStart: (data) => applyIonPriceData(filter, data, false),
+      onChange: (data) => applyIonPriceData(filter, data, false),
+      onUpdate: (data) => applyIonPriceData(filter, data, false),
+      onFinish: (data) => applyIonPriceData(filter, data, true)
+    };
+
+    const existing = $input.data('ionRangeSlider');
+    filter.dataset.dealerLocalSlider = 'ion';
+    filter.dataset.defaultMin = String(minLimit);
+    filter.dataset.defaultMax = String(maxLimit);
+
+    if (existing?.update) {
+      existing.update(options);
+    } else {
+      $input.ionRangeSlider(options);
+    }
+
+    window.setTimeout(() => {
+      const instance = $input.data('ionRangeSlider');
+      if (instance?.update) {
+        instance.update({ from, to });
+      }
+      applyIonPriceData(filter, { from, to, min: minLimit, max: maxLimit }, false);
+    }, 0);
+
+    return true;
+  }
+
   function resetLocalPriceSlider() {
     const filter = document.querySelector('.prdctfltr_rng_price');
     if (!filter) return;
@@ -1996,6 +2060,10 @@
     if (hiddenMax) hiddenMax.value = String(maxLimit);
     filter.dataset.currentMin = String(minLimit);
     filter.dataset.currentMax = String(maxLimit);
+    const instance = window.jQuery?.(input).data('ionRangeSlider');
+    if (instance?.update) {
+      instance.update({ from: minLimit, to: maxLimit });
+    }
     syncLocalPriceSlider(filter);
   }
 
@@ -2012,14 +2080,7 @@
 
   function setupLocalPriceSlider() {
     const filter = document.querySelector('.prdctfltr_rng_price');
-    if (!filter || filter.dataset.dealerLocalSlider === '1') return;
-
-    const sliderShell = filter.querySelector('.irs');
-    if (sliderShell && sliderShell.dataset.dealerCleanSlider !== '1') {
-      const cleanSlider = sliderShell.cloneNode(true);
-      cleanSlider.dataset.dealerCleanSlider = '1';
-      sliderShell.replaceWith(cleanSlider);
-    }
+    if (!filter || filter.dataset.dealerLocalSlider) return;
 
     const input = filter.querySelector('input.pf_rng_price');
     const hiddenMin = filter.querySelector('input[name="rng_min_price"]');
@@ -2038,12 +2099,24 @@
     const maxLimit = startMax || Number(hiddenMax?.value || 0);
     if (!minLimit || !maxLimit || minLimit >= maxLimit) return;
 
+    let from = Number(filter.dataset.currentMin || hiddenMin?.value || minLimit) || minLimit;
+    let to = Number(filter.dataset.currentMax || hiddenMax?.value || maxLimit) || maxLimit;
+    from = Math.max(minLimit, Math.min(from, maxLimit));
+    to = Math.max(from, Math.min(to, maxLimit));
+
+    if (setupIonPriceSlider(filter, input, minLimit, maxLimit, from, to)) return;
+
+    const sliderShell = filter.querySelector('.irs');
+    if (sliderShell && sliderShell.dataset.dealerCleanSlider !== '1') {
+      const cleanSlider = sliderShell.cloneNode(true);
+      cleanSlider.dataset.dealerCleanSlider = '1';
+      sliderShell.replaceWith(cleanSlider);
+    }
+
     filter.dataset.dealerLocalSlider = '1';
     filter.dataset.defaultMin = String(minLimit);
     filter.dataset.defaultMax = String(maxLimit);
 
-    let from = Number(hiddenMin?.value || minLimit) || minLimit;
-    let to = Number(hiddenMax?.value || maxLimit) || maxLimit;
     let activeHandle = '';
     let activePointerId = null;
     let priceRangeApplied = false;
@@ -2335,6 +2408,11 @@
         input.addEventListener(eventName, async (event) => {
           event.preventDefault();
           event.stopImmediatePropagation();
+          const priceFilter = input.closest('.prdctfltr_rng_price');
+          if (priceFilter?.dataset.dealerLocalSlider === 'ion') {
+            syncLocalPriceSlider(priceFilter);
+            return;
+          }
           document.querySelectorAll('.xwc--pf-loader-overlay, .prdctfltr_loader').forEach((node) => node.remove());
           await ensureAllLocalProductsLoaded();
           await ensureCatalogMetaLoaded();
