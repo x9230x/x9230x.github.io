@@ -488,7 +488,7 @@
         .dealer-static-catalog.dealer-filter-compact .hidden_filter {
           position: fixed !important;
           display: flex !important;
-          top: 0 !important;
+          top: var(--dealer-nav-height, 67px) !important;
           left: 0 !important;
           z-index: 9998 !important;
           width: 100% !important;
