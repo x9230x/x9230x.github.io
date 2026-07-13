@@ -38,6 +38,8 @@
   let lastScrollY = window.scrollY || 0;
   let productImageUpdateToken = 0;
   let restoringCatalogFilters = false;
+  let mobileFilterToggleLockedUntil = 0;
+  let suppressNextMobileFilterClick = false;
   const productDetailsCache = new Map();
   const productImageProbeCache = new Map();
   const productKeys = new Set();
@@ -2187,11 +2189,33 @@
     }
 
     if (!filterDropdownBound) {
+      document.addEventListener('pointerdown', (event) => {
+        const mobileButton = event.target.closest('.hidden_button');
+        if (!mobileButton) return;
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        const now = Date.now();
+        if (now < mobileFilterToggleLockedUntil) return;
+
+        mobileFilterToggleLockedUntil = now + 450;
+        suppressNextMobileFilterClick = true;
+        setMobileFiltersOpen(!document.body.classList.contains('dealer-filter-expanded'));
+      }, true);
+
       document.addEventListener('click', (event) => {
         const mobileButton = event.target.closest('.hidden_button');
         if (mobileButton) {
           event.preventDefault();
           event.stopImmediatePropagation();
+
+          if (suppressNextMobileFilterClick || Date.now() < mobileFilterToggleLockedUntil) {
+            suppressNextMobileFilterClick = false;
+            return;
+          }
+
+          mobileFilterToggleLockedUntil = Date.now() + 450;
           setMobileFiltersOpen(!document.body.classList.contains('dealer-filter-expanded'));
           return;
         }
