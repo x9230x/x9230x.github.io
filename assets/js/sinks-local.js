@@ -1072,7 +1072,7 @@
     document.body.classList.toggle('dealer-filter-compact', compact);
     lastScrollY = currentScrollY;
 
-    if (!compact) {
+    if (window.innerWidth > 1250 && !compact) {
       document.body.classList.remove('dealer-filter-expanded');
       document.querySelectorAll('.prdctfltr_filter.dealer-filter-open').forEach((openFilter) => {
         openFilter.classList.remove('dealer-filter-open');
