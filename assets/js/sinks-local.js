@@ -2066,6 +2066,18 @@
   }
 
   function bindFilters() {
+    const setMobileFiltersOpen = (open) => {
+      document.body.classList.toggle('dealer-filter-expanded', open);
+      document.querySelectorAll('.hidden_filter .widget-area, .hidden_filter .widget-column, .hidden_filter .widget').forEach((node) => {
+        node.classList.toggle('active', open);
+      });
+      if (!open) {
+        document.querySelectorAll('.prdctfltr_filter.dealer-filter-open').forEach((openFilter) => {
+          openFilter.classList.remove('dealer-filter-open');
+        });
+      }
+    };
+
     if (!filterClickBound) {
       document.addEventListener('click', async (event) => {
         const label = event.target.closest('.prdctfltr_filter label');
@@ -2088,6 +2100,14 @@
 
     if (!filterDropdownBound) {
       document.addEventListener('click', (event) => {
+        const mobileButton = event.target.closest('.hidden_button');
+        if (mobileButton) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          setMobileFiltersOpen(!document.body.classList.contains('dealer-filter-expanded'));
+          return;
+        }
+
         const title = event.target.closest('.prdctfltr_widget_title');
         const filter = title?.closest('.prdctfltr_filter');
 
@@ -2097,7 +2117,7 @@
           event.preventDefault();
           event.stopImmediatePropagation();
 
-          document.body.classList.toggle('dealer-filter-expanded');
+          setMobileFiltersOpen(!document.body.classList.contains('dealer-filter-expanded'));
           document.querySelectorAll('.prdctfltr_filter.dealer-filter-open').forEach((openFilter) => {
             openFilter.classList.remove('dealer-filter-open');
           });
@@ -2105,10 +2125,7 @@
         }
 
         if (!event.target.closest('.hidden_filter')) {
-          document.body.classList.remove('dealer-filter-expanded');
-          document.querySelectorAll('.prdctfltr_filter.dealer-filter-open').forEach((openFilter) => {
-            openFilter.classList.remove('dealer-filter-open');
-          });
+          setMobileFiltersOpen(false);
         }
       }, true);
 
