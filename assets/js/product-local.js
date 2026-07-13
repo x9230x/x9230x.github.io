@@ -270,7 +270,7 @@
         transform: translateY(0);
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 900px) {
         .dealer-local-cart-tab {
           display: none !important;
         }
@@ -374,6 +374,73 @@
       .card_actions .pin {
         flex: 0 0 auto !important;
         white-space: nowrap !important;
+      }
+
+      @media (max-width: 700px) {
+        html,
+        body,
+        body.single-product,
+        body.single-product .site,
+        body.single-product .default,
+        body.single-product .product,
+        body.single-product .product_card,
+        body.single-product .card_grid,
+        body.single-product .card_grid_half,
+        body.single-product .card_info,
+        body.single-product .summary {
+          max-width: 100% !important;
+          overflow-x: hidden !important;
+          box-sizing: border-box !important;
+        }
+
+        body.single-product .card_info {
+          padding-left: 26px !important;
+          padding-right: 26px !important;
+        }
+
+        body.single-product .prod_image,
+        body.single-product .prod_image img,
+        body.single-product .second_image_cont,
+        body.single-product .second_image,
+        body.single-product .second_image img,
+        body.single-product .add_info,
+        body.single-product .add_info img {
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+        }
+
+        body.single-product .card_title h1,
+        body.single-product .prod_title {
+          max-width: 100% !important;
+          overflow-wrap: anywhere !important;
+          word-break: normal !important;
+        }
+
+        body.single-product .card_actions {
+          width: 100% !important;
+          max-width: 100% !important;
+          flex-wrap: wrap !important;
+          gap: 14px 18px !important;
+          align-items: center !important;
+          overflow: visible !important;
+        }
+
+        body.single-product .card_actions .rrc {
+          max-width: 100% !important;
+          flex: 0 1 auto !important;
+        }
+
+        body.single-product .card_actions .fav_button,
+        body.single-product .card_actions .pin {
+          flex: 0 1 auto !important;
+          min-width: 0 !important;
+        }
+
+        body.single-product .dealer-favorite-label,
+        body.single-product .card_actions .pin a,
+        body.single-product .card_actions .pin span {
+          white-space: nowrap !important;
+        }
       }
     `;
     document.head.appendChild(style);
