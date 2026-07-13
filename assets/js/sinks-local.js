@@ -294,15 +294,17 @@
       }
 
       .dealer-static-catalog .prdctfltr_rng_price {
-        min-width: 165px !important;
+        min-width: 250px !important;
         padding-right: 18px !important;
       }
 
       .dealer-static-catalog .prdctfltr_rng_price .irs {
         position: relative !important;
         z-index: 3 !important;
-        width: 165px !important;
+        width: 250px !important;
         max-width: 100% !important;
+        height: 36px !important;
+        min-height: 36px !important;
         touch-action: none !important;
       }
 
@@ -313,18 +315,34 @@
         touch-action: none !important;
       }
 
+      .dealer-static-catalog .prdctfltr_rng_price .irs-line,
+      .dealer-static-catalog .prdctfltr_rng_price .irs-bar {
+        top: 18px !important;
+      }
+
       .dealer-static-catalog .prdctfltr_rng_price .irs-slider {
         z-index: 8 !important;
         width: 18px !important;
         height: 18px !important;
+        top: 15px !important;
       }
 
       .dealer-static-catalog .prdctfltr_rng_price .irs-slider.from {
-        margin-left: 0 !important;
+        margin-left: -9px !important;
       }
 
       .dealer-static-catalog .prdctfltr_rng_price .irs-slider.to {
-        margin-left: -18px !important;
+        margin-left: -9px !important;
+      }
+
+      @media (max-width: 1450px) and (min-width: 1251px) {
+        .dealer-static-catalog .prdctfltr_rng_price {
+          min-width: 185px !important;
+        }
+
+        .dealer-static-catalog .prdctfltr_rng_price .irs {
+          width: 185px !important;
+        }
       }
 
       .dealer-local-empty {
@@ -2391,9 +2409,8 @@
         document.addEventListener(eventName, (event) => {
           if (!event.target.closest?.('.prdctfltr_rng_price')) return;
 
-          event.stopImmediatePropagation();
           applyPriceRangeSoon();
-        }, true);
+        }, false);
       });
 
       priceRangeBound = true;
