@@ -294,13 +294,13 @@
       }
 
       .dealer-static-catalog .prdctfltr_rng_price {
-        min-width: 260px !important;
+        min-width: 205px !important;
       }
 
       .dealer-static-catalog .prdctfltr_rng_price .irs {
         position: relative !important;
         z-index: 3 !important;
-        width: 260px !important;
+        width: 205px !important;
         max-width: 100% !important;
         touch-action: none !important;
       }
