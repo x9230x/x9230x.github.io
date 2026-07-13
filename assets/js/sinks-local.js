@@ -293,6 +293,39 @@
         display: none !important;
       }
 
+      .dealer-static-catalog .prdctfltr_rng_price {
+        min-width: 260px !important;
+      }
+
+      .dealer-static-catalog .prdctfltr_rng_price .irs {
+        position: relative !important;
+        z-index: 3 !important;
+        width: 260px !important;
+        max-width: 100% !important;
+        touch-action: none !important;
+      }
+
+      .dealer-static-catalog .prdctfltr_rng_price .irs-line,
+      .dealer-static-catalog .prdctfltr_rng_price .irs-bar,
+      .dealer-static-catalog .prdctfltr_rng_price .irs-slider {
+        pointer-events: auto !important;
+        touch-action: none !important;
+      }
+
+      .dealer-static-catalog .prdctfltr_rng_price .irs-slider {
+        z-index: 8 !important;
+        width: 18px !important;
+        height: 18px !important;
+      }
+
+      .dealer-static-catalog .prdctfltr_rng_price .irs-slider.from {
+        margin-left: 0 !important;
+      }
+
+      .dealer-static-catalog .prdctfltr_rng_price .irs-slider.to {
+        margin-left: -18px !important;
+      }
+
       .dealer-local-empty {
         display: none;
         width: 100%;
@@ -2014,7 +2047,9 @@
     let activeHandle = '';
     let activePointerId = null;
     let priceRangeApplied = false;
-    let usingPointerInput = false;
+    let activeInputType = '';
+    let ignoreMouseUntil = 0;
+    let ignoreTouchUntil = 0;
 
     const valueToPercent = (value) => ((value - minLimit) / (maxLimit - minLimit)) * 100;
     const pointToValue = (event) => {
@@ -2061,12 +2096,24 @@
 
     const begin = (event) => {
       if (!event.target.closest('.prdctfltr_rng_price')) return;
-      if (window.PointerEvent && (event.type === 'mousedown' || event.type === 'touchstart')) return;
+      const now = Date.now();
+      if (activeHandle) return;
+      if (event.type === 'mousedown' && now < ignoreMouseUntil) return;
+      if (event.type === 'touchstart' && now < ignoreTouchUntil) return;
       event.preventDefault();
       event.stopImmediatePropagation();
 
       activePointerId = event.pointerId ?? null;
-      usingPointerInput = event.type.startsWith('pointer');
+      activeInputType = event.type.startsWith('pointer') ? 'pointer'
+        : event.type.startsWith('touch') ? 'touch'
+          : 'mouse';
+      if (activeInputType === 'pointer') {
+        ignoreMouseUntil = now + 900;
+        ignoreTouchUntil = now + 900;
+      }
+      if (activeInputType === 'touch') {
+        ignoreMouseUntil = now + 900;
+      }
       if (activePointerId !== null) {
         filter.setPointerCapture?.(activePointerId);
       }
@@ -2085,8 +2132,9 @@
 
     const move = (event) => {
       if (!activeHandle) return;
-      if (usingPointerInput && !event.type.startsWith('pointer')) return;
-      if (!usingPointerInput && window.PointerEvent && (event.type === 'mousemove' || event.type === 'touchmove')) return;
+      if (activeInputType === 'pointer' && !event.type.startsWith('pointer')) return;
+      if (activeInputType === 'touch' && !event.type.startsWith('touch')) return;
+      if (activeInputType === 'mouse' && event.type !== 'mousemove') return;
       if (activePointerId !== null && event.pointerId !== undefined && event.pointerId !== activePointerId) return;
 
       event.preventDefault();
@@ -2100,20 +2148,21 @@
 
     const end = (event) => {
       if (!activeHandle && !event.target.closest?.('.prdctfltr_rng_price')) return;
-      if (usingPointerInput && !event.type.startsWith('pointer')) return;
-      if (!usingPointerInput && window.PointerEvent && (event.type === 'mouseup' || event.type === 'touchend' || event.type === 'touchcancel')) return;
+      if (activeInputType === 'pointer' && !event.type.startsWith('pointer')) return;
+      if (activeInputType === 'touch' && !event.type.startsWith('touch')) return;
+      if (activeInputType === 'mouse' && event.type !== 'mouseup') return;
       if (activePointerId !== null && event.pointerId !== undefined && event.pointerId !== activePointerId) return;
       event.preventDefault();
       event.stopImmediatePropagation();
       if (activePointerId !== null) filter.releasePointerCapture?.(activePointerId);
       activePointerId = null;
-      usingPointerInput = false;
+      activeInputType = '';
       finish();
     };
 
     const forceEnd = () => {
       activePointerId = null;
-      usingPointerInput = false;
+      activeInputType = '';
       if (activeHandle) finish();
     };
 
