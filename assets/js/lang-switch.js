@@ -374,6 +374,28 @@
         }
       }
 
+      body.fancybox-active .dealer-lang-switch,
+      body.fancybox-active .dealer-kz-note,
+      body.fancybox-active .dealer-local-cart-tab,
+      body.fancybox-active .favorites-icon-wrapper,
+      body.fancybox-active #search,
+      body.fancybox-active .search_line {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+
+      body .fancybox-container {
+        z-index: 300000 !important;
+      }
+
+      body .fancybox-is-open .fancybox-bg,
+      body .fancybox-is-open .fancybox-stage,
+      body .fancybox-is-open .fancybox-toolbar,
+      body .fancybox-is-open .fancybox-navigation {
+        z-index: 300001 !important;
+      }
+
       .dgwt-wcas-search-submit {
         display: inline-flex !important;
         align-items: center !important;
