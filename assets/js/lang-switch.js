@@ -146,6 +146,13 @@
         line-height: 1.1 !important;
       }
 
+      .top_nav > span > a[href^="tel:"],
+      .top_nav a[href^="tel:87077832888"] {
+        font-family: "GothamProBold", "GothamProMedium", Arial, Helvetica, sans-serif !important;
+        font-weight: 700 !important;
+        letter-spacing: 0 !important;
+      }
+
       @media (min-width: 781px) {
         .top_nav {
           height: 67px !important;
