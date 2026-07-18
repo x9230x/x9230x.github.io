@@ -584,6 +584,10 @@
           box-shadow: none !important;
         }
 
+        .dealer-static-catalog .products {
+          padding-top: 64px !important;
+        }
+
         .dealer-static-catalog .hidden_filter .hidden_button {
           display: flex !important;
           position: sticky !important;
@@ -639,6 +643,19 @@
         .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_filter {
           width: 100% !important;
           min-width: 0 !important;
+        }
+
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_rng_price {
+          display: block !important;
+          width: 100% !important;
+          min-width: 0 !important;
+        }
+
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_rng_price .prdctfltr_add_scroll,
+        .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_rng_price .prdctfltr_checkboxes {
+          display: block !important;
+          width: 100% !important;
+          overflow: visible !important;
         }
 
         .dealer-static-catalog.dealer-filter-expanded .hidden_filter .prdctfltr_widget_title {
