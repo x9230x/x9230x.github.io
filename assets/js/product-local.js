@@ -593,6 +593,10 @@
     return price ? roundKzt(price) : 0;
   }
 
+  function cartPrice() {
+    return variationPrice() || visiblePrice();
+  }
+
   function productImage() {
     return document.querySelector('.prod_image img, .woocommerce-product-gallery img, .rtwpvg-single-image-container img, .product img')?.currentSrc ||
       document.querySelector('.prod_image img, .woocommerce-product-gallery img, .rtwpvg-single-image-container img, .product img')?.src ||
@@ -1115,7 +1119,7 @@
     const displayTitle = productDisplayTitle(document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim());
     const title = isTapProduct() ? displayTitle : titleWithColor(displayTitle, selectedColor());
     const variation = productSku() || currentVariationId() || primaryAttributeValue() || cleanColorName(selectedColor()) || 'default';
-    const price = visiblePrice() || variationPrice();
+    const price = cartPrice();
 
     return {
       id: productSlug() + '-' + String(variation).toLowerCase().replace(/[^a-z0-9а-яё-]+/gi, '-'),
