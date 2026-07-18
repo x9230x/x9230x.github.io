@@ -942,7 +942,17 @@
   }
 
   function ensureSimpleCartButton() {
-    if (document.querySelector('.single_add_to_cart_button, button[name="add-to-cart"], .dealer-simple-cart-button')) return;
+    if (document.querySelector('.dealer-simple-cart-button')) return;
+
+    const nativeButton = [...document.querySelectorAll('.single_add_to_cart_button, button[name="add-to-cart"]')]
+      .find((button) => {
+        const style = getComputedStyle(button);
+        return style.display !== 'none' &&
+          style.visibility !== 'hidden' &&
+          button.offsetWidth > 0 &&
+          button.offsetHeight > 0;
+      });
+    if (nativeButton) return;
 
     const actions = document.querySelector('.card_actions');
     const price = document.querySelector('.card_actions .rrc, .summary .rrc, .summary .price, .entry-summary .price, .rrc');
@@ -953,9 +963,9 @@
     button.className = 'single_add_to_cart_button button alt dealer-simple-cart-button';
     button.textContent = 'В корзину';
 
-    const favorite = actions.querySelector('.fav_button');
-    if (favorite) {
-      actions.insertBefore(button, favorite);
+    const pin = actions.querySelector('.pin');
+    if (pin?.nextSibling) {
+      actions.insertBefore(button, pin.nextSibling);
     } else {
       actions.appendChild(button);
     }
