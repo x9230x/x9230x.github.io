@@ -37,6 +37,8 @@
   let catalogMeta = {};
   let catalogMetaReady = false;
   let lastScrollY = window.scrollY || 0;
+  let filterCompactAnchor = 0;
+  let filterFullHeight = 0;
   let productImageUpdateToken = 0;
   let restoringCatalogFilters = false;
   let mobileFilterToggleLockedUntil = 0;
@@ -385,6 +387,10 @@
         border-bottom: 0 !important;
         box-shadow: none !important;
         overflow: visible !important;
+      }
+
+      .dealer-static-catalog.dealer-filter-compact .products {
+        padding-top: var(--dealer-filter-flow-space, 0px) !important;
       }
 
       .dealer-static-catalog.dealer-filter-compact > .menu {
@@ -1149,18 +1155,30 @@
 
   function updateFilterMode() {
     const currentScrollY = window.scrollY || 0;
-    const compact = window.innerWidth > 1250 && currentScrollY > 0;
+    const filter = document.querySelector('.hidden_filter');
     const topNav = document.querySelector('.top_nav');
     const menu = document.querySelector('body > .menu');
     const topNavRect = topNav?.getBoundingClientRect();
     const topNavHeight = topNavRect?.height || 67;
     const menuVisible = menu && getComputedStyle(menu).display !== 'none';
     const menuHeight = menuVisible ? (menu.offsetHeight || 45) : 0;
+    const wasCompact = document.body.classList.contains('dealer-filter-compact');
+
+    if (filter && (!filterCompactAnchor || !wasCompact)) {
+      const rect = filter.getBoundingClientRect();
+      filterCompactAnchor = Math.max(0, rect.top + currentScrollY - topNavHeight);
+      filterFullHeight = Math.max(filterFullHeight, Math.round(filter.offsetHeight || rect.height || 0));
+    }
+
+    const compactThreshold = Math.max(140, filterCompactAnchor + 24);
+    const compact = window.innerWidth > 1250 && currentScrollY > compactThreshold;
     const filterTop = compact ? Math.round(topNavHeight) + 'px' : '0px';
+    const flowSpace = compact ? Math.max(84, Math.round(filterFullHeight || 0)) : 0;
 
     document.documentElement.style.setProperty('--dealer-nav-height', Math.round(topNavHeight) + 'px');
     document.documentElement.style.setProperty('--dealer-menu-height', Math.round(menuHeight) + 'px');
     document.documentElement.style.setProperty('--dealer-filter-top', filterTop);
+    document.documentElement.style.setProperty('--dealer-filter-flow-space', flowSpace + 'px');
     document.body.classList.toggle('dealer-filter-compact', compact);
     lastScrollY = currentScrollY;
 
