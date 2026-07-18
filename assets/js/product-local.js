@@ -840,6 +840,10 @@
     return productCatalogKey() === 'sinks' || Boolean(document.querySelector('.product_cat-sinks, .entry.product_cat-sinks'));
   }
 
+  function isDispenserProduct() {
+    return productCatalogKey() === 'dispenser' || Boolean(document.querySelector('.product_cat-dispenser, .entry.product_cat-dispenser'));
+  }
+
   const TAP_PAINTED_SUFFIX_SLUGS = new Set([
     'nagano',
     'nagano-pure-drop-lite',
@@ -862,10 +866,10 @@
   function productDisplayTitle(value) {
     const title = cleanProductTitle(value);
     if (isDisposerProduct()) return title;
-    if (!isTapProduct() && !isSinkProduct()) return title;
+    if (!isTapProduct() && !isSinkProduct() && !isDispenserProduct()) return title;
 
     let code = selectedColorDisplayCode();
-    if (isSinkProduct()) {
+    if (isSinkProduct() || isDispenserProduct()) {
       code = code.replace(/-P$/i, '');
     } else if (!tapUsesPaintedSuffix()) {
       code = code.replace(/-P$/i, '');
