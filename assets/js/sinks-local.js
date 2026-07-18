@@ -2390,7 +2390,17 @@
 
         event.preventDefault();
         event.stopImmediatePropagation();
-        input.checked = !input.checked;
+        const filter = label.closest('.prdctfltr_filter');
+        const wasChecked = input.checked;
+
+        if (filter?.dataset.filter === 'pa_color') {
+          filter.querySelectorAll('input[type="checkbox"]').forEach((colorInput) => {
+            colorInput.checked = false;
+          });
+          input.checked = !wasChecked;
+        } else {
+          input.checked = !input.checked;
+        }
 
         document.querySelectorAll('.xwc--pf-loader-overlay, .prdctfltr_loader').forEach((node) => node.remove());
         await ensureAllLocalProductsLoaded();
