@@ -451,27 +451,27 @@ p {
 }
 
 #gb {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/26.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/26.jpg');
 }
 
 #wh {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/031.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/031.jpg');
 }
 
 #az {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/38.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/38.jpg');
 }
 
 #do {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/50.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/50.jpg');
 }
 
 #cn {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/60.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/60.jpg');
 }
 
 #wg {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/52.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/52.jpg');
 }
 
 .mob_kin {
@@ -682,19 +682,19 @@ p {
 }
 
 #to {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/70.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/70.jpg');
 }
 
 #rg {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/51.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/51.jpg');
 }
 
 #sl {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/65.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/65.jpg');
 }
 
 #ib {
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/37.jpg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/c/37.jpg');
 }
 
 .change_bg {
@@ -985,7 +985,7 @@ p {
 	width: 100%;
 	position: relative;
 	margin-top: -30px;
-	background-image: url(https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/acs_back.jpg);
+	background-image: url(/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/main/acs_back.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;

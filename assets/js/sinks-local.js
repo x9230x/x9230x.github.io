@@ -522,7 +522,7 @@
         display: block !important;
         width: 28px !important;
         height: 28px !important;
-        background-image: url("https://omoikiri.ru/wp-content/themes/twentynineteen/img/plus.svg") !important;
+        background-image: url("/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/plus.svg") !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
         background-size: 28px 28px !important;

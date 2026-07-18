@@ -587,7 +587,7 @@ label.prdctfltr_active .prdctfltr_customize_block {
 .prdctfltr-down:before {
 	display: block;
 	content: ' ';
-	background-image: url('https://omoikiri.ru/wp-content/themes/twentynineteen/img/plus.svg');
+	background-image: url('/assets/remote/omoikiri.ru/wp-content/themes/twentynineteen/img/plus.svg');
 	background-size: 28px 28px;
 	height: 28px;
 	width: 28px;

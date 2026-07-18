@@ -1,0 +1,3 @@
+https://omoikiri.ru/product/c/0.jpg :: HTTP 404
+https://omoikiri.ru/product/c/4.jpg :: HTTP 404
+https://omoikiri.ru/wp-content/themes/twentynineteen/img/main/sq/img_${index}.png :: HTTP 404

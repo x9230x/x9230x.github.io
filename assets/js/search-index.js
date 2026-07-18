@@ -8,7 +8,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994509"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Akashi-S-LG-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Akashi-S-LG-9.png",
     "url": "product/akashi-s/index.html",
     "slug": "akashi-s"
   },
@@ -22,7 +22,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993759"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Akegata_51-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Akegata_51-BE.png",
     "url": "product/akegata-51/index.html",
     "slug": "akegata-51"
   },
@@ -36,7 +36,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994543"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/12/akeno-bn-bl.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/12/akeno-bn-bl.png",
     "url": "product/akeno/index.html",
     "slug": "akeno"
   },
@@ -47,7 +47,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4972072"
     ],
     "category": "Раковины для ванной",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Akira-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Akira-BL.png",
     "url": "product/akira/index.html",
     "slug": "akira"
   },
@@ -60,7 +60,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973080"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-41-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-41-gb.png",
     "url": "product/akisame-41/index.html",
     "slug": "akisame-41"
   },
@@ -73,7 +73,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973081"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-46-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-46-gb.png",
     "url": "product/akisame-46/index.html",
     "slug": "akisame-46"
   },
@@ -86,7 +86,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973439"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-51-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-51-gb.png",
     "url": "product/akisame-51/index.html",
     "slug": "akisame-51"
   },
@@ -99,7 +99,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973082"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-59-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-59-gb.png",
     "url": "product/akisame-59/index.html",
     "slug": "akisame-59"
   },
@@ -108,7 +108,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993775",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-60-2-l-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-60-2-l-in.png",
     "url": "product/akisame-60-2-l/index.html",
     "slug": "akisame-60-2-l"
   },
@@ -120,7 +120,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973083"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-65-l-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-65-l-gm.png",
     "url": "product/akisame-65-l/index.html",
     "slug": "akisame-65-l"
   },
@@ -132,7 +132,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973084"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-65-r-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-65-r-gm.png",
     "url": "product/akisame-65-r/index.html",
     "slug": "akisame-65-r"
   },
@@ -144,7 +144,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973087"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-78-2-l-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-78-2-l-gm.png",
     "url": "product/akisame-78-2-l/index.html",
     "slug": "akisame-78-2-l"
   },
@@ -156,7 +156,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973088"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-78-2-r-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-78-2-r-gm.png",
     "url": "product/akisame-78-2-r/index.html",
     "slug": "akisame-78-2-r"
   },
@@ -168,7 +168,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973085"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-78-l-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-78-l-gm.png",
     "url": "product/akisame-78-l/index.html",
     "slug": "akisame-78-l"
   },
@@ -180,7 +180,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973086"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-78-r-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-78-r-gm.png",
     "url": "product/akisame-78-r/index.html",
     "slug": "akisame-78-r"
   },
@@ -192,7 +192,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997045"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-86-side-l-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-86-side-l-gb.png",
     "url": "product/akisame-86-side-l/index.html",
     "slug": "akisame-86-side-l"
   },
@@ -204,7 +204,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997046"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-86-side-r-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-86-side-r-gb.png",
     "url": "product/akisame-86-side-r/index.html",
     "slug": "akisame-86-side-r"
   },
@@ -216,7 +216,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997048"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/05/akisame_86-2-side-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/05/akisame_86-2-side-gb.png",
     "url": "product/akisame-86-2-side/index.html",
     "slug": "akisame-86-2-side"
   },
@@ -225,7 +225,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993760",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-86-l-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-86-l-in.png",
     "url": "product/akisame-86-l/index.html",
     "slug": "akisame-86-l"
   },
@@ -234,7 +234,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993763",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-86-r-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-86-r-in.png",
     "url": "product/akisame-86-r/index.html",
     "slug": "akisame-86-r"
   },
@@ -246,7 +246,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973089"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-100-2-l-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-100-2-l-gm.png",
     "url": "product/akisame-100-2-l/index.html",
     "slug": "akisame-100-2-l"
   },
@@ -258,7 +258,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973090"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/akisame-100-2-r-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/akisame-100-2-r-gm.png",
     "url": "product/akisame-100-2-r/index.html",
     "slug": "akisame-100-2-r"
   },
@@ -269,7 +269,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994086"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Akita-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Akita-GB-9.png",
     "url": "product/akita/index.html",
     "slug": "akita"
   },
@@ -287,7 +287,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994330"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Akita-S-AZ-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Akita-S-AZ-6.png",
     "url": "product/akita-s/index.html",
     "slug": "akita-s"
   },
@@ -296,7 +296,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997028",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/amadare-39-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/amadare-39-in.png",
     "url": "product/amadare-39/index.html",
     "slug": "amadare-39"
   },
@@ -305,7 +305,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993802",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/amadare-45-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/amadare-45-in.png",
     "url": "product/amadare-45/index.html",
     "slug": "amadare-45"
   },
@@ -314,7 +314,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993766",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/amadare-50-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/amadare-50-in.png",
     "url": "product/amadare-50/index.html",
     "slug": "amadare-50"
   },
@@ -323,7 +323,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993718",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/amadare-55-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/amadare-55-in.png",
     "url": "product/amadare-55/index.html",
     "slug": "amadare-55"
   },
@@ -338,7 +338,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994072"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Amagasaki-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Amagasaki-GB-9.png",
     "url": "product/amagasaki/index.html",
     "slug": "amagasaki"
   },
@@ -347,7 +347,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4994355",
     "skus": [],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/Arita-SB-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/Arita-SB-GB.png",
     "url": "product/arita-sb/index.html",
     "slug": "arita-sb"
   },
@@ -361,7 +361,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994582"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/03/asakawa-s-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/03/asakawa-s-gb.png",
     "url": "product/asakawa-s/index.html",
     "slug": "asakawa-s"
   },
@@ -370,7 +370,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993449",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/ashi-56-in-3.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/ashi-56-in-3.png",
     "url": "product/ashi-56/index.html",
     "slug": "ashi-56"
   },
@@ -379,7 +379,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993785",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/asida-51-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/asida-51-in.png",
     "url": "product/asida-51/index.html",
     "slug": "asida-51"
   },
@@ -390,7 +390,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911404"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/bd-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/bd-01.png",
     "url": "product/bd-01/index.html",
     "slug": "bd-01"
   },
@@ -408,7 +408,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993155"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_20-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_20-U-BE.png",
     "url": "product/bosen-20-u/index.html",
     "slug": "bosen-20-u"
   },
@@ -424,7 +424,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993160"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_38-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_38-U-BE.png",
     "url": "product/bosen-38-u/index.html",
     "slug": "bosen-38-u"
   },
@@ -440,7 +440,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993144"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_41-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_41-BE.png",
     "url": "product/bosen-41/index.html",
     "slug": "bosen-41"
   },
@@ -452,7 +452,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993814"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Bosen_41A-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Bosen_41A-GB-1.png",
     "url": "product/bosen-41a/index.html",
     "slug": "bosen-41a"
   },
@@ -468,7 +468,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993598"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_44-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_44-U-BE.png",
     "url": "product/bosen-44-u/index.html",
     "slug": "bosen-44-u"
   },
@@ -484,7 +484,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997207"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_47-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_47-BE.png",
     "url": "product/bosen-47/index.html",
     "slug": "bosen-47"
   },
@@ -496,7 +496,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993817"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Bosen_47A-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Bosen_47A-GB-1.png",
     "url": "product/bosen-47a/index.html",
     "slug": "bosen-47a"
   },
@@ -512,7 +512,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993164"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_54-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_54-U-BE.png",
     "url": "product/bosen-54-u/index.html",
     "slug": "bosen-54-u"
   },
@@ -528,7 +528,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993148"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_57-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_57-BE.png",
     "url": "product/bosen-57/index.html",
     "slug": "bosen-57"
   },
@@ -541,7 +541,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997465"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Bosen_57A-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Bosen_57A-GB-1.png",
     "url": "product/bosen-57a/index.html",
     "slug": "bosen-57a"
   },
@@ -556,7 +556,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993152"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/bosen_59-2-be-4.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/bosen_59-2-be-4.png",
     "url": "product/bosen-59-2/index.html",
     "slug": "bosen-59-2"
   },
@@ -568,7 +568,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993823"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Bosen_59-2A-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Bosen_59-2A-GB-1.png",
     "url": "product/bosen-59-2a/index.html",
     "slug": "bosen-59-2a"
   },
@@ -583,7 +583,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4991212"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_61-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_61-BE.png",
     "url": "product/bosen-61/index.html",
     "slug": "bosen-61"
   },
@@ -596,7 +596,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997198"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Bosen_61A-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Bosen_61A-GB-1.png",
     "url": "product/bosen-61a/index.html",
     "slug": "bosen-61a"
   },
@@ -611,7 +611,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993839"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Bosen_80-2-GR.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Bosen_80-2-GR.png",
     "url": "product/bosen-80-2/index.html",
     "slug": "bosen-80-2"
   },
@@ -631,7 +631,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911410"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/bw-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/bw-01.png",
     "url": "product/bw-01/index.html",
     "slug": "bw-01"
   },
@@ -640,7 +640,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999005",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/cb-01-wood-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/cb-01-wood-1.png",
     "url": "product/cb-01-wood/index.html",
     "slug": "cb-01-wood"
   },
@@ -649,7 +649,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999008",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-03-Wood-S.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-03-Wood-S.png",
     "url": "product/cb-03-wood-s/index.html",
     "slug": "cb-03-wood-s"
   },
@@ -658,7 +658,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999009",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-04-Wood-L.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-04-Wood-L.png",
     "url": "product/cb-04-wood-l/index.html",
     "slug": "cb-04-wood-l"
   },
@@ -667,7 +667,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999053",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-05-Wood-M.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-05-Wood-M.png",
     "url": "product/cb-05-wood-m/index.html",
     "slug": "cb-05-wood-m"
   },
@@ -678,7 +678,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999102"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/cb-basic-370-gb-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/cb-basic-370-gb-1.png",
     "url": "product/cb-basic-370/index.html",
     "slug": "cb-basic-370"
   },
@@ -689,7 +689,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999103"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/cb-basic-380-gb-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/cb-basic-380-gb-1.png",
     "url": "product/cb-basic-380/index.html",
     "slug": "cb-basic-380"
   },
@@ -700,7 +700,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999104"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/cb-basic-400-gb-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/cb-basic-400-gb-1.png",
     "url": "product/cb-basic-400/index.html",
     "slug": "cb-basic-400"
   },
@@ -711,7 +711,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999064"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-Kitagawa-86-LB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-Kitagawa-86-LB.png",
     "url": "product/cb-kitagawa-86-lb/index.html",
     "slug": "cb-kitagawa-86-lb"
   },
@@ -720,7 +720,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999030",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-Maru-86.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-Maru-86.png",
     "url": "product/cb-maru-86/index.html",
     "slug": "cb-maru-86"
   },
@@ -729,7 +729,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999133",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/cb-prime-400-gb-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/cb-prime-400-gb-1.png",
     "url": "product/cb-prime-400/index.html",
     "slug": "cb-prime-400"
   },
@@ -738,7 +738,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999071",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-Sintesi-L-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-Sintesi-L-GB.png",
     "url": "product/cb-sintesi-l/index.html",
     "slug": "cb-sintesi-l"
   },
@@ -749,7 +749,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999070"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-Sintesi-M-WD.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-Sintesi-M-WD.png",
     "url": "product/cb-sintesi-m/index.html",
     "slug": "cb-sintesi-m"
   },
@@ -760,7 +760,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999072"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-Sintesi-S-WD.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-Sintesi-S-WD.png",
     "url": "product/cb-sintesi-s/index.html",
     "slug": "cb-sintesi-s"
   },
@@ -769,7 +769,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999033",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/cb-sumi-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/cb-sumi-1.png",
     "url": "product/cb-sumi/index.html",
     "slug": "cb-sumi"
   },
@@ -778,7 +778,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999065",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CB-Tarento-83-WD.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CB-Tarento-83-WD.png",
     "url": "product/cb-tarento-83/index.html",
     "slug": "cb-tarento-83"
   },
@@ -789,7 +789,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999149"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/cb-yamakawa-wd-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/cb-yamakawa-wd-1.png",
     "url": "product/cb-yamakawa/index.html",
     "slug": "cb-yamakawa"
   },
@@ -800,7 +800,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911408"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/cj-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/cj-01.png",
     "url": "product/cj-01/index.html",
     "slug": "cj-01"
   },
@@ -813,7 +813,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999003"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CO-02-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CO-02-GB.png",
     "url": "product/co-02/index.html",
     "slug": "co-02"
   },
@@ -825,7 +825,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999056"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CO-04-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CO-04-GM.png",
     "url": "product/co-04/index.html",
     "slug": "co-04"
   },
@@ -837,7 +837,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999058"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CO-05-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CO-05-GM.png",
     "url": "product/co-05/index.html",
     "slug": "co-05"
   },
@@ -850,7 +850,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999051"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CO-06-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CO-06-GB.png",
     "url": "product/co-06/index.html",
     "slug": "co-06"
   },
@@ -859,7 +859,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999069",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/CO-07-Pro-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/CO-07-Pro-GB.png",
     "url": "product/co-07-pro/index.html",
     "slug": "co-07-pro"
   },
@@ -868,7 +868,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4996529",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/D-01-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/D-01-AB.png",
     "url": "product/d-01/index.html",
     "slug": "d-01"
   },
@@ -883,7 +883,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993607"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_42-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_42-be.png",
     "url": "product/daisen-42/index.html",
     "slug": "daisen-42"
   },
@@ -892,7 +892,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993179",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/daisen-44-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/daisen-44-in.png",
     "url": "product/daisen-44/index.html",
     "slug": "daisen-44"
   },
@@ -907,7 +907,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997489"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_46-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_46-be.png",
     "url": "product/daisen-46/index.html",
     "slug": "daisen-46"
   },
@@ -920,7 +920,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997576"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/06/daisen_51-bl.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/06/daisen_51-bl.png",
     "url": "product/daisen-51/index.html",
     "slug": "daisen-51"
   },
@@ -933,7 +933,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997577"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/06/daisen_57-bl.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/06/daisen_57-bl.png",
     "url": "product/daisen-57/index.html",
     "slug": "daisen-57"
   },
@@ -948,7 +948,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993623"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_60-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_60-be.png",
     "url": "product/daisen-60/index.html",
     "slug": "daisen-60"
   },
@@ -963,7 +963,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997496"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_65-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_65-be.png",
     "url": "product/daisen-65/index.html",
     "slug": "daisen-65"
   },
@@ -979,7 +979,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993514"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Daisen_65T-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Daisen_65T-BE.png",
     "url": "product/daisen-65t/index.html",
     "slug": "daisen-65t"
   },
@@ -994,7 +994,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993631"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_77-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_77-be.png",
     "url": "product/daisen-77/index.html",
     "slug": "daisen-77"
   },
@@ -1008,7 +1008,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993418"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_78-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_78-be.png",
     "url": "product/daisen-78/index.html",
     "slug": "daisen-78"
   },
@@ -1022,7 +1022,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993417"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/daisen_78-2-be-5.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/daisen_78-2-be-5.png",
     "url": "product/daisen-78-2/index.html",
     "slug": "daisen-78-2"
   },
@@ -1037,7 +1037,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993530"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/daisen_78-2t-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/daisen_78-2t-be.png",
     "url": "product/daisen-78-2t/index.html",
     "slug": "daisen-78-2t"
   },
@@ -1052,7 +1052,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997497"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_78-lb-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_78-lb-be.png",
     "url": "product/daisen-78-lb/index.html",
     "slug": "daisen-78-lb"
   },
@@ -1068,7 +1068,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993522"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Daisen_78T-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Daisen_78T-BE.png",
     "url": "product/daisen-78t/index.html",
     "slug": "daisen-78t"
   },
@@ -1082,7 +1082,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993701"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_86-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_86-be.png",
     "url": "product/daisen-86/index.html",
     "slug": "daisen-86"
   },
@@ -1096,7 +1096,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993478"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/daisen_86-2-be.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/daisen_86-2-be.png",
     "url": "product/daisen-86-2/index.html",
     "slug": "daisen-86-2"
   },
@@ -1109,7 +1109,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4992035"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/kuon-santoku.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/kuon-santoku.png",
     "url": "product/damascus-kuon/index.html",
     "slug": "damascus-kuon"
   },
@@ -1122,7 +1122,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4996234"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/sumi-chief.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/sumi-chief.png",
     "url": "product/damascus-suminagashi/index.html",
     "slug": "damascus-suminagashi"
   },
@@ -1133,7 +1133,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911418"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/gb-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/gb-01.png",
     "url": "product/db-01/index.html",
     "slug": "db-01"
   },
@@ -1145,7 +1145,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999039"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DC-01-1-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DC-01-1-GB.png",
     "url": "product/dc-01-1/index.html",
     "slug": "dc-01-1"
   },
@@ -1157,7 +1157,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999077"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DC-02-2-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DC-02-2-GB.png",
     "url": "product/dc-02-2/index.html",
     "slug": "dc-02-2"
   },
@@ -1169,7 +1169,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999080"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DC-02-3-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DC-02-3-GB.png",
     "url": "product/dc-02-3/index.html",
     "slug": "dc-02-3"
   },
@@ -1181,7 +1181,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999083"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DC-03-1-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DC-03-1-GB.png",
     "url": "product/dc-03-1/index.html",
     "slug": "dc-03-1"
   },
@@ -1193,7 +1193,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999086"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DC-04-2-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DC-04-2-GB.png",
     "url": "product/dc-04-2/index.html",
     "slug": "dc-04-2"
   },
@@ -1205,7 +1205,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999089"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DC-04-3-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DC-04-3-GB.png",
     "url": "product/dc-04-3/index.html",
     "slug": "dc-04-3"
   },
@@ -1217,7 +1217,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999092"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DC-05-1-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DC-05-1-GB.png",
     "url": "product/dc-05-1/index.html",
     "slug": "dc-05-1"
   },
@@ -1231,7 +1231,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4957090"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/DEC-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/DEC-AB.png",
     "url": "product/dec/index.html",
     "slug": "dec"
   },
@@ -1242,7 +1242,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956772"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/11/dec-wh.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/11/dec-wh.png",
     "url": "product/dec-02/index.html",
     "slug": "dec-02"
   },
@@ -1254,7 +1254,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999106"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Dry-01-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Dry-01-GM.png",
     "url": "product/dry-01/index.html",
     "slug": "dry-01"
   },
@@ -1266,7 +1266,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999109"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Dry-02-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Dry-02-GM.png",
     "url": "product/dry-02/index.html",
     "slug": "dry-02"
   },
@@ -1282,7 +1282,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999144"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Dry-03-Pro-AZ.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Dry-03-Pro-AZ.png",
     "url": "product/dry-03-pro/index.html",
     "slug": "dry-03-pro"
   },
@@ -1294,7 +1294,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999130"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/01/dry-04-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/01/dry-04-in.png",
     "url": "product/dry-04/index.html",
     "slug": "dry-04"
   },
@@ -1305,7 +1305,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911369"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/EC-01-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/EC-01-GB-1.png",
     "url": "product/ec-01/index.html",
     "slug": "ec-01"
   },
@@ -1317,7 +1317,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999115"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/FG-02-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/FG-02-GM.png",
     "url": "product/fg-02/index.html",
     "slug": "fg-02"
   },
@@ -1328,7 +1328,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999141"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/FK-01-WD.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/FK-01-WD.png",
     "url": "product/fk-01/index.html",
     "slug": "fk-01"
   },
@@ -1341,7 +1341,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999112"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/FP-04-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/FP-04-GM.png",
     "url": "product/fp-04/index.html",
     "slug": "fp-04"
   },
@@ -1350,7 +1350,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999131",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/fp-05-gb-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/fp-05-gb-1.png",
     "url": "product/fp-05/index.html",
     "slug": "fp-05"
   },
@@ -1359,7 +1359,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999154",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/fp-08-pro-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/fp-08-pro-gb.png",
     "url": "product/fp-07-pro/index.html",
     "slug": "fp-07-pro"
   },
@@ -1368,7 +1368,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999153",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/fp-07-pro-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/fp-07-pro-gb.png",
     "url": "product/fp-08-pro/index.html",
     "slug": "fp-08-pro"
   },
@@ -1380,7 +1380,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999116"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/FT-01-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/FT-01-GM.png",
     "url": "product/ft-01/index.html",
     "slug": "ft-01"
   },
@@ -1389,7 +1389,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4972079",
     "skus": [],
     "category": "Раковины для ванной",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Fumico-NU.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Fumico-NU.png",
     "url": "product/fumico/index.html",
     "slug": "fumico"
   },
@@ -1400,7 +1400,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4991119"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/11/furaipan-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/11/furaipan-1.png",
     "url": "product/furaipan-24/index.html",
     "slug": "furaipan-24"
   },
@@ -1427,7 +1427,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993451",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Haruna-86-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Haruna-86-IN.png",
     "url": "product/haruna-86/index.html",
     "slug": "haruna-86"
   },
@@ -1438,7 +1438,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4972078"
     ],
     "category": "Раковины для ванной",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Hitomi-BL-Marble.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Hitomi-BL-Marble.png",
     "url": "product/hitomi/index.html",
     "slug": "hitomi"
   },
@@ -1455,7 +1455,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994051"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Hotaru-GM-WH-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Hotaru-GM-WH-9.png",
     "url": "product/hotaru/index.html",
     "slug": "hotaru"
   },
@@ -1466,7 +1466,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911429"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/11/hp-01-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/11/hp-01-1.png",
     "url": "product/hp-01/index.html",
     "slug": "hp-01"
   },
@@ -1478,7 +1478,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4972076"
     ],
     "category": "Раковины для ванной",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/June-LI.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/June-LI.png",
     "url": "product/june/index.html",
     "slug": "june"
   },
@@ -1493,7 +1493,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994165"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Kado-GR-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Kado-GR-9.png",
     "url": "product/kado/index.html",
     "slug": "kado"
   },
@@ -1511,7 +1511,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994014"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Kanto-AZ-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Kanto-AZ-6.png",
     "url": "product/kanto/index.html",
     "slug": "kanto"
   },
@@ -1525,7 +1525,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994400"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/Kanto-2-Plus-BN-2.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/Kanto-2-Plus-BN-2.png",
     "url": "product/kanto-2-plus-sb/index.html",
     "slug": "kanto-2-plus-sb"
   },
@@ -1540,7 +1540,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994612"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/12/karatsu-s-lg_.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/12/karatsu-s-lg_.png",
     "url": "product/karatsu-s/index.html",
     "slug": "karatsu-s"
   },
@@ -1552,7 +1552,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997057"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kasen-48-26-INT-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kasen-48-26-INT-GM.png",
     "url": "product/kasen-48-26-int/index.html",
     "slug": "kasen-48-26-int"
   },
@@ -1564,7 +1564,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997054"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kasen-49-16-INT-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kasen-49-16-INT-GM.png",
     "url": "product/kasen-49-16-int/index.html",
     "slug": "kasen-49-16-int"
   },
@@ -1576,7 +1576,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993790"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kasen-53-26-INT-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kasen-53-26-INT-GM.png",
     "url": "product/kasen-53-26-int/index.html",
     "slug": "kasen-53-26-int"
   },
@@ -1588,7 +1588,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997060"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kasen-54-16-INT-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kasen-54-16-INT-GM.png",
     "url": "product/kasen-54-16-int/index.html",
     "slug": "kasen-54-16-int"
   },
@@ -1597,7 +1597,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993452",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kashiogawa-79-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kashiogawa-79-IN.png",
     "url": "product/kashiogawa-79/index.html",
     "slug": "kashiogawa-79"
   },
@@ -1606,7 +1606,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993453",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kashiogawa-86-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kashiogawa-86-IN.png",
     "url": "product/kashiogawa-86/index.html",
     "slug": "kashiogawa-86"
   },
@@ -1615,7 +1615,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993727",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kasumigaura-65-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kasumigaura-65-IN.png",
     "url": "product/kasumigaura-65/index.html",
     "slug": "kasumigaura-65"
   },
@@ -1630,7 +1630,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997498"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Kata_20-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Kata_20-U-BE.png",
     "url": "product/kata-20-u/index.html",
     "slug": "kata-20-u"
   },
@@ -1644,7 +1644,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993420"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Kata_34-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Kata_34-U-BE.png",
     "url": "product/kata-34-u/index.html",
     "slug": "kata-34-u"
   },
@@ -1659,7 +1659,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997501"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Kata_40-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Kata_40-U-BE.png",
     "url": "product/kata-40-u/index.html",
     "slug": "kata-40-u"
   },
@@ -1674,7 +1674,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997502"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Kata_44-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Kata_44-U-BE.png",
     "url": "product/kata-44-u/index.html",
     "slug": "kata-44-u"
   },
@@ -1689,7 +1689,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997503"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Kata_54-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Kata_54-U-BE.png",
     "url": "product/kata-54-u/index.html",
     "slug": "kata-54-u"
   },
@@ -1704,7 +1704,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997500"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Kata_55-2-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Kata_55-2-U-BE.png",
     "url": "product/kata-55-2-u/index.html",
     "slug": "kata-55-2-u"
   },
@@ -1718,7 +1718,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997586"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/kata_56-ui-side-gr.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/kata_56-ui-side-gr.png",
     "url": "product/kata-56-ui-side/index.html",
     "slug": "kata-56-ui-side"
   },
@@ -1732,7 +1732,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997565"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/12/kata_74-u-gr.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/12/kata_74-u-gr.png",
     "url": "product/kata-74-u/index.html",
     "slug": "kata-74-u"
   },
@@ -1746,7 +1746,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997590"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/kata_76-ui-side-bl.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/kata_76-ui-side-bl.png",
     "url": "product/kata-76-u-i-side/index.html",
     "slug": "kata-76-u-i-side"
   },
@@ -1770,7 +1770,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997026"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kinaru_Pro-86-CN-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kinaru_Pro-86-CN-1.png",
     "url": "product/kinaru-pro-86-u-i/index.html",
     "slug": "kinaru-pro-86-u-i"
   },
@@ -1781,7 +1781,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997463"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/02/kinokawa-60-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/02/kinokawa-60-gb.png",
     "url": "product/kinokawa-60/index.html",
     "slug": "kinokawa-60"
   },
@@ -1793,7 +1793,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993853"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kinokawa_90-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kinokawa_90-GB-1.png",
     "url": "product/kinokawa-90/index.html",
     "slug": "kinokawa-90"
   },
@@ -1807,7 +1807,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993309"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_51-WH.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_51-WH.png",
     "url": "product/kitagawa-51/index.html",
     "slug": "kitagawa-51"
   },
@@ -1822,7 +1822,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993303"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_57-WH.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_57-WH.png",
     "url": "product/kitagawa-57/index.html",
     "slug": "kitagawa-57"
   },
@@ -1836,7 +1836,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993997"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_79-LB-WH.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_79-LB-WH.png",
     "url": "product/kitagawa-79-lb/index.html",
     "slug": "kitagawa-79-lb"
   },
@@ -1849,7 +1849,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993809"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_83-2-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_83-2-GB.png",
     "url": "product/kitagawa-83-2-u/index.html",
     "slug": "kitagawa-83-2-u"
   },
@@ -1862,7 +1862,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993493"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_86-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_86-GB.png",
     "url": "product/kitagawa-86/index.html",
     "slug": "kitagawa-86"
   },
@@ -1875,7 +1875,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993806"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_86-2-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_86-2-GB.png",
     "url": "product/kitagawa-86-2/index.html",
     "slug": "kitagawa-86-2"
   },
@@ -1889,7 +1889,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993795"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_86-LB-AZ.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_86-LB-AZ.png",
     "url": "product/kitagawa-86-lb/index.html",
     "slug": "kitagawa-86-lb"
   },
@@ -1902,7 +1902,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993787"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_100-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_100-GB-1.png",
     "url": "product/kitagawa-100/index.html",
     "slug": "kitagawa-100"
   },
@@ -1915,7 +1915,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993803"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_100-2-GB-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Kitagawa_100-2-GB-1.png",
     "url": "product/kitagawa-100-2/index.html",
     "slug": "kitagawa-100-2"
   },
@@ -1926,7 +1926,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993019"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/08/kiten_48-int-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/08/kiten_48-int-gb.png",
     "url": "product/kiten-48-int/index.html",
     "slug": "kiten-48-int"
   },
@@ -1937,7 +1937,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997479"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/08/kiten_70-int-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/08/kiten_70-int-gb.png",
     "url": "product/kiten-70-int/index.html",
     "slug": "kiten-70-int"
   },
@@ -1946,7 +1946,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4991005",
     "skus": [],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Koriyama-BN-12.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Koriyama-BN-12.png",
     "url": "product/koriyama/index.html",
     "slug": "koriyama"
   },
@@ -1955,7 +1955,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4991006",
     "skus": [],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/Koriyama-SB-BN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/Koriyama-SB-BN.png",
     "url": "product/koriyama-sb/index.html",
     "slug": "koriyama-sb"
   },
@@ -1967,7 +1967,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994508"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Kyoto-SI-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Kyoto-SI-9.png",
     "url": "product/kyoto/index.html",
     "slug": "kyoto"
   },
@@ -1978,7 +1978,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994353"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Kyoto-2-Plus-SI-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Kyoto-2-Plus-SI-9.png",
     "url": "product/kyoto-2-plus/index.html",
     "slug": "kyoto-2-plus"
   },
@@ -2010,7 +2010,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994495"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/makkari-2-plus-sb-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/makkari-2-plus-sb-gm.png",
     "url": "product/makkari-2-plus-sb/index.html",
     "slug": "makkari-2-plus-sb"
   },
@@ -2022,7 +2022,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993290"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Maru_86-2-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Maru_86-2-BE.png",
     "url": "product/maru-86-2/index.html",
     "slug": "maru-86-2"
   },
@@ -2045,7 +2045,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994451"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/mikawa-2-plus-sb-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/mikawa-2-plus-sb-gm.png",
     "url": "product/mikawa-2-plus-sb/index.html",
     "slug": "mikawa-2-plus-sb"
   },
@@ -2063,7 +2063,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911258"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Mikura_61-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Mikura_61-BL.png",
     "url": "product/mikura-61/index.html",
     "slug": "mikura-61"
   },
@@ -2078,7 +2078,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997074"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Mikura_76-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Mikura_76-BL.png",
     "url": "product/mikura-76/index.html",
     "slug": "mikura-76"
   },
@@ -2087,7 +2087,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993023",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/mikura_76-dali.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/mikura_76-dali.png",
     "url": "product/mikura-76-dali/index.html",
     "slug": "mikura-76-dali"
   },
@@ -2096,7 +2096,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993022",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/mikura_76-klimt.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/mikura_76-klimt.png",
     "url": "product/mikura-76-klimt/index.html",
     "slug": "mikura-76-klimt"
   },
@@ -2105,7 +2105,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993020",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/mikura_76-lemon.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/mikura_76-lemon.png",
     "url": "product/mikura-76-lemon/index.html",
     "slug": "mikura-76-lemon"
   },
@@ -2114,7 +2114,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993021",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/mikura_76-tokyo.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/mikura_76-tokyo.png",
     "url": "product/mikura-76-tokyo/index.html",
     "slug": "mikura-76-tokyo"
   },
@@ -2123,7 +2123,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993173",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/mikura_76-tokyo-2.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/mikura_76-tokyo-2.png",
     "url": "product/mikura-76-tokyo-2/index.html",
     "slug": "mikura-76-tokyo-2"
   },
@@ -2132,7 +2132,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993174",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/mikura_76-tokyo-3.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/mikura_76-tokyo-3.png",
     "url": "product/mikura-76-tokyo-3/index.html",
     "slug": "mikura-76-tokyo-3"
   },
@@ -2141,7 +2141,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993024",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/mikura_76-vangogh.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/mikura_76-vangogh.png",
     "url": "product/mikura-76-vangogh/index.html",
     "slug": "mikura-76-vangogh"
   },
@@ -2158,7 +2158,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997080"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Mikura_83-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Mikura_83-BL.png",
     "url": "product/mikura-83/index.html",
     "slug": "mikura-83"
   },
@@ -2174,7 +2174,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997086"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Mikura_91-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Mikura_91-BL.png",
     "url": "product/mikura-91/index.html",
     "slug": "mikura-91"
   },
@@ -2189,7 +2189,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4972071"
     ],
     "category": "Раковины для ванной",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Mira-GU.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Mira-GU.png",
     "url": "product/mira/index.html",
     "slug": "mira"
   },
@@ -2205,7 +2205,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993506"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Miya_50R-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Miya_50R-BE.png",
     "url": "product/miya-50-r/index.html",
     "slug": "miya-50-r"
   },
@@ -2219,7 +2219,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994591"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/04/miyako-bn.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/04/miyako-bn.png",
     "url": "product/miyako/index.html",
     "slug": "miyako"
   },
@@ -2228,7 +2228,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4973730",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Mizu-78-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Mizu-78-IN.png",
     "url": "product/mizu-78/index.html",
     "slug": "mizu-78"
   },
@@ -2237,7 +2237,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4973731",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Mizu-78-2-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Mizu-78-2-IN.png",
     "url": "product/mizu-78-2/index.html",
     "slug": "mizu-78-2"
   },
@@ -2246,7 +2246,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4973729",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Mizu-78-LB-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Mizu-78-LB-IN.png",
     "url": "product/mizu-78-lb/index.html",
     "slug": "mizu-78-lb"
   },
@@ -2282,7 +2282,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4994320",
     "skus": [],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Mori-C-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Mori-C-9.png",
     "url": "product/mori/index.html",
     "slug": "mori"
   },
@@ -2291,7 +2291,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4956655",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/na-01-2.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/na-01-2.png",
     "url": "product/na-01/index.html",
     "slug": "na-01"
   },
@@ -2306,7 +2306,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956686"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/NA-02-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/NA-02-AB.png",
     "url": "product/na-02/index.html",
     "slug": "na-02"
   },
@@ -2315,7 +2315,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4956715",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/NA-03-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/NA-03-IN.png",
     "url": "product/na-03/index.html",
     "slug": "na-03"
   },
@@ -2328,7 +2328,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956726"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/NA-04-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/NA-04-AB.png",
     "url": "product/na-04/index.html",
     "slug": "na-04"
   },
@@ -2346,7 +2346,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994178"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Nagano-AZ-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Nagano-AZ-6.png",
     "url": "product/nagano/index.html",
     "slug": "nagano"
   },
@@ -2364,7 +2364,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4217.8028P"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/nagano-bn_pure-drop-lite.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/nagano-bn_pure-drop-lite.png",
     "url": "product/nagano-pure-drop-lite/index.html",
     "slug": "nagano-pure-drop-lite"
   },
@@ -2373,7 +2373,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4995060",
     "skus": [],
     "category": "Измельчители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Nagare-500-2.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Nagare-500-2.png",
     "url": "product/nagare-500/index.html",
     "slug": "nagare-500"
   },
@@ -2382,7 +2382,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4995059",
     "skus": [],
     "category": "Измельчители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Nagare-750-2.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Nagare-750-2.png",
     "url": "product/nagare-750/index.html",
     "slug": "nagare-750"
   },
@@ -2391,7 +2391,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4995058",
     "skus": [],
     "category": "Измельчители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Nagare-1000-2.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Nagare-1000-2.png",
     "url": "product/nagare-1000/index.html",
     "slug": "nagare-1000"
   },
@@ -2400,7 +2400,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4995061",
     "skus": [],
     "category": "Измельчители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Nagare-Slim-500-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Nagare-Slim-500-1.png",
     "url": "product/nagare-slim-500/index.html",
     "slug": "nagare-slim-500"
   },
@@ -2409,7 +2409,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4995062",
     "skus": [],
     "category": "Измельчители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Nagare-Slim-900-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Nagare-Slim-900-1.png",
     "url": "product/nagare-slim-900/index.html",
     "slug": "nagare-slim-900"
   },
@@ -2420,7 +2420,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995066"
     ],
     "category": "Измельчители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Nagare-Slim-1250-AZ.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Nagare-Slim-1250-AZ.png",
     "url": "product/nagare-slim-1250/index.html",
     "slug": "nagare-slim-1250"
   },
@@ -2438,7 +2438,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4974307"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Nakagawa-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Nakagawa-GB-9.png",
     "url": "product/nakagawa/index.html",
     "slug": "nakagawa"
   },
@@ -2456,7 +2456,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994418"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Nakagawa-2-Plus-AZ-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Nakagawa-2-Plus-AZ-6.png",
     "url": "product/nakagawa-2-plus/index.html",
     "slug": "nakagawa-2-plus"
   },
@@ -2469,7 +2469,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994321"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Nara-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Nara-GB-9.png",
     "url": "product/nara/index.html",
     "slug": "nara"
   },
@@ -2482,7 +2482,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994366"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Nara-2-Plus-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Nara-2-Plus-GB-9.png",
     "url": "product/nara-2-plus/index.html",
     "slug": "nara-2-plus"
   },
@@ -2495,7 +2495,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994367"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Nara-2-Plus-S-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Nara-2-Plus-S-GB-9.png",
     "url": "product/nara-2-plus-s/index.html",
     "slug": "nara-2-plus-s"
   },
@@ -2508,7 +2508,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994322"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Nara-S-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Nara-S-GB-9.png",
     "url": "product/nara-s/index.html",
     "slug": "nara-s"
   },
@@ -2519,7 +2519,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997437"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/12/notoro-48-in-5.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/12/notoro-48-in-5.png",
     "url": "product/notoro-48/index.html",
     "slug": "notoro-48"
   },
@@ -2530,7 +2530,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911400"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/ob-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/ob-01.png",
     "url": "product/ob-01/index.html",
     "slug": "ob-01"
   },
@@ -2543,7 +2543,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994550"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/12/okawa-2-plus-bn-3.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/12/okawa-2-plus-bn-3.png",
     "url": "product/okawa-2-plus/index.html",
     "slug": "okawa-2-plus"
   },
@@ -2554,7 +2554,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994253"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Okinawa-2-SI-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Okinawa-2-SI-9.png",
     "url": "product/okinawa-2/index.html",
     "slug": "okinawa-2"
   },
@@ -2572,7 +2572,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997065"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Okinoshima_61-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Okinoshima_61-BL.png",
     "url": "product/okinoshima-61-u-i/index.html",
     "slug": "okinoshima-61-u-i"
   },
@@ -2590,7 +2590,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997145"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Okinoshima_76-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Okinoshima_76-BL.png",
     "url": "product/okinoshima-76-u-i/index.html",
     "slug": "okinoshima-76-u-i"
   },
@@ -2608,7 +2608,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995035"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/OM-01-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/OM-01-AB.png",
     "url": "product/om-01/index.html",
     "slug": "om-01"
   },
@@ -2626,7 +2626,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995026"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/OM-02-BN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/OM-02-BN.png",
     "url": "product/om-02/index.html",
     "slug": "om-02"
   },
@@ -2643,7 +2643,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995047"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/OM-03-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/OM-03-BL.png",
     "url": "product/om-03/index.html",
     "slug": "om-03"
   },
@@ -2657,7 +2657,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995050"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/OM-04-BN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/OM-04-BN.png",
     "url": "product/om-04/index.html",
     "slug": "om-04"
   },
@@ -2672,7 +2672,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995077"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/02/om-05-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/02/om-05-gb.png",
     "url": "product/om-05/index.html",
     "slug": "om-05"
   },
@@ -2685,7 +2685,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995091"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/01/om-06-gb-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/01/om-06-gb-1.png",
     "url": "product/om-06/index.html",
     "slug": "om-06"
   },
@@ -2698,7 +2698,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995088"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/01/om-07-bn-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/01/om-07-bn-1.png",
     "url": "product/om-07/index.html",
     "slug": "om-07"
   },
@@ -2712,7 +2712,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995081"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/06/om-08-lg.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/06/om-08-lg.png",
     "url": "product/om-08/index.html",
     "slug": "om-08"
   },
@@ -2727,7 +2727,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995087"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/12/om-09-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/12/om-09-gm.png",
     "url": "product/om-09-sensor/index.html",
     "slug": "om-09-sensor"
   },
@@ -2741,7 +2741,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4995109"
     ],
     "category": "Дозаторы",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/09/om-10-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/09/om-10-gm.png",
     "url": "product/om-10/index.html",
     "slug": "om-10"
   },
@@ -2750,7 +2750,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997022",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-20-U-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-20-U-IN.png",
     "url": "product/omi-20-u/index.html",
     "slug": "omi-20-u"
   },
@@ -2762,7 +2762,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997400"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-37-UI-Ultra-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-37-UI-Ultra-GB.png",
     "url": "product/omi-37-u-i-ultra/index.html",
     "slug": "omi-37-u-i-ultra"
   },
@@ -2771,7 +2771,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997435",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-38-UI-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-38-UI-IN.png",
     "url": "product/omi-38-u-i/index.html",
     "slug": "omi-38-u-i"
   },
@@ -2783,7 +2783,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997412"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-43-UI-Ultra-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-43-UI-Ultra-GB.png",
     "url": "product/omi-43-u-i-ultra/index.html",
     "slug": "omi-43-u-i-ultra"
   },
@@ -2795,7 +2795,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997403"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-43-UI-Ultra-Mini-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-43-UI-Ultra-Mini-GB.png",
     "url": "product/omi-43-u-i-ultra-mini/index.html",
     "slug": "omi-43-u-i-ultra-mini"
   },
@@ -2808,7 +2808,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993268"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/omi-44-ui-lg.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/omi-44-ui-lg.png",
     "url": "product/omi-44-u-i/index.html",
     "slug": "omi-44-u-i"
   },
@@ -2817,7 +2817,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993494",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-44-UI-Quadro-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-44-UI-Quadro-IN.png",
     "url": "product/omi-44-u-i-quadro/index.html",
     "slug": "omi-44-u-i-quadro"
   },
@@ -2828,7 +2828,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993073"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/omi-49-ui-lg.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/omi-49-ui-lg.png",
     "url": "product/omi-49-u-i/index.html",
     "slug": "omi-49-u-i"
   },
@@ -2839,7 +2839,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993066"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/omi-49-ui-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/omi-49-ui-in.png",
     "url": "product/omi-49-u-i-in/index.html",
     "slug": "omi-49-u-i-in"
   },
@@ -2851,7 +2851,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997409"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-53-UI-Ultra-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-53-UI-Ultra-GB.png",
     "url": "product/omi-53-u-i-ultra/index.html",
     "slug": "omi-53-u-i-ultra"
   },
@@ -2863,7 +2863,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997406"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-53-UI-Ultra-Mini-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-53-UI-Ultra-Mini-GB.png",
     "url": "product/omi-53-u-i-ultra-mini/index.html",
     "slug": "omi-53-u-i-ultra-mini"
   },
@@ -2872,7 +2872,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993488",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-54-UI-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-54-UI-IN.png",
     "url": "product/omi-54-u-i/index.html",
     "slug": "omi-54-u-i"
   },
@@ -2885,7 +2885,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997562"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/01/omi-73-ui-ultra-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/01/omi-73-ui-ultra-in.png",
     "url": "product/omi-73-u-i-ultra/index.html",
     "slug": "omi-73-u-i-ultra"
   },
@@ -2894,7 +2894,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993500",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Omi-76-UI-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Omi-76-UI-IN.png",
     "url": "product/omi-76-u-i/index.html",
     "slug": "omi-76-u-i"
   },
@@ -2934,7 +2934,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994333"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Osaka-BN-WH-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Osaka-BN-WH-9.png",
     "url": "product/osaka/index.html",
     "slug": "osaka"
   },
@@ -2951,7 +2951,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4996003"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/OT-01-AZ.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/OT-01-AZ.png",
     "url": "product/ot-01/index.html",
     "slug": "ot-01"
   },
@@ -2966,7 +2966,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4998036"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/ov-1-r-ab-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/ov-1-r-ab-1.png",
     "url": "product/ov-1-r/index.html",
     "slug": "ov-1-r"
   },
@@ -2980,7 +2980,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4998048"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/OV-1-S-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/OV-1-S-AB.png",
     "url": "product/ov-1-s/index.html",
     "slug": "ov-1-s"
   },
@@ -2994,7 +2994,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956723"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/OV-02-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/OV-02-AB.png",
     "url": "product/ov-02/index.html",
     "slug": "ov-02"
   },
@@ -3005,7 +3005,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911419"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/pl-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/pl-01.png",
     "url": "product/pl-01/index.html",
     "slug": "pl-01"
   },
@@ -3053,7 +3053,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999017"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/RE-01-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/RE-01-GM.png",
     "url": "product/re-01/index.html",
     "slug": "re-01"
   },
@@ -3066,7 +3066,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997001"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Roll-01-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Roll-01-GM.png",
     "url": "product/roll-01/index.html",
     "slug": "roll-01"
   },
@@ -3075,7 +3075,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997004",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Roll-02-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Roll-02-IN.png",
     "url": "product/roll-02/index.html",
     "slug": "roll-02"
   },
@@ -3084,7 +3084,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997005",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Roll-03-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Roll-03-IN.png",
     "url": "product/roll-03/index.html",
     "slug": "roll-03"
   },
@@ -3093,7 +3093,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4999060",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Roll-05-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Roll-05-IN.png",
     "url": "product/roll-05/index.html",
     "slug": "roll-05"
   },
@@ -3102,7 +3102,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4996119",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/S-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/S-01.png",
     "url": "product/s-01/index.html",
     "slug": "s-01"
   },
@@ -3111,7 +3111,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993732",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sagami-63-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sagami-63-IN.png",
     "url": "product/sagami-63/index.html",
     "slug": "sagami-63"
   },
@@ -3120,7 +3120,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993735",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sagami-79-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sagami-79-IN.png",
     "url": "product/sagami-79/index.html",
     "slug": "sagami-79"
   },
@@ -3129,7 +3129,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993733",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sagami-79-2-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sagami-79-2-IN.png",
     "url": "product/sagami-79-2/index.html",
     "slug": "sagami-79-2"
   },
@@ -3145,7 +3145,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993911"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_60-2-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_60-2-BE.png",
     "url": "product/sakaime-60-2/index.html",
     "slug": "sakaime-60-2"
   },
@@ -3160,7 +3160,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993544"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_60E-GR.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_60E-GR.png",
     "url": "product/sakaime-60e/index.html",
     "slug": "sakaime-60e"
   },
@@ -3174,7 +3174,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993126"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_68-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_68-BE.png",
     "url": "product/sakaime-68/index.html",
     "slug": "sakaime-68"
   },
@@ -3189,7 +3189,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993127"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_78-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_78-BE.png",
     "url": "product/sakaime-78/index.html",
     "slug": "sakaime-78"
   },
@@ -3205,7 +3205,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993128"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_78-2-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_78-2-BE.png",
     "url": "product/sakaime-78-2/index.html",
     "slug": "sakaime-78-2"
   },
@@ -3220,7 +3220,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993903"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/site_sakaime-78-lb-be-1-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/site_sakaime-78-lb-be-1-1.png",
     "url": "product/sakaime-78-lb/index.html",
     "slug": "sakaime-78-lb"
   },
@@ -3235,7 +3235,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993279"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_79-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_79-BE.png",
     "url": "product/sakaime-79/index.html",
     "slug": "sakaime-79"
   },
@@ -3249,7 +3249,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993129"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_86-2-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_86-2-BE.png",
     "url": "product/sakaime-86-2/index.html",
     "slug": "sakaime-86-2"
   },
@@ -3264,7 +3264,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993887"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_100-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_100-BE.png",
     "url": "product/sakaime-100/index.html",
     "slug": "sakaime-100"
   },
@@ -3279,7 +3279,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993895"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sakaime_100-2-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sakaime_100-2-BE.png",
     "url": "product/sakaime-100-2/index.html",
     "slug": "sakaime-100-2"
   },
@@ -3288,7 +3288,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993833",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/saru-48-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/saru-48-in.png",
     "url": "product/saru-48/index.html",
     "slug": "saru-48"
   },
@@ -3299,7 +3299,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911402"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/sb-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/sb-01.png",
     "url": "product/sb-01/index.html",
     "slug": "sb-01"
   },
@@ -3310,7 +3310,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911421"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/se-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/se-01.png",
     "url": "product/se-01/index.html",
     "slug": "se-01"
   },
@@ -3323,7 +3323,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4999122"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/05/sh-01-lg.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/05/sh-01-lg.png",
     "url": "product/sh-01/index.html",
     "slug": "sh-01"
   },
@@ -3341,7 +3341,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4974157"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/shinagawa-bn-bl.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/shinagawa-bn-bl.png",
     "url": "product/shinagawa/index.html",
     "slug": "shinagawa"
   },
@@ -3359,7 +3359,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994410"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Shinagawa-2-Plus-GR-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Shinagawa-2-Plus-GR-9.png",
     "url": "product/shinagawa-2-plus/index.html",
     "slug": "shinagawa-2-plus"
   },
@@ -3374,7 +3374,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994518"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/03/shinagawa-slim-bn.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/03/shinagawa-slim-bn.png",
     "url": "product/shinagawa-slim/index.html",
     "slug": "shinagawa-slim"
   },
@@ -3385,7 +3385,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994458"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Shinagawa-SB-BN-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Shinagawa-SB-BN-6.png",
     "url": "product/shinagawa-sb/index.html",
     "slug": "shinagawa-sb"
   },
@@ -3400,7 +3400,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997457"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sintesi_57-CN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sintesi_57-CN.png",
     "url": "product/sintesi-57/index.html",
     "slug": "sintesi-57"
   },
@@ -3414,7 +3414,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997136"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sintesi_79-CN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sintesi_79-CN.png",
     "url": "product/sintesi-79/index.html",
     "slug": "sintesi-79"
   },
@@ -3428,7 +3428,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997131"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sintesi_86-CN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sintesi_86-CN.png",
     "url": "product/sintesi-86/index.html",
     "slug": "sintesi-86"
   },
@@ -3442,7 +3442,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997126"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sintesi_100-CN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sintesi_100-CN.png",
     "url": "product/sintesi-100/index.html",
     "slug": "sintesi-100"
   },
@@ -3456,7 +3456,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997121"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sintesi_116-CN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sintesi_116-CN.png",
     "url": "product/sintesi-116/index.html",
     "slug": "sintesi-116"
   },
@@ -3471,7 +3471,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997449"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/12/sintesi_114-2-cn.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/12/sintesi_114-2-cn.png",
     "url": "product/sintesi-pro-114-2/index.html",
     "slug": "sintesi-pro-114-2"
   },
@@ -3485,7 +3485,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994377"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Sinto-2-Plus-GM-R-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Sinto-2-Plus-GM-R-9.png",
     "url": "product/sinto-2-plus/index.html",
     "slug": "sinto-2-plus"
   },
@@ -3496,7 +3496,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911420"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/so-01.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/so-01.png",
     "url": "product/so-01/index.html",
     "slug": "so-01"
   },
@@ -3523,7 +3523,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4911378",
     "skus": [],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/sr-01-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/sr-01-1.png",
     "url": "product/sr-01/index.html",
     "slug": "sr-01"
   },
@@ -3540,7 +3540,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993673"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sumi_65-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sumi_65-BE.png",
     "url": "product/sumi-65/index.html",
     "slug": "sumi-65"
   },
@@ -3554,7 +3554,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997468"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sumi_65A-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sumi_65A-GB.png",
     "url": "product/sumi-65a/index.html",
     "slug": "sumi-65a"
   },
@@ -3570,7 +3570,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993722"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sumi_78-LB-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sumi_78-LB-BE.png",
     "url": "product/sumi-78-lb/index.html",
     "slug": "sumi-78-lb"
   },
@@ -3583,7 +3583,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997100"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sumi_78A-LB-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sumi_78A-LB-GB.png",
     "url": "product/sumi-78a-lb/index.html",
     "slug": "sumi-78a-lb"
   },
@@ -3598,7 +3598,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993665"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sumi_79-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sumi_79-BE.png",
     "url": "product/sumi-79/index.html",
     "slug": "sumi-79"
   },
@@ -3611,7 +3611,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997096"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sumi_79A-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sumi_79A-GB.png",
     "url": "product/sumi-79a/index.html",
     "slug": "sumi-79a"
   },
@@ -3623,7 +3623,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997174"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sumi_83C-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sumi_83C-BL.png",
     "url": "product/sumi-83c/index.html",
     "slug": "sumi-83c"
   },
@@ -3639,7 +3639,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993649"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sumi_86-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sumi_86-BE.png",
     "url": "product/sumi-86/index.html",
     "slug": "sumi-86"
   },
@@ -3652,7 +3652,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997104"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sumi_86A-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sumi_86A-GB.png",
     "url": "product/sumi-86a/index.html",
     "slug": "sumi-86a"
   },
@@ -3667,7 +3667,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993657"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Sumi_100-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Sumi_100-BE.png",
     "url": "product/sumi-100/index.html",
     "slug": "sumi-100"
   },
@@ -3680,7 +3680,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997108"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Sumi_100A-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Sumi_100A-GB.png",
     "url": "product/sumi-100a/index.html",
     "slug": "sumi-100a"
   },
@@ -3696,7 +3696,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4996060"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/SW-01-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/SW-01-AB.png",
     "url": "product/sw-01/index.html",
     "slug": "sw-01"
   },
@@ -3705,7 +3705,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993734",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/tadzava-22-u-i-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/tadzava-22-u-i-in.png",
     "url": "product/tadzava-22-u-i/index.html",
     "slug": "tadzava-22-u-i"
   },
@@ -3714,7 +3714,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997112",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/tadzava-22-u-i-ultra-15-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/tadzava-22-u-i-ultra-15-in.png",
     "url": "product/tadzava-22-u-i-ultra-15/index.html",
     "slug": "tadzava-22-u-i-ultra-15"
   },
@@ -3723,7 +3723,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993077",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-38-UI-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-38-UI-IN.png",
     "url": "product/tadzava-38-u-i/index.html",
     "slug": "tadzava-38-u-i"
   },
@@ -3732,7 +3732,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997113",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-38-UI-Ultra-15-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-38-UI-Ultra-15-IN.png",
     "url": "product/tadzava-38-u-i-ultra-15/index.html",
     "slug": "tadzava-38-u-i-ultra-15"
   },
@@ -3744,7 +3744,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993262"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/tadzava-39-ui-gm.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/tadzava-39-ui-gm.png",
     "url": "product/tadzava-39-u-i/index.html",
     "slug": "tadzava-39-u-i"
   },
@@ -3753,7 +3753,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993509",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-44-UI-Quadro-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-44-UI-Quadro-IN.png",
     "url": "product/tadzava-44-u-i-quadro/index.html",
     "slug": "tadzava-44-u-i-quadro"
   },
@@ -3765,7 +3765,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993264"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-44-UI-Ultra-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-44-UI-Ultra-GM.png",
     "url": "product/tadzava-44-u-i-ultra/index.html",
     "slug": "tadzava-44-u-i-ultra"
   },
@@ -3774,7 +3774,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997114",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-44-UI-Ultra-15-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-44-UI-Ultra-15-IN.png",
     "url": "product/tadzava-44-u-i-ultra-15/index.html",
     "slug": "tadzava-44-u-i-ultra-15"
   },
@@ -3787,7 +3787,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993263"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/tadzava-49-ui-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/tadzava-49-ui-in.png",
     "url": "product/tadzava-49-u-i/index.html",
     "slug": "tadzava-49-u-i"
   },
@@ -3796,7 +3796,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997115",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-49-UI-Ultra-15-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-49-UI-Ultra-15-IN.png",
     "url": "product/tadzava-49-u-i-ultra-15/index.html",
     "slug": "tadzava-49-u-i-ultra-15"
   },
@@ -3805,7 +3805,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993512",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-54-UI-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-54-UI-IN.png",
     "url": "product/tadzava-54-u-i/index.html",
     "slug": "tadzava-54-u-i"
   },
@@ -3817,7 +3817,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993266"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-54-UI-Ultra-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-54-UI-Ultra-GM.png",
     "url": "product/tadzava-54-u-i-ultra/index.html",
     "slug": "tadzava-54-u-i-ultra"
   },
@@ -3826,7 +3826,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997116",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-54-UI-Ultra-15-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-54-UI-Ultra-15-IN.png",
     "url": "product/tadzava-54-u-i-ultra-15/index.html",
     "slug": "tadzava-54-u-i-ultra-15"
   },
@@ -3835,7 +3835,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997118",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-ultra-15-in-l.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-ultra-15-in-l.png",
     "url": "product/tadzava-58-2-u-i-ultra-15-l/index.html",
     "slug": "tadzava-58-2-u-i-ultra-15-l"
   },
@@ -3844,7 +3844,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997117",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-ultra-15-in-r.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-ultra-15-in-r.png",
     "url": "product/tadzava-58-2-u-i-ultra-15-r/index.html",
     "slug": "tadzava-58-2-u-i-ultra-15-r"
   },
@@ -3853,7 +3853,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993774",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-l.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-l.png",
     "url": "product/tadzava-58-2-u-i-l/index.html",
     "slug": "tadzava-58-2-u-i-l"
   },
@@ -3862,7 +3862,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993773",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-r.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/tadzava-58-2-u-i-in-r.png",
     "url": "product/tadzava-58-2-u-i-r/index.html",
     "slug": "tadzava-58-2-u-i-r"
   },
@@ -3871,7 +3871,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993501",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-75-UI-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-75-UI-IN.png",
     "url": "product/tadzava-75-u-i/index.html",
     "slug": "tadzava-75-u-i"
   },
@@ -3880,7 +3880,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4997119",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Tadzava-75-UI-Ultra-15-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Tadzava-75-UI-Ultra-15-IN.png",
     "url": "product/tadzava-75-u-i-ultra-15/index.html",
     "slug": "tadzava-75-u-i-ultra-15"
   },
@@ -3893,7 +3893,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994527"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/12/tahara-bn.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/12/tahara-bn.png",
     "url": "product/tahara-sb/index.html",
     "slug": "tahara-sb"
   },
@@ -3904,7 +3904,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994477"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Takamatsu-BN-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Takamatsu-BN-6.png",
     "url": "product/takamatsu/index.html",
     "slug": "takamatsu"
   },
@@ -3921,7 +3921,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994570"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Takamatsu-S-AZ-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Takamatsu-S-AZ-6.png",
     "url": "product/takamatsu-s/index.html",
     "slug": "takamatsu-s"
   },
@@ -3943,7 +3943,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973091"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-20-UIF-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-20-UIF-GB.png",
     "url": "product/taki-20-u-if/index.html",
     "slug": "taki-20-u-if"
   },
@@ -3956,7 +3956,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973092"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-38-UIF-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-38-UIF-GB.png",
     "url": "product/taki-38-u-if/index.html",
     "slug": "taki-38-u-if"
   },
@@ -3969,7 +3969,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973520"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-44-UIF-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-44-UIF-GB.png",
     "url": "product/taki-44-u-if/index.html",
     "slug": "taki-44-u-if"
   },
@@ -3982,7 +3982,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973523"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-49-UIF-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-49-UIF-GB.png",
     "url": "product/taki-49-u-if/index.html",
     "slug": "taki-49-u-if"
   },
@@ -3995,7 +3995,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4973093"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-54-UIF-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-54-UIF-GB.png",
     "url": "product/taki-54-u-if/index.html",
     "slug": "taki-54-u-if"
   },
@@ -4006,7 +4006,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997467"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/11/taki-54-uif-microdecor-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/11/taki-54-uif-microdecor-in.png",
     "url": "product/taki-54-u-if-microdecor/index.html",
     "slug": "taki-54-u-if-microdecor"
   },
@@ -4015,7 +4015,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993034",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/07/taki-54-uif-nano-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/07/taki-54-uif-nano-in.png",
     "url": "product/taki-54-u-if-nano/index.html",
     "slug": "taki-54-u-if-nano"
   },
@@ -4027,7 +4027,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997092"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-54-UIF-Side-SF-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-54-UIF-Side-SF-GB.png",
     "url": "product/taki-54-u-if-side-sf/index.html",
     "slug": "taki-54-u-if-side-sf"
   },
@@ -4040,7 +4040,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997475"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/09/taki-54-uif-l-side-sf-gb.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/09/taki-54-uif-l-side-sf-gb.png",
     "url": "product/taki-54-u-if-l-side-sf/index.html",
     "slug": "taki-54-u-if-l-side-sf"
   },
@@ -4049,7 +4049,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993768",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-58-2-UIF-L-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-58-2-UIF-L-IN.png",
     "url": "product/taki-58-2-u-if-l/index.html",
     "slug": "taki-58-2-u-if-l"
   },
@@ -4058,7 +4058,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993767",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-58-2-UIF-R-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-58-2-UIF-R-IN.png",
     "url": "product/taki-58-2-u-if-r/index.html",
     "slug": "taki-58-2-u-if-r"
   },
@@ -4070,7 +4070,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997051"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-69-2-UIF-Side-L-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-69-2-UIF-Side-L-GB.png",
     "url": "product/taki-69-2-u-if-side-l/index.html",
     "slug": "taki-69-2-u-if-side-l"
   },
@@ -4082,7 +4082,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993184"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-69-2-UIF-Side-R-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-69-2-UIF-Side-R-GB.png",
     "url": "product/taki-69-2-u-if-side-r/index.html",
     "slug": "taki-69-2-u-if-side-r"
   },
@@ -4095,7 +4095,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993499"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-74-UIF-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-74-UIF-GB.png",
     "url": "product/taki-74-u-if/index.html",
     "slug": "taki-74-u-if"
   },
@@ -4106,7 +4106,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997574"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/05/taki-74-uif-microdecor-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/05/taki-74-uif-microdecor-in.png",
     "url": "product/taki-74-u-if-microdecor/index.html",
     "slug": "taki-74-u-if-microdecor"
   },
@@ -4118,7 +4118,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993171"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-74-UIF-Side-GB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-74-UIF-Side-GB.png",
     "url": "product/taki-74-u-if-side/index.html",
     "slug": "taki-74-u-if-side"
   },
@@ -4131,7 +4131,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997472"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/09/taki-74-uif-l-side-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/09/taki-74-uif-l-side-in.png",
     "url": "product/taki-74-u-if-l-side/index.html",
     "slug": "taki-74-u-if-l-side"
   },
@@ -4143,7 +4143,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997038"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/taki-85-2-lb-uif-side-gb-new-1.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/taki-85-2-lb-uif-side-gb-new-1.png",
     "url": "product/taki-85-2-lb-u-if-side/index.html",
     "slug": "taki-85-2-lb-u-if-side"
   },
@@ -4155,7 +4155,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993792"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Taki-86-2-UIF-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Taki-86-2-UIF-GM.png",
     "url": "product/taki-86-2-u-if/index.html",
     "slug": "taki-86-2-u-if"
   },
@@ -4166,7 +4166,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994240"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Tanigawa-BN-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Tanigawa-BN-6.png",
     "url": "product/tanigawa/index.html",
     "slug": "tanigawa"
   },
@@ -4177,7 +4177,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994456"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Tanigawa-SB-BN-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Tanigawa-SB-BN-6.png",
     "url": "product/tanigawa-sb/index.html",
     "slug": "tanigawa-sb"
   },
@@ -4188,7 +4188,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994396"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Tara-GM-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Tara-GM-6.png",
     "url": "product/tara/index.html",
     "slug": "tara"
   },
@@ -4199,7 +4199,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993177"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tarento_83-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tarento_83-BL.png",
     "url": "product/tarento-83/index.html",
     "slug": "tarento-83"
   },
@@ -4213,7 +4213,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993743"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Tasogare_51-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Tasogare_51-BE.png",
     "url": "product/tasogare-51/index.html",
     "slug": "tasogare-51"
   },
@@ -4227,7 +4227,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993495"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Tasogare_65-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Tasogare_65-BE.png",
     "url": "product/tasogare-65/index.html",
     "slug": "tasogare-65"
   },
@@ -4241,7 +4241,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993751"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Tasogare_78-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Tasogare_78-BE.png",
     "url": "product/tasogare-78/index.html",
     "slug": "tasogare-78"
   },
@@ -4254,7 +4254,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993470"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Tasogare_86-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Tasogare_86-BE.png",
     "url": "product/tasogare-86/index.html",
     "slug": "tasogare-86"
   },
@@ -4266,7 +4266,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994115"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Tateyama-S-GB-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Tateyama-S-GB-9.png",
     "url": "product/tateyama-s/index.html",
     "slug": "tateyama-s"
   },
@@ -4282,7 +4282,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993991"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_54-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_54-BE.png",
     "url": "product/tedori-54-u/index.html",
     "slug": "tedori-54-u"
   },
@@ -4298,7 +4298,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993983"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_57-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_57-BE.png",
     "url": "product/tedori-57/index.html",
     "slug": "tedori-57"
   },
@@ -4314,7 +4314,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993975"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_66-U-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_66-U-BE.png",
     "url": "product/tedori-66-u/index.html",
     "slug": "tedori-66-u"
   },
@@ -4329,7 +4329,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993967"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_68-SA.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_68-SA.png",
     "url": "product/tedori-68/index.html",
     "slug": "tedori-68"
   },
@@ -4342,7 +4342,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993951"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_79-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_79-BE.png",
     "url": "product/tedori-79/index.html",
     "slug": "tedori-79"
   },
@@ -4357,7 +4357,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993943"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_85-2-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_85-2-BL.png",
     "url": "product/tedori-85-2-u/index.html",
     "slug": "tedori-85-2-u"
   },
@@ -4373,7 +4373,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993927"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_86-2-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_86-2-BE.png",
     "url": "product/tedori-86-2/index.html",
     "slug": "tedori-86-2"
   },
@@ -4388,7 +4388,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993935"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_86-2-LB-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_86-2-LB-BE.png",
     "url": "product/tedori-86-2-lb/index.html",
     "slug": "tedori-86-2-lb"
   },
@@ -4403,7 +4403,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993919"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Tedori_100-GR.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Tedori_100-GR.png",
     "url": "product/tedori-100/index.html",
     "slug": "tedori-100"
   },
@@ -4412,7 +4412,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993867",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Tokara_88-WH_Glossy.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Tokara_88-WH_Glossy.png",
     "url": "product/tokara-88-u-i/index.html",
     "slug": "tokara-88-u-i"
   },
@@ -4424,7 +4424,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994256"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Tokigawa-AB-022-6.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Tokigawa-AB-022-6.png",
     "url": "product/tokigawa/index.html",
     "slug": "tokigawa"
   },
@@ -4442,7 +4442,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994012"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Tonami-GR-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Tonami-GR-9.png",
     "url": "product/tonami/index.html",
     "slug": "tonami"
   },
@@ -4451,7 +4451,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993866",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Torishima_67-WH_Glossy.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Torishima_67-WH_Glossy.png",
     "url": "product/torishima-67-u-i/index.html",
     "slug": "torishima-67-u-i"
   },
@@ -4462,7 +4462,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994324"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Toshima-SI-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Toshima-SI-9.png",
     "url": "product/toshima/index.html",
     "slug": "toshima"
   },
@@ -4473,7 +4473,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994009"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Tottori-AB-022-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Tottori-AB-022-9.png",
     "url": "product/tottori/index.html",
     "slug": "tottori"
   },
@@ -4482,7 +4482,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4993006",
     "skus": [],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/10/tovada-49-in.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/10/tovada-49-in.png",
     "url": "product/tovada-49/index.html",
     "slug": "tovada-49"
   },
@@ -4496,7 +4496,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993412"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Tovada_51-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Tovada_51-BE.png",
     "url": "product/tovada-51/index.html",
     "slug": "tovada-51"
   },
@@ -4513,7 +4513,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994116"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Umi-GR-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Umi-GR-9.png",
     "url": "product/umi/index.html",
     "slug": "umi"
   },
@@ -4525,7 +4525,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4911393"
     ],
     "category": "OMOIKIRI Home",
-    "image": "https://omoikiri.ru/wp-content/uploads/2025/06/un-01-ol.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2025/06/un-01-ol.png",
     "url": "product/un-01/index.html",
     "slug": "un-01"
   },
@@ -4547,7 +4547,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994243"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Wakayama-GM-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Wakayama-GM-9.png",
     "url": "product/wakayama/index.html",
     "slug": "wakayama"
   },
@@ -4561,7 +4561,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956824"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1-AB.png",
     "url": "product/wk-1/index.html",
     "slug": "wk-1"
   },
@@ -4575,7 +4575,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956469"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1-A-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1-A-AB.png",
     "url": "product/wk-1-a/index.html",
     "slug": "wk-1-a"
   },
@@ -4588,7 +4588,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956486"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1-R-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1-R-AB.png",
     "url": "product/wk-1-r/index.html",
     "slug": "wk-1-r"
   },
@@ -4597,7 +4597,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4956164",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1-R-A-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1-R-A-IN.png",
     "url": "product/wk-1-r-a/index.html",
     "slug": "wk-1-r-a"
   },
@@ -4609,7 +4609,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956490"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1-S-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1-S-AB.png",
     "url": "product/wk-1-s/index.html",
     "slug": "wk-1-s"
   },
@@ -4622,7 +4622,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956832"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1-UN-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1-UN-GM.png",
     "url": "product/wk-1-un/index.html",
     "slug": "wk-1-un"
   },
@@ -4631,7 +4631,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4956485",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-15-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-15-IN.png",
     "url": "product/wk-1-5/index.html",
     "slug": "wk-1-5"
   },
@@ -4640,7 +4640,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4957093",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-15-CL-R-A-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-15-CL-R-A-AB.png",
     "url": "product/wk-1-5-cl-r-a/index.html",
     "slug": "wk-1-5-cl-r-a"
   },
@@ -4649,7 +4649,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4998039",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-15-S-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-15-S-IN.png",
     "url": "product/wk-1-5-s/index.html",
     "slug": "wk-1-5-s"
   },
@@ -4658,7 +4658,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4956778",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-15-UN-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-15-UN-IN.png",
     "url": "product/wk-1-5-un/index.html",
     "slug": "wk-1-5-un"
   },
@@ -4671,7 +4671,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956473"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1C-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1C-GM.png",
     "url": "product/wk-1c/index.html",
     "slug": "wk-1c"
   },
@@ -4680,7 +4680,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4956615",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1CL-R-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1CL-R-AB.png",
     "url": "product/wk-1cl-r/index.html",
     "slug": "wk-1cl-r"
   },
@@ -4689,7 +4689,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4957092",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-1CL-R-A-AB.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-1CL-R-A-AB.png",
     "url": "product/wk-1cl-r-a/index.html",
     "slug": "wk-1cl-r-a"
   },
@@ -4701,7 +4701,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956495"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-2-A-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-2-A-GM.png",
     "url": "product/wk-2-a/index.html",
     "slug": "wk-2-a"
   },
@@ -4710,7 +4710,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
     "sku": "4956506",
     "skus": [],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-2-R-A-IN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-2-R-A-IN.png",
     "url": "product/wk-2-r-a/index.html",
     "slug": "wk-2-r-a"
   },
@@ -4723,7 +4723,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4956497"
     ],
     "category": "Аксессуары",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/WK-2C-GM.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/WK-2C-GM.png",
     "url": "product/wk-2c/index.html",
     "slug": "wk-2c"
   },
@@ -4741,7 +4741,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4974260"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/yamada-ab-022.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/yamada-ab-022.png",
     "url": "product/yamada/index.html",
     "slug": "yamada"
   },
@@ -4756,7 +4756,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994555"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2026/04/yamada-slim-bn.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2026/04/yamada-slim-bn.png",
     "url": "product/yamada-slim/index.html",
     "slug": "yamada-slim"
   },
@@ -4770,7 +4770,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997253"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_45_Integra-WH.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_45_Integra-WH.png",
     "url": "product/yamakawa-45-integra/index.html",
     "slug": "yamakawa-45-integra"
   },
@@ -4785,7 +4785,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993784"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_45-WG.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_45-WG.png",
     "url": "product/yamakawa-45-u-i/index.html",
     "slug": "yamakawa-45-u-i"
   },
@@ -4798,7 +4798,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997255"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_45T-Integra-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_45T-Integra-BL.png",
     "url": "product/yamakawa-45t-integra/index.html",
     "slug": "yamakawa-45t-integra"
   },
@@ -4810,7 +4810,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993310"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_45T-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_45T-BL.png",
     "url": "product/yamakawa-45t-u-i/index.html",
     "slug": "yamakawa-45t-u-i"
   },
@@ -4825,7 +4825,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997265"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_55_Integra-WH.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_55_Integra-WH.png",
     "url": "product/yamakawa-55-integra/index.html",
     "slug": "yamakawa-55-integra"
   },
@@ -4841,7 +4841,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993783"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_55-WH.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_55-WH.png",
     "url": "product/yamakawa-55-u-i/index.html",
     "slug": "yamakawa-55-u-i"
   },
@@ -4854,7 +4854,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997267"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_55T-Integra-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_55T-Integra-BL.png",
     "url": "product/yamakawa-55t-integra/index.html",
     "slug": "yamakawa-55t-integra"
   },
@@ -4866,7 +4866,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993431"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_55T-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_55T-BL.png",
     "url": "product/yamakawa-55t-u-i/index.html",
     "slug": "yamakawa-55t-u-i"
   },
@@ -4881,7 +4881,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997277"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_75_Integra-CN.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_75_Integra-CN.png",
     "url": "product/yamakawa-75-integra/index.html",
     "slug": "yamakawa-75-integra"
   },
@@ -4897,7 +4897,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993782"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_75-WH.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/09/Yamakawa_75-WH.png",
     "url": "product/yamakawa-75-u-i/index.html",
     "slug": "yamakawa-75-u-i"
   },
@@ -4909,7 +4909,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4997279"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_75T-Integra-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_75T-Integra-BL.png",
     "url": "product/yamakawa-75t-integra/index.html",
     "slug": "yamakawa-75t-integra"
   },
@@ -4921,7 +4921,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993462"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_75T-BL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yamakawa_75T-BL.png",
     "url": "product/yamakawa-75t-u-i/index.html",
     "slug": "yamakawa-75t-u-i"
   },
@@ -4936,7 +4936,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993133"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yasugata_48R-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yasugata_48R-BE.png",
     "url": "product/yasugata-48r/index.html",
     "slug": "yasugata-48r"
   },
@@ -4949,7 +4949,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993871"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yasugata_86-PL.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yasugata_86-PL.png",
     "url": "product/yasugata-86/index.html",
     "slug": "yasugata-86"
   },
@@ -4962,7 +4962,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993847"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/06/Yasugata_100-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/06/Yasugata_100-BE.png",
     "url": "product/yasugata-100/index.html",
     "slug": "yasugata-100"
   },
@@ -4975,7 +4975,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994247"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Yatomi-BN-GR-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Yatomi-BN-GR-9.png",
     "url": "product/yatomi/index.html",
     "slug": "yatomi"
   },
@@ -4987,7 +4987,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4994344"
     ],
     "category": "Смесители",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/08/Yatomi-2-Plus-GB-BL-9.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/08/Yatomi-2-Plus-GB-BL-9.png",
     "url": "product/yatomi-2-plus/index.html",
     "slug": "yatomi-2-plus"
   },
@@ -5001,7 +5001,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993415"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Yonaka_65-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Yonaka_65-BE.png",
     "url": "product/yonaka-65/index.html",
     "slug": "yonaka-65"
   },
@@ -5015,7 +5015,7 @@ window.OMOIKIRI_SEARCH_INDEX = [
       "4993416"
     ],
     "category": "Мойки",
-    "image": "https://omoikiri.ru/wp-content/uploads/2024/07/Yonaka_78-LB-BE.png",
+    "image": "/assets/remote/omoikiri.ru/wp-content/uploads/2024/07/Yonaka_78-LB-BE.png",
     "url": "product/yonaka-78-lb/index.html",
     "slug": "yonaka-78-lb"
   }
