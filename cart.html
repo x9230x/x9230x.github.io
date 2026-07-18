@@ -222,6 +222,10 @@
       return new Intl.NumberFormat('ru-KZ').format(value) + ' ₸';
     }
 
+    function localizeImage(value) {
+      return String(value || '').replace(/^https?:\/\/omoikiri\.ru(?=\/)/i, '/assets/remote/omoikiri.ru');
+    }
+
     function readCart() {
       const stored = JSON.parse(localStorage.getItem('omoikiriCart') || 'null');
       if (Array.isArray(stored) && stored.length) return stored;
@@ -253,7 +257,7 @@
           if (!product) return '';
           return `
             <article class="dealer-cart-row">
-              <img src="${product.image}" alt="">
+              <img src="${localizeImage(product.image)}" alt="">
               <div>
                 <h2>${product.name || product.title || 'OMOIKIRI'}</h2>
                 <p>${product.detail || product.color || ''} ${product.price ? '· ' + money(Number(product.price)) : ''}</p>
@@ -288,6 +292,6 @@
 
     renderCart();
   </script>
-<script src="assets/js/lang-switch.js?v=20260718-03" data-root=""></script>
+<script src="assets/js/lang-switch.js?v=20260718-04" data-root=""></script>
 </body>
 </html>

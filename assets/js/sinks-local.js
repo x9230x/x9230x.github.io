@@ -1059,6 +1059,15 @@
   }
 
   function convertRangePriceLabel(node) {
+    if (node.textContent.includes('\u20b8')) {
+      node.textContent = node.textContent.replace(/\s*\u20b8\s*\u20b8/g, ' \u20b8').trim();
+    }
+    if (node.dataset.kztRangeDone === '1' && node.textContent.includes('\u20b8')) return;
+    if (!node.dataset.originalRubText && node.textContent.includes('\u20b8')) {
+      node.dataset.kztRangeDone = '1';
+      return;
+    }
+
     const original = node.dataset.originalRubText || node.textContent;
     const rubValues = String(original)
       .split('|')
@@ -1071,6 +1080,7 @@
     const target = rubValues.map((rub) => formatKzt(roundKzt(rub))).join(' \u2014 ');
 
     node.dataset.originalRubText = rubValues.join('|');
+    node.dataset.kztRangeDone = '1';
     if (node.textContent.trim() !== target) {
       node.textContent = target;
     }

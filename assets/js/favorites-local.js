@@ -98,6 +98,10 @@
       .replace(/"/g, '&quot;');
   }
 
+  function localizeImage(value) {
+    return String(value || '').replace(/^https?:\/\/omoikiri\.ru(?=\/)/i, '/assets/remote/omoikiri.ru');
+  }
+
   function cleanPrice(value) {
     const compact = String(value || '')
       .replace(/\s+/g, ' ')
@@ -311,7 +315,7 @@
     items.forEach((item) => {
       const row = document.createElement('tr');
       row.innerHTML = [
-        '<td class="photo-cell"><img src="' + escapeHtml(item.image) + '" alt=""></td>',
+        '<td class="photo-cell"><img src="' + escapeHtml(localizeImage(item.image)) + '" alt=""></td>',
         '<td class="name-cell"><a href="' + escapeHtml(item.href) + '">' + escapeHtml(item.title) + '</a></td>',
         '<td class="article-cell">' + escapeHtml(article(item)) + '</td>',
         '<td class="price-cell">' + escapeHtml(cleanPrice(item.price)) + '</td>',
@@ -339,7 +343,7 @@
   function exportExcel() {
     const items = readFavorites();
     const rows = [['фото', 'наименование', 'артикул', 'цена']].concat(items.map((item) => [
-      item.image || '',
+      localizeImage(item.image) || '',
       item.title || '',
       article(item),
       cleanPrice(item.price)

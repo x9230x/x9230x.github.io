@@ -35,6 +35,10 @@
     return new Intl.NumberFormat('ru-KZ').format(value) + ' \u20b8';
   }
 
+  function localizeOmoikiriUrl(value) {
+    return String(value || '').replace(/^https?:\/\/omoikiri\.ru(?=\/)/i, '/assets/remote/omoikiri.ru');
+  }
+
   function numeric(text) {
     return Number(String(text || '').replace(/\D/g, ''));
   }
@@ -535,32 +539,35 @@
     });
   }
 
-  function updateVariationPriceDisplay() {
-    const variation = variationData();
-    const priceBox = document.querySelector('.woocommerce-variation-price');
-    if (!variation || !priceBox) return;
-
+  function variationPriceHtml(variation) {
     const sale = Number(variation.display_price || 0);
     const regular = Number(variation.display_regular_price || sale || 0);
-    if (!sale && !regular) return;
+    if (!sale && !regular) return '';
 
     const saleKzt = formatKzt(roundKzt(sale || regular));
     const regularKzt = formatKzt(roundKzt(regular));
-    let html = '';
     if (regular && sale && regular !== sale) {
-      html = '<span class="price"><del><span class="woocommerce-Price-amount amount"><bdi>' +
+      return '<span class="price"><del><span class="woocommerce-Price-amount amount"><bdi>' +
         regularKzt + '</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi>' +
         saleKzt + '</bdi></span></ins></span>';
-    } else {
-      html = '<span class="price"><span class="woocommerce-Price-amount amount"><bdi>' +
-        saleKzt + '</bdi></span></span>';
     }
 
-    if (priceBox.innerHTML === html) return;
-    priceBox.innerHTML = html;
+    return '<span class="price"><span class="woocommerce-Price-amount amount"><bdi>' +
+      saleKzt + '</bdi></span></span>';
+  }
 
-    priceBox.querySelectorAll('.woocommerce-Price-amount.amount').forEach((node) => {
-      node.dataset.kztDone = '1';
+  function updateVariationPriceDisplay() {
+    const variation = variationData();
+    const html = variation ? variationPriceHtml(variation) : '';
+    if (!html) return;
+
+    document.querySelectorAll('.woocommerce-variation-price, .card_actions .rrc').forEach((priceBox) => {
+      if (priceBox.innerHTML === html) return;
+      priceBox.innerHTML = html;
+      priceBox.dataset.kztDone = '1';
+      priceBox.querySelectorAll('.woocommerce-Price-amount.amount').forEach((node) => {
+        node.dataset.kztDone = '1';
+      });
     });
   }
 
@@ -598,9 +605,10 @@
   }
 
   function productImage() {
-    return document.querySelector('.prod_image img, .woocommerce-product-gallery img, .rtwpvg-single-image-container img, .product img')?.currentSrc ||
-      document.querySelector('.prod_image img, .woocommerce-product-gallery img, .rtwpvg-single-image-container img, .product img')?.src ||
-      '';
+    const image = document.querySelector('.prod_image img, .woocommerce-product-gallery img, .rtwpvg-single-image-container img, .product img');
+    return localizeOmoikiriUrl(image?.currentSrc ||
+      image?.src ||
+      '');
   }
 
   function selectedColor() {
@@ -895,6 +903,10 @@
     return productCatalogKey() === 'sinks' || Boolean(document.querySelector('.product_cat-sinks, .entry.product_cat-sinks'));
   }
 
+  function isBathSinkProduct() {
+    return productCatalogKey() === 'bathsinks' || Boolean(document.querySelector('.product_cat-bathsinks, .entry.product_cat-bathsinks'));
+  }
+
   function isDispenserProduct() {
     return productCatalogKey() === 'dispenser' || Boolean(document.querySelector('.product_cat-dispenser, .entry.product_cat-dispenser'));
   }
@@ -910,9 +922,11 @@
     'shinagawa',
     'yamada'
   ]);
+  const TAP_PAINTED_SUFFIX_COLOR_CODES = new Set(['gr', 'sa', 'be', 'ca', 'pa', 'bl', 'es', 'wh', 'pl', 'ch']);
 
-  function tapUsesPaintedSuffix() {
-    return isTapProduct() && TAP_PAINTED_SUFFIX_SLUGS.has(productSlug());
+  function tapUsesPaintedSuffix(colorCode = selectedColorCode()) {
+    const cleanCode = String(colorCode || '').toLowerCase().replace(/-p$/i, '');
+    return isTapProduct() && TAP_PAINTED_SUFFIX_SLUGS.has(productSlug()) && TAP_PAINTED_SUFFIX_COLOR_CODES.has(cleanCode);
   }
 
   function isDisposerProduct() {
@@ -925,12 +939,14 @@
   function productDisplayTitle(value) {
     const title = cleanProductTitle(value);
     if (isDisposerProduct()) return title;
-    if (!isTapProduct() && !isSinkProduct() && !isDispenserProduct() && !isAccessoryProduct()) return title;
+    if (!isTapProduct() && !isSinkProduct() && !isBathSinkProduct() && !isDispenserProduct() && !isAccessoryProduct()) return title;
 
     let code = selectedColorDisplayCode();
-    if (isSinkProduct() || isDispenserProduct() || isAccessoryProduct()) {
+    if (/^(ab-\d+|wod|wood|wd)$/i.test(code)) code = '';
+
+    if (isSinkProduct() || isBathSinkProduct() || isDispenserProduct() || isAccessoryProduct()) {
       code = code.replace(/-P$/i, '');
-    } else if (!tapUsesPaintedSuffix()) {
+    } else if (!tapUsesPaintedSuffix(code)) {
       code = code.replace(/-P$/i, '');
     } else if (code && !/-P$/i.test(code)) {
       code += '-P';
@@ -1040,13 +1056,13 @@
   }
 
   function variationImage(variation) {
-    return variation?.image?.full_src ||
+    return localizeOmoikiriUrl(variation?.image?.full_src ||
       variation?.image?.url ||
       variation?.image?.src ||
       variation?.variation_gallery_images?.[0]?.full_src ||
       variation?.variation_gallery_images?.[0]?.url ||
       variation?.variation_gallery_images?.[0]?.src ||
-      '';
+      '');
   }
 
   function renderProductImage() {
@@ -1058,7 +1074,17 @@
     if (!image) return;
 
     const current = container.querySelector('img');
-    if (current && current.src === image) return;
+    if (current) {
+      const currentSrc = current.getAttribute('src') || current.src || '';
+      const currentUrl = new URL(localizeOmoikiriUrl(currentSrc), window.location.href).href;
+      const nextUrl = new URL(image, window.location.href).href;
+      if (currentUrl === nextUrl) {
+        if (/^https?:\/\/omoikiri\.ru(?=\/)/i.test(currentSrc)) {
+          current.setAttribute('src', image);
+        }
+        return;
+      }
+    }
 
     container.innerHTML = '';
     const img = document.createElement('img');

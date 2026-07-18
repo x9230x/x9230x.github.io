@@ -721,6 +721,30 @@
     document.body.appendChild(link);
   }
 
+  function readJsonList(key) {
+    try {
+      const value = window.localStorage?.getItem(key) || '[]';
+      const parsed = JSON.parse(value);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function updateDealerHeaderCounts() {
+    const favoritesCount = readJsonList('omoikiri:favorites').length;
+    document.querySelectorAll('#favorites-count, .favorites-count, [data-favorites-count]').forEach((node) => {
+      node.textContent = String(favoritesCount);
+      node.toggleAttribute('data-count-zero', favoritesCount === 0);
+    });
+
+    const cartCount = readJsonList('omoikiriCart').reduce((sum, item) => sum + (Number(item?.qty) || 0), 0);
+    document.querySelectorAll('#cart-count, .cart-count, [data-cart-count]').forEach((node) => {
+      node.textContent = String(cartCount);
+      node.toggleAttribute('data-count-zero', cartCount === 0);
+    });
+  }
+
   function loadSearchIndex() {
     if (window.OMOIKIRI_SEARCH_INDEX) return Promise.resolve(window.OMOIKIRI_SEARCH_INDEX);
     if (searchIndexPromise) return searchIndexPromise;
@@ -922,9 +946,13 @@
     addStyle();
     createSwitcher();
     addCartLink();
+    updateDealerHeaderCounts();
     bindSearchState();
     bindLightboxState();
     bindLocalSearchSuggestions();
+    window.addEventListener('storage', updateDealerHeaderCounts);
+    window.setTimeout(updateDealerHeaderCounts, 250);
+    window.setTimeout(updateDealerHeaderCounts, 1200);
     if (localStorage.getItem(STORE_KEY) === 'kz') {
       window.setTimeout(() => applyKz(false), 0);
     }
