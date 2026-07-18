@@ -967,6 +967,11 @@
       node.style.display = 'none';
     });
 
+    document.querySelectorAll('.color_text, .current_color_text').forEach((node) => {
+      const cleaned = node.textContent.replace(/^\s*\d+\.\s*/, '');
+      if (cleaned !== node.textContent) node.textContent = cleaned;
+    });
+
     document.querySelectorAll('.prod_title, h1.product_title').forEach((node) => {
       const displayTitle = productDisplayTitle(node.textContent);
       if (displayTitle && node.textContent.trim() !== displayTitle) {

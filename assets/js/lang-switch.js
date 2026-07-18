@@ -386,7 +386,13 @@
       body.fancybox-active .dealer-local-cart-tab,
       body.fancybox-active .favorites-icon-wrapper,
       body.fancybox-active #search,
-      body.fancybox-active .search_line {
+      body.fancybox-active .search_line,
+      body.dealer-lightbox-open .dealer-lang-switch,
+      body.dealer-lightbox-open .dealer-kz-note,
+      body.dealer-lightbox-open .dealer-local-cart-tab,
+      body.dealer-lightbox-open .favorites-icon-wrapper,
+      body.dealer-lightbox-open #search,
+      body.dealer-lightbox-open .search_line {
         opacity: 0 !important;
         visibility: hidden !important;
         pointer-events: none !important;
@@ -400,6 +406,15 @@
       body .fancybox-is-open .fancybox-stage,
       body .fancybox-is-open .fancybox-toolbar,
       body .fancybox-is-open .fancybox-navigation {
+        z-index: 300001 !important;
+      }
+
+      body .pswp {
+        z-index: 300000 !important;
+      }
+
+      body .pswp.pswp--open,
+      body .pswp[aria-hidden="false"] {
         z-index: 300001 !important;
       }
 
@@ -876,11 +891,39 @@
     }, true);
   }
 
+  function bindLightboxState() {
+    const sync = () => {
+      const pswp = document.querySelector('.pswp');
+      const open = Boolean(pswp && (
+        pswp.classList.contains('pswp--open') ||
+        pswp.getAttribute('aria-hidden') === 'false' ||
+        getComputedStyle(pswp).display !== 'none'
+      ));
+      document.body.classList.toggle('dealer-lightbox-open', open);
+    };
+
+    sync();
+
+    const pswp = document.querySelector('.pswp');
+    if (pswp) {
+      new MutationObserver(sync).observe(pswp, {
+        attributes: true,
+        attributeFilter: ['class', 'style', 'aria-hidden']
+      });
+    }
+
+    document.addEventListener('click', () => window.setTimeout(sync, 50), true);
+    document.addEventListener('keyup', (event) => {
+      if (event.key === 'Escape') window.setTimeout(sync, 50);
+    }, true);
+  }
+
   function init() {
     addStyle();
     createSwitcher();
     addCartLink();
     bindSearchState();
+    bindLightboxState();
     bindLocalSearchSuggestions();
     if (localStorage.getItem(STORE_KEY) === 'kz') {
       window.setTimeout(() => applyKz(false), 0);
