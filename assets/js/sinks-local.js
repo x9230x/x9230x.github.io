@@ -35,6 +35,7 @@
   let allProductsLoadingPromise = null;
   let catalogMetaPromise = null;
   let catalogMeta = {};
+  let catalogMetaReady = false;
   let lastScrollY = window.scrollY || 0;
   let productImageUpdateToken = 0;
   let restoringCatalogFilters = false;
@@ -236,6 +237,7 @@
 
       .dealer-filter-hidden,
       .dealer-discontinued-product,
+      body.dealer-meta-loading ul.products,
       .xwc--pf-loader-overlay,
       .prdctfltr_loader,
       .prdctfltr_woocommerce_filter_submit,
@@ -1346,6 +1348,16 @@
     return CATALOG_DIRS.has(key) ? key : '';
   }
 
+  function hasCatalogUrlFilters() {
+    const params = new URLSearchParams(window.location.search);
+    return [...params.keys()].some((key) => (
+      key === 'product_cat'
+      || key === 'rng_min_price'
+      || key === 'rng_max_price'
+      || key.indexOf('pa_') === 0
+    ));
+  }
+
   function persistCatalogReturnUrl(url = new URL(window.location.href)) {
     const key = currentCatalogKey();
     if (!key) return;
@@ -1612,6 +1624,7 @@
 
   async function ensureCatalogMetaLoaded() {
     if (Object.keys(catalogMeta).length) {
+      catalogMetaReady = true;
       hydrateCatalogMeta();
       return;
     }
@@ -1620,6 +1633,7 @@
     if (inlineMeta?.textContent) {
       try {
         catalogMeta = JSON.parse(inlineMeta.textContent) || {};
+        catalogMetaReady = true;
         hydrateCatalogMeta();
         return;
       } catch (error) {
@@ -1629,6 +1643,7 @@
 
     if (window.__OMOIKIRI_SINKS_META__) {
       catalogMeta = window.__OMOIKIRI_SINKS_META__ || {};
+      catalogMetaReady = true;
       hydrateCatalogMeta();
       return;
     }
@@ -1645,11 +1660,13 @@
       ])
         .then(([sinksMeta, tapsMeta, extraMeta]) => {
           catalogMeta = { ...(sinksMeta || {}), ...(tapsMeta || {}), ...(extraMeta || {}) };
+          catalogMetaReady = true;
           hydrateCatalogMeta();
         })
         .catch((error) => {
           console.warn('Local catalog metadata was not loaded', error);
           catalogMeta = {};
+          catalogMetaReady = true;
           hydrateCatalogMeta();
         });
     }
@@ -2306,6 +2323,8 @@
   }
 
   function applyFilters() {
+    if (!catalogMetaReady && hasCatalogUrlFilters()) return;
+
     const filters = selectedFilters();
     const priceRange = selectedPriceRange();
     const products = [...document.querySelectorAll('ul.products li.product')];
@@ -2464,13 +2483,12 @@
       });
     });
 
+    document.querySelectorAll('.dealer-local-clear-filters').forEach((button) => button.remove());
+
     const resetContainers = [...document.querySelectorAll('.prdctfltr_buttons')];
     const primaryResetContainer = resetContainers[0];
-    resetContainers.slice(1).forEach((container) => {
-      container.querySelectorAll('.dealer-local-clear-filters').forEach((button) => button.remove());
-    });
 
-    if (primaryResetContainer && !primaryResetContainer.querySelector('.dealer-local-clear-filters')) {
+    if (primaryResetContainer) {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'dealer-local-clear-filters';
@@ -2504,6 +2522,7 @@
 
   function init() {
     addStyle();
+    document.body.classList.toggle('dealer-meta-loading', hasCatalogUrlFilters());
     disableRemoteCatalogLoaders();
     guardRemoteFilterAlerts();
     watchFilterMode();
@@ -2518,7 +2537,10 @@
     bindFilters();
     restoreCatalogFiltersFromUrl();
     persistCatalogReturnUrl();
-    ensureCatalogMetaLoaded().then(applyFilters);
+    ensureCatalogMetaLoaded().then(() => {
+      document.body.classList.remove('dealer-meta-loading');
+      applyFilters();
+    });
     if (document.body.classList.contains('term-taps')) {
       window.setTimeout(() => {
         ensureAllLocalProductsLoaded().then(() => {
