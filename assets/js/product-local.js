@@ -818,12 +818,63 @@
       .trim();
   }
 
+  function escapeRegExp(value) {
+    return String(value || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function titleColorCodeCandidates() {
+    const codes = new Set();
+    const addCode = (value) => {
+      const code = String(value || '').trim();
+      if (!/^[a-z0-9-]{1,12}$/i.test(code)) return;
+
+      codes.add(code);
+      codes.add(code.toUpperCase());
+      codes.add(code.replace(/-p$/i, ''));
+      codes.add(code.toUpperCase().replace(/-P$/i, ''));
+    };
+
+    addCode(selectedColorCode());
+
+    document.querySelectorAll('select[name="attribute_pa_color"] option[value]').forEach((option) => {
+      addCode(option.value);
+    });
+
+    document.querySelectorAll('[data-attribute_name="attribute_pa_color"][data-value], .thwvs-wrapper-item-li[data-value], .thwvsf-wrapper-item-li[data-value], .variable-item[data-value]').forEach((node) => {
+      addCode(node.getAttribute('data-value'));
+    });
+
+    availableVariations().forEach((variation) => {
+      addCode(variation?.attributes?.attribute_pa_color);
+    });
+
+    return Array.from(codes)
+      .filter(Boolean)
+      .sort((a, b) => b.length - a.length);
+  }
+
   function cleanProductTitle(value) {
-    return String(value || '')
-      .replace(/\s+[a-z0-9-]+-p\s*$/i, '')
-      .replace(/\s+(?=[a-z0-9]*[a-z])[a-z0-9]{1,4}\s*$/i, '')
-      .replace(/\s+/g, ' ')
-      .trim();
+    let title = String(value || '').replace(/\s+/g, ' ').trim();
+    const codes = titleColorCodeCandidates();
+    let changed = true;
+
+    while (changed) {
+      changed = false;
+      for (const code of codes) {
+        const next = title
+          .replace(new RegExp('\\s+' + escapeRegExp(code) + '(?:-P)?\\s*$', 'i'), '')
+          .replace(/\s+/g, ' ')
+          .trim();
+
+        if (next !== title) {
+          title = next;
+          changed = true;
+          break;
+        }
+      }
+    }
+
+    return title;
   }
 
   function selectedColorDisplayCode() {
@@ -882,7 +933,7 @@
     }
 
     const suffix = code || '';
-    if (!suffix || new RegExp('\\s' + suffix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i').test(title)) return title;
+    if (!suffix || new RegExp('\\s' + escapeRegExp(suffix) + '$', 'i').test(title)) return title;
     return title + ' ' + suffix;
   }
 
@@ -943,7 +994,7 @@
   function titleWithColor(title, color) {
     title = cleanProductTitle(title);
     const cleanColor = cleanColorName(color);
-    if (!cleanColor || new RegExp('\\(' + cleanColor.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\)', 'i').test(title)) return title;
+    if (!cleanColor || new RegExp('\\(' + escapeRegExp(cleanColor) + '\\)', 'i').test(title)) return title;
     return title + ' (' + cleanColor + ')';
   }
 
