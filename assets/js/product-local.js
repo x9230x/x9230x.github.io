@@ -1132,15 +1132,16 @@
 
   function currentProduct() {
     const displayTitle = productDisplayTitle(document.querySelector('.product_title, h1')?.textContent.trim() || document.title.replace(' - OMOIKIRI', '').trim());
-    const title = isTapProduct() ? displayTitle : titleWithColor(displayTitle, selectedColor());
+    const color = cleanColorName(selectedColor());
     const variation = productSku() || currentVariationId() || primaryAttributeValue() || cleanColorName(selectedColor()) || 'default';
     const price = cartPrice();
 
     return {
       id: productSlug() + '-' + String(variation).toLowerCase().replace(/[^a-z0-9а-яё-]+/gi, '-'),
       slug: productSlug(),
-      name: title,
-      color: selectedColor(),
+      name: displayTitle,
+      color,
+      detail: color ? '\u0426\u0432\u0435\u0442: ' + color : '',
       price,
       image: productImage(),
       href: window.location.href
