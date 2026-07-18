@@ -39,6 +39,7 @@
   let lastScrollY = window.scrollY || 0;
   let filterCompactAnchor = 0;
   let filterFullHeight = 0;
+  let menuFullHeight = 0;
   let productImageUpdateToken = 0;
   let restoringCatalogFilters = false;
   let mobileFilterToggleLockedUntil = 0;
@@ -1179,6 +1180,7 @@
     const topNavHeight = topNavRect?.height || 67;
     const menuVisible = menu && getComputedStyle(menu).display !== 'none';
     const menuHeight = menuVisible ? (menu.offsetHeight || 45) : 0;
+    if (menuHeight) menuFullHeight = Math.max(menuFullHeight, Math.round(menuHeight));
     const wasCompact = document.body.classList.contains('dealer-filter-compact');
 
     if (filter && (!filterCompactAnchor || !wasCompact)) {
@@ -1190,7 +1192,7 @@
     const compactThreshold = Math.max(140, filterCompactAnchor + 24);
     const compact = window.innerWidth > 1250 && currentScrollY > compactThreshold;
     const filterTop = compact ? Math.round(topNavHeight) + 'px' : '0px';
-    const flowSpace = compact ? Math.max(84, Math.round(filterFullHeight || 0)) : 0;
+    const flowSpace = compact ? Math.max(84, Math.round(filterFullHeight || 0) + menuFullHeight) : 0;
 
     document.documentElement.style.setProperty('--dealer-nav-height', Math.round(topNavHeight) + 'px');
     document.documentElement.style.setProperty('--dealer-menu-height', Math.round(menuHeight) + 'px');
